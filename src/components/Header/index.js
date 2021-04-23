@@ -1,4 +1,4 @@
-// import logoImg from '../../logo.svg'
+import logoImg from '../../assets/Logo_home01.png'
 
 import { Container, Content } from "./styles";
 
@@ -6,7 +6,7 @@ export function Header() {
   return (
     <Container>
       <Content>
-        <img src="" alt="Logo"/>
+        <img src={ logoImg } alt="Logo"/>
         
         <ul>
           <li><a href="" className="cool-link">home</a></li>

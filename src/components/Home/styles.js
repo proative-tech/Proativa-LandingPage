@@ -16,6 +16,11 @@ export const Content = styled.div`
 
     gap: 0 7rem;
 
+    img {
+      height: 360px;
+      margin-top: 40px;
+    }
+
   }
   
   .section-next {
@@ -105,8 +110,16 @@ export const Content = styled.div`
     
   }
 
+  @media (max-width:720px) {
+    margin: 42px 70px;
+  }
+
   @media (max-width:520px) {
     margin: 42px 30px;
+
+    img {
+      display: ;
+    }
   }
 
 `;

@@ -9,6 +9,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   max-width: 1140px;
   margin: 42px 120px;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -40,9 +41,10 @@ export const Content = styled.div`
 
   .section-item {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); //width 189 auto-fit , minmax(189px, 1fr)
-    grid-auto-rows: 150px;
-    gap: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); //width 189 auto-fit , minmax(189px, 1fr)
+    grid-auto-rows: 195px;
+    gap: 4rem;
+    padding: 2rem 0;
 
     p {
       color: var(--text);
@@ -51,12 +53,28 @@ export const Content = styled.div`
     p strong {
       color: var(--red);
     }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: space-between;
+
+      p{
+        
+      }
+    }
+    img {
+      padding: 1rem 0;
+    }
   }
 
   .section-line {
     display: flex;
     justify-content: center;
+   
     hr {
+      margin: 1rem 0;
       width: 115px;
       height: 0.125rem;
       background: #C4C4C4;

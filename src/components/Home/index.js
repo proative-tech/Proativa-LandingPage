@@ -1,5 +1,6 @@
 import { Content } from "./styles";
 import iconArrow from '../../assets/icon-arrow.svg'
+import ilustration from '../../assets/Ilustração_Home01.svg'
 
 
 export function Home() {
@@ -26,7 +27,7 @@ export function Home() {
         </section>
         
         <section>
-          <img src="" alt="Proative"/>
+          <img src={ ilustration } alt="Proative"/>
         </section>
       </div>
 
