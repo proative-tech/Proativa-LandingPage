@@ -7,7 +7,7 @@ export const Container = styled.header`
 
 export const Content = styled.div`
   max-width: 1140px;
-  margin: 1.5rem 7.5rem;
+  margin: 2.0rem 7.5rem;
   
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@ export const Content = styled.div`
 
   ul li {
     display: inline-block;
-    padding: 20px 26px;
+    padding: 13.5px 26px;
 
     .cool-link::after {
       content: '';

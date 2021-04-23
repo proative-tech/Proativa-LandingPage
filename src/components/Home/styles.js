@@ -10,8 +10,12 @@ export const Content = styled.div`
 
   .section-home {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 400px;
+
     gap: 0 7rem;
+
   }
   
   .section-next {
@@ -21,6 +25,7 @@ export const Content = styled.div`
 
     img {
       cursor: pointer;
+      
     }
   }
   h1 {
@@ -98,6 +103,10 @@ export const Content = styled.div`
   .iconArrow {
     justify-content: center;
     
+  }
+
+  @media (max-width:520px) {
+    margin: 42px 30px;
   }
 
 `;
