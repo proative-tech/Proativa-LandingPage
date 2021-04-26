@@ -9,7 +9,7 @@ export function About() {
     <Container>
       <Content>
         <section className="section-main">
-          <div>
+          <div className="text-main">
             <p>Nosso propósito</p>
             <h1>Nós transparecemos </h1>
             <strong>informação.</strong>
@@ -55,6 +55,8 @@ export function About() {
         <section className="section-line">
           <hr/>
         </section>
+
+        
       </Content>
     </Container>
     

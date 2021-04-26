@@ -1,13 +1,19 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  width: 100%;
+  background: var(--background);
+
+`;
+
 export const Content = styled.div`
   max-width: 1140px;
-  margin: 42px 120px;
+  margin: 0 120px;
+  padding-top: 42px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem 0;
   
-
   .section-home {
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
@@ -105,20 +111,24 @@ export const Content = styled.div`
     
   }
 
+  .section-next {
+    padding: 1.7rem 0;
+  }
+
   .iconArrow {
     justify-content: center;
     
   }
 
   @media (max-width:720px) {
-    margin: 42px 70px;
+    margin: 0 70px;
   }
 
   @media (max-width:520px) {
-    margin: 42px 30px;
+    margin: 0 20px;
 
     img {
-      display: ;
+      display: none;
     }
   }
 

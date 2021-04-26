@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.header`
-  height: 67px;
+export const Container = styled.div`
   width: 100vw;
+  background: var(--background);
 `;
 
 export const Content = styled.div`
   max-width: 1140px;
-  margin: 2.0rem 7.5rem;
+  margin: 0 7.5rem;
+  padding-top: 2.0rem;
   
   display: flex;
   justify-content: space-between;
@@ -45,8 +46,15 @@ export const Content = styled.div`
     color: var(--black);
     font-weight: 400;
     font-size: 0.87rem;
+ 
+  }
 
-    
-    
+  @media (max-width:520px) {
+
+    margin: 2.0rem auto;
+
+    ul {
+      display: none;
+    }
   }
 `;

@@ -1,8 +1,10 @@
+import { GlobalStyle } from './styles/global';
 import { Header } from './components/Header';
 import { Home } from './components/Home';
 import { About } from './components/About';
-import { GlobalStyle } from './styles/global';
 import { Solution } from './components/Solution';
+import { Marketplace } from './components/Marketplace';
+import { Cases } from './components/Cases';
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <Home />
       <About />
       <Solution />
+      <Marketplace />
+      <Cases />
       <GlobalStyle />
     </>
   );

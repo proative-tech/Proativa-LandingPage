@@ -25,7 +25,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--background);
     --webkit-font-font-smooth: antialiased;
     overflow-x: hidden;
   }

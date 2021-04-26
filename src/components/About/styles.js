@@ -9,10 +9,9 @@ export const Container = styled.div`
 export const Content = styled.div`
   max-width: 1140px;
   margin: 42px 120px;
-  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: auto;
   grid-auto-flow: row;
   
   .section-main {
@@ -20,6 +19,7 @@ export const Content = styled.div`
     display: flex;
     justify-content: center;
     font-family: 'Source Sans Pro', sans-serif;
+
 
     p {
       color: var(--red); 
@@ -60,9 +60,6 @@ export const Content = styled.div`
       align-items: baseline;
       justify-content: space-between;
 
-      p{
-        
-      }
     }
     img {
       padding: 1rem 0;
@@ -74,7 +71,7 @@ export const Content = styled.div`
     justify-content: center;
    
     hr {
-      margin: 1rem 0;
+      margin: 2rem 0;
       width: 115px;
       height: 0.125rem;
       background: #C4C4C4;
@@ -83,6 +80,11 @@ export const Content = styled.div`
 
   @media (max-width:520px) {
     margin: 42px 30px;
+    
+    .section-item {
+      /* grid-template-columns: 1fr;
+      grid-auto-rows: auto; */
+    }
   }
   
 `;
