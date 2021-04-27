@@ -25,7 +25,7 @@ export const Content = styled.div`
     }
 
     img {
-      height: 360px;
+      /* height: 360px; */
       margin-top: 40px;
     }
   }
@@ -170,7 +170,7 @@ export const Content = styled.div`
     .section-home {
       .section-ilustration {
         img {
-          margin-top: -10rem;
+          margin-top: -6rem;
         }
       }
     }
