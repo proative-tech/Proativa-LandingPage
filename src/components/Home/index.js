@@ -9,7 +9,7 @@ export function Home() {
       <Content>
         <div className="section-home">
           <section>
-            <h1>Acreditamos no poder dos dados no processo de tomada de decisão.</h1>
+            <h1>Acreditamos no poder dos dados no processo</h1>
             <p>
               Organizamos suas informações e facilitamos sua visualização, permitindo
               definições mais precisas e com maior confiança na performance e resultados.
@@ -27,7 +27,7 @@ export function Home() {
             </span>
           </section>
           
-          <section>
+          <section className="section-ilustration">
             <img src={ ilustration } alt="Proative"/>
           </section>
         </div>

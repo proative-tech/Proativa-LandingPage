@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
-export const Content = styled.div`
+export const Container = styled.div`
   width: 100%;
-  /* height: 100vh; */
+
+`;
+
+export const Content = styled.div`
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 710px 657px;
   
@@ -41,17 +46,11 @@ export const Content = styled.div`
     }
   }
 
-
-  @media (max-width:1370px) {
-    /* grid-template-columns: 710px 450px; */
-  }
-
   @media (max-width:1160px) {
 
     grid-template-columns: 1fr;
     .first-section {
       img {
-        
         width: 100%;
         height:100%;
         object-fit: cover;
@@ -66,22 +65,14 @@ export const Content = styled.div`
     
   }
 
-  @media (min-width: 350px) and (max-width: 500px) {
-    
-    
+  @media (min-width: 270px) and (max-width: 500px) {
     .first-section {
-      img {
-        width: 100%;
-        
-      }
-    }
-
-    .second-section {
-      width: 100%;
-      padding: 1rem;
      
+    }
+    .second-section {
+      padding: 3rem 2rem;
       .text {
-        width:330px;
+        width: auto;
       }
     }
   }

@@ -7,8 +7,8 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  max-width: 1140px;
-  margin: 0 120px;
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 42px;
   display: grid;
   grid-template-columns: 1fr;
@@ -16,37 +16,38 @@ export const Content = styled.div`
   
   .section-home {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 400px;
-
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: auto;
     gap: 0 7rem;
+
+    section {
+      max-width: 500px;
+    }
 
     img {
       height: 360px;
       margin-top: 40px;
     }
-
   }
   
   .section-next {
-    max-width: 1140px;
+    max-width: 1440px;
     display: flex;
     justify-content: center;
 
     img {
-      cursor: pointer;
-      
+      cursor: pointer;  
     }
   }
   h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 3rem;
     font-weight: bold;
-    padding: 1rem 0;
+    padding: 2rem 0 1rem 0;
   }
 
   p {
+    padding: 2rem 0 1rem 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
     color: var(--text);
@@ -69,8 +70,7 @@ export const Content = styled.div`
     &:hover {
       background: none;
       color: var(--red);
-    }
-    
+    }  
   }
 
   .second-btn {
@@ -107,8 +107,7 @@ export const Content = styled.div`
       top: 50%;
       left: -0.2rem;
       }
-    }
-    
+    }  
   }
 
   .section-next {
@@ -120,16 +119,33 @@ export const Content = styled.div`
     
   }
 
+  @media (max-width:980px) {
+    .section-home {
+      gap: 0 0;
+      margin: 0 auto;
+      padding: 0 auto;
+    }
+
+    .section-ilustration {
+      
+    }
+  }
+
   @media (max-width:720px) {
-    margin: 0 70px;
+    
   }
 
   @media (max-width:520px) {
     margin: 0 20px;
 
-    img {
+    .section-home {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));    
+    }
+
+    .section-ilustration {
       display: none;
     }
   }
+
 
 `;

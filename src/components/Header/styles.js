@@ -6,8 +6,8 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  max-width: 1140px;
-  margin: 0 7.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 2.0rem;
   
   display: flex;
@@ -51,7 +51,7 @@ export const Content = styled.div`
 
   @media (max-width:520px) {
 
-    margin: 2.0rem auto;
+    margin: 0 auto;
 
     ul {
       display: none;

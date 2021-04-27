@@ -75,7 +75,8 @@ export function Cases() {
       </Content>
  
       <Footer>
-        <section className="footer">
+       <Content>
+          <section className="footer">
           <div>
             <img src={ logo } alt=""/>
           </div>
@@ -88,16 +89,27 @@ export function Cases() {
             <p>06455-000</p>
           </div>
 
-          <div>
+          <div className="contact">
             <p>+55 11 4130-8800</p>
             <p>contato@proativetec.com.br</p>
 
-            <span>Facebook</span>
-            <span>Linkedin</span>
+            <span>
+              <a href="">Facebook</a>
+              <a href=""></a>
+              <a href="">linkedln</a>
+            </span>
 
-            <p>Olíticas de Privacidade</p>
+            <p >Olíticas de Privacidade</p>
           </div>
+
+         
         </section>
+
+          <hr/>
+          <p className="text-footer">
+            © 2021Proative Technology – Todos os direitos reservados
+          </p>
+        </Content>
       </Footer>
       
     </Container>

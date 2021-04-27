@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 
 
+
+
 export const Container = styled.div`
   width: 100%;
-  
+`;
+
+export const Content = styled.div`
+  max-width: 1440px;
+  margin: 0 auto;
 
   display: grid; 
   grid-template-columns: 710px 657px;
@@ -35,7 +41,12 @@ export const Container = styled.div`
   }
 
   .section02 {
-
+    img {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        object-position: center;
+    }
   }
 
   .section03 {
@@ -67,6 +78,13 @@ export const Container = styled.div`
   }
 
   @media (max-width:840px) { 
+
+    .section01,.section02 {
+      h1,p {
+        text-align: left;
+      }
+    }
+
     .section02 {
       img {
         width: 100%;
@@ -74,13 +92,20 @@ export const Container = styled.div`
         object-fit: cover;
         object-position: center;
       }
-    }   
+    }  
+
+    .section01,.section04 {
+      .text-item {
+        justify-content: flex-start;
+      }
+    } 
   }
 
   @media (max-width: 600px) {
 
     .section01 {
-      padding: 5rem 2rem;
+     
+      padding: 3rem 2rem;
     }
     .section01,.section04 {
       padding: 5rem 1rem;
