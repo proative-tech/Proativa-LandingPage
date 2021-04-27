@@ -43,6 +43,7 @@ export const Content = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     grid-auto-rows: 195px;
     gap: 4rem;
+    /* margin: 0 auto; */
     padding: 2rem 0;
 
     p {
@@ -85,15 +86,20 @@ export const Content = styled.div`
 
   @media (max-width:960px) {
     .section-item {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+      /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem; 
+      margin: 0 auto;
     }
   }
 
   @media (max-width:520px) {
-    margin: 42px 2rem;
-
+    margin: 42px auto;
+    .section-main {
+      padding: 5rem 2rem;
+    }
     .section-item {
-      padding: 0;
+      padding-bottom: 7rem;
     }
   }
   

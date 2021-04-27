@@ -21,7 +21,7 @@ export function About() {
             <img src={ foguete } alt="icon1"/>
             <div>
               <p><strong>Seja proativo</strong></p>
-              <p>Indentifique os problemas <br/> antes que os seus usuários <br/> e se antecipe nas soluções.</p>
+              <p>Indentifique os problemas  antes que os seus usuários  e se antecipe nas soluções.</p>
             </div>
           </div>
 
@@ -29,7 +29,7 @@ export function About() {
             <img src={ relogio } alt="icon2"/>
             <div>
               <p><strong>Diminua o Downtime</strong></p>
-              <p>Seja rápido e preciso na <br/> detecção e solução dos problemas dos <br/> seus ambientes.</p>
+              <p>Seja rápido e preciso na  detecção e solução dos problemas dos  seus ambientes.</p>
             </div>
           </div>
 
@@ -37,7 +37,7 @@ export function About() {
             <img src={ alvo } alt="icon3"/>
             <div>
               <p><strong>Maior produtividade</strong></p>
-              <p>Automatize sistemas e <br/> diminua incidência de problemas <br/> recorrentes.</p>
+              <p>Automatize sistemas e  diminua incidência de problemas recorrentes.</p>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ export function About() {
             <img src={ lampada } alt="icon4"/>
             <div>
               <p><strong>Melhore sua Gestão</strong></p>
-              <p>Tenha informações precisas para <br/>  medir e melhorar o desempenho<br/> do seu negócio em tempo real.</p>
+              <p>Tenha informações precisas para   medir e melhorar o desempenhodo seu negócio em tempo real.</p>
             </div>
           </div>
 

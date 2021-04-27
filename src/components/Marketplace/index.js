@@ -1,5 +1,5 @@
 import { Container, Content } from './styles';
-import Imagem02 from '../../assets/Imagem02.svg';
+import Imagem02 from '../../assets/Imagem02.png';
 
 
 

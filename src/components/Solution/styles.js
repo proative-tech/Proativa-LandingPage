@@ -26,6 +26,7 @@ export const Content = styled.div`
     h2 {
       font-size: 2.25rem;
       margin: 1rem 0;
+      font-weight: bold;
     }
     
     .text {
@@ -74,9 +75,13 @@ export const Content = styled.div`
      
     }
     .second-section {
+      h2 {
+        font-size: 1.75rem;
+      }
       .text {
         width: auto;
       }
+
     }
   }
 

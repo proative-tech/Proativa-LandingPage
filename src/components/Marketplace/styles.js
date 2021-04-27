@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 
 
+
 export const Container = styled.div`
   width: 100%;
 `;
@@ -23,6 +24,7 @@ export const Content = styled.div`
       margin: 2rem 0 1.5rem 0;
       font-size: 2.25rem;
       text-align: right;
+      font-weight: bold;
     }
 
     .text-item {
@@ -42,11 +44,10 @@ export const Content = styled.div`
   }
 
   .section02 {
+    
     img {
         width: 100%;
         height:100%;
-        object-fit: cover;
-        object-position: center;
     }
   }
 
@@ -113,7 +114,15 @@ export const Content = styled.div`
   @media (max-width: 768px) {
     .section01,.section04 {
       padding: 5rem 2rem;
+
+      h1 {
+        font-size: 1.75rem;
+      }
     }
+  }
+
+  @media (max-width:400px) {
+    
   }
 
   @media (max-width: 360px) {
@@ -127,5 +136,4 @@ export const Content = styled.div`
       }
     } 
   }
-
 `;
