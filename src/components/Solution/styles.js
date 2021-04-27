@@ -9,7 +9,7 @@ export const Content = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 710px 657px;
+  grid-template-columns: repeat(2, 1fr);
   
   .first-section {
     
@@ -46,6 +46,12 @@ export const Content = styled.div`
     }
   }
 
+  @media (max-width:1360px) {
+    .second-section {
+      padding: 2rem 4rem;
+    }
+  }
+
   @media (max-width:1160px) {
 
     grid-template-columns: 1fr;
@@ -55,22 +61,19 @@ export const Content = styled.div`
         height:100%;
         object-fit: cover;
         object-position: center;
-
       }
     }
 
+    .second-section {
+      padding: 3rem 2rem;
+    }
   }
-
-  @media (max-width:520px) {
-    
-  }
-
+ 
   @media (min-width: 270px) and (max-width: 500px) {
     .first-section {
      
     }
     .second-section {
-      padding: 3rem 2rem;
       .text {
         width: auto;
       }

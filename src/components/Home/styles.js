@@ -136,7 +136,8 @@ export const Content = styled.div`
   }
 
   @media (max-width:520px) {
-    margin: 0 20px;
+    margin: 0 auto;
+    padding: 0 2rem;
 
     .section-home {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));    

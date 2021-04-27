@@ -12,12 +12,13 @@ export const Content = styled.div`
   margin: 0 auto;
 
   display: grid; 
-  grid-template-columns: 710px 657px;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 431px 414px;
   
   .section01 {
     padding: 5rem 3rem;
-
+    background: #F4F4F4;
+    
     h1 {
       margin: 2rem 0 1.5rem 0;
       font-size: 2.25rem;
@@ -55,6 +56,7 @@ export const Content = styled.div`
 
   .section04 {
     padding: 5rem 3rem;
+    background: #F4F4F4;
  
     .text-item {
       padding-top: 1rem;
@@ -73,11 +75,18 @@ export const Content = styled.div`
     }
   }
 
+  @media (max-width:1360px) {
+    grid-template-columns: 710px auto;
+
+
   @media (max-width: 1160px) {
     grid-template-columns: 1fr;
   }
 
   @media (max-width:840px) { 
+    .section01 { 
+      padding: 3rem 2rem;
+    }
 
     .section01,.section02 {
       h1,p {
@@ -101,29 +110,21 @@ export const Content = styled.div`
     } 
   }
 
-  @media (max-width: 600px) {
-
-    .section01 {
-     
-      padding: 3rem 2rem;
-    }
+  @media (max-width: 768px) {
     .section01,.section04 {
-      padding: 5rem 1rem;
+      padding: 5rem 2rem;
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 360px) {
     .section01 {
-      p {
-        width: 300px;
-      }
+      padding: 0 2rem;
     }
-    .section04 {
-      
+    .section01, .section04 {
       p {
-        width: 300px;
+        width: 200px;
+        
       }
-
     } 
   }
 

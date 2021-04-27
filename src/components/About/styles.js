@@ -77,6 +77,12 @@ export const Content = styled.div`
     }
   }
 
+  @media (max-width: 1150px) {
+    .section-item {
+      padding: 2rem;
+    }
+  }
+
   @media (max-width:960px) {
     .section-item {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -85,6 +91,10 @@ export const Content = styled.div`
 
   @media (max-width:520px) {
     margin: 42px 2rem;
+
+    .section-item {
+      padding: 0;
+    }
   }
   
 `;

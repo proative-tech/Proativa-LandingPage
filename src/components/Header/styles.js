@@ -49,12 +49,13 @@ export const Content = styled.div`
  
   }
 
-  @media (max-width:520px) {
-
-    margin: 0 auto;
-
+  @media (max-width:1130px) {
     ul {
       display: none;
     }
+  }
+
+  @media (max-width:520px) {
+    margin: 0 auto;
   }
 `;

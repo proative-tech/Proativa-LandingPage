@@ -10,6 +10,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   max-width: 1440px;
   margin: 0 auto;
+  
 
   .section-main {
     padding: 7rem 0 3rem 0;
