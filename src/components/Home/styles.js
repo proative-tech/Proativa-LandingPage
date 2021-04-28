@@ -18,14 +18,14 @@ export const Content = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: auto;
-    gap: 0 7rem;
+    gap: 0 2rem;
+   
 
     section {
       max-width: 500px;
     }
 
     img {
-      /* height: 360px; */
       margin-top: 40px;
     }
   }
@@ -39,6 +39,7 @@ export const Content = styled.div`
       cursor: pointer;  
     }
   }
+  
   h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 3rem;
@@ -51,6 +52,7 @@ export const Content = styled.div`
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
     color: var(--text);
+    line-height: 1.7;
   }
 
   button { 
@@ -119,6 +121,14 @@ export const Content = styled.div`
     
   }
 
+  @media (max-width:1360px) {
+    .section-home {
+      img {
+        width: 500px;
+      }
+    }
+  }
+
   @media (max-width: 1050px) {
     .section-home {
       gap: 0 3rem;
@@ -146,13 +156,24 @@ export const Content = styled.div`
 
     .section-home {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));   
-      
+      h1 {
+        font-size: 26px;
+      }
+
+      button {
+        margin: 0rem 1rem 1rem 0;
+        width: 193px;
+        font-size: 12px;
+        padding: 0.75rem 1.375rem;
+      }
+
       .section-ilustration {
         img {
           width:100%;
           margin-top: -3rem;
         }
       }
+
 
       span {
         display: none;
@@ -170,7 +191,7 @@ export const Content = styled.div`
     .section-home {
       .section-ilustration {
         img {
-          margin-top: -6rem;
+          margin-top: -3rem;
         }
       }
     }

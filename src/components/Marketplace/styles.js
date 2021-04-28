@@ -67,9 +67,14 @@ export const Content = styled.div`
       
     }
 
+    strong {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
     p {
       
-      color: var(--text);
+      color: #434343;
       line-height: 1.6;
       width: 335px;
       justify-content: center;
@@ -122,7 +127,7 @@ export const Content = styled.div`
   }
 
   @media (max-width:400px) {
-    
+    display: block;
   }
 
   @media (max-width: 360px) {
