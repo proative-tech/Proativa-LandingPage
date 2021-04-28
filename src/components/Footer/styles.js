@@ -1,19 +1,14 @@
 import styled from 'styled-components';
-
-
-export const Container = styled.div`
-  width: 100%;
-  background: #FFF;
-
-`;
+import Ondulacao from '../../assets/bg_ondulacao.svg'
 
 export const Content = styled.div`
    max-width: 1146px;
-    margin: 0 auto; 
+   margin: 0 auto;
+
   
 
   .section-main {
-    padding: 7rem 0 3rem 0;
+    padding: 132px 0 0 0;
     width: 100%;
     text-align: center;
 
@@ -89,9 +84,27 @@ export const Content = styled.div`
 
 `;
 
-export const Footer = styled.div`
+export const Container = styled.div`
   width: 100%;
-  background: #F4F4F4;
+  background: #f4f4f4;
+  background-size: cover;
+  height: 100%;
+
+  position: relative;
+  
+
+  svg {
+    position: absolute;
+    top: 0;
+
+    fill: #fff;
+
+    width: 100%;
+
+    z-index: 20;
+
+    margin: 0 auto;
+  }
 
   hr {
     background: #E5E3DF;
@@ -101,22 +114,38 @@ export const Footer = styled.div`
 
   }
 
-  .text-footer {
-    color: #C4C4C4;
-    margin-bottom: 1rem;
+  div.text-footer {
+    padding-bottom: 4rem;
+
+    p {
+      color: #C4C4C4;
+    }
   }
 
    
 
   .footer {
-    max-width: 1140px;
-    margin: 0 120px;
+    width: 100%;
     margin-top: 10rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    
+    display: flex;
+    align-items: flex-start;
 
-    div {
-      padding: 4rem 0
+    img {
+      width: 168px;
+      height: 67px;
+    }
+  
+    div + div {
+      margin-left: 5.5rem;
+    }
+ 
+
+    div:nth-child(2) {
+      p {
+        font-size: 1rem;
+        line-height: 1.75rem;
+      }
     }
 
     .contact {  
@@ -164,7 +193,34 @@ export const Footer = styled.div`
     .footer {
       grid-template-columns: 1fr;
       margin: 5rem 30px;
+      
     }
   }
 
+`;
+
+export const ContentMain = styled.div`
+  max-width: 1146px;
+  margin: 256px auto 0; 
+
+  display: flex;
+  align-items: center;
+
+  height: 278px;
+
+  position: relative;
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.125rem;
+
+    max-width: 50%;
+    
+    font-weight: normal;
+    font-family: 'Source Sans Pro';
+
+    strong {
+      font-weight: bold;
+    }
+  }
 `;

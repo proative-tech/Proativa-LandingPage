@@ -1,18 +1,28 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100vw;
+  min-width: 100vw;
   background: var(--background);
 `;
 
 export const Content = styled.div`
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 2.0rem;
+  max-width: 1146px;
+  margin: 0 auto; 
+
+  padding: 2.6875rem 0 0; 
   
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  > a {
+   img {
+      width: 168px;
+      height: 67px;
+    } 
+  }
+
+ 
  
 
   ul {
@@ -45,7 +55,7 @@ export const Content = styled.div`
     text-transform: uppercase;
     color: var(--black);
     font-weight: 400;
-    font-size: 0.87rem;
+    font-size: 0.875rem;
  
   }
 

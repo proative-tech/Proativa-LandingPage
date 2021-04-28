@@ -3,28 +3,40 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
 
+  background: #f4f4f4;
 `;
 
 export const Content = styled.div`
-  max-width: 1440px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto; 
   
-  .first-section {
-    
+  display: flex;
+  justify-content: space-between;
+
+  max-height: 725px;
+  
+  .first-section{
+    max-width: 100%;
+
+    > img {
+      width: 100%;
+    }
   }
 
   .second-section {
-    padding: 5rem 4rem;
-  
+    max-width: 657px;
+    width: 100%;
+
+    padding: 72px 77px 77px 4rem;
+
+    margin-right: auto;
+
     strong {
       color: var(--red);
       font-size: 1rem;
     }
 
     h2 {
-      font-size: 2.25rem;
+      font-size: 2rem;
       margin: 1rem 0;
       font-weight: bold;
     }
@@ -42,9 +54,13 @@ export const Content = styled.div`
 
     p {
       color: var(--text);
-      font-size: 0.9rem ;
+      font-size: 0.875rem ;
       line-height: 1.7;
     }
+  }
+
+  @media (min-width: 1441px) {
+    max-width: 1440px;
   }
 
   @media (max-width:1360px) {

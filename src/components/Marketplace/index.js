@@ -3,6 +3,7 @@ import Imagem02 from '../../assets/Imagem02.png';
 
 
 
+
 export function Marketplace() {
   return(
     <Container>
@@ -25,24 +26,6 @@ export function Marketplace() {
         <section className="section02">
           <img src={ Imagem02 } alt=""/>
         </section>
-        
-        <section className="section03">
-          
-        </section>
-
-        <section className="section04">
-          <strong>
-              Conheça a Proative
-          </strong>
-
-          <div className="text-item">
-            <p>
-              Caso tenha interesse, é possível saber um pouco mais de quem somos e no que 
-              acreditamos assistindo ao nosso vídeo de apresentação.
-            </p>
-          </div>
-        </section>
-    
       </Content>
     </Container>
   )

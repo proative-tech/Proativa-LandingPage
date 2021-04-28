@@ -11,54 +11,20 @@ export const Content = styled.div`
 
   display: flex;
   justify-content: space-between;
-  
-  .section01 {
-    padding: 5rem 0;
-    background: #F4F4F4;
 
-    max-width: 536px;
-    width: 100%;
-
-    margin: 0 87px;
-    
-    h1 {
-      margin: 2rem 0 1.5rem 0;
-      font-size: 2.25rem;
-      text-align: right;
-      font-weight: bold;
-    }
-
-    .text-item {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    p {
-      text-align: right;
-      color: var(--text);
-      line-height: 1.6;
-      width: 335px;
-      justify-content: center;
-    }
-  }
-
-  .section02 {
-    flex: 1;
-    
-    img {
-        width: 100%;
-        height:100%;
-    }
-  }
+  height: 414px;
 
   .section03 {
+    content: '';
     background: #E5E5E5;
+    flex: 1;
   }
 
   .section04 {
-    padding: 5rem 3rem;
+    padding: 5rem 0 0 96px;
     background: #F4F4F4;
+
+    width: 50.20%;
  
     .text-item {
       padding-top: 1rem;
@@ -69,7 +35,6 @@ export const Content = styled.div`
     }
 
     p {
-      
       color: var(--text);
       line-height: 1.6;
       width: 335px;
@@ -79,6 +44,10 @@ export const Content = styled.div`
 
    @media (min-width: 1441px) {
     max-width: 1440px;
+
+    .section04 {
+      width: 50.60%;
+    }
   }
 
   @media (max-width:1360px) {

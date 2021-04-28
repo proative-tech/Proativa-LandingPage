@@ -18,7 +18,9 @@ export function About() {
 
         <section className="section-item">
           <div className="item">
+           <div className="containerImg">
             <img src={ foguete } alt="icon1"/>
+           </div>
             <div>
               <p><strong>Seja proativo</strong></p>
               <p>Indentifique os problemas  antes que os seus usuários  e se antecipe nas soluções.</p>
@@ -26,7 +28,10 @@ export function About() {
           </div>
 
           <div className="item">
+            <div className="containerImg">
             <img src={ relogio } alt="icon2"/>
+           </div>
+            
             <div>
               <p><strong>Diminua o Downtime</strong></p>
               <p>Seja rápido e preciso na  detecção e solução dos problemas dos  seus ambientes.</p>
@@ -34,7 +39,10 @@ export function About() {
           </div>
 
           <div className="item">
-            <img src={ alvo } alt="icon3"/>
+          <div className="containerImg">
+          <img src={ alvo } alt="icon3"/>
+           </div>
+            
             <div>
               <p><strong>Maior produtividade</strong></p>
               <p>Automatize sistemas e  diminua incidência de problemas recorrentes.</p>
@@ -42,7 +50,9 @@ export function About() {
           </div>
 
           <div className="item">
+          <div className="containerImg">
             <img src={ lampada } alt="icon4"/>
+           </div>
             <div>
               <p><strong>Melhore sua Gestão</strong></p>
               <p>Tenha informações precisas para   medir e melhorar o desempenhodo seu negócio em tempo real.</p>
@@ -54,7 +64,9 @@ export function About() {
       
         <section className="section-line">
           <hr/>
-        </section>        
+        </section>
+
+        
       </Content>
     </Container>
     

@@ -6,8 +6,8 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  max-width: 1440px;
-  margin: 42px auto;
+  max-width: 1146px;
+  margin: 42px auto; 
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
@@ -58,9 +58,28 @@ export const Content = styled.div`
       display: flex;
       flex-direction: column;
       align-items: baseline;
-      justify-content: space-between;
 
+     
+      > div.containerImg {
+        height: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      > div {
+        p:nth-child(1) {
+          margin: 20px 0 12px
+        }
+
+        p:nth-child(2) {
+          color: #666666;
+        }
+      }
     }
+
+
     img {
       padding: 1rem 0;
     }

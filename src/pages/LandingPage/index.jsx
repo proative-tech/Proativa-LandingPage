@@ -5,19 +5,21 @@ import { Home } from '../../components/Home';
 import { About } from '../../components/About';
 import { Solution } from '../../components/Solution';
 import { Marketplace } from '../../components/Marketplace';
+import { MarketPlaceTwo } from '../../components/MarketPlaceTwo';
 import { Cases } from '../../components/Cases';
-
-import { Container } from './styles';
+import { Footer } from '../../components/Footer';
 
 export function LandingPage() {
     return (
-        <Container>
+        <>
             <Header />
             <Home />
             <About />
             <Solution />
             <Marketplace />
+            <MarketPlaceTwo />
             <Cases />
-        </Container>
+            <Footer />
+        </>
     )
 }
