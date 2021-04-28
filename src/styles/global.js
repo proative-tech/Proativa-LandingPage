@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, textarea, button {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Opens sans', sans-serif;
     font-weight: 400;
   }
 

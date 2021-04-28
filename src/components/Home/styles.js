@@ -81,6 +81,8 @@ export const Content = styled.div`
     color: #fff;
     border: 2px solid var(--red);
 
+    transition: all 0.2s;
+
     &:hover {
       background: none;
       color: var(--red);
@@ -90,10 +92,12 @@ export const Content = styled.div`
   .second-btn {
     border: 2px solid #707070;
     background: none;
-    transition: 0.2s;
+    
+    transition: all 0.2s;
 
     &:hover {
-      border: 2px solid var(--background);
+      background: #707070;
+      color: var(--background);
     }
   }
 
