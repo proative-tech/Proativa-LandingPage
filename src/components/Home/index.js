@@ -1,6 +1,6 @@
 import { Container, Content } from "./styles";
 import iconArrow from '../../assets/icon-arrow.svg'
-import ilustration from '../../assets/Home.svg'
+import ilustration from '../../assets/Home02.svg'
 
 
 export function Home() {
