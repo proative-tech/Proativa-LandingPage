@@ -1,23 +1,15 @@
-import { GlobalStyle } from './styles/global';
-import { Header } from './components/Header';
-import { Home } from './components/Home';
-import { About } from './components/About';
-import { Solution } from './components/Solution';
-import { Marketplace } from './components/Marketplace';
-import { Cases } from './components/Cases';
+import React from 'react';
+import { BrowserRouter, Switch } from 'react-router-dom';
 
+import { Routes } from './routes'
 
 function App() {
   return (
-    <>
-      <Header />
-      <Home />
-      <About />
-      <Solution />
-      <Marketplace />
-      <Cases />
-      <GlobalStyle />
-    </>
+    <BrowserRouter>
+      <Switch>
+        <Routes />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

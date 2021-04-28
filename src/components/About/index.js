@@ -54,9 +54,7 @@ export function About() {
       
         <section className="section-line">
           <hr/>
-        </section>
-
-        
+        </section>        
       </Content>
     </Container>
     
