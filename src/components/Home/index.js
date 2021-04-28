@@ -19,7 +19,7 @@ export function Home() {
             <button className="second-btn">Fale Conosco</button>
             <br/><br/>
             <span>
-              <a href="">Facebook</a>
+              <a href="">Youtube</a>
             </span>
 
             <span>
