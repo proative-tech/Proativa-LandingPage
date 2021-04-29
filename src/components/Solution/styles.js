@@ -32,15 +32,19 @@ export const Content = styled.div`
 
     margin-right: auto;
 
-    strong {
+    span {
       color: var(--red);
       font-size: 1rem;
+      font-weight: 300;
     }
 
     h2 {
       font-size: 2rem;
       margin: 1rem 0;
+      line-height: 50px;
       font-weight: bold;
+
+      width: 90%;
     }
     
     .text {
@@ -56,12 +60,22 @@ export const Content = styled.div`
 
     p {
       color: var(--text);
-      font-size: 0.875rem ;
+      font-size: 0.875rem;
+      line-height: 25px;
     }
   }
 
   @media (min-width: 1441px) {
-    max-width: 1440px;
+    max-height: 724px;
+
+    .first-section {
+      width: 50%;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    max-height: 724px;
   }
 
 
@@ -72,18 +86,34 @@ export const Content = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     min-height: 0;
+    max-height: 100%;
+
+    .first-section {
+
+    }
 
     .second-section {
       padding-left: 2rem;
       padding-top: 2rem;
+      padding-bottom: 0;
     }
   }
 
-  @media (max-width: 1195px) {
+  @media (max-width: 1216px) {
     .second-section {
-      padding-top: 2rem;
-      padding-bottom: 1.5rem;
+      h2 {
+        line-height: 40px;
+      }
     }
+  }
+
+  @media (max-width: 1189px) {
+    .second-section {
+        div.text{
+          margin-right: 0;
+          padding: 0px 1rem 0px 0;
+        } 
+      }
   }
 
   @media (max-width: 985px) {
@@ -94,7 +124,13 @@ export const Content = styled.div`
       
     }
     .second-section {
-      padding-right: 2rem
+      padding-right: 2rem;
+
+      padding-bottom: 1rem;
+
+      div.text{
+        padding: 1rem 1rem 1rem 0;
+      }
     }
   }
 

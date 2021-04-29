@@ -81,8 +81,22 @@ export const Content = styled.div`
     }
   }
 
-   @media (min-width: 1441px) {
-    max-width: 1440px;
+  @media (min-width: 1441px) {
+    max-height: 431px;
+    display: flex;
+
+
+    .section01 {
+      min-width: 50%;
+      margin: 0;
+
+      padding: 0px 2rem 0px 20%;
+    }
+
+    .section02  {
+      width: 100%;
+      overflow: hidden;
+    }
   }
 
   @media (max-width:1360px) {
@@ -101,6 +115,10 @@ export const Content = styled.div`
 
     .section02 {
       width: 100%;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -153,6 +171,8 @@ export const Content = styled.div`
       h1 {
         font-size: 28px;
         line-height: 35px;
+
+        width: 80%;
       }
 
       div.text-item {

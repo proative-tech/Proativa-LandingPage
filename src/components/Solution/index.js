@@ -11,7 +11,7 @@ export function Solution() {
         </section>
 
         <section className="second-section">
-          <strong>Sobre a Proative</strong>
+          <span>Sobre a Proative</span>
           <h2>Somos uma empresa de tecnologia especializada em soluções inovadoras de gerenciamento de informações.</h2>
           
           <div className="text">

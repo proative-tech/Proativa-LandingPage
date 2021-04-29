@@ -43,10 +43,13 @@ export const Content = styled.div`
   }
 
    @media (min-width: 1441px) {
-    max-width: 1440px;
+    max-height: 414px;
+    display: flex;
 
+
+    
     .section04 {
-      width: 50.60%;
+      width: 50%;
     }
   }
 
