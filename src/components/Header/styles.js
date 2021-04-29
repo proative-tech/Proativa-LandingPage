@@ -22,14 +22,15 @@ export const Content = styled.div`
     } 
   }
 
- 
- 
-
-  ul {
+  > ul {
     list-style: none;
   }
 
-  ul li {
+  div.containerBurger {
+    display: none;
+  }
+
+ > ul li {
     display: inline-block;
     padding: 13.5px 26px;
 
@@ -50,7 +51,7 @@ export const Content = styled.div`
     }
   }
 
-  ul li a {
+  > ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--black);
@@ -60,8 +61,14 @@ export const Content = styled.div`
   }
 
   @media (max-width:1130px) {
-    ul {
+    padding-right: 2rem;
+
+   > ul {
       display: none;
+    }
+
+    div.containerBurger {
+      display: block;
     }
   }
 
