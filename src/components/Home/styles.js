@@ -265,6 +265,9 @@ export const Content = styled.div`
 
         button {
           font-size: 12px;
+
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
         }
       }
 

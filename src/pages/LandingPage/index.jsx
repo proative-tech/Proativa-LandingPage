@@ -18,7 +18,7 @@ export function LandingPage() {
             <Solution />
             <Marketplace />
             <MarketPlaceTwo />
-            {/* <Cases /> */}
+            <Cases />
             {/* <Footer /> */}
         </>
     )
