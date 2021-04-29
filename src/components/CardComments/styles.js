@@ -34,6 +34,10 @@ export const Container = styled.div`
         font-size: 0.93rem;
         color: #434343;
 
+        div.profileMobile {
+          display: none;
+        }
+
         p {
           display: flex;
           strong {
@@ -57,4 +61,50 @@ export const Container = styled.div`
           }
         }
       }
+
+    @media (max-width: 490px) {
+      padding: 1rem;
+
+      margin: 0;
+
+      div.profile {
+        display: none
+      }
+
+      div.note {
+        padding: 0;
+
+        p {
+          font-size: 12px;
+          line-height: 27px;
+        }
+
+        div.profileMobile {
+          display: flex;
+          flex-direction: column;
+
+          padding-left: 18px;
+
+          margin-top: 12px;
+
+          strong {
+            font-size: 12px;
+            font-weight: Normal;
+            line-height: 19px;
+            color: #000;
+          }
+
+          p {
+            color: #C4C4C4;
+            font-size: 0.75rem;
+          }
+        }
+
+        div.empresa {
+          justify-content: flex-start;
+
+          margin-left: 18px;
+        }
+      }
+    }
 `;

@@ -15,28 +15,29 @@ export const Footer = () => {
             <Content>
                 <section className="footer">
                     <div>
-                        <img src={ logo } alt=""/>
+                    <img src={ logo } alt=""/>
                     </div>
         
-                    <div>
-                        <p>Alameda Araguaia, 2104 – 7º andar</p>
-                        <p>Conj. 71A</p>
-                        <p>Alphaville | Barueri</p>
-                        <p>São Paulo, Brasil</p>
-                        <p>06455-000</p>
-                    </div>
-        
-                    <div className="contact">
-                        <p>+55 11 4130-8800</p>
-                        <p>contato@proativetec.com.br</p>
+                    <div className="contentRight">
+                        <div>
+                            <p>Alameda Araguaia, 2104 – 7º andar</p>
+                            <p>Conj. 71A</p>
+                            <p>Alphaville | Barueri</p>
+                            <p>São Paulo, Brasil</p>
+                            <p>06455-000</p>
+                        </div>
             
-                        <span>
-                            <a href="/">Facebook</a>
-                            <a href="/"></a>
-                            <a href="/">linkedln</a>
-                        </span>
-            
-                        <p >Olíticas de Privacidade</p>
+                        <div className="contact">
+                            <div>
+                                <p>+55 11 4130-8800</p>
+                                <p>contato@proativetec.com.br</p>
+                            </div>
+                            <div>
+                                <a href="/">Youtube</a>
+                                <a href="/"></a>
+                                <a href="/">linkedln</a>
+                            </div>
+                        </div>
                     </div>
             
                 
@@ -45,7 +46,7 @@ export const Footer = () => {
                 <hr/>
                 <div className="text-footer">
                     <p>
-                        © 2021Proative Technology – Todos os direitos reservados
+                        © 2021Proative Technology <span>– Todos os direitos reservados</span>
                     </p>
                 </div>
             </Content>

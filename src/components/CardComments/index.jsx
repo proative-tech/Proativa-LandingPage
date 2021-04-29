@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 
 import { Container } from './styles';
 
@@ -17,6 +17,11 @@ export function CardComments() {
                 Criamos uma relação de comprometimento, ética profissional e com total 
                 prioridade no nosso atendimento. Foi isso que mais nos encantou.”
                 </p>
+
+                <div className="profileMobile">
+                        <strong>Adriano Santos</strong>
+                        <p>Gestor executivo</p>
+                </div>
 
                 <div className="empresa">
                     <p>

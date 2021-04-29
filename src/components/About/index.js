@@ -11,7 +11,7 @@ export function About() {
         <section className="section-main">
           <div className="text-main">
             <p>Nosso propósito</p>
-            <h1>Nós transparecemos <strong>informação.</strong></h1>
+            <h1>Nós transparecemos<br/> <strong>informação.</strong></h1>
           </div>
         </section>
 

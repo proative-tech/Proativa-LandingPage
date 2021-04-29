@@ -19,7 +19,7 @@ export function LandingPage() {
             <Marketplace />
             <MarketPlaceTwo />
             <Cases />
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }
