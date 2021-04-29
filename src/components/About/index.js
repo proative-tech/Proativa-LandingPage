@@ -11,8 +11,7 @@ export function About() {
         <section className="section-main">
           <div className="text-main">
             <p>Nosso propósito</p>
-            <h1>Nós transparecemos </h1>
-            <strong>informação.</strong>
+            <h1>Nós transparecemos <strong>informação.</strong></h1>
           </div>
         </section>
 
@@ -29,8 +28,8 @@ export function About() {
 
           <div className="item">
             <div className="containerImg">
-            <img src={ relogio } alt="icon2"/>
-           </div>
+              <img src={ relogio } alt="icon2"/>
+            </div>
             
             <div>
               <p><strong>Diminua o Downtime</strong></p>

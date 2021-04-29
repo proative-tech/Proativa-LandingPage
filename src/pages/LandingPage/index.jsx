@@ -16,10 +16,10 @@ export function LandingPage() {
             <Home />
             <About />
             <Solution />
-            <Marketplace />
-            <MarketPlaceTwo />
-            <Cases />
-            <Footer />
+            {/* <Marketplace /> */}
+            {/* <MarketPlaceTwo /> */}
+            {/* <Cases /> */}
+            {/* <Footer /> */}
         </>
     )
 }

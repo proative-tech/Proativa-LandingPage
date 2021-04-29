@@ -87,11 +87,27 @@ export const Content = styled.div`
   }
 
   @media (max-width:1360px) {
-    grid-template-columns: 710px auto;
+    max-width: 100vw;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    .section01  {
+      margin: 0 2rem;
+
+      width: 100%;
+    }
+
+    .section02 {
+      
+    }
+  }
 
 
-  @media (max-width: 1160px) {
-    grid-template-columns: 1fr;
+  @media (max-width: 1198px) {
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width:840px) { 
@@ -145,6 +161,5 @@ export const Content = styled.div`
         
       }
     } 
-  }
   }
 `;

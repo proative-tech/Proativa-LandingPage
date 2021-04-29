@@ -112,6 +112,40 @@ export const Content = styled.div`
     }
   }
 
+  @media (max-width: 490px) {
+    .section-main {
+      .text-main {
+        h1, strong {
+          font-size: 30px;
+          line-height: 30px;
+        }
+
+        h1 {
+          margin-top: 2px;
+        }
+      }
+    }
+
+
+    .section-item {
+      margin-top: 0px;
+
+
+      .item {
+        div:nth-child(2) {
+          p:nth-child(1) {
+            font-size: 14px;
+          }
+
+          p:nth-child(2) {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+
   @media (max-width:520px) {
     margin: 42px auto;
     .section-main {

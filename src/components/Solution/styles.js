@@ -12,7 +12,9 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
 
-  max-height: 725px;
+  min-height: 725px;
+  width: 100%;
+  
   
   .first-section{
     max-width: 100%;
@@ -23,7 +25,7 @@ export const Content = styled.div`
   }
 
   .second-section {
-    max-width: 657px;
+    max-width: 41.0625rem;
     width: 100%;
 
     padding: 72px 77px 77px 4rem;
@@ -42,7 +44,7 @@ export const Content = styled.div`
     }
     
     .text {
-      width:378px;
+      width: 378px;
       padding: 1rem 1rem 1rem 0 ;
     }
 
@@ -55,7 +57,6 @@ export const Content = styled.div`
     p {
       color: var(--text);
       font-size: 0.875rem ;
-      line-height: 1.7;
     }
   }
 
@@ -63,42 +64,64 @@ export const Content = styled.div`
     max-width: 1440px;
   }
 
-  @media (max-width:1360px) {
+
+  @media (max-width: 1360px) {
+    max-width: 100vw;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+
     .second-section {
-      padding: 2rem 4rem;
+      
+
+      padding-left: 2rem;
+      padding-top: 2rem;
     }
   }
 
-  @media (max-width:1160px) {
-
-    grid-template-columns: 1fr;
-    .first-section {
-      img {
-        width: 100%;
-        height:100%;
-        object-fit: cover;
-        object-position: center;
-      }
-    }
-
+  @media (max-width: 1195px) {
     .second-section {
-      padding: 3rem 2rem;
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
     }
   }
- 
-  @media (min-width: 270px) and (max-width: 500px) {
-    .first-section {
-     
+
+  @media (max-width: 985px) {
+    display: flex;
+    flex-direction: column;
+
+    section.first-section {
+      
     }
     .second-section {
-      h2 {
-        font-size: 1.75rem;
-      }
+      padding-right: 2rem
+    }
+  }
+
+  @media (max-width:490px) {
+    .second-section {
+      padding: 53px 2rem 59px;
+      
       .text {
-        width: auto;
+        width: 100%;
       }
 
+      h2 {
+        font-size: 28px;
+        line-height: 35px;
+
+        width: 100%;
+
+        text-align: left;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 24px;
+        font-family: 'Open Sans'
+      }
     }
   }
-
 `;
