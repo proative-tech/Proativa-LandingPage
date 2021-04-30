@@ -28,6 +28,10 @@ export default createGlobalStyle`
       overflow-x: hidden;
     }
 
+    body {
+      background: #f4f4f4;
+    }
+
 
     body, input, textarea, button {
       font: 400 1rem 'Open Sans', sans-serif;
