@@ -13,8 +13,6 @@ export const ContainerTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  position: relative;
   left: 40px;
 
   @media (max-width: 1322px) {
@@ -140,6 +138,8 @@ export const Content = styled.section`
       flex-direction: column;
       width: 80%;
 
+      margin-bottom:  550px;
+
       div + div {
         margin-left: 0;
         margin-top: 1rem;
@@ -148,6 +148,48 @@ export const Content = styled.section`
       > div.containerBtn {
         width: 100%;
       }
+    }
+  }
+
+  @media (max-width: 712px) {
+    > div.content__btns {
+      margin-bottom:  500px;
+    }
+  }
+
+  @media (max-width: 644px) {
+    > div.content__btns {
+      margin-bottom:  450px;
+    }
+  }
+
+  @media (max-width: 559px) {
+    > div.content__btns {
+      margin-bottom:  400px;
+    }
+  }
+
+  @media (max-width: 490px) {
+    > div.content__btns {
+      margin-bottom:  350px;
+    }
+  }
+
+  @media (max-width: 461px) {
+    > div.content__btns {
+      margin-bottom:  320px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    > div.content__btns {
+      margin-bottom:  280px;
+    }
+  }
+
+  @media (max-width: 384px) {
+    > div.content__btns {
+      margin-bottom:  250px;
     }
   }
 
@@ -196,43 +238,24 @@ export const ContainerImg = styled.section`
   @media (max-width: 768px) {
     width: 100%;
 
-    position: relative;
+    position: absolute;
     left: -90px;
-    top: -100px;
+    bottom: -90px;
+
 
     img {
       width: 130%;
     }
   }
 
-  @media (max-width: 644px) {
+  @media (max-width: 768px) {
     img {
-      width: 140%;
+      width: 135%;
     }
   }
 
-  @media (max-width: 585px) {
-    img {
-      width: 145%;
-    }
-  }
-
-  @media (max-width: 456px) {
-    img {
-      width: 150%;
-    }
-  }
-
-  @media (max-width: 402px) {
-    img {
-      width: 160%;
-    }
-  }
-
-  @media (max-width: 360px) {
-    img {
-      width: 170%;
-    }
+  @media (max-width: 461px) {
+    left: -80px;
   }
 `;
 
