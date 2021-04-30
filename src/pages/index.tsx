@@ -1,5 +1,10 @@
+import { Header } from '../components/Header';
+import { Container } from '../styles/pages/LandingPage';
+
 export default function Index() {
   return (
-    <h1>Ola</h1>
+    <Container>
+      <Header />
+    </Container>
   )
 }
