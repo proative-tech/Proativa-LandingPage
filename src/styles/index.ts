@@ -8,15 +8,15 @@ export default createGlobalStyle`
         outline: none;
     }
 
-    @media(max-width: 1080px){
+    @media(max-width: 1168px){
       html{
-          font-size: 93.75%;
-          }
+        font-size: 87.5%;
+      }
     }
 
-    @media(max-width: 720px){
+    @media(max-width: 1000px){
         html{
-            font-size: 87.5%;
+            font-size: 81.25%;
         }
     }
 

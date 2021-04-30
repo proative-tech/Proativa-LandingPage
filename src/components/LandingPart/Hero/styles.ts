@@ -6,7 +6,7 @@ export const Container = styled.div`
 
   position: relative;
 
-  min-height: calc(100vh - 155px);
+  /* min-height: calc(100vh - 155px); */
 `;
 
 export const ContainerTop = styled.div`
@@ -266,4 +266,6 @@ export const ContainerBottom = styled.div`
   justify-content: center;
 
   margin-top: 50px;
+
+  padding-bottom: 67px;
 `;
