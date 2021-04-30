@@ -1,4 +1,4 @@
-import { Container, ContainerImg, Content, Header, Footer } from './styles';
+import { Container, ContainerImg, Content, Footer } from './styles';
 
 export const AboutThree = () => {
   return (
