@@ -69,6 +69,18 @@ export const Footer = styled.div`
       margin-top: 1.6875rem;
     }
 
+    @media (min-width: 1772px) {
+      max-width: 70%;
+    }
+
+    @media (min-width: 1518px) {
+      max-width: 80%;
+    }
+
+    @media (min-width: 1441px) {
+      max-width: 83%;
+    }
+
     @media (max-width: 1260px) {
       margin-top: 18px;
 
@@ -78,8 +90,8 @@ export const Footer = styled.div`
     }
 
     @media (max-width: 928px) {
-    max-width: 70%;
-  }
+      max-width: 70%;
+    }
 
 
 

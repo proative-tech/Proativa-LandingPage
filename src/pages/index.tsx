@@ -5,9 +5,12 @@ import { AboutTwo } from '../components/LandingPart/AboutTwo';
 import { AboutThree } from '../components/LandingPart/AboutThree';
 import { Informations } from '../components/LandingPart/Informations';
 import { Container } from '../styles/pages/LandingPage';
+import { Cases } from '../components/LandingPart/Cases';
+import { Footer } from '../components/Footer';
 
 export default function Index() {
   return (
+    <>
     <Container>
       <Header />
       <Hero />
@@ -16,5 +19,8 @@ export default function Index() {
       <AboutTwo />
       <AboutThree />
     </Container>
+    <Cases />
+    <Footer />
+    </>
   )
 }

@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+    :root {
+      --background: #F4F4F4;
+      --red: #EB0029;
+      --black: #000000;
+      --text: #434343;
+    }
+
     *{
         margin: 0;
         padding: 0;
@@ -28,9 +35,9 @@ export default createGlobalStyle`
       overflow-x: hidden;
     }
 
-    body {
+    /* body {
       background: #f4f4f4;
-    }
+    } */
 
 
     body, input, textarea, button {

@@ -75,6 +75,20 @@ export const Header = styled.div`
     margin-top: 2rem;
   }
 
+  @media (min-width: 1772px) {
+    max-width: 70%;
+  }
+
+
+  @media (min-width: 1518px) {
+    max-width: 80%;
+  }
+
+  @media (min-width: 1441px) {
+    max-width: 83%;
+    margin-left: auto;
+  }
+
   @media (max-width: 1260px) {
     p {
       margin-top: 17px;
