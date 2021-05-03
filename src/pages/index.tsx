@@ -11,18 +11,16 @@ import { Footer } from '../components/Footer';
 export default function Index() {
   return (
     <>
-    <Container>
-      <Header />
-      <Hero />
-      <Informations />
-      <About />
-      <AboutTwo />
-      <AboutThree />
-    </Container>
-    <Cases />
-    <Footer />
+      <Container>
+        <Header />
+        <Hero />
+        <Informations />
+        <About />
+        <AboutTwo />
+        <AboutThree />
+      </Container>
+      <Cases />
+      <Footer />
     </>
-  )
+  );
 }
-
-

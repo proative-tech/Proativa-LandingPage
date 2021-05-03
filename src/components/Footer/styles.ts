@@ -34,7 +34,7 @@ export const Content = styled.div`
       text-align: center;
 
       h1 {
-        font-size: 4.5rem ;
+        font-size: 4.5rem;
       }
 
       p {
@@ -54,7 +54,7 @@ export const Content = styled.div`
     hr {
       width: 115px;
       height: 2px;
-      background: #C4C4C4;
+      background: #c4c4c4;
     }
   }
 
@@ -79,7 +79,6 @@ export const Content = styled.div`
 
     gap: 1.5rem;
   }
-
 `;
 
 export const Container = styled.div`
@@ -102,26 +101,22 @@ export const Container = styled.div`
   }
 
   hr {
-    background: #E5E3DF;
+    background: #e5e3df;
     margin: 2rem 0 0 0;
     height: 1px;
     border: none;
-
   }
 
   div.text-footer {
     padding-bottom: 4rem;
 
     p {
-      color: #C4C4C4;
+      color: #c4c4c4;
     }
   }
 
-
-
   .footer {
     width: 100%;
-
 
     display: flex;
     align-items: flex-start;
@@ -135,8 +130,8 @@ export const Container = styled.div`
     }
 
     > div + div {
-        margin-left: 56px;
-      }
+      margin-left: 56px;
+    }
 
     > div:nth-child(2) {
       display: flex;
@@ -208,7 +203,6 @@ export const Container = styled.div`
     }
   }
 
-
   @media (max-width: 768px) {
     .footer {
       flex-direction: column;
@@ -255,10 +249,9 @@ export const Container = styled.div`
         }
       }
 
-      div:nth-child(2) a:nth-child(2)  {
-          display: none;
+      div:nth-child(2) a:nth-child(2) {
+        display: none;
       }
-
     }
 
     div.text-footer {
@@ -267,7 +260,6 @@ export const Container = styled.div`
       }
     }
   }
-
 
   @media (max-width: 425px) {
     .footer {
@@ -280,8 +272,11 @@ export const Container = styled.div`
   }
 `;
 
+interface ContentMainProps {
+  isMobileOrTablet: boolean;
+}
 
-export const ContentMain = styled.div`
+export const ContentMain = styled.div<ContentMainProps>`
   width: 100vw;
   margin: 256px auto 0;
 
@@ -290,7 +285,10 @@ export const ContentMain = styled.div`
 
   height: 278px;
 
-  background: url('/images/bg_ondulacao1.svg');
+  background: ${props =>
+    props.isMobileOrTablet
+      ? "url('/images/bg_ondulacaoMobile.svg')"
+      : "url('/images/bg_ondulacao1.svg')"};
   background-size: cover;
 
   > div {

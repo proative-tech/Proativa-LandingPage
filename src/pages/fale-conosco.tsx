@@ -6,13 +6,13 @@ import { Input } from '../components/Input';
 export default function Index() {
   return (
     <>
-    <Container>
-      <Header />
-      <div>
-        <Input label="Nome:" name="nome" placeholder="ex: Mariana Camargo"/>
-      </div>
-    </Container>
-    <Footer />
+      <Container>
+        <Header />
+        <div style={{ width: 250, margin: '0 auto' }}>
+          <Input label="Nome:" name="nome" placeholder="ex: Mariana Camargo" />
+        </div>
+      </Container>
+      <Footer />
     </>
-  )
+  );
 }

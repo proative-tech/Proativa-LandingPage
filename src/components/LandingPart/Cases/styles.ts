@@ -1,16 +1,15 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div`
   width: 100%;
-  background: #FFF;
-
+  background: #fff;
 `;
 
 export const Content = styled.div`
-   max-width: 1146px;
-    margin: 0 auto; 
-  
+  max-width: 1146px;
+  margin: 0 auto;
+
+  padding: 0 32px;
 
   .section-main {
     padding: 7rem 0 3rem 0;
@@ -35,9 +34,9 @@ export const Content = styled.div`
 
     div {
       text-align: center;
-  
+
       h1 {
-        font-size: 4.5rem ;
+        font-size: 4.5rem;
         font-weight: 600;
       }
 
@@ -58,7 +57,7 @@ export const Content = styled.div`
     hr {
       width: 115px;
       height: 2px;
-      background: #C4C4C4;
+      background: #c4c4c4;
     }
   }
 
@@ -66,7 +65,7 @@ export const Content = styled.div`
     width: 100%;
     text-align: center;
     padding: 0 0 4rem 0;
-    
+
     h3 {
       font-size: 2rem;
     }
@@ -107,7 +106,8 @@ export const Content = styled.div`
   }
 
   @media (max-width: 490px) {
-    section.section-main, .section-client {
+    section.section-main,
+    .section-client {
       h3 {
         font-size: 28px;
         line-height: 38px;
@@ -116,7 +116,7 @@ export const Content = styled.div`
       p {
         font-size: 14px;
         line-height: 28px;
-        font-family: 'Open Sans'
+        font-family: 'Open Sans';
       }
     }
 
@@ -133,5 +133,65 @@ export const Content = styled.div`
       display: flex;
       flex-direction: column;
     }
-  } 
+  }
+`;
+
+export const ContainerCarousel = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .containerREC {
+    button.rec-arrow {
+      display: none;
+    }
+
+    div.rec-pagination {
+      margin-top: 3rem;
+
+      button.rec-dot {
+        background: #c4c4c4;
+        border: none;
+        box-shadow: none;
+
+        width: 6px;
+        height: 6px;
+      }
+
+      button.rec-dot_active {
+        background: #eb0029;
+      }
+    }
+  }
+`;
+
+export const ContainerBottomCarousel = styled.div`
+  margin-top: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    background: #f4f4f4;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #c4c4c4;
+    border-radius: 50%;
+
+    margin: 0 17px;
+  }
 `;

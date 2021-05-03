@@ -28,7 +28,7 @@ export const ContainerTop = styled.div`
     flex-direction: column;
     align-items: flex-start;
 
-    padding:0 36px;
+    padding: 0 36px;
   }
 `;
 
@@ -81,7 +81,7 @@ export const Content = styled.section`
         display: block;
         width: 100%;
         height: 0.12rem;
-        background: #ADABAC;
+        background: #adabac;
         transform: scale(0, 1);
         transform-origin: 0% 100%;
         transition: transform 0.3s ease;
@@ -96,8 +96,8 @@ export const Content = styled.section`
       position: relative;
 
       &::before {
-        content: "";
-        background: #C4C4C4;
+        content: '';
+        background: #c4c4c4;
         width: 6px;
         height: 6px;
         border-radius: 3px;
@@ -138,7 +138,7 @@ export const Content = styled.section`
       flex-direction: column;
       width: 80%;
 
-      margin-bottom:  550px;
+      margin-bottom: 550px;
 
       div + div {
         margin-left: 0;
@@ -153,43 +153,43 @@ export const Content = styled.section`
 
   @media (max-width: 712px) {
     > div.content__btns {
-      margin-bottom:  500px;
+      margin-bottom: 500px;
     }
   }
 
   @media (max-width: 644px) {
     > div.content__btns {
-      margin-bottom:  450px;
+      margin-bottom: 450px;
     }
   }
 
   @media (max-width: 559px) {
     > div.content__btns {
-      margin-bottom:  400px;
+      margin-bottom: 400px;
     }
   }
 
   @media (max-width: 490px) {
     > div.content__btns {
-      margin-bottom:  350px;
+      margin-bottom: 350px;
     }
   }
 
   @media (max-width: 461px) {
     > div.content__btns {
-      margin-bottom:  320px;
+      margin-bottom: 320px;
     }
   }
 
   @media (max-width: 420px) {
     > div.content__btns {
-      margin-bottom:  280px;
+      margin-bottom: 280px;
     }
   }
 
   @media (max-width: 384px) {
     > div.content__btns {
-      margin-bottom:  250px;
+      margin-bottom: 250px;
     }
   }
 
@@ -201,20 +201,20 @@ export const Content = styled.section`
     width: 90%;
 
     > div.content__text {
-     h1 {
-      font-size: 26px;
-      line-height: 34px;
-     }
+      h1 {
+        font-size: 26px;
+        line-height: 34px;
+      }
 
-     p {
-       font-size: 12px;
-       line-height: 24px;
-     }
+      p {
+        font-size: 12px;
+        line-height: 24px;
+      }
     }
   }
 
-  @media (max-width: 360px)  {
-   width: 100%;
+  @media (max-width: 360px) {
+    width: 100%;
   }
 `;
 
@@ -242,7 +242,6 @@ export const ContainerImg = styled.section`
     left: -90px;
     bottom: -90px;
 
-
     img {
       width: 130%;
     }
@@ -258,7 +257,6 @@ export const ContainerImg = styled.section`
     left: -80px;
   }
 `;
-
 
 export const ContainerBottom = styled.div`
   display: flex;
