@@ -19,7 +19,7 @@ export function Nav() {
             <Link href="/">QUEM SOMOS</Link>
           </li>
           <li>
-            <Link href="/">SOLUÇÕES</Link>
+            <Link href="/solucoes">SOLUÇÕES</Link>
           </li>
           <li>
             <Link href="/">MERCADOS</Link>

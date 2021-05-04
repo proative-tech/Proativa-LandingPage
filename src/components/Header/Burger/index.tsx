@@ -6,27 +6,19 @@ import { DrawerMenu } from '../Drawer';
 import { Container } from './styles';
 
 export const MenuBurger = () => {
-    const [activedDrawer, setActivedDrawer] = useState(false)
+  const [activedDrawer, setActivedDrawer] = useState(false);
 
-    const onCloseDrawer = useCallback(() => {
-        setActivedDrawer(!activedDrawer)
-    }, [activedDrawer])
+  const onCloseDrawer = useCallback(() => {
+    setActivedDrawer(!activedDrawer);
+  }, [activedDrawer]);
 
-    return (
-        <>
-            <Container onClick={() => setActivedDrawer(!activedDrawer)}>
-                <Image
-                  src="/images/burguer.svg"
-                  width={40}
-                  height={40}
-                />
-            </Container>
+  return (
+    <>
+      <Container onClick={() => setActivedDrawer(!activedDrawer)}>
+        <Image src="/images/burguer.svg" width={40} height={40} />
+      </Container>
 
-            {
-                activedDrawer && (
-                    <DrawerMenu onCloseDrawer={onCloseDrawer} />
-                )
-            }
-        </>
-    )
-}
+      {activedDrawer && <DrawerMenu onCloseDrawer={onCloseDrawer} />}
+    </>
+  );
+};
