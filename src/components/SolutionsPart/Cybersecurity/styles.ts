@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
@@ -12,7 +12,11 @@ export const Container = styled.div`
   }
 `;
 
-export const ContainerImg = styled.div`
+interface ContainerProps {
+  modifier: boolean;
+}
+
+export const ContainerImg = styled.div<ContainerProps>`
   max-width: 100%;
 
   img {
@@ -20,6 +24,12 @@ export const ContainerImg = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  ${({ modifier }) =>
+    modifier &&
+    css`
+      order: -1;
+    `}
 
   @media (max-width: 928px) {
     order: -1;

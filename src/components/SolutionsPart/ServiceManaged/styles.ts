@@ -80,6 +80,16 @@ export const Header = styled.div`
     width: 90%;
   }
 
+  p.textPage {
+    font-size: 1rem;
+    line-height: 1.875rem;
+    color: #434343;
+
+    & + p.textPage {
+      margin-top: 2rem;
+    }
+  }
+
   @media (min-width: 1772px) {
     max-width: 70%;
   }
