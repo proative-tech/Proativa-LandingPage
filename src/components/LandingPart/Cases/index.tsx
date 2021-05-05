@@ -1,4 +1,5 @@
-import { useRef } from 'react';
+/* eslint-disable react/require-default-props */
+import { useRef, ReactNode } from 'react';
 import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel';
 import { useMediaQuery } from 'react-responsive';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
@@ -16,7 +17,11 @@ interface CarouseRefData extends ReactElasticCarouselProps {
   slideNext: () => void;
 }
 
-export function Cases() {
+interface CasesProps {
+  children?: ReactNode;
+}
+
+export function Cases({ children }: CasesProps) {
   const carousel = useRef<CarouseRefData | any>();
 
   const isMobileOrTablet = useMediaQuery({ maxWidth: 768 });
@@ -26,27 +31,33 @@ export function Cases() {
   return (
     <Container>
       <Content>
-        <section className="section-main">
-          <h3>Cobertura Completa</h3>
-          <p>Atendimento em todo território naciona.</p>
-        </section>
+        {children ? (
+          <>{children}</>
+        ) : (
+          <>
+            <section className="section-main">
+              <h3>Cobertura Completa</h3>
+              <p>Atendimento em todo território naciona.</p>
+            </section>
 
-        <section className="section-item">
-          <div className="iten">
-            <h1>+55.00</h1>
-            <p>Itens monitorados</p>
-          </div>
+            <section className="section-item">
+              <div className="iten">
+                <h1>+55.00</h1>
+                <p>Itens monitorados</p>
+              </div>
 
-          <div className="iten">
-            <h1>+20.00</h1>
-            <p>Devices monitorados</p>
-          </div>
+              <div className="iten">
+                <h1>+20.00</h1>
+                <p>Devices monitorados</p>
+              </div>
 
-          <div className="iten">
-            <h1>+25.00</h1>
-            <p>Incidentes/mês</p>
-          </div>
-        </section>
+              <div className="iten">
+                <h1>+25.00</h1>
+                <p>Incidentes/mês</p>
+              </div>
+            </section>
+          </>
+        )}
 
         <section className="section-line">
           <hr />

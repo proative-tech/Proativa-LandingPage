@@ -43,7 +43,7 @@ export const ContainerTop = styled.div`
 `;
 
 export const Content = styled.section`
-  width: 70%;
+  width: 75%;
 
   justify-self: flex-end;
   align-self: center;
