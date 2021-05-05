@@ -22,10 +22,10 @@ export function Nav() {
             <Link href="/solucoes">SOLUÇÕES</Link>
           </li>
           <li>
-            <Link href="/">MERCADOS</Link>
+            <Link href="/mercados">MERCADOS</Link>
           </li>
           <li>
-            <Link href="/">CASES</Link>
+            <Link href="/cases">CASES</Link>
           </li>
           <li>
             <Link href="/">CARREIRAS</Link>

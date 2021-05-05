@@ -32,12 +32,12 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
             </Link>
           </Item>
           <Item>
-            <Link href="/" passHref>
+            <Link href="/mercados" passHref>
               MARCADOS
             </Link>
           </Item>
           <Item>
-            <Link href="/" passHref>
+            <Link href="/cases" passHref>
               CASES
             </Link>
           </Item>
