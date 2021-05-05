@@ -20,6 +20,15 @@ export const ContainerImg = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  @media (min-width: 1441px) {
+    height: 798px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -31,6 +40,11 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: 1441px) {
+    max-width: 780px;
+    width: 100%;
+  }
 
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
@@ -76,8 +90,6 @@ export const Header = styled.div`
     color: #434343;
 
     margin-top: 1rem;
-
-    width: 90%;
   }
 
   p.textPage {
@@ -90,16 +102,20 @@ export const Header = styled.div`
     }
   }
 
-  @media (min-width: 1772px) {
-    max-width: 70%;
-  }
-
-  @media (min-width: 1518px) {
-    max-width: 80%;
-  }
-
-  @media (min-width: 1441px) {
+  @media (min-width: 1558px) {
     max-width: 83%;
+
+    p {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 1558px) {
+    max-width: 83%;
+
+    p {
+      width: 90%;
+    }
   }
 
   @media (max-width: 1260px) {
@@ -190,6 +206,10 @@ export const Footer = styled.div`
 
 export const ContainerButton = styled.div`
   margin-top: 30px;
+
+  @media (min-width: 1441px) {
+    width: 60%;
+  }
 
   @media (max-width: 920px) {
     width: 70%;
