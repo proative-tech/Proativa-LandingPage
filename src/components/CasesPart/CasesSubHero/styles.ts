@@ -47,24 +47,37 @@ export const Content = styled.div`
   margin-left: auto;
   margin-right: 36px;
 
+  @media (min-width: 1441px) {
+    padding-right: 32px;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
     padding-bottom: 3.4rem;
 
-    width: 95%;
+    width: 90%;
   }
 
   @media (max-width: 1343px) {
     padding-top: 3.4rem;
     padding-right: 2rem;
+    width: 85%;
   }
 
   @media (max-width: 1260px) {
-    width: 100%;
+    width: 85%;
   }
 
   @media (max-width: 1260px) {
     padding-left: 30px;
+  }
+
+  @media (max-width: 928px) {
+    padding-left: 0;
+    padding-right: 0;
   }
 `;
 
@@ -98,16 +111,9 @@ export const Header = styled.div`
     margin-top: 1rem;
   }
 
-  @media (min-width: 1772px) {
-    max-width: 70%;
-  }
-
-  @media (min-width: 1518px) {
-    max-width: 80%;
-  }
-
   @media (min-width: 1441px) {
-    max-width: 83%;
+    max-width: 468px;
+    width: 100%;
   }
 
   @media (max-width: 1260px) {
