@@ -4,6 +4,8 @@ import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel';
 import { useMediaQuery } from 'react-responsive';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 
+import CountUp from 'react-countup';
+
 import {
   Container,
   Content,
@@ -11,6 +13,7 @@ import {
   ContainerBottomCarousel,
 } from './styles';
 import { CardComments } from '../CardComments';
+import { start } from 'repl';
 
 interface CarouseRefData extends ReactElasticCarouselProps {
   slidePrev: () => void;
@@ -42,17 +45,63 @@ export function Cases({ children }: CasesProps) {
 
             <section className="section-item">
               <div className="iten">
-                <h1>+55.00</h1>
+              <CountUp
+                start={1}
+                end={55.000}
+                duration={2.75}
+                separator=" "
+                decimals={3}
+                decimal="."
+                prefix="+"
+                suffix=""
+              >
+                {({ countUpRef, start }) => (
+                  <div>
+                    <h1 ref={countUpRef}>+55.00</h1>
+                  </div>
+                )}
+              </CountUp>
                 <p>Itens monitorados</p>
               </div>
 
               <div className="iten">
-                <h1>+20.00</h1>
-                <p>Devices monitorados</p>
+              <CountUp
+                start={0}
+                end={20.000}
+                duration={2.75}
+                separator=" "
+                decimals={3}
+                decimal="."
+                prefix="+"
+                suffix=""
+              >
+                {({ countUpRef, start }) => (
+                  <div>
+                    <h1 ref={countUpRef}>+55.00</h1>
+                  </div>
+                )}
+              </CountUp>
+              <p>Devices monitorados</p>
               </div>
+              
 
               <div className="iten">
-                <h1>+25.00</h1>
+              <CountUp
+                start={1}
+                end={25.000}
+                duration={3}
+                separator=" "
+                decimals={3}
+                decimal="."
+                prefix="+"
+                suffix=""
+              >
+                {({ countUpRef, start }) => (
+                  <div>
+                    <h1 ref={countUpRef}></h1>
+                  </div>
+                )}
+              </CountUp>
                 <p>Incidentes/mês</p>
               </div>
             </section>
