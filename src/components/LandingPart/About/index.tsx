@@ -13,8 +13,8 @@ interface AboutProps {
 export const About =({ children }: AboutProps) => {
   const is1920 = useMediaQuery({ minWidth: 1601 });
   return (
-    <Element name="inicio" className="element">
-        <Container>
+    
+      <Container>
        <ContainerImg modifier={!!children}>
         <img
           src={
@@ -27,7 +27,7 @@ export const About =({ children }: AboutProps) => {
       </ContainerImg>
       <Content>
         <Header>
-          <span>Sobre a Proative</span>
+          <span id="inicio">Sobre a Proative</span>
           <h1>
             Somos uma empresa de tecnologia especializada em soluções inovadoras
             de gerenciamento de informações.
@@ -50,7 +50,7 @@ export const About =({ children }: AboutProps) => {
         </Footer>
       </Content>
     </Container>
-    </Element>
+    
   
   );
 };

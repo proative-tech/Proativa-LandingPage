@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { Button } from '../../Button';
 import {Link} from 'react-scroll'
+import React, { useRef } from 'react';
 
 import {
   Container,
@@ -14,6 +15,8 @@ import {
 function Hero() {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 768 });
   const router = useRouter();
+
+  const myRef = useRef(null)
 
   return (
     <Container>
@@ -66,9 +69,8 @@ function Hero() {
       {!isMobileOrTablet && (
        
         <ContainerBottom>
-          
-          <Link  activeClass="active" to="inicio" spy={true} smooth={true} offset={50} duration={500} delay={1000}><a href="#"><img src="/images/icon-arrow.svg" alt="" /></a></Link>
-          
+
+          <a href="#inicio"><img src="/images/icon-arrow.svg" alt="" /></a>
         </ContainerBottom>
         
       )}

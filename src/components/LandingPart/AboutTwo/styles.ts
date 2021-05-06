@@ -53,6 +53,9 @@ export const Content = styled.div`
   @media (max-width: 490px) {
     max-width: 90%;
     margin-left: 0%;
+    p {
+      margin-left: 0px
+    }
   }
 `;
 
@@ -130,7 +133,7 @@ export const Header = styled.div`
   }
 
   @media (max-width: 490px) {
-    max-width: 90%;
+    max-width: 100%;
 
     span {
       font-size: 14px;
@@ -140,11 +143,13 @@ export const Header = styled.div`
     h1 {
       font-size: 28px;
       line-height: 35px;
+      margin-left: 0px;
     }
 
     p {
       font-size: 12px;
       line-height: 24px;
+      margin-left: 0px;
     }
   }
 `;

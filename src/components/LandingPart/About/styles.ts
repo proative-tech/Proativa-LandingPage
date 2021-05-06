@@ -176,6 +176,10 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   background: #fff;
 
   @media (max-width: 928px) {

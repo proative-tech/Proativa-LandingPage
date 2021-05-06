@@ -115,9 +115,11 @@ export const Footer = styled.div`
 
 
   @media (max-width: 490px) {
+    max-width: 100%;
     p {
       font-size: 12px;
       line-height: 24px;
+      margin-right: 30px
     }
   }
 `;
