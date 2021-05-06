@@ -56,11 +56,11 @@ export const Content = styled.div`
     margin-left: auto;
   }
 
-  @media (max-width: 1440px) {
+  /* @media (min-width: 1440px) {
     max-width: 80%;
     width: 100%;
     margin-left: 10%;
-  }
+  } */
 
   @media (max-width: 1399px) {
     padding-top: 3.9rem;

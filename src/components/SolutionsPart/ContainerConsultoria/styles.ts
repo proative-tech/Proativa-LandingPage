@@ -6,6 +6,10 @@ export const Container = styled.div`
 
   background: #fff;
 
+  @media (min-width: 1441px) {
+    grid-template-columns: 1fr 45%;
+  }
+
   @media (max-width: 928px) {
     display: flex;
     flex-direction: column;
@@ -25,8 +29,18 @@ export const ContainerImg = styled.div`
     height: 208px;
   }
 
+  @media (min-width: 1441px) {
+    justify-content: flex-start;
+
+    img {
+      margin-left: 40px;
+    }
+  }
+
   @media (max-width: 928px) {
     order: -1;
+
+    padding-top: 50px;
   }
 `;
 
@@ -41,8 +55,10 @@ export const Content = styled.div`
   justify-content: space-between;
 
   @media (min-width: 1441px) {
-    max-width: 780px;
+    max-width: 680px;
     width: 100%;
+
+    padding-right: 0;
 
     margin-left: auto;
   }

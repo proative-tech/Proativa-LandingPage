@@ -18,6 +18,8 @@ export const ContainerContent = styled.div`
   @media (max-width: 928px) {
     display: flex;
     flex-direction: column;
+
+    width: 100%;
   }
 `;
 
@@ -70,5 +72,49 @@ export const Header = styled.div`
     width: 85%;
 
     align-self: flex-end;
+  }
+
+  @media (max-width: 994px) {
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width: 928px) {
+    max-width: 52%;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 827px) {
+    max-width: 60%;
+  }
+
+  @media (max-width: 650px) {
+    max-width: 70%;
+  }
+
+  @media (max-width: 580px) {
+    max-width: 80%;
+  }
+
+  @media (max-width: 523px) {
+    max-width: 90%;
+  }
+
+  @media (max-width: 490px) {
+    max-width: 100%;
+
+    span {
+      font-size: 12px;
+      line-height: 19px;
+    }
+
+    h1 {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 `;

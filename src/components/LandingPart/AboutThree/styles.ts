@@ -21,7 +21,7 @@ export const ContainerImg = styled.div`
 
   div {
     content: '';
-    background: #E5E5E5;
+    background: #e5e5e5;
     width: 100%;
     height: 414px;
   }
@@ -52,67 +52,64 @@ export const Content = styled.div`
   }
 `;
 
-
 export const Footer = styled.div`
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 
-    h3 {
-      font-size: 1rem;
-      line-height: 1.3125rem;
-    }
+  h3 {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
 
+  p {
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    color: #434343;
+
+    margin-top: 1.6875rem;
+  }
+
+  @media (min-width: 1772px) {
+    max-width: 70%;
+  }
+
+  @media (min-width: 1518px) {
+    max-width: 80%;
+  }
+
+  @media (min-width: 1441px) {
+    max-width: 83%;
     p {
       font-size: 0.875rem;
-      line-height: 1.5625rem;
+      line-height: 34px;
       color: #434343;
-
-      margin-top: 1.6875rem;
+      margin-right: 250px;
+      margin-top: 2rem;
     }
+  }
 
-    @media (min-width: 1772px) {
-      max-width: 70%;
+  @media (max-width: 1441px) {
+    max-width: 83%;
+    p {
+      font-size: 0.875rem;
+      line-height: 24px;
+      color: #434343;
+      margin-right: 100px;
+      margin-top: 2rem;
     }
+  }
+  @media (max-width: 1260px) {
+    max-width: 83%;
+    margin-top: 18px;
 
-    @media (min-width: 1518px) {
-      max-width: 80%;
+    p {
+      margin-right: 100px;
+      margin-top: 22px;
     }
+  }
 
-    @media (min-width: 1441px) {
-      max-width: 83%;
-      p {
-        font-size: 0.875rem;
-        line-height: 34px;
-        color: #434343;
-        margin-right:250px;
-        margin-top: 2rem;
-      }
-    }
-
-    @media (max-width: 1441px) {
-      max-width: 83%;
-      p {
-        font-size: 0.875rem;
-        line-height: 24px;
-        color: #434343;
-        margin-right:100px;
-        margin-top: 2rem;
-      }
-    }
-    @media (max-width: 1260px) {
-      max-width: 83%;
-      margin-top: 18px;
-
-      p {
-        margin-right:100px;
-        margin-top: 22px;
-      }
-    }
-
-    @media (max-width: 928px) {
-      max-width: 70%;
-    }
-
-
+  @media (max-width: 928px) {
+    max-width: 70%;
+  }
 
   @media (max-width: 490px) {
     max-width: 100%;

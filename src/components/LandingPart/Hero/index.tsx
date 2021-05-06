@@ -1,8 +1,12 @@
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-scroll';
 import { Button } from '../../Button';
+<<<<<<< HEAD
 import {Link} from 'react-scroll'
 import React, { useRef } from 'react';
+=======
+>>>>>>> b1ba70f610f647382d60a43c3eeca03b5121fea7
 
 import {
   Container,
@@ -35,7 +39,9 @@ function Hero() {
 
           <div className="content__btns">
             <div className="containerBtn">
-              <Button type="button">Conheça nossas soluções</Button>
+              <Button type="button" onClick={() => router.push('/solucoes')}>
+                Conheça nossas soluções
+              </Button>
             </div>
             <div className="containerBtn">
               <Button
@@ -67,12 +73,26 @@ function Hero() {
         </ContainerImg>
       </ContainerTop>
       {!isMobileOrTablet && (
-       
         <ContainerBottom>
+<<<<<<< HEAD
 
           <a href="#inicio"><img src="/images/icon-arrow.svg" alt="" /></a>
+=======
+          <Link
+            activeClass="active"
+            to="inicio"
+            spy
+            smooth
+            offset={50}
+            duration={500}
+            delay={1000}
+          >
+            <a href="#">
+              <img src="/images/icon-arrow.svg" alt="" />
+            </a>
+          </Link>
+>>>>>>> b1ba70f610f647382d60a43c3eeca03b5121fea7
         </ContainerBottom>
-        
       )}
     </Container>
   );
