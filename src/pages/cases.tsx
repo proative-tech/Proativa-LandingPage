@@ -6,6 +6,7 @@ import { Cases } from '../components/LandingPart/Cases';
 
 import { Container, ContainerInfos } from '../styles/pages/Cases';
 import { CaseSubHero } from '../components/CasesPart/CasesSubHero';
+import { ContainerInformation } from '../components/CasesPart/ContainerInformation';
 
 export default function Index() {
   return (
@@ -25,6 +26,7 @@ export default function Index() {
         </HeroMaketOrCases>
         <ContainerInfos>
           <CaseSubHero />
+          <ContainerInformation />
           <Cases>
             <section className="section-main">
               <h3>Resultados</h3>
