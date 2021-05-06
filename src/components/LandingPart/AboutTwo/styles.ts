@@ -30,6 +30,14 @@ export const Content = styled.div`
   padding: 4.9rem 4rem;
   width: 100%;
 
+
+  @media (min-width: 1441px) {
+    // max-width: 780px;
+    // width: 100%;
+    width: 95%;
+    margin-right: 200px;
+  }
+
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
     padding-bottom: 3.4rem;

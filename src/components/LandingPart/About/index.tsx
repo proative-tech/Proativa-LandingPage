@@ -23,7 +23,7 @@ export const About = ({ children }: AboutProps) => {
       <Container>
         <ContainerImg>
           <img
-            src={is1920 ? '/images/home1_1330.png' : '/images/home1_1330.png'}
+            src={is1920 ? '/images/home_1920.png' : '/images/home1_1366.png'}
             alt="proative"
           />
         </ContainerImg>

@@ -79,6 +79,12 @@ export const Content = styled.div`
     padding-left: 0;
     padding-right: 0;
   }
+
+  @media (max-width: 490px) {
+    padding-top: rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
 `;
 
 export const Header = styled.div`
