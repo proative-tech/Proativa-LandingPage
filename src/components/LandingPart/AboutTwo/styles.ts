@@ -67,11 +67,9 @@ export const Header = styled.div`
 
   p {
     font-size: 0.875rem;
-    line-height: 1.5625rem;
+    line-height: 34px;
     color: #434343;
-
     text-align: right;
-
     margin-top: 2rem;
   }
 
@@ -87,6 +85,10 @@ export const Header = styled.div`
   @media (min-width: 1441px) {
     max-width: 83%;
     margin-left: auto;
+    p {
+      margin-left: 280px;
+      line-height: 34px;
+    }
   }
 
   @media (max-width: 1260px) {

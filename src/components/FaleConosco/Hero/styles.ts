@@ -68,6 +68,13 @@ export const Content = styled.section`
     }
   }
 
+  @media (min-width: 1440px) {
+    div.content__text {
+      margin-bottom: 3.125rem;
+      margin-left: 12rem;
+    }
+  }
+
   @media (max-width: 1378px) {
     width: 80%;
   }

@@ -10,7 +10,7 @@ export const AboutTwo = () => {
           </Header>
         </Content>
         <ContainerImg>
-          <img src="/images/about_2.png" alt="proative"/>
+          <img src="/images/home2.png" alt="proative"/>
         </ContainerImg>
     </Container>
   )

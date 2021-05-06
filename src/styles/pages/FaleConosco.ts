@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: #fff;
 
+  
+
   .content__text {
     margin-top: 6.4rem;
 

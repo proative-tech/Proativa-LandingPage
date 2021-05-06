@@ -32,6 +32,11 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+  @media (min-width: 1441px) {
+    max-width: 780px;
+    width: 100%;
+  }
+
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
     padding-bottom: 3.4rem;
@@ -78,6 +83,15 @@ export const Header = styled.div`
     margin-top: 1rem;
 
     width: 90%;
+  }
+
+  @media (min-width: 1441px) {
+    p {
+      font-size: 16px;
+      line-height: 30px;
+
+      width: 85%;
+    }
   }
 
   @media (min-width: 1772px) {
@@ -165,6 +179,10 @@ export const ListVant = styled.ul`
 
 export const ContainerButton = styled.div`
   margin-top: 30px;
+
+  @media (min-width: 1441px) {
+    width: 60%;
+  }
 
   @media (max-width: 920px) {
     width: 70%;
