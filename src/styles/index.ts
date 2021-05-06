@@ -47,4 +47,32 @@ export default createGlobalStyle`
     button {
       cursor: pointer;
     }
+
+
+    //modal estilizacao
+    .react-modal-overlay {
+    background: rgba(74, 74, 74, 0.5);
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+  }
+
+  .react-modal-content {
+    max-width: 576px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 10px -2px 10px #00000029;
+    padding: 3rem;
+    position: relative;
+
+  }
 `;
