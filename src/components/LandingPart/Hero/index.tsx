@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { Button } from '../../Button';
+import {Link} from 'react-scroll'
 
 import {
   Container,
@@ -63,11 +64,13 @@ function Hero() {
         </ContainerImg>
       </ContainerTop>
       {!isMobileOrTablet && (
+       
         <ContainerBottom>
-          <a href="#">
-            <img src="/images/icon-arrow.svg" alt="" />
+          <a href="#inicio">
+          <Link  to="inicio" spy={true} smooth={true}><img src="/images/icon-arrow.svg" alt="" /></Link>
           </a>
         </ContainerBottom>
+        
       )}
     </Container>
   );

@@ -1,8 +1,9 @@
 /* eslint-disable react/require-default-props */
-import { useRef, ReactNode } from 'react';
+import { useRef, ReactNode, this.props. } from 'react';
 import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel';
 import { useMediaQuery } from 'react-responsive';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
+import React, { useEffect, useState } from 'react';
 
 import CountUp from 'react-countup';
 
@@ -31,6 +32,12 @@ export function Cases({ children }: CasesProps) {
 
   const items = [1, 2, 3];
 
+  let initialValue = 0
+
+  useEffect(() => {
+    initialValue = 1;
+  }, []);
+
   return (
     <Container>
       <Content>
@@ -46,18 +53,21 @@ export function Cases({ children }: CasesProps) {
             <section className="section-item">
               <div className="iten">
               <CountUp
-                start={1}
+                start={initialValue}
                 end={55.000}
-                duration={2.75}
+                duration={10}
                 separator=" "
                 decimals={3}
                 decimal="."
                 prefix="+"
                 suffix=""
+                onEnd={({ pauseResume, reset, start, update }) => {
+                  setTimeout(function(){ start() }, 3000);
+                }}
               >
                 {({ countUpRef, start }) => (
                   <div>
-                    <h1 ref={countUpRef}>+55.00</h1>
+                    <h1 ref={countUpRef}></h1>
                   </div>
                 )}
               </CountUp>
@@ -66,35 +76,42 @@ export function Cases({ children }: CasesProps) {
 
               <div className="iten">
               <CountUp
-                start={0}
+                start={initialValue}
                 end={20.000}
-                duration={2.75}
+                duration={6}
                 separator=" "
                 decimals={3}
                 decimal="."
                 prefix="+"
                 suffix=""
+                onStart={({ pauseResume, reset, start, update }) => {
+                 start()
+                }}
+                onEnd={({ pauseResume, reset, start, update }) => {
+                  setTimeout(function(){ start() }, 3000);
+                }}
               >
                 {({ countUpRef, start }) => (
                   <div>
-                    <h1 ref={countUpRef}>+55.00</h1>
+                    <h1 ref={countUpRef}></h1>
                   </div>
                 )}
               </CountUp>
               <p>Devices monitorados</p>
               </div>
-              
-
               <div className="iten">
               <CountUp
-                start={1}
+                start={initialValue}
                 end={25.000}
-                duration={3}
+                duration={6}
                 separator=" "
                 decimals={3}
                 decimal="."
                 prefix="+"
                 suffix=""
+                onEnd={({ pauseResume, reset, start, update }) => {
+                  setTimeout(function(){ start() }, 3000);
+                }}
               >
                 {({ countUpRef, start }) => (
                   <div>
