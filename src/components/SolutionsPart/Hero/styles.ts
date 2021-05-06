@@ -67,6 +67,16 @@ export const Content = styled.section`
     }
   }
 
+  @media (min-width: 1441px) {
+    max-width: 485px;
+    width: 100%;
+
+    p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
   @media (max-width: 1378px) {
     width: 80%;
   }
@@ -97,6 +107,13 @@ export const ContainerImg = styled.section`
   justify-self: flex-end;
 
   width: 80%;
+
+  @media (min-width: 1441px) {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+  }
 `;
 
 export const ContainerBottom = styled.div`

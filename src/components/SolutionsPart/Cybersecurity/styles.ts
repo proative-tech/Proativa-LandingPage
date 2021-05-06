@@ -30,6 +30,10 @@ export const ContainerImg = styled.div<ContainerProps>`
     css`
       order: -1;
     `}
+  @media (min-width: 1441px) {
+    max-height: 820px;
+    height: 100%;
+  }
 
   @media (max-width: 928px) {
     order: -1;
@@ -45,6 +49,18 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: 1441px) {
+    max-width: 780px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  @media (max-width: 1440px) {
+    max-width: 80%;
+    width: 100%;
+    margin-left: 10%;
+  }
 
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
@@ -64,6 +80,11 @@ export const Content = styled.div`
 
   @media (max-width: 1260px) {
     padding-left: 30px;
+  }
+  @media (max-width: 490px) {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0%;
   }
 `;
 
@@ -94,16 +115,19 @@ export const Header = styled.div`
     width: 90%;
   }
 
-  @media (min-width: 1772px) {
-    max-width: 70%;
-  }
-
-  @media (min-width: 1518px) {
+  @media (min-width: 1546px) {
     max-width: 80%;
   }
 
   @media (min-width: 1441px) {
-    max-width: 83%;
+    max-width: 85%;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.875rem;
+
+      width: 80%;
+    }
   }
 
   @media (max-width: 1260px) {
@@ -197,7 +221,15 @@ export const Footer = styled.div`
 export const ContainerButton = styled.div`
   margin-top: 30px;
 
-  @media (max-width: 920px) {
+  @media (min-width: 1441px) {
+    width: 60%;
+  }
+
+  @media (max-width: 1440px) {
+    width: 70%;
+  }
+
+  @media (max-width: 928px) {
     width: 70%;
   }
 
@@ -209,3 +241,4 @@ export const ContainerButton = styled.div`
     width: 100%;
   }
 `;
+

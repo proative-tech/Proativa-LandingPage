@@ -10,6 +10,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
   }
+  @media (max-width: 490px) {
+    max-width: 100%;
+    margin-left: 0%;
+  }
 `;
 
 export const ContainerImg = styled.div`
@@ -22,12 +26,8 @@ export const ContainerImg = styled.div`
   }
 
   @media (min-width: 1441px) {
-    height: 798px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    max-height: 820px;
+    height: 100%;
   }
 `;
 
@@ -44,6 +44,7 @@ export const Content = styled.div`
   @media (min-width: 1441px) {
     max-width: 780px;
     width: 100%;
+
   }
 
   @media (max-width: 1399px) {
@@ -51,6 +52,21 @@ export const Content = styled.div`
     padding-bottom: 3.4rem;
 
     width: 95%;
+  }
+
+  @media (max-width: 1440px) {
+    padding-top: 3.9rem;
+    padding-bottom: 3.4rem;
+    width: 95%;
+
+    h1{
+      margin-top: 10px;
+      margin-right: 30px;
+      margin-bottom: 20px;
+    }
+    p{
+      margin-right: 120px;
+    }
   }
 
   @media (max-width: 1343px) {
@@ -106,16 +122,12 @@ export const Header = styled.div`
     max-width: 83%;
 
     p {
-      width: 80%;
+      width: 70%;
     }
   }
 
-  @media (min-width: 1558px) {
+  @media (min-width: 1441px) {
     max-width: 83%;
-
-    p {
-      width: 90%;
-    }
   }
 
   @media (max-width: 1260px) {
@@ -174,16 +186,9 @@ export const Footer = styled.div`
     color: #434343;
   }
 
-  @media (min-width: 1772px) {
-    max-width: 70%;
-  }
-
-  @media (min-width: 1518px) {
-    max-width: 80%;
-  }
-
   @media (min-width: 1441px) {
-    max-width: 83%;
+    max-width: 400px;
+    width: 100%;
   }
 
   @media (max-width: 928px) {
@@ -209,6 +214,10 @@ export const ContainerButton = styled.div`
 
   @media (min-width: 1441px) {
     width: 60%;
+  }
+
+  @media (max-width: 1440px) {
+    width: 70%;
   }
 
   @media (max-width: 920px) {

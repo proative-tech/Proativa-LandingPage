@@ -66,9 +66,9 @@ function Hero() {
       {!isMobileOrTablet && (
        
         <ContainerBottom>
-          <a href="#inicio">
-          <Link  to="inicio" spy={true} smooth={true}><img src="/images/icon-arrow.svg" alt="" /></Link>
-          </a>
+          
+          <Link  activeClass="active" to="inicio" spy={true} smooth={true} offset={50} duration={500} delay={1000}><a href="#"><img src="/images/icon-arrow.svg" alt="" /></a></Link>
+          
         </ContainerBottom>
         
       )}

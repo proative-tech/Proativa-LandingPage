@@ -9,6 +9,8 @@ import { Container } from './styles';
 
 export function Nav() {
   const [focusMarket, setFocusMerket] = useState(false);
+  const [focusSolutions, setFocusSolutions] = useState(false);
+  const [focusPortais, setFocusPortais] = useState(false);
 
   const isMobileOrTablet = useMediaQuery({ maxWidth: 920 });
 
@@ -23,22 +25,27 @@ export function Nav() {
             <Link href="/">QUEM SOMOS</Link>
           </li>
           <li
-          // onMouseEnter={() => setFocusMerket(!focusMarket)}
-          // onMouseLeave={() => setFocusMerket(!focusMarket)}
+            onMouseEnter={() => setFocusSolutions(!focusSolutions)}
+            onMouseLeave={() => setFocusSolutions(!focusSolutions)}
           >
             <Link href="/solucoes">SOLUÇÕES</Link>
-            {/* {focusMarket && (
+            {focusSolutions && (
               <DropdownMenu
                 links={[
-                  { name: 'Todos Mercados', href: '/mercados' },
-                  { name: 'Logística', href: '/mercados' },
-                  { name: 'Health And Care', href: '/mercados' },
-                  { name: 'Contrução Civil', href: '/mercados' },
-                  { name: 'Financeiro', href: '/mercados' },
-                  { name: 'Outros', href: '/mercados' },
+                  { name: 'Todos Soluções', href: '/solucoes' },
+                  {
+                    name: 'Services Managed',
+                    href: '/solucoes/service-manager',
+                  },
+                  { name: 'Cybersecurity', href: '/solucoes/cybersecurity' },
+                  {
+                    name: 'Serviços Profissionais',
+                    href: '/solucoes/professionals',
+                  },
+                  { name: 'Consultoria', href: '/solucoes/consultancy' },
                 ]}
               />
-            )} */}
+            )}
           </li>
           <li
             onMouseEnter={() => setFocusMerket(!focusMarket)}
@@ -70,8 +77,20 @@ export function Nav() {
           <li>
             <Link href="/fale-conosco">FALE CONOSCO</Link>
           </li>
-          <li>
+          <li
+            onMouseEnter={() => setFocusPortais(!focusPortais)}
+            onMouseLeave={() => setFocusPortais(!focusPortais)}
+          >
             <Link href="/">PORTAIS</Link>
+            {focusPortais && (
+              <DropdownMenu
+                links={[
+                  { name: 'Clientes', href: '/' },
+                  { name: 'Parceiros', href: '/' },
+                  { name: 'Colaboradores', href: '/' },
+                ]}
+              />
+            )}
           </li>
         </ul>
       )}

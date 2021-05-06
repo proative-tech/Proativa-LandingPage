@@ -32,6 +32,18 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+  @media (min-width: 1441px) {
+    max-width: 780px;
+    width: 100%;
+  }
+
+  @media (max-width: 1440px) {
+    
+    max-width: 80%;
+    width: 100%;
+
+  }
+
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
     padding-bottom: 3.4rem;
@@ -50,6 +62,12 @@ export const Content = styled.div`
 
   @media (max-width: 1260px) {
     padding-left: 30px;
+  }
+
+  @media (max-width: 490px) {
+    max-width: 85%;
+  
+    margin-left: 0%;
   }
 `;
 
@@ -80,12 +98,22 @@ export const Header = styled.div`
     width: 90%;
   }
 
+
   @media (min-width: 1772px) {
     max-width: 70%;
   }
 
   @media (min-width: 1518px) {
     max-width: 80%;
+  }
+ 
+  @media (min-width: 1441px) {
+    p {
+      font-size: 16px;
+      line-height: 30px;
+
+      width: 85%;
+    }
   }
 
   @media (min-width: 1441px) {
@@ -111,8 +139,7 @@ export const Header = styled.div`
   }
 
   @media (max-width: 490px) {
-    max-width: 90%;
-
+    max-width: 10%;
     span {
       font-size: 14px;
       line-height: 19px;
@@ -131,6 +158,9 @@ export const Header = styled.div`
 
   @media (max-width: 390px) {
     max-width: 100%;
+    p {
+      width: 100%;
+    }
   }
 `;
 
@@ -139,7 +169,7 @@ export const ListVant = styled.ul`
 
   padding-left: 1rem;
 
-  margin-bottom: 72px;
+  margin-bottom: 40px;
 
   li {
     color: #666666;
@@ -166,15 +196,26 @@ export const ListVant = styled.ul`
 export const ContainerButton = styled.div`
   margin-top: 30px;
 
+  @media (min-width: 1441px) {
+    width: 60%;
+  }
+
+  @media (max-width: 1440px) {
+    width: 90%;
+  }
+
   @media (max-width: 920px) {
     width: 70%;
   }
 
   @media (max-width: 490px) {
-    width: 95%;
+    width: 120%;
   }
 
   @media (max-width: 360px) {
+    p {
+      font-size: 3px;
+    }
     width: 100%;
   }
 `;

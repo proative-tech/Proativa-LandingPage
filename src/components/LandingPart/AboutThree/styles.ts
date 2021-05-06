@@ -87,10 +87,23 @@ export const Footer = styled.div`
         margin-top: 2rem;
       }
     }
+
+    @media (max-width: 1441px) {
+      max-width: 83%;
+      p {
+        font-size: 0.875rem;
+        line-height: 24px;
+        color: #434343;
+        margin-right:100px;
+        margin-top: 2rem;
+      }
+    }
     @media (max-width: 1260px) {
+      max-width: 83%;
       margin-top: 18px;
 
       p {
+        margin-right:100px;
         margin-top: 22px;
       }
     }

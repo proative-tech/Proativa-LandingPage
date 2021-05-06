@@ -40,6 +40,13 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+  @media (min-width: 1441px) {
+    max-width: 780px;
+    width: 100%;
+
+    margin-left: auto;
+  }
+
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
     padding-bottom: 3.4rem;
@@ -88,16 +95,19 @@ export const Header = styled.div`
     width: 90%;
   }
 
-  @media (min-width: 1772px) {
-    max-width: 70%;
-  }
-
-  @media (min-width: 1518px) {
+  @media (min-width: 1546px) {
     max-width: 80%;
   }
 
   @media (min-width: 1441px) {
-    max-width: 83%;
+    max-width: 85%;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.875rem;
+
+      width: 80%;
+    }
   }
 
   @media (max-width: 1260px) {

@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { useRouter } from 'next/router';
+import { useMediaQuery } from 'react-responsive';
 import { Button } from '../../Button';
 import {
   Container,
@@ -17,11 +18,19 @@ interface CybersecurityProps {
 
 export const Professionals = ({ children }: CybersecurityProps) => {
   const router = useRouter();
+  const is1920 = useMediaQuery({ minWidth: 1601 });
 
   return (
     <Container>
       <ContainerImg>
-        <img src="/images/professionals.png" alt="proative" />
+        <img
+          src={
+            is1920
+              ? '/images/servicosProfissionais1920.png'
+              : '/images/servico_profissional1440.png'
+          }
+          alt="proative"
+        />
       </ContainerImg>
       <Content>
         {children ? (

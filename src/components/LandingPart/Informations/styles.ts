@@ -102,7 +102,7 @@ export const ContainerInfos = styled.div`
     }
 
     p.title {
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 1.1875rem;
       color: #EB0029;
       font-weight: bold;

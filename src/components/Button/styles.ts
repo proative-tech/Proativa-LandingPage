@@ -52,4 +52,8 @@ export const Container = styled.button<ContainerProps>`
     font-size: 12px;
     padding: 12px 18px;
   }
+  @media (max-width: 321px) {
+    font-size: 8px;
+    padding: 12px 18px;
+  }
 `;
