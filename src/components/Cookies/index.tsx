@@ -1,4 +1,5 @@
 import CookieConsent, { Cookies } from 'react-cookie-consent';
+import Link from 'next/link';
 import { Container, Content } from './styles';
 
 export const CookiesAlert = () => {
@@ -37,7 +38,10 @@ export const CookiesAlert = () => {
           <p>
             Nosso site utiliza cookies para melhorar sua experiência. Ao navegar
             pela página, você aceita tais condições.
-            <br /> Para mais informações, acesse nossa Política de Privacidade.
+            <br /> Para mais informações, acesse nossa{' '}
+            <Link href="/politicas-de-privacidade" passHref>
+              <a>Política de Privacidade.</a>
+            </Link>
           </p>
         </Content>
       </CookieConsent>

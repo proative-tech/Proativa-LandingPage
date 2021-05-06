@@ -13,5 +13,14 @@ export const Content = styled.div`
     color: #434343;
     font-size: 0.875rem;
     line-height: 1.125rem;
+
+    a {
+      color: #434343;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 `;
