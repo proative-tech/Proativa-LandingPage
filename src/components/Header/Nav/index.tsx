@@ -32,7 +32,7 @@ export function Nav() {
             {focusSolutions && (
               <DropdownMenu
                 links={[
-                  { name: 'Todos Soluções', href: '/solucoes' },
+                  { name: 'Todas Soluções', href: '/solucoes' },
                   {
                     name: 'Services Managed',
                     href: '/solucoes/service-manager',
