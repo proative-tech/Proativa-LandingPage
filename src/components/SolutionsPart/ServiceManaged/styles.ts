@@ -20,6 +20,11 @@ export const ContainerImg = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  @media (min-width: 1441px) {
+    max-height: 820px;
+    height: 100%;
+  }
 `;
 
 export const Content = styled.div`

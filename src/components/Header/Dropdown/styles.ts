@@ -16,12 +16,12 @@ export const Container = styled.ul`
   padding: 16px 0;
 
   li {
-    width: 100%;
     margin-left: 0;
 
-    width: 170px;
+    min-width: 170px;
+    width: 100%;
 
-    padding-left: 32px;
+    padding-left: 26px;
 
     height: 32px;
 

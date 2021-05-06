@@ -30,6 +30,10 @@ export const ContainerImg = styled.div<ContainerProps>`
     css`
       order: -1;
     `}
+  @media (min-width: 1441px) {
+    max-height: 820px;
+    height: 100%;
+  }
 
   @media (max-width: 928px) {
     order: -1;
