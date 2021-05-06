@@ -81,6 +81,7 @@ export const Content = styled.div`
   @media (max-width: 1260px) {
     padding-left: 30px;
   }
+  
   @media (max-width: 490px) {
     max-width: 100%;
     width: 100%;
@@ -226,7 +227,7 @@ export const ContainerButton = styled.div`
   }
 
   @media (max-width: 1440px) {
-    width: 70%;
+    width: 90%;
   }
 
   @media (max-width: 928px) {

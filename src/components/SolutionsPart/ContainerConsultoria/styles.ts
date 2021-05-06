@@ -34,6 +34,24 @@ export const ContainerImg = styled.div`
 
     img {
       margin-left: 40px;
+      img {
+        display: block;
+        width: 30px;
+        height: 208px;
+      }
+    }
+  }
+
+  @media (max-width: 1441px) {
+    justify-content: flex-start;
+
+    img {
+      margin-left: 100px;
+      
+        display: block;
+        width: 330px;
+        height: 207px;
+      
     }
   }
 
@@ -41,6 +59,19 @@ export const ContainerImg = styled.div`
     order: -1;
 
     padding-top: 50px;
+  }
+
+  @media (max-width: 490px) {
+    justify-content: flex-start;
+
+    img {
+      margin-left: 100px;
+      
+        display: block;
+        width: 110px;
+        height: 70px;
+      
+    }
   }
 `;
 
@@ -66,8 +97,8 @@ export const Content = styled.div`
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
     padding-bottom: 3.4rem;
-
-    width: 95%;
+    width: 90%;
+    margin-left: 20%
   }
 
   @media (max-width: 1343px) {
@@ -81,6 +112,15 @@ export const Content = styled.div`
 
   @media (max-width: 1260px) {
     padding-left: 30px;
+  }
+
+  @media (max-width: 490px) {
+    padding-top: 3.9rem;
+    padding-bottom: 3.4rem;
+
+    width: 100%;
+    margin-left: 0%
+    
   }
 `;
 
