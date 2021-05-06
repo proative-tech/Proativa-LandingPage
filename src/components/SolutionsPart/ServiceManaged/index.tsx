@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { Button } from '../../Button';
 import {
   Container,
@@ -17,11 +18,19 @@ interface ServiceManagedProps {
 
 export const ServiceManaged = ({ children }: ServiceManagedProps) => {
   const router = useRouter();
+  const is1920 = useMediaQuery({ minWidth: 1441 });
 
   return (
     <Container>
       <ContainerImg>
-        <img src="/images/servicemanager.png" alt="proative" />
+        <img
+          src={
+            is1920
+              ? '/images/1_img_1920_solution.png'
+              : '/images/servicemanager.png'
+          }
+          alt="proative"
+        />
       </ContainerImg>
 
       <Content>

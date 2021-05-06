@@ -106,16 +106,12 @@ export const Header = styled.div`
     max-width: 83%;
 
     p {
-      width: 80%;
+      width: 70%;
     }
   }
 
-  @media (min-width: 1558px) {
+  @media (min-width: 1441px) {
     max-width: 83%;
-
-    p {
-      width: 90%;
-    }
   }
 
   @media (max-width: 1260px) {
@@ -174,16 +170,9 @@ export const Footer = styled.div`
     color: #434343;
   }
 
-  @media (min-width: 1772px) {
-    max-width: 70%;
-  }
-
-  @media (min-width: 1518px) {
-    max-width: 80%;
-  }
-
   @media (min-width: 1441px) {
-    max-width: 83%;
+    max-width: 400px;
+    width: 100%;
   }
 
   @media (max-width: 928px) {

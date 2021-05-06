@@ -31,6 +31,15 @@ export const ContainerImg = styled.div<ContainerProps>`
       order: -1;
     `}
 
+  @media (min-width: 1441px) {
+    height: 804px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   @media (max-width: 928px) {
     order: -1;
   }
@@ -45,6 +54,13 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  margin-left: auto;
+
+  @media (min-width: 1441px) {
+    max-width: 780px;
+    width: 100%;
+  }
 
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
@@ -94,16 +110,19 @@ export const Header = styled.div`
     width: 90%;
   }
 
-  @media (min-width: 1772px) {
-    max-width: 70%;
-  }
-
-  @media (min-width: 1518px) {
+  @media (min-width: 1546px) {
     max-width: 80%;
   }
 
   @media (min-width: 1441px) {
-    max-width: 83%;
+    max-width: 85%;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.875rem;
+
+      width: 80%;
+    }
   }
 
   @media (max-width: 1260px) {
@@ -164,16 +183,8 @@ export const Footer = styled.div`
     color: #434343;
   }
 
-  @media (min-width: 1772px) {
-    max-width: 70%;
-  }
-
-  @media (min-width: 1518px) {
-    max-width: 80%;
-  }
-
   @media (min-width: 1441px) {
-    max-width: 83%;
+    max-width: 60%;
   }
 
   @media (max-width: 928px) {
@@ -196,6 +207,10 @@ export const Footer = styled.div`
 
 export const ContainerButton = styled.div`
   margin-top: 30px;
+
+  @media (min-width: 1441px) {
+    width: 60%;
+  }
 
   @media (max-width: 920px) {
     width: 70%;
