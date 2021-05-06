@@ -53,7 +53,7 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
                 ipsum dolore. Lorem ipsum dolore.
               </p>
             </Footer>
-            <Footer>
+            {/* <Footer>
               <h3>Reports BI</h3>
               <p>
                 Lorem ipsum dolore. Lorem ipsum dolore.Lorem ipsum dolore. Lorem
@@ -63,7 +63,7 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
             <Footer>
               <h3>Reports SLAM</h3>
               <p>Os dados de serem expostos ou roubados, em tempo real.</p>
-            </Footer>
+            </Footer> */}
 
             <ContainerButton>
               <Button

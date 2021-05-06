@@ -4,6 +4,10 @@ export const Container = styled.div`
   max-width: 1085px;
   margin: 0 auto;
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   position: relative;
 
   /* min-height: calc(100vh - 155px); */

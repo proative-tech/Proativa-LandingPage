@@ -31,6 +31,14 @@ export const Content = styled.div`
   padding: 4.9rem 4rem;
   width: 100%;
 
+  @media (min-width: 1399px) {
+    padding-top: 3.9rem;
+    padding-bottom: 3.4rem;
+
+    width: 95%;
+    margin-left: 5%;
+  }
+
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
     padding-bottom: 3.4rem;
@@ -112,9 +120,11 @@ export const Footer = styled.div`
   }
 
   @media (max-width: 490px) {
+    max-width: 100%;
     p {
       font-size: 12px;
       line-height: 24px;
+      margin-right: 30px
     }
   }
 `;

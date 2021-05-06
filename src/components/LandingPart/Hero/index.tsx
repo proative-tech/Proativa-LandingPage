@@ -3,6 +3,9 @@ import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-scroll';
 import { Button } from '../../Button';
 
+import React, { useRef } from 'react';
+
+
 import {
   Container,
   Content,
@@ -14,6 +17,8 @@ import {
 function Hero() {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 768 });
   const router = useRouter();
+
+  const myRef = useRef(null)
 
   return (
     <Container>
@@ -32,9 +37,7 @@ function Hero() {
 
           <div className="content__btns">
             <div className="containerBtn">
-              <Button type="button" onClick={() => router.push('/solucoes')}>
-                Conheça nossas soluções
-              </Button>
+              <Button type="button">Conheça nossas soluções</Button>
             </div>
             <div className="containerBtn">
               <Button
@@ -66,21 +69,11 @@ function Hero() {
         </ContainerImg>
       </ContainerTop>
       {!isMobileOrTablet && (
+       
         <ContainerBottom>
-          <Link
-            activeClass="active"
-            to="inicio"
-            spy
-            smooth
-            offset={50}
-            duration={500}
-            delay={1000}
-          >
-            <a href="#">
-              <img src="/images/icon-arrow.svg" alt="" />
-            </a>
-          </Link>
+          <a href="#inicio"><img src="/images/icon-arrow.svg" alt="" /></a>
         </ContainerBottom>
+        
       )}
     </Container>
   );

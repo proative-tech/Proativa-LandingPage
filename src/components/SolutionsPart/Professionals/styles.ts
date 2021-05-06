@@ -66,7 +66,6 @@ export const Content = styled.div`
 
   @media (max-width: 490px) {
     max-width: 85%;
-  
     margin-left: 0%;
   }
 `;
@@ -139,8 +138,9 @@ export const Header = styled.div`
   }
 
   @media (max-width: 490px) {
-    max-width: 10%;
+    max-width: 100%;
     span {
+      margin-bottom: 20px;
       font-size: 14px;
       line-height: 19px;
     }
@@ -151,8 +151,10 @@ export const Header = styled.div`
     }
 
     p {
+      width: 100%;
       font-size: 12px;
       line-height: 24px;
+      margin-right: 0px;
     }
   }
 

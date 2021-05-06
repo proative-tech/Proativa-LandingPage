@@ -176,7 +176,11 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  background: #fff;
+  html {
+    scroll-behavior: smooth;
+  }
+
+  // background: #fff;
 
   @media (max-width: 928px) {
     display: flex;
@@ -212,7 +216,7 @@ export const Content = styled.div`
   @media (min-width: 1441px) {
     max-width: 780px;
     width: 100%;
-
+    margin-left: 5%;
   }
 
   @media (max-width: 1399px) {
