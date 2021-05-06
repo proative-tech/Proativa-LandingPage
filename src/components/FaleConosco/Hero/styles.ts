@@ -68,7 +68,7 @@ export const Content = styled.section`
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1441px) {
     div.content__text {
       margin-bottom: 3.125rem;
       margin-left: 12rem;
@@ -105,6 +105,13 @@ export const ContainerImg = styled.section`
   justify-self: flex-end;
 
   width: 80%;
+
+  @media (min-width: 1446px) {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+  }
 `;
 
 export const ContainerBottom = styled.div`

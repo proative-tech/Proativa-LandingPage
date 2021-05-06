@@ -18,8 +18,6 @@ export const ContainerImg = styled.div`
     width: 100%;
     height: 100%;
   }
-
-
 `;
 
 export const Content = styled.div`
@@ -51,7 +49,7 @@ export const Header = styled.div`
   span {
     font-size: 1rem;
     line-height: 1.1875rem;
-    color: #EB0029;
+    color: #eb0029;
     font-weight: 300;
     font-family: 'Source Sans Pro';
   }
@@ -76,7 +74,7 @@ export const Header = styled.div`
       font-size: 0.875rem;
       line-height: 34px;
       color: #434343;
-      margin-right:250px;
+      margin-right: 250px;
       margin-top: 2rem;
     }
   }
@@ -116,45 +114,45 @@ export const Header = styled.div`
 `;
 
 export const Footer = styled.div`
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 
-    h3 {
-      font-size: 1rem;
-      line-height: 1.3125rem;
+  h3 {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 34px;
+    color: #434343;
+    margin-top: 1.6875rem;
+  }
+
+  @media (min-width: 1772px) {
+    max-width: 70%;
+  }
+
+  @media (min-width: 1518px) {
+    max-width: 80%;
+  }
+
+  @media (min-width: 1441px) {
+    max-width: 83%;
+    p {
+      line-height: 34px;
+      margin-right: 300px;
     }
+  }
+
+  @media (max-width: 1260px) {
+    margin-top: 18px;
 
     p {
-      font-size: 0.875rem;
-      line-height: 34px;
-      color: #434343;
-      margin-top: 1.6875rem;
+      margin-top: 22px;
     }
+  }
 
-    @media (min-width: 1772px) {
-      max-width: 70%;
-    }
-
-    @media (min-width: 1518px) {
-      max-width: 80%;
-    }
-
-    @media (min-width: 1441px) {
-      max-width: 83%;
-        p {
-            line-height: 34px;
-            margin-right: 300px;
-          }
-    }
-
-    @media (max-width: 1260px) {
-      margin-top: 18px;
-
-      p {
-        margin-top: 22px;
-      }
-    }
-
-    @media (max-width: 928px) {
+  @media (max-width: 928px) {
     max-width: 70%;
   }
 
