@@ -44,7 +44,6 @@ export const Content = styled.div`
   @media (min-width: 1441px) {
     max-width: 780px;
     width: 100%;
-
   }
 
   @media (max-width: 1399px) {
@@ -59,12 +58,12 @@ export const Content = styled.div`
     padding-bottom: 3.4rem;
     width: 95%;
 
-    h1{
+    h1 {
       margin-top: 10px;
       margin-right: 30px;
       margin-bottom: 20px;
     }
-    p{
+    p {
       margin-right: 120px;
     }
   }
@@ -164,6 +163,8 @@ export const Header = styled.div`
     p {
       font-size: 12px;
       line-height: 24px;
+
+      margin-right: 0;
     }
   }
 

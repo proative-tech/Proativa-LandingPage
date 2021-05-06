@@ -6,6 +6,10 @@ export const Container = styled.div`
   background: #fff;
 
   padding: 100px 0 80px;
+
+  @media (max-width: 578px) {
+    padding: 29px;
+  }
 `;
 
 export const Content = styled.div`
@@ -16,6 +20,29 @@ export const Content = styled.div`
   width: 55.2%;
 
   margin: 0 auto;
+
+  @media (max-width: 1366px) {
+    gap: 4rem;
+  }
+
+  @media (max-width: 1233px) {
+    width: 70%;
+  }
+
+  @media (max-width: 921px) {
+    width: 90%;
+  }
+
+  @media (max-width: 578px) {
+    display: flex;
+    flex-direction: column;
+
+    width: 35%;
+  }
+
+  @media (max-width: 490px) {
+    width: 55%;
+  }
 `;
 
 export const Info = styled.div`
