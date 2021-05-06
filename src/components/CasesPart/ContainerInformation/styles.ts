@@ -17,6 +17,31 @@ export const Content = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 7rem;
+
+  @media (max-width: 1140px) {
+    padding: 0 36px;
+  }
+
+  @media (max-width: 928px) {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 70%;
+
+    margin: 0;
+  }
+
+  @media (max-width: 695px) {
+    max-width: 80%;
+  }
+
+  @media (max-width: 528px) {
+    max-width: 90%;
+  }
+
+  @media (max-width: 473px) {
+    max-width: 100%;
+  }
 `;
 
 export const ContainerLeft = styled.div`
@@ -62,5 +87,9 @@ export const ContainerRight = styled.div`
     & + div.containerRightContent {
       margin-top: 3rem;
     }
+  }
+
+  @media (max-width: 928px) {
+    order: -1;
   }
 `;
