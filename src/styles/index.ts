@@ -67,7 +67,7 @@ export default createGlobalStyle`
   }
 
   .react-modal-content {
-    max-width: 576px;
+    max-width: 463px;
     width: 100%;
     background: #fff;
     box-shadow: 10px -2px 10px #00000029;

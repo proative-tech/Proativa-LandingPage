@@ -11,7 +11,7 @@ interface ConfigCookiesProps {
 Modal.setAppElement('#__next');
 
 export const ConfigCookies = ({
-  isOpen = true,
+  isOpen,
   onRequestClose,
 }: ConfigCookiesProps) => {
   return (

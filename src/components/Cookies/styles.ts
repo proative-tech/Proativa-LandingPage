@@ -24,3 +24,21 @@ export const Content = styled.div`
     }
   }
 `;
+
+export const ContainerButtons = styled.div`
+  button:first-child {
+    background: #fff;
+    border: 1px solid #595959;
+    padding: 7px 28px;
+  }
+
+  button:nth-child(2) {
+    background: #fff;
+    border: 1px solid #595959;
+    padding: 7px 42px;
+  }
+
+  button + button {
+    margin-left: 24px;
+  }
+`;

@@ -1,11 +1,12 @@
-import { useState, useCallback } from 'react';
-import CookieConsent, { Cookies } from 'react-cookie-consent';
+import { useState, useCallback, useRef } from 'react';
+import CookieConsent, { CookieConsentProps } from 'react-cookie-consent';
 import Link from 'next/link';
-import { Container, Content } from './styles';
+import { Container, Content, ContainerButtons } from './styles';
 import { ConfigCookies } from './Modal';
 
 export const CookiesAlert = () => {
-  const [isModalShow, setIsModalShow] = useState(true);
+  const [isModalShow, setIsModalShow] = useState(false);
+  const cookieConsentRef = useRef<CookieConsentProps>();
 
   const onRequestClose = useCallback(() => {
     setIsModalShow(!isModalShow);
@@ -18,6 +19,7 @@ export const CookiesAlert = () => {
           location="bottom"
           buttonText="Aceito"
           cookieName="cookieTesteProative"
+          buttonId="buttonAcee"
           style={{
             background: '#fff',
             boxShadow: '0px -2px 10px #00000029',
@@ -25,6 +27,16 @@ export const CookiesAlert = () => {
             alignItems: 'center',
             padding: '29px',
           }}
+          ButtonComponent={() => (
+            <ContainerButtons>
+              <button type="button" id="buttonAcee">
+                Aceito
+              </button>
+              <button type="button" onClick={onRequestClose}>
+                Configurar Cookies
+              </button>
+            </ContainerButtons>
+          )}
           buttonStyle={{
             color: '',
             background: '#fff',
@@ -32,16 +44,8 @@ export const CookiesAlert = () => {
             padding: '7px 28px',
           }}
           expires={150}
-          enableDeclineButton
-          flipButtons
-          declineButtonText="Saber Mais"
-          declineButtonStyle={{
-            color: '',
-            background: '#fff',
-            border: '1px solid #595959',
-            padding: '7px 42px',
-          }}
-          onDecline={onRequestClose}
+
+          // onDecline={onRequestClose}
         >
           <Content>
             <h3>Nós utilizamos cookies</h3>
