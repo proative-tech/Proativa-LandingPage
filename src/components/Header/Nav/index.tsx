@@ -69,7 +69,7 @@ export function Nav() {
             <Link href="/cases">CASES</Link>
           </li>
           <li>
-            <Link href="/">CARREIRAS</Link>
+            <Link href="/carreiras">CARREIRAS</Link>
           </li>
           <li>
             <Link href="/">BLOG</Link>

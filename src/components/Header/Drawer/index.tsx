@@ -42,7 +42,7 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
             </Link>
           </Item>
           <Item>
-            <Link href="/" passHref>
+            <Link href="/carreiras" passHref>
               CARREIRAS
             </Link>
           </Item>

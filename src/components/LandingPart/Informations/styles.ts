@@ -38,7 +38,7 @@ export const Header = styled.div`
 
       font-family: 'Source Sans Pro';
 
-      color: #EB0029;
+      color: #eb0029;
     }
 
     h1 {
@@ -56,7 +56,6 @@ export const Header = styled.div`
       }
     }
   }
-
 
   @media (max-width: 768px) {
     align-items: flex-start;
@@ -104,7 +103,7 @@ export const ContainerInfos = styled.div`
     p.title {
       font-size: 0.9rem;
       line-height: 1.1875rem;
-      color: #EB0029;
+      color: #eb0029;
       font-weight: bold;
     }
 
@@ -166,8 +165,8 @@ export const ContainerInfos = styled.div`
 `;
 
 export const Divider = styled.hr`
-      margin: 112px auto 0;
-      width: 115px;
-      height: 2px;
-      background: #C4C4C4;
+  margin: 112px auto 0;
+  width: 115px;
+  height: 2px;
+  background: #c4c4c4;
 `;
