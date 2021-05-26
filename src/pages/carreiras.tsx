@@ -4,6 +4,7 @@ import { Footer } from '../components/Footer';
 import { HeroMaketOrCases } from '../components/CareersParts/Hero';
 import { ContainerImgLeft } from '../components/CareersParts/ContainerImgLeft';
 import { ContainerImgRight } from '../components/CareersParts/ContainerImgRigth';
+import { ContainerFinish } from '../components/CareersParts/ContainerFinish';
 
 import { Container, ContainerInfos } from '../styles/pages/Careers';
 
@@ -47,6 +48,7 @@ export default function Index() {
             </p>
           </header>
         </ContainerImgLeft>
+        <ContainerFinish />
       </ContainerInfos>
       <Footer />
     </>
