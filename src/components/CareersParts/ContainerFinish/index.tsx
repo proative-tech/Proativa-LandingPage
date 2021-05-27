@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { useMediaQuery } from 'react-responsive';
 
+
 import { Container, ContainerTop, ContainerBottom, ContainerInfo, ContainerGoTop } from './styles';
 
 export function ContainerFinish() {
@@ -11,7 +12,7 @@ export function ContainerFinish() {
   return (
     <Container>
 
-      <ContainerTop>
+      <ContainerTop >
         <p className="tag">#vemserproative</p>
       </ContainerTop>
       <ContainerBottom>
@@ -54,7 +55,9 @@ export function ContainerFinish() {
         </div>
       </ContainerInfo>
       <ContainerGoTop>
-        <img src="/images/arrow-go-top.svg" alt="seta para cima" />
+        <a href="#headerScroll" >
+          <img src="/images/arrow-go-top.svg" alt="seta para cima" />
+        </a>
       </ContainerGoTop>
     </Container>
   );

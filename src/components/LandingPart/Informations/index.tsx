@@ -2,7 +2,7 @@ import { Container, Content, Header, ContainerInfos, Divider } from './styles';
 
 export function Informations() {
   return (
-    <Container>
+    <Container id="lg-container-info">
       <Content>
         <Header>
           <div>

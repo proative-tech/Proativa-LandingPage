@@ -127,6 +127,13 @@ export const ContainerGoTop = styled.div`
 
   margin-top: 80px;
 
+  a {
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+  }
+
   @media (max-width: 490px) {
     margin-top: 52px;
   }

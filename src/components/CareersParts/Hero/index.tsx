@@ -6,13 +6,13 @@ import { Button } from '../../Button';
 
 import { Container, ContainerTop, ContainerBottom } from './styles';
 
-export function HeroMaketOrCases() {
+export const HeroMaketOrCases = () =>{
   const isMobile = useMediaQuery({ maxWidth: 490 });
   const isMobileUltra = useMediaQuery({ minWidth: 1920 });
   const def = useMediaQuery({ minWidth: 491, maxWidth: 1919 });
 
   return (
-    <Container>
+    <Container id="beginContent">
       <ContainerTop>
         {(isMobile && !def) && (
           <img

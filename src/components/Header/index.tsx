@@ -12,7 +12,7 @@ interface HeaderProps {
 
 export function Header({ noPaddingBottom = false }: HeaderProps) {
   return (
-    <Container>
+    <Container id="headerScroll">
       <Content noPaddingBottom={noPaddingBottom}>
         <h1>
           <Link href="/" passHref>

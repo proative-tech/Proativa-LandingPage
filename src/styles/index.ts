@@ -33,6 +33,8 @@ export default createGlobalStyle`
       margin: 0px;
       padding: 0px;
       overflow-x: hidden;
+
+      scroll-behavior: smooth;
     }
 
     /* body {

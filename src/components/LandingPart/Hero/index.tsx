@@ -69,7 +69,7 @@ function Hero() {
       </ContainerTop>
       {!isMobileOrTablet && (
         <ContainerBottom>
-          <a href="#inicio">
+          <a href="#lg-container-info">
             <img src="/images/icon-arrow.svg" alt="" />
           </a>
         </ContainerBottom>

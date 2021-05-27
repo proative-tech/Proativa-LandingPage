@@ -1,5 +1,5 @@
 import { CookiesAlert } from '../components/Cookies';
-import GlobalStyles from '../styles'; 
+import GlobalStyles from '../styles';
 
 function MyApp({ Component, pageProps }) {
   return (
