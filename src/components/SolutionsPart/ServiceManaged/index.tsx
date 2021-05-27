@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import Link from 'next/link';
 import { Button } from '../../Button';
 import {
   Container,
@@ -21,13 +22,11 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
   const is1920 = useMediaQuery({ minWidth: 1601 });
 
   return (
-    <Container>
+    <Container id="soluciton-service">
       <ContainerImg>
         <img
           src={
-            is1920
-              ? '/images/servicesManaged1920.png'
-              : '/images/teste.jpeg'
+            is1920 ? '/images/servicesManaged1920.png' : '/images/teste.jpeg'
           }
           alt="proative"
         />
@@ -72,12 +71,9 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
               </p>
             </Footer>
             <ContainerButton>
-              <Button
-                type="button"
-                onClick={() => router.push('solucoes/service-manager')}
-              >
-                Saiba mais sobre Services Managed
-              </Button>
+              <Link scroll={false} href="/solucoes/service-manager" passHref>
+                <Button type="button">Saiba mais sobre Services Managed</Button>
+              </Link>
             </ContainerButton>
           </>
         )}

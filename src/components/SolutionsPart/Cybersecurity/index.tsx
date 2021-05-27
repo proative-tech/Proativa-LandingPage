@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { Button } from '../../Button';
@@ -58,23 +59,16 @@ export const Cybersecurity = ({ children }: CybersecurityProps) => {
               <p>Os dados de serem expostos ou roubados, em tempo real.</p>
             </Footer>
             <ContainerButton>
-              <Button
-                type="button"
-                onClick={() => router.push('/solucoes/cybersecurity')}
-              >
-                Saiba mais sobre Cybersecurity
-              </Button>
+              <Link scroll={false} href="/solucoes/cybersecurity" passHref>
+                <Button type="button">Saiba mais sobre Cybersecurity</Button>
+              </Link>
             </ContainerButton>
           </>
         )}
       </Content>
       <ContainerImg modifier={!!children}>
         <img
-          src={
-            is1920
-              ? '/images/cyber1920.png'
-              : '/images/teste2.png'
-          }
+          src={is1920 ? '/images/cyber1920.png' : '/images/teste2.png'}
           alt="proative"
         />
       </ContainerImg>

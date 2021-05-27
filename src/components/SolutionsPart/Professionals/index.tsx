@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { Button } from '../../Button';
@@ -69,12 +70,11 @@ export const Professionals = ({ children }: CybersecurityProps) => {
               </li>
             </ListVant>
             <ContainerButton>
-              <Button
-                type="button"
-                onClick={() => router.push('/solucoes/professionals')}
-              >
-                Saiba mais sobre Serviços Profissionais
-              </Button>
+              <Link scroll={false} href="/solucoes/professionals" passHref>
+                <Button type="button">
+                  Saiba mais sobre Serviços Profissionais
+                </Button>
+              </Link>
             </ContainerButton>
           </>
         )}

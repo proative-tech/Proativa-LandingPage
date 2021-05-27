@@ -6,6 +6,7 @@ import { MenuBurger } from '../Burger';
 import { DropdownMenu } from '../Dropdown';
 
 import { Container } from './styles';
+import { DropdownMenuTwo } from '../DropdownTwo';
 
 export function Nav() {
   const [focusMarket, setFocusMerket] = useState(false);
@@ -53,14 +54,26 @@ export function Nav() {
           >
             <Link href="/mercados">MERCADOS</Link>
             {focusMarket && (
-              <DropdownMenu
+              <DropdownMenuTwo
                 links={[
-                  { name: 'Todos Mercados', href: '/mercados' },
-                  { name: 'Logística', href: '/mercados' },
-                  { name: 'Health And Care', href: '/mercados' },
-                  { name: 'Contrução Civil', href: '/mercados' },
-                  { name: 'Financeiro', href: '/mercados' },
-                  { name: 'Outros', href: '/mercados' },
+                  { name: 'Todos Mercados', to: 'mkt-top', href: '/mercados' },
+                  { name: 'Logística', to: 'mkt-logista', href: '/mercados' },
+                  {
+                    name: 'Health And Care',
+                    to: 'mkt-Health',
+                    href: '/mercados',
+                  },
+                  {
+                    name: 'Contrução Civil',
+                    to: 'mkt-contrucao',
+                    href: '/mercados',
+                  },
+                  {
+                    name: 'Financeiro',
+                    to: 'mkt-Financeiro',
+                    href: '/mercados',
+                  },
+                  { name: 'Outros', to: 'mkt-Outros', href: '/mercados' },
                 ]}
               />
             )}

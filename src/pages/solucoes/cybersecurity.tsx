@@ -1,3 +1,6 @@
+import { animateScroll } from 'react-scroll';
+
+import { useEffect } from 'react';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { Container } from '../../styles/pages/Solutions';
@@ -14,6 +17,10 @@ import { ContainerImpulse } from '../../components/SolutionsPart/ContainerImpuls
 import { ContainerEscritorio } from '../../components/SolutionsPart/ContainerEscritorio';
 
 export default function Index() {
+  useEffect(() => {
+    animateScroll.scrollToTop();
+  }, []);
+
   return (
     <>
       <Container>

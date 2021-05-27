@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import { Link as LinkScroll } from 'react-scroll';
 import { Container } from './styles';
 
 interface LinkData {
   name: string;
-  href: string;
+  href?: string;
+  to?: string;
 }
 
 interface DropdownMenuProps {
@@ -15,7 +17,7 @@ export const DropdownMenu = ({ links = [] }: DropdownMenuProps) => {
     <Container>
       {links.map((link, index) => (
         <li key={String(index)}>
-          <Link href={link.href} passHref>
+          <Link href={link.href} passHref scroll={false}>
             {link.name}
           </Link>
         </li>

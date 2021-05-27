@@ -1,10 +1,9 @@
 import React from 'react';
+import CountUp, { useCountUp } from 'react-countup';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { HeroMaketOrCases } from '../components/MarketParts/Hero';
 import { Cases } from '../components/LandingPart/Cases';
-
-import CountUp, { useCountUp } from 'react-countup';
 
 import { Container, ContainerInfos } from '../styles/pages/Cases';
 import { CaseSubHero } from '../components/CasesPart/CasesSubHero';
@@ -15,7 +14,7 @@ export default function Index() {
     <>
       <Container>
         <Header />
-        <HeroMaketOrCases>
+        <HeroMaketOrCases id="cases-top">
           <div className="content__text">
             <h1>Transformamos a sua informação em resultado</h1>
             <p>
@@ -37,41 +36,59 @@ export default function Index() {
 
             <section className="section-item">
               <div className="iten">
-              <h1><CountUp 
-              end={99.98} 
-              duration={1}
-              prefix=""
-              decimal=","
-              decimals={2} 
-              onEnd={({    pauseResume, reset, start, update }) => {
-                  setTimeout(function(){ start() }, 6000);
-              }}/>%</h1>
+                <h1>
+                  <CountUp
+                    end={99.98}
+                    duration={1}
+                    prefix=""
+                    decimal=","
+                    decimals={2}
+                    onEnd={({ pauseResume, reset, start, update }) => {
+                      setTimeout(function () {
+                        start();
+                      }, 6000);
+                    }}
+                  />
+                  %
+                </h1>
                 <p>de disponibilidade aos negócios</p>
               </div>
 
               <div className="iten">
-              <h1><CountUp 
-              end={25} 
-              duration={1}
-              prefix=""
-              decimal=","
-              decimals={0} 
-              onEnd={({    pauseResume, reset, start, update }) => {
-                  setTimeout(function(){ start() }, 6000);
-              }}/>%</h1>
+                <h1>
+                  <CountUp
+                    end={25}
+                    duration={1}
+                    prefix=""
+                    decimal=","
+                    decimals={0}
+                    onEnd={({ pauseResume, reset, start, update }) => {
+                      setTimeout(function () {
+                        start();
+                      }, 6000);
+                    }}
+                  />
+                  %
+                </h1>
                 <p>De redução de custos por meio da otimização de recursos</p>
               </div>
 
               <div className="iten">
-              <h1><CountUp 
-              end={40} 
-              duration={1}
-              prefix=""
-              decimal=","
-              decimals={0} 
-              onEnd={({    pauseResume, reset, start, update }) => {
-                  setTimeout(function(){ start() }, 6000);
-              }}/>%</h1>
+                <h1>
+                  <CountUp
+                    end={40}
+                    duration={1}
+                    prefix=""
+                    decimal=","
+                    decimals={0}
+                    onEnd={({ pauseResume, reset, start, update }) => {
+                      setTimeout(function () {
+                        start();
+                      }, 6000);
+                    }}
+                  />
+                  %
+                </h1>
                 <p>De incidentes remediados</p>
               </div>
             </section>

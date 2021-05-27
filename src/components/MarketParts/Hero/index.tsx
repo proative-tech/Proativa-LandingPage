@@ -1,4 +1,6 @@
+/* eslint-disable react/require-default-props */
 import { useRouter } from 'next/router';
+import { Link } from 'react-scroll';
 import { ReactNode } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Button } from '../../Button';
@@ -13,14 +15,16 @@ import {
 
 interface HeroSolutionProps {
   children: ReactNode;
+  id: string;
+  to?: string;
 }
 
-export function HeroMaketOrCases({ children }: HeroSolutionProps) {
+export function HeroMaketOrCases({ children, id, to }: HeroSolutionProps) {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 920 });
   const router = useRouter();
 
   return (
-    <Container>
+    <Container id={id}>
       <ContainerTop>
         <Content>{children}</Content>
         {!isMobileOrTablet && (
@@ -30,9 +34,9 @@ export function HeroMaketOrCases({ children }: HeroSolutionProps) {
         )}
       </ContainerTop>
       <ContainerBottom>
-        <a href="#">
+        <Link to={to} smooth duration={700} style={{ cursor: 'pointer' }}>
           <img src="/images/icon-arrow.svg" alt="" />
-        </a>
+        </Link>
       </ContainerBottom>
     </Container>
   );

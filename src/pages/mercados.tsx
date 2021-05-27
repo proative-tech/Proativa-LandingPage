@@ -12,7 +12,7 @@ export default function Index() {
     <>
       <Container>
         <Header />
-        <HeroMaketOrCases>
+        <HeroMaketOrCases id="mkt-top" to="mkt-logista">
           <div className="content__text">
             <h1>Mercados de Atuação</h1>
             <p>
@@ -25,7 +25,11 @@ export default function Index() {
         </HeroMaketOrCases>
       </Container>
       <ContainerInfos>
-        <ContainerImgLeft src="/images/1_market.png" name="logistica">
+        <ContainerImgLeft
+          src="/images/1_market.png"
+          name="logistica"
+          id="mkt-logista"
+        >
           <header className="headerContent">
             <h1>Logística</h1>
             <p>
@@ -61,7 +65,11 @@ export default function Index() {
             </div>
           </div>
         </ContainerImgLeft>
-        <ContainerImgRight src="/images/2_market.png" name="logistica">
+        <ContainerImgRight
+          src="/images/2_market.png"
+          name="logistica"
+          id="mkt-Health"
+        >
           <header className="headerContent">
             <h1>Health and Care</h1>
             <p>
@@ -97,7 +105,11 @@ export default function Index() {
             </div>
           </div>
         </ContainerImgRight>
-        <ContainerImgLeft src="/images/3_market.png" name="logistica">
+        <ContainerImgLeft
+          src="/images/3_market.png"
+          name="logistica"
+          id="mkt-contrucao"
+        >
           <header className="headerContent">
             <h1>Construção Civil</h1>
             <p>
@@ -133,7 +145,11 @@ export default function Index() {
             </div>
           </div>
         </ContainerImgLeft>
-        <ContainerImgRight src="/images/4_market.png" name="logistica">
+        <ContainerImgRight
+          src="/images/4_market.png"
+          name="logistica"
+          id="mkt-Financeiro"
+        >
           <header className="headerContent">
             <h1>Financeiro</h1>
             <p>
@@ -169,7 +185,11 @@ export default function Index() {
             </div>
           </div>
         </ContainerImgRight>
-        <ContainerImgLeft src="/images/5_market.png" name="logistica">
+        <ContainerImgLeft
+          src="/images/5_market.png"
+          name="logistica"
+          id="mkt-Outros"
+        >
           <header className="headerContent">
             <h1>Outros Segmentos</h1>
             <p>

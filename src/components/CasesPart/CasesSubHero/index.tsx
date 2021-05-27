@@ -12,7 +12,7 @@ export const CaseSubHero = ({ children }: CybersecurityProps) => {
   const router = useRouter();
 
   return (
-    <Container>
+    <Container id="cases-top">
       <Content>
         <Header>
           <span>Case Título</span>
