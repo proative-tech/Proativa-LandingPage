@@ -1,8 +1,32 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const animationFade = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
+
+const animationH1 = keyframes`
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    opacity: translateY(0);
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   max-width: 1085px;
   margin: 0 auto;
+
+  animation: ${animationFade} 0.5s;
 
   html {
     scroll-behavior: smooth;
@@ -46,6 +70,8 @@ export const Content = styled.section`
       font-size: 2.75rem;
       line-height: 3.5625rem;
       font-family: 'Source Sans Pro';
+
+      animation: ${animationH1} 0.8s;
     }
 
     p {
@@ -55,6 +81,7 @@ export const Content = styled.section`
       color: #434343;
 
       margin-top: 13px;
+      animation: ${animationH1} 1.2s;
     }
   }
 
@@ -270,4 +297,8 @@ export const ContainerBottom = styled.div`
   margin-top: 50px;
 
   padding-bottom: 67px;
+
+  img {
+    animation: ${animationH1} 2s;
+  }
 `;
