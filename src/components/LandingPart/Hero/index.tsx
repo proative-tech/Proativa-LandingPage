@@ -69,9 +69,20 @@ function Hero() {
       </ContainerTop>
       {!isMobileOrTablet && (
         <ContainerBottom>
-          <a href="#lg-container-info">
+          <Link
+            to="lg-container-info"
+            smooth
+            duration={700}
+            style={{
+              display: 'inline-block',
+              zIndex: 20,
+              width: 60,
+              height: 40,
+              cursor: 'pointer',
+            }}
+          >
             <img src="/images/icon-arrow.svg" alt="" />
-          </a>
+          </Link>
         </ContainerBottom>
       )}
     </Container>

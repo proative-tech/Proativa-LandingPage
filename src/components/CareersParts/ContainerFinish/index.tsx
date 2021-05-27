@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-scroll';
 
 import { Container, ContainerTop, ContainerBottom, ContainerInfo, ContainerGoTop } from './styles';
 
@@ -53,9 +54,9 @@ export function ContainerFinish() {
         </div>
       </ContainerInfo>
       <ContainerGoTop>
-        <a href="#headerScroll" style={{ display: 'inline-block', zIndex: 20, width: 60, height: 40, cursor: 'pointer' }}>
+        <Link to="headerScroll" smooth duration={700} style={{ display: 'inline-block', zIndex: 20, width: 60, height: 40, cursor: 'pointer' }}>
           <img src="/images/arrow-go-top.svg" alt="seta para cima" />
-        </a>
+        </Link>
       </ContainerGoTop>
     </Container>
   );
