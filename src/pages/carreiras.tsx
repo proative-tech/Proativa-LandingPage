@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useWindowScroll } from 'react-use';
 
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
@@ -10,6 +11,8 @@ import { ContainerFinish } from '../components/CareersParts/ContainerFinish';
 import { Container, ContainerInfos } from '../styles/pages/Careers';
 
 export default function Index() {
+  const { y } = useWindowScroll();
+
   return (
     <>
       <Container>
