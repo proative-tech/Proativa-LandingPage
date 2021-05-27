@@ -18,31 +18,26 @@ export function Informations() {
             <div className="containerImg">
               <img src="/images/01_foguete.svg" alt="Seja Proativo" />
             </div>
-            <p className="title">Seja Proativo</p>
-            <p>
-              Identifique os problemas antes que os seus usuários e se antecipe
-              nas soluções.
-            </p>
+            <p className="title">Cocriamos Valor</p>
+            <p>Lentes para gerar valor e potencializar negócios.</p>
           </div>
 
           <div className="containerInfo">
             <div className="containerImg">
               <img src="/images/02_relogio.svg" alt="Diminua o Downtime" />
             </div>
-            <p className="title">Diminua o Downtime</p>
-            <p>
-              Seja rápido e preciso na detecção e resolução dos problemas do seu
-              ambiente.
-            </p>
+            <p className="title">Continuidade</p>
+            <p>Garantimos a continuidade do seu negócio.</p>
           </div>
 
           <div className="containerInfo">
             <div className="containerImg">
               <img src="/images/03_alvo.svg" alt="Maior produtividade" />
             </div>
-            <p className="title">Maior produtividade</p>
+            <p className="title">Gestão e Agilidade</p>
             <p>
-              Automatize sistemas e diminua incidência de problemas recorrentes.
+              Oferecemos uma experiência única sobre um ciclo de trabalho
+              inteligente, ágil e uma gestão centralizada.
             </p>
           </div>
 
@@ -50,10 +45,10 @@ export function Informations() {
             <div className="containerImg">
               <img src="/images/04_lampada.svg" alt="Melhore sua Gestão" />
             </div>
-            <p className="title">Melhore sua Gestão</p>
+            <p className="title">Garantimos Qualidade</p>
             <p>
-              Tenha informações precisas para medir e melhorar o desempenho do
-              seu negócio em tempo real.
+              Cuidamos da sua operação garantindo disponibilidade, segurança e
+              qualidade na entrega.
             </p>
           </div>
         </ContainerInfos>

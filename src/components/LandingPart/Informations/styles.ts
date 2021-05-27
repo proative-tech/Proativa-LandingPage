@@ -90,6 +90,7 @@ export const ContainerInfos = styled.div`
   gap: 7rem;
 
   > div.containerInfo {
+    max-width: 140px;
     > div {
       height: 80px;
       width: 80px;

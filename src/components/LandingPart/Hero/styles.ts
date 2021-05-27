@@ -37,19 +37,19 @@ export const ContainerTop = styled.div`
 `;
 
 export const Content = styled.section`
-  min-width: 45%;
+  min-width: 48%;
 
   > div.content__text {
     margin-bottom: 3.125rem;
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.75rem;
       line-height: 3.5625rem;
       font-family: 'Source Sans Pro';
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.125rem;
       line-height: 1.75rem;
       line-height: 'Open Sans';
       color: #434343;

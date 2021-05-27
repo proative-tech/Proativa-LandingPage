@@ -1,10 +1,8 @@
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-scroll';
-import { Button } from '../../Button';
-
 import React, { useRef } from 'react';
-
+import { Button } from '../../Button';
 
 import {
   Container,
@@ -18,7 +16,7 @@ function Hero() {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 768 });
   const router = useRouter();
 
-  const myRef = useRef(null)
+  const myRef = useRef(null);
 
   return (
     <Container>
@@ -26,12 +24,13 @@ function Hero() {
         <Content>
           <div className="content__text">
             <h1>
-              Acreditamos no poder dos dados no processo de tomada de decisão.
+              Impulsionando operações com Serviços Gerenciados que focam o
+              negócio.
             </h1>
             <p>
-              Organizamos suas informações e facilitamos sua visualização,
-              permitindo definições mais precisas e com maior confiança na
-              performance e resultados.
+              Mais informações permitem decisões mais precisas. As soluções da
+              Proative usam os dados disponíveis para produzir as melhores
+              tomadas de decisões.
             </p>
           </div>
 
@@ -69,11 +68,11 @@ function Hero() {
         </ContainerImg>
       </ContainerTop>
       {!isMobileOrTablet && (
-       
         <ContainerBottom>
-          <a href="#inicio"><img src="/images/icon-arrow.svg" alt="" /></a>
+          <a href="#inicio">
+            <img src="/images/icon-arrow.svg" alt="" />
+          </a>
         </ContainerBottom>
-        
       )}
     </Container>
   );

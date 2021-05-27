@@ -22,24 +22,20 @@ export const About = ({ children }: AboutProps) => {
     <Element name="inicio" className="element">
       <Container>
         <ContainerImg>
-          <img
-            src={is1920 ? '/images/home_1920.png' : '/images/home1_1366.png'}
-            alt="proative"
-          />
+          <div className="video" />
         </ContainerImg>
         <Content>
           <Header>
-            <span>Sobre a Proative</span>
+            <span>Sobre a Proative Technology</span>
             <h1>
               Somos uma empresa de tecnologia especializada em soluções
-              inovadoras de gerenciamento de informações.
+              inovadoras de serviços gerenciados.
             </h1>
             <p>
-              Oferecemos soluções de gerenciamento de TI que te possibilitam
-              visualizar seus dados e dispositivos de forma fácil, impulsionando
-              operações e serviços para conectar, integrar e analisar seus
-              indicadores de performance com segurança, agilidade, eficiência e
-              colaboração.
+              Trazemos ordem e simplicidade a ambientes complexos facilitando a
+              tomada de decisão. Trabalhamos o equilíbrio entre criatividade,
+              tecnologia, governança e agilidade, sustentada sempre, por pessoas
+              apaixonadas pelo sucesso.
             </p>
           </Header>
           <Footer>

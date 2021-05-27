@@ -16,37 +16,36 @@ export const Container = styled.button<ContainerProps>`
 
   width: 100%;
 
-  ${
-    ({ buttonType }) => buttonType === 'primary' && css`
+  ${({ buttonType }) =>
+    buttonType === 'primary' &&
+    css`
       color: #fff;
-      background: linear-gradient(to right, #f4f4f4 50%, #EB0029 50%);
+      background: linear-gradient(to right, #fff 50%, #eb0029 50%);
       background-position: right bottom;
       background-size: 200% 100%;
 
       transition: all 0.3s ease;
 
-
       &:hover {
         background-position: left bottom;
-        color: #EB0029;
-        border-color: #f4f4f4;
+        color: #eb0029;
+        border-color: #fff;
       }
-    `
-  }
+    `}
 
-  ${
-    ({ buttonType }) => buttonType === 'secondary' && css`
-      background: #f4f4f4;
+  ${({ buttonType }) =>
+    buttonType === 'secondary' &&
+    css`
+      background: #fff;
       border-color: #000000;
       color: #000000;
 
       transition: all 0.3s ease;
 
       &:hover {
-        border-color: #f4f4f4;
+        border-color: #fff;
       }
-    `
-  }
+    `}
 
   @media (max-width: 490px) {
     font-size: 12px;

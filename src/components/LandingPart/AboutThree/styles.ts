@@ -4,9 +4,12 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+  margin-top: 92px;
+
   @media (max-width: 928px) {
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
   }
 `;
 
@@ -64,8 +67,8 @@ export const Footer = styled.div`
   margin-top: 2.5rem;
 
   h3 {
-    font-size: 1rem;
-    line-height: 1.3125rem;
+    font-size: 2.25rem;
+    line-height: 3.125rem;
   }
 
   p {
@@ -74,14 +77,6 @@ export const Footer = styled.div`
     color: #434343;
 
     margin-top: 1.6875rem;
-  }
-
-  @media (min-width: 1772px) {
-    max-width: 70%;
-  }
-
-  @media (min-width: 1518px) {
-    max-width: 80%;
   }
 
   @media (min-width: 1441px) {
@@ -95,16 +90,22 @@ export const Footer = styled.div`
     }
   }
 
-  @media (max-width: 1441px) {
-    max-width: 83%;
+  @media (min-width: 1518px) {
+    max-width: 80%;
+
     p {
-      font-size: 0.875rem;
-      line-height: 24px;
-      color: #434343;
-      margin-right: 100px;
-      margin-top: 2rem;
+      width: 80%;
     }
   }
+
+  @media (min-width: 1772px) {
+    max-width: 60%;
+
+    p {
+      width: 80%;
+    }
+  }
+
   @media (max-width: 1260px) {
     max-width: 83%;
     margin-top: 18px;
@@ -124,7 +125,7 @@ export const Footer = styled.div`
     p {
       font-size: 12px;
       line-height: 24px;
-      margin-right: 30px
+      margin-right: 30px;
     }
   }
 `;

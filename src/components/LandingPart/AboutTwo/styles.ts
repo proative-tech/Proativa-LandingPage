@@ -8,8 +8,6 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
   }
-
-
 `;
 
 export const ContainerImg = styled.div`
@@ -29,7 +27,6 @@ export const ContainerImg = styled.div`
 export const Content = styled.div`
   padding: 4.9rem 4rem;
   width: 100%;
-
 
   @media (min-width: 1441px) {
     // max-width: 780px;
@@ -62,7 +59,7 @@ export const Content = styled.div`
     max-width: 90%;
     margin-left: 0%;
     p {
-      margin-left: 0px
+      margin-left: 0px;
     }
   }
 `;
@@ -71,7 +68,7 @@ export const Header = styled.div`
   span {
     font-size: 1rem;
     line-height: 1.1875rem;
-    color: #EB0029;
+    color: #eb0029;
     font-weight: 300;
     font-family: 'Source Sans Pro';
   }
@@ -91,28 +88,23 @@ export const Header = styled.div`
     margin-top: 2rem;
   }
 
-  @media (min-width: 1772px) {
-    max-width: 70%;
+  @media (min-width: 1441px) {
+    max-width: 73%;
+    margin-left: auto;
   }
-
 
   @media (min-width: 1518px) {
     max-width: 80%;
   }
 
-  @media (min-width: 1441px) {
-    max-width: 73%;
-    margin-left: auto;
-    p {
-      margin-left: 280px;
-      line-height: 24px;
-    }
+  @media (min-width: 1772px) {
+    max-width: 70%;
   }
 
   @media (max-width: 1440px) {
     max-width: 83%;
     margin-left: auto;
-    h1{
+    h1 {
       margin-left: -100px;
     }
     p {
@@ -131,7 +123,17 @@ export const Header = styled.div`
   @media (max-width: 928px) {
     max-width: 70%;
 
-    h1, p {
+    margin-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    h1,
+    p {
+      margin: 0;
+      margin-top: 17px;
       text-align: left;
     }
   }
