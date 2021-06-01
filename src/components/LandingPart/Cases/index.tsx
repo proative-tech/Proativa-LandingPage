@@ -29,10 +29,31 @@ export function Cases({ children }: CasesProps) {
   const carousel = useRef<CarouseRefData | any>();
 
   const isMobileOrTablet = useMediaQuery({ maxWidth: 768 });
+  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
 
   const items = [1, 2, 3];
 
   const initialValue = 0;
+
+  const [isShowElement, setIsShowElement] = useState(false);
+
+  const handleScroll = () => {
+    let heightEle = window.innerHeight;
+
+    heightEle = isMobileOrTabled
+      ? window.innerHeight + 700
+      : window.innerHeight + 700;
+
+    if (!isShowElement && window.pageYOffset >= heightEle) {
+      setIsShowElement(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Container>
@@ -49,53 +70,53 @@ export function Cases({ children }: CasesProps) {
             <section className="section-item">
               <div className="iten">
                 <h1>
-                  <CountUp
-                    end={55}
-                    duration={5}
-                    prefix="+"
-                    decimal="."
-                    decimals={3}
-                    onEnd={({ pauseResume, reset, start, update }) => {
-                      setTimeout(function () {
-                        start();
-                      }, 3000);
-                    }}
-                  />
+                  {isShowElement ? (
+                    <CountUp
+                      end={55}
+                      duration={5}
+                      prefix="+"
+                      decimal="."
+                      decimals={3}
+                      start={0}
+                    />
+                  ) : (
+                    '+0'
+                  )}
                 </h1>
                 <p>Itens monitorados</p>
               </div>
 
               <div className="iten">
                 <h1>
-                  <CountUp
-                    end={20}
-                    duration={5}
-                    prefix="+"
-                    decimal="."
-                    decimals={3}
-                    onEnd={({ pauseResume, reset, start, update }) => {
-                      setTimeout(function () {
-                        start();
-                      }, 3000);
-                    }}
-                  />
+                  {isShowElement ? (
+                    <CountUp
+                      end={20}
+                      duration={5}
+                      prefix="+"
+                      decimal="."
+                      decimals={3}
+                      start={0}
+                    />
+                  ) : (
+                    '+0'
+                  )}
                 </h1>
                 <p>Devices monitorados</p>
               </div>
               <div className="iten">
                 <h1>
-                  <CountUp
-                    end={25}
-                    duration={5}
-                    prefix="+"
-                    decimal="."
-                    decimals={3}
-                    onEnd={({ pauseResume, reset, start, update }) => {
-                      setTimeout(function () {
-                        start();
-                      }, 3000);
-                    }}
-                  />
+                  {isShowElement ? (
+                    <CountUp
+                      end={25}
+                      duration={5}
+                      prefix="+"
+                      decimal="."
+                      decimals={3}
+                      start={0}
+                    />
+                  ) : (
+                    '+0'
+                  )}
                 </h1>
                 <p>Incidentes/mês</p>
               </div>
