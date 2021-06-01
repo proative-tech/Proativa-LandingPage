@@ -11,7 +11,7 @@ export const AboutTwo = () => {
 
     heightEle = isMobileOrTabled
       ? window.innerHeight + 700
-      : window.innerHeight;
+      : window.innerHeight + 400;
 
     if (!isAnimated && window.pageYOffset >= heightEle) {
       setIsAnimated(true);

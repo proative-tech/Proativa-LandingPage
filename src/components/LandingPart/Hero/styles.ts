@@ -26,7 +26,6 @@ export const Container = styled.div`
   max-width: 1085px;
   width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
 
   animation: ${animationFade} 0.5s;
 
@@ -291,8 +290,6 @@ export const ContainerBottom = styled.div`
   justify-content: center;
 
   margin-top: 50px;
-
-  padding-bottom: 67px;
 
   img {
     animation: ${animationH1} 2s;

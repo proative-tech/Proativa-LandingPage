@@ -1,5 +1,5 @@
 import { Header } from '../components/Header';
-import { Container } from '../styles/pages/FaleConosco';
+import { Container, ButtonAsLink } from '../styles/pages/FaleConosco';
 import { HeroFaleConosco } from '../components/FaleConosco/Hero';
 import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
@@ -19,7 +19,9 @@ export default function Index() {
               Clique no botão abaixo para solicitar o contato de um deles.
             </p>
 
-            <Button>Solicitar contato</Button>
+            <ButtonAsLink as="a" href="mailto:sac@proative.com">
+              Solicitar contato
+            </ButtonAsLink>
 
             <div className="info__text">
               <div>
