@@ -1,7 +1,22 @@
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+import {
+  toBottomFromTopSmall,
+  animationsObj,
+  animationFade,
+} from '../../../utils/animations';
 
-export const Container = styled.div`
-  background: #fff;
+export type VisibledProp = {
+  visibled: boolean;
+};
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    background: #fff;
+    ${visibled &&
+    css`
+      animation: ${animationFade} 0.8s;
+    `}
+  `}
 `;
 
 export const Content = styled.div`
@@ -23,7 +38,7 @@ export const Content = styled.div`
   }
 `;
 
-export const Header = styled.div`
+export const Header = styled.div<VisibledProp>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +54,16 @@ export const Header = styled.div`
       font-family: 'Source Sans Pro';
 
       color: #eb0029;
+
+      display: inline-block;
+
+      ${({ visibled }) => css`
+        opacity: ${visibled ? 1 : 0};
+        ${visibled &&
+        css`
+          animation: ${toBottomFromTopSmall} 2.4s;
+        `}
+      `}
     }
 
     h1 {
@@ -50,6 +75,14 @@ export const Header = styled.div`
       color: #434343;
 
       margin-top: 1rem;
+
+      ${({ visibled }) => css`
+        opacity: ${visibled ? 1 : 0};
+        ${visibled &&
+        css`
+          animation: ${toBottomFromTopSmall} 3s;
+        `}
+      `}
 
       strong {
         font-weight: 700;
@@ -84,13 +117,14 @@ export const Header = styled.div`
   }
 `;
 
-export const ContainerInfos = styled.div`
+export const ContainerInfos = styled.div<VisibledProp>`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 7rem;
 
   > div.containerInfo {
     max-width: 140px;
+
     > div {
       height: 80px;
       width: 80px;
@@ -115,6 +149,46 @@ export const ContainerInfos = styled.div`
 
       margin-top: 11px;
     }
+  }
+
+  > div.containerInfo:nth-child(1) {
+    ${({ visibled }) => css`
+      opacity: ${visibled ? 1 : 0};
+      ${visibled &&
+      css`
+        animation: ${animationsObj.toLeftFromRight(-50)} 4s;
+      `}
+    `}
+  }
+
+  > div.containerInfo:nth-child(2) {
+    ${({ visibled }) => css`
+      opacity: ${visibled ? 1 : 0};
+      ${visibled &&
+      css`
+        animation: ${animationsObj.toLeftFromRight(-250)} 4s;
+      `}
+    `}
+  }
+
+  > div.containerInfo:nth-child(3) {
+    ${({ visibled }) => css`
+      opacity: ${visibled ? 1 : 0};
+      ${visibled &&
+      css`
+        animation: ${animationsObj.toLeftFromRight(-450)} 4s;
+      `}
+    `}
+  }
+
+  > div.containerInfo:nth-child(4) {
+    ${({ visibled }) => css`
+      opacity: ${visibled ? 1 : 0};
+      ${visibled &&
+      css`
+        animation: ${animationsObj.toLeftFromRight(-650)} 4s;
+      `}
+    `}
   }
 
   @media (max-width: 1152px) {

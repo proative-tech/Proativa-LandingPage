@@ -1,10 +1,28 @@
+import { useEffect, useState } from 'react';
+import { Events } from 'react-scroll';
 import { Container, Content, Header, ContainerInfos, Divider } from './styles';
 
 export function Informations() {
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  const handleScroll = () => {
+    const heightEle = window.innerHeight - 320;
+
+    if (window.pageYOffset >= heightEle) {
+      setIsAnimated(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <Container id="lg-container-info">
+    <Container id="lg-container-info" visibled={isAnimated}>
       <Content>
-        <Header>
+        <Header visibled={isAnimated}>
           <div>
             <span>Nosso propósito</span>
             <h1>
@@ -13,7 +31,7 @@ export function Informations() {
           </div>
         </Header>
 
-        <ContainerInfos>
+        <ContainerInfos visibled={isAnimated}>
           <div className="containerInfo">
             <div className="containerImg">
               <img src="/images/01_foguete.svg" alt="Seja Proativo" />
