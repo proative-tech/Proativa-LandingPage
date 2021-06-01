@@ -13,6 +13,23 @@ export const CookiesAlert = () => {
     setIsModalShow(!isModalShow);
   }, [isModalShow]);
 
+  function AcceptCookiesMandatories() {
+    Cookies.set('cookieTesteProative', 'true', {
+      expires: 150,
+    });
+    setAccetedCookies(true);
+  }
+
+  function AcceptCookiesAllMain() {
+    Cookies.set('cookieTesteProative', 'true', {
+      expires: 150,
+    });
+    Cookies.set('cookiesTesteTerceiros', 'true', {
+      expires: 150,
+    });
+    setAccetedCookies(true);
+  }
+
   return (
     <>
       {!accetedCookies && (
@@ -35,12 +52,7 @@ export const CookiesAlert = () => {
                   <button
                     type="button"
                     id="buttonAcee"
-                    onClick={() => {
-                      Cookies.set('cookieTesteProative', 'true', {
-                        expires: 150,
-                      });
-                      setAccetedCookies(true);
-                    }}
+                    onClick={AcceptCookiesAllMain}
                   >
                     Aceito
                   </button>
@@ -71,7 +83,12 @@ export const CookiesAlert = () => {
             </CookieConsent>
           </Container>
 
-          <ConfigCookies isOpen={isModalShow} onRequestClose={onRequestClose} />
+          <ConfigCookies
+            isOpen={isModalShow}
+            onRequestClose={onRequestClose}
+            AcceptAllCookies={AcceptCookiesAllMain}
+            AcceptMandatoriesCookies={AcceptCookiesMandatories}
+          />
         </>
       )}
     </>

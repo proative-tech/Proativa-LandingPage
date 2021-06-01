@@ -41,4 +41,35 @@ export const ContainerButtons = styled.div`
   button + button {
     margin-left: 24px;
   }
+
+  @media (max-width: 720px) {
+    display: flex;
+    width: 100%;
+
+    button:first-child {
+      width: 50%;
+    }
+    button:nth-child(2) {
+      width: 50%;
+      padding: 7px 20px;
+    }
+  }
+
+  @media (max-width: 470px) {
+    flex-direction: column;
+
+    button:first-child {
+      width: 100%;
+    }
+
+    button:nth-child(2) {
+      width: 100%;
+      padding: 7px 28px;
+    }
+
+    button + button {
+      margin-top: 12px;
+      margin-left: 0px;
+    }
+  }
 `;

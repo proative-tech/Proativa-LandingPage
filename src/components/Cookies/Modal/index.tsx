@@ -1,3 +1,4 @@
+import { useEffect, useState, useCallback, useContext } from 'react';
 import Modal from 'react-modal';
 
 import { Container } from './styles';
@@ -6,6 +7,8 @@ import { Toogle } from './Toggle';
 interface ConfigCookiesProps {
   isOpen: boolean;
   onRequestClose: () => void;
+  AcceptAllCookies: () => void;
+  AcceptMandatoriesCookies: () => void;
 }
 
 Modal.setAppElement('#__next');
@@ -13,7 +16,27 @@ Modal.setAppElement('#__next');
 export const ConfigCookies = ({
   isOpen,
   onRequestClose,
+  AcceptMandatoriesCookies,
+  AcceptAllCookies,
 }: ConfigCookiesProps) => {
+  const [mandatoryCookies, setMandatoryCookies] = useState(true);
+  const [thirdPartyCookies, setchirdPartyCookies] = useState(false);
+  const [allCookiesAccept, setAllCookiesAccept] = useState(true);
+
+  function handleAcceptCookies() {}
+
+  const handleSelectThirdPartyCookies = useCallback((value: boolean) => {
+    setchirdPartyCookies(value);
+  }, []);
+
+  useEffect(() => {
+    if (thirdPartyCookies) {
+      setAllCookiesAccept(false);
+    } else {
+      setAllCookiesAccept(true);
+    }
+  }, [thirdPartyCookies]);
+
   return (
     <Modal
       isOpen={isOpen}
@@ -36,11 +59,30 @@ export const ConfigCookies = ({
         </p>
 
         <form onSubmit={() => {}}>
-          <Toogle />
-          <Toogle />
+          <div className="Toogles">
+            <Toogle
+              label="Estritamente obrigatórios"
+              defaultValue={mandatoryCookies}
+              disabled={allCookiesAccept}
+            />
+            <div style={{ marginTop: '0.5rem' }}>
+              <Toogle
+                seleted={handleSelectThirdPartyCookies}
+                label="Cookies de terceiros"
+                defaultValue={thirdPartyCookies}
+              />
+            </div>
+          </div>
           <div className="containerBtns">
-            <button type="button">Confirmar escolha</button>
-            <button type="button" className="btnAll" disabled>
+            <button type="button" onClick={AcceptMandatoriesCookies}>
+              Confirmar escolha
+            </button>
+            <button
+              type="button"
+              className="btnAll"
+              disabled={allCookiesAccept}
+              onClick={AcceptAllCookies}
+            >
               Aceitar todos Cookies
             </button>
           </div>

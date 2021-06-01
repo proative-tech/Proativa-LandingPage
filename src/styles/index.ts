@@ -75,5 +75,22 @@ export default createGlobalStyle`
     padding: 3rem;
     position: relative;
 
+    @media (max-width: 768px) {
+      margin: 0 26px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    div.CookieConsent {
+      > div:first-child {
+        width: 100%;
+        margin: 0 !important;
+        margin-bottom: 16px !important;
+      }
+
+      > div:nth-child(2) {
+        width: 100%;
+      }
+  }
   }
 `;

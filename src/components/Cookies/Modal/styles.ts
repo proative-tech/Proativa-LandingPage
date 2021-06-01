@@ -18,13 +18,19 @@ export const Container = styled.div`
   div.containerBtns {
     margin-top: 36px;
     margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
 
     > button {
       background: #ffffff 0% 0% no-repeat padding-box;
       border: 1px solid #595959;
-      padding: 8px 28px;
+      padding: 8px 20px;
 
       font-size: 0.75rem;
+
+      width: 50%;
 
       & + button {
         margin-left: 22px;
@@ -44,5 +50,19 @@ export const Container = styled.div`
 
     font-size: 0.75rem;
     color: #696969;
+  }
+
+  @media (max-width: 490px) {
+    div.containerBtns {
+      flex-direction: column;
+
+      button {
+        width: 100%;
+        & + button {
+          margin-left: 0;
+          margin-top: 1rem;
+        }
+      }
+    }
   }
 `;
