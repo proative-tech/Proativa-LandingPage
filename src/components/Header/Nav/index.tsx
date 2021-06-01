@@ -85,7 +85,7 @@ export function Nav() {
             <Link href="/carreiras">CARREIRAS</Link>
           </li>
           <li>
-            <Link href="/">BLOG</Link>
+            <Link href="/blog">BLOG</Link>
           </li>
           <li>
             <Link href="/fale-conosco">FALE CONOSCO</Link>
