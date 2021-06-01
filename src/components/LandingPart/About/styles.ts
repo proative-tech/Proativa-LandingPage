@@ -301,16 +301,16 @@ export const Container = styled.div<VisibledProp>`
     css`
       ${ContainerImg} {
         div[data-video] {
-          animation: ${animationsObj.toLeftFromRight(-150)} 4s;
+          animation: ${animationsObj.toLeftFromRight(-150)} 3s;
         }
       }
 
       ${Header} {
-        animation: ${animationsObj.toLeftFromRight(650)} 3s;
+        animation: ${animationsObj.toLeftFromRight(650)} 2s;
       }
 
       ${Footer} {
-        animation: ${animationsObj.toLeftFromRight(650)} 3s;
+        animation: ${animationsObj.toLeftFromRight(650)} 2s;
       }
     `}
   `}

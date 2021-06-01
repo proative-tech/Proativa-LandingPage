@@ -166,7 +166,7 @@ export const ContainerInfos = styled.div<VisibledProp>`
       opacity: ${visibled ? 1 : 0};
       ${visibled &&
       css`
-        animation: ${animationsObj.toYAnimation(50)} 5s;
+        animation: ${animationsObj.toYAnimation(50)} 4s;
       `}
     `}
   }
@@ -176,7 +176,7 @@ export const ContainerInfos = styled.div<VisibledProp>`
       opacity: ${visibled ? 1 : 0};
       ${visibled &&
       css`
-        animation: ${animationsObj.toYAnimation(50)} 7s;
+        animation: ${animationsObj.toYAnimation(50)} 5s;
       `}
     `}
   }
@@ -186,7 +186,7 @@ export const ContainerInfos = styled.div<VisibledProp>`
       opacity: ${visibled ? 1 : 0};
       ${visibled &&
       css`
-        animation: ${animationsObj.toYAnimation(50)} 9s;
+        animation: ${animationsObj.toYAnimation(50)} 6s;
       `}
     `}
   }

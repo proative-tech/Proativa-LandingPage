@@ -166,12 +166,12 @@ export const Container = styled.div<VisibledProp>`
     css`
       ${ContainerImg} {
         img[data-img] {
-          animation: ${animationsObj.toYAnimation(50)} 3s;
+          animation: ${animationsObj.toYAnimation(50)} 5s;
         }
       }
 
       ${Header} {
-        animation: ${animationsObj.toXAnimation(-650)} 3s;
+        animation: ${animationsObj.toXAnimation(-650)} 2s;
       }
     `}
   `}
