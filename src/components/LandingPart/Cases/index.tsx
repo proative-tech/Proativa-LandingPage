@@ -1,9 +1,9 @@
 /* eslint-disable react/require-default-props */
-import { useRef, ReactNode } from 'react';
+import React, { useRef, ReactNode, useState, useEffect } from 'react';
 import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel';
 import { useMediaQuery } from 'react-responsive';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
-import React, { useEffect, useState } from 'react';
+
 import VisibilitySensor from 'react-visibility-sensor';
 
 import CountUp, { useCountUp } from 'react-countup';
@@ -15,7 +15,6 @@ import {
   ContainerBottomCarousel,
 } from './styles';
 import { CardComments } from '../CardComments';
-import { start } from 'repl';
 
 interface CarouseRefData extends ReactElasticCarouselProps {
   slidePrev: () => void;
@@ -26,18 +25,14 @@ interface CasesProps {
   children?: ReactNode;
 }
 
-export function Cases({ children }: CasesProps)  {
-
-  
+export function Cases({ children }: CasesProps) {
   const carousel = useRef<CarouseRefData | any>();
 
   const isMobileOrTablet = useMediaQuery({ maxWidth: 768 });
 
   const items = [1, 2, 3];
 
-  let initialValue = 0
-  
-  // useEffect(()=> useCountUp(), [])
+  const initialValue = 0;
 
   return (
     <Container>
@@ -53,41 +48,55 @@ export function Cases({ children }: CasesProps)  {
 
             <section className="section-item">
               <div className="iten">
-              <h1><CountUp 
-              end={55} 
-              duration={6}
-              prefix="+"
-              decimal="."
-              decimals={3} 
-              onEnd={({    pauseResume, reset, start, update }) => {
-                  setTimeout(function(){ start() }, 3000);
-              }}/></h1>
+                <h1>
+                  <CountUp
+                    end={55}
+                    duration={5}
+                    prefix="+"
+                    decimal="."
+                    decimals={3}
+                    onEnd={({ pauseResume, reset, start, update }) => {
+                      setTimeout(function () {
+                        start();
+                      }, 3000);
+                    }}
+                  />
+                </h1>
                 <p>Itens monitorados</p>
               </div>
 
               <div className="iten">
-              <h1><CountUp 
-              end={20} 
-              duration={6}
-              prefix="+"
-              decimal="."
-              decimals={3} 
-              onEnd={({    pauseResume, reset, start, update }) => {
-                  setTimeout(function(){ start() }, 3000);
-              }}/></h1>
-              <p>Devices monitorados</p>
+                <h1>
+                  <CountUp
+                    end={20}
+                    duration={5}
+                    prefix="+"
+                    decimal="."
+                    decimals={3}
+                    onEnd={({ pauseResume, reset, start, update }) => {
+                      setTimeout(function () {
+                        start();
+                      }, 3000);
+                    }}
+                  />
+                </h1>
+                <p>Devices monitorados</p>
               </div>
               <div className="iten">
-        
-              <h1><CountUp 
-              end={25} 
-              duration={6}
-              prefix="+"
-              decimal="."
-              decimals={3} 
-              onEnd={({    pauseResume, reset, start, update }) => {
-                  setTimeout(function(){ start() }, 3000);
-              }}/></h1>
+                <h1>
+                  <CountUp
+                    end={25}
+                    duration={5}
+                    prefix="+"
+                    decimal="."
+                    decimals={3}
+                    onEnd={({ pauseResume, reset, start, update }) => {
+                      setTimeout(function () {
+                        start();
+                      }, 3000);
+                    }}
+                  />
+                </h1>
                 <p>Incidentes/mês</p>
               </div>
             </section>

@@ -21,6 +21,26 @@ export const animationsObj = {
         transform: translateX(0px);
       }
   `,
+  toXAnimation: (value: number) => keyframes`
+  from {
+      opacity: 0;
+      transform: translateX(${value}px)
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+`,
+  toYAnimation: (value: number) => keyframes`
+  from {
+      opacity: 0;
+      transform: translateY(${value}px)
+    }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+`,
 };
 
 export const toBottomFromTopSmall = keyframes`

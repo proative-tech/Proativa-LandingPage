@@ -6,9 +6,9 @@ export function Informations() {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    const heightEle = window.innerHeight - 320;
+    const heightEle = window.innerHeight - 450;
 
-    if (window.pageYOffset >= heightEle) {
+    if (!isAnimated && window.pageYOffset >= heightEle) {
       setIsAnimated(true);
     }
   };

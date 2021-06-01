@@ -1,8 +1,31 @@
+import { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { Container, ContainerImg, Content, Header } from './styles';
 
 export const AboutTwo = () => {
+  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  const handleScroll = () => {
+    let heightEle = window.innerHeight;
+
+    heightEle = isMobileOrTabled
+      ? window.innerHeight + 700
+      : window.innerHeight;
+
+    if (!isAnimated && window.pageYOffset >= heightEle) {
+      setIsAnimated(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <Container>
+    <Container visibled={isAnimated}>
       <Content>
         <Header>
           <h1>Governança de TI impulsionando e colaborando seu negócio.</h1>
@@ -15,7 +38,7 @@ export const AboutTwo = () => {
         </Header>
       </Content>
       <ContainerImg>
-        <img src="/images/home2.png" alt="proative" />
+        <img src="/images/home2.png" alt="proative" data-img="img" />
       </ContainerImg>
     </Container>
   );

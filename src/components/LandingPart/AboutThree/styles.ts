@@ -1,17 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  margin-top: 92px;
-
-  @media (max-width: 928px) {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-  }
-`;
+import styled, { css } from 'styled-components';
+import { VisibledProp } from '../Informations/styles';
+import { animationFade, animationsObj } from '../../../utils/animations';
 
 export const ContainerImg = styled.div`
   max-width: 100%;
@@ -127,5 +116,33 @@ export const Footer = styled.div`
       line-height: 24px;
       margin-right: 30px;
     }
+  }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    opacity: ${visibled ? 1 : 0};
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-top: 92px;
+    animation: ${animationFade} 2s;
+    ${visibled &&
+    css`
+      ${ContainerImg} {
+        img[data-img] {
+          animation: ${animationsObj.toYAnimation(50)} 5s;
+        }
+      }
+
+      ${Footer} {
+        animation: ${animationsObj.toXAnimation(650)} 5s;
+      }
+    `}
+  `}
+  @media (max-width: 928px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
   }
 `;

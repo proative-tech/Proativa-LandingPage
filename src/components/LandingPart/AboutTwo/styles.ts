@@ -1,14 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  @media (max-width: 928px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../Informations/styles';
 
 export const ContainerImg = styled.div`
   max-width: 100%;
@@ -161,5 +153,31 @@ export const Header = styled.div`
       line-height: 24px;
       margin-left: 0px;
     }
+  }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    opacity: ${visibled ? 1 : 0};
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    animation: ${animationFade} 2s;
+    ${visibled &&
+    css`
+      ${ContainerImg} {
+        img[data-img] {
+          animation: ${animationsObj.toYAnimation(50)} 3s;
+        }
+      }
+
+      ${Header} {
+        animation: ${animationsObj.toXAnimation(-650)} 3s;
+      }
+    `}
+  `}
+
+  @media (max-width: 928px) {
+    display: flex;
+    flex-direction: column;
   }
 `;

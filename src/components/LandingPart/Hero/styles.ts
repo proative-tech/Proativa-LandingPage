@@ -24,17 +24,12 @@ const animationH1 = keyframes`
 
 export const Container = styled.div`
   max-width: 1085px;
+  width: 100%;
   margin: 0 auto;
 
   animation: ${animationFade} 0.5s;
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   position: relative;
-
-  /* min-height: calc(100vh - 155px); */
 `;
 
 export const ContainerTop = styled.div`

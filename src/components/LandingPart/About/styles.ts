@@ -1,20 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  // background: #fff;
-
-  @media (max-width: 928px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../Informations/styles';
 
 export const ContainerImg = styled.div`
   max-width: 100%;
@@ -301,5 +287,36 @@ export const ContainerButton = styled.div`
 
   @media (max-width: 360px) {
     width: 100%;
+  }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  // animacoes
+  ${({ visibled }) => css`
+    opacity: ${visibled ? 1 : 0};
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    animation: ${animationFade} 2s;
+    ${visibled &&
+    css`
+      ${ContainerImg} {
+        div[data-video] {
+          animation: ${animationsObj.toLeftFromRight(-150)} 4s;
+        }
+      }
+
+      ${Header} {
+        animation: ${animationsObj.toLeftFromRight(650)} 3s;
+      }
+
+      ${Footer} {
+        animation: ${animationsObj.toLeftFromRight(650)} 3s;
+      }
+    `}
+  `}
+
+  @media (max-width: 928px) {
+    display: flex;
+    flex-direction: column;
   }
 `;

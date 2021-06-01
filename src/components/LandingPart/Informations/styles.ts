@@ -156,7 +156,7 @@ export const ContainerInfos = styled.div<VisibledProp>`
       opacity: ${visibled ? 1 : 0};
       ${visibled &&
       css`
-        animation: ${animationsObj.toLeftFromRight(-50)} 4s;
+        animation: ${animationsObj.toYAnimation(50)} 3s;
       `}
     `}
   }
@@ -166,7 +166,7 @@ export const ContainerInfos = styled.div<VisibledProp>`
       opacity: ${visibled ? 1 : 0};
       ${visibled &&
       css`
-        animation: ${animationsObj.toLeftFromRight(-250)} 4s;
+        animation: ${animationsObj.toYAnimation(50)} 5s;
       `}
     `}
   }
@@ -176,7 +176,7 @@ export const ContainerInfos = styled.div<VisibledProp>`
       opacity: ${visibled ? 1 : 0};
       ${visibled &&
       css`
-        animation: ${animationsObj.toLeftFromRight(-450)} 4s;
+        animation: ${animationsObj.toYAnimation(50)} 7s;
       `}
     `}
   }
@@ -186,7 +186,7 @@ export const ContainerInfos = styled.div<VisibledProp>`
       opacity: ${visibled ? 1 : 0};
       ${visibled &&
       css`
-        animation: ${animationsObj.toLeftFromRight(-650)} 4s;
+        animation: ${animationsObj.toYAnimation(50)} 9s;
       `}
     `}
   }
