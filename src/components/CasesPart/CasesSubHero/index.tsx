@@ -1,5 +1,6 @@
-import { ReactNode } from 'react';
+import { ReactNode, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { useMediaQuery } from 'react-responsive';
 import { Button } from '../../Button';
 import { Container, ContainerImg, Content, Header } from './styles';
 
@@ -11,8 +12,29 @@ interface CybersecurityProps {
 export const CaseSubHero = ({ children }: CybersecurityProps) => {
   const router = useRouter();
 
+  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  const handleScroll = () => {
+    let heightEle = window.innerHeight;
+
+    heightEle = isMobileOrTabled
+      ? window.innerHeight - 700
+      : window.innerHeight;
+
+    if (!isAnimated && window.pageYOffset >= heightEle) {
+      setIsAnimated(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <Container id="cases-top">
+    <Container id="cases-top" visibled={isAnimated}>
       <Content>
         <Header>
           <span>Case Título</span>

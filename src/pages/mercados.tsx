@@ -191,6 +191,7 @@ export default function Index() {
           src="/images/5_market.png"
           name="logistica"
           id="mkt-Outros"
+          pixelOffset
         >
           <header className="headerContent">
             <h1>Outros Segmentos</h1>

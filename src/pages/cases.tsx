@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import CountUp, { useCountUp } from 'react-countup';
+import { useMediaQuery } from 'react-responsive';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { HeroMaketOrCases } from '../components/MarketParts/Hero';
@@ -10,6 +11,26 @@ import { CaseSubHero } from '../components/CasesPart/CasesSubHero';
 import { ContainerInformation } from '../components/CasesPart/ContainerInformation';
 
 export default function Index() {
+  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  const handleScroll = () => {
+    let heightEle = window.innerHeight;
+
+    heightEle = isMobileOrTabled
+      ? window.innerHeight + 600
+      : window.innerHeight + 1200;
+
+    if (!isAnimated && window.pageYOffset >= heightEle) {
+      setIsAnimated(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       <Container>
@@ -37,57 +58,63 @@ export default function Index() {
             <section className="section-item">
               <div className="iten">
                 <h1>
-                  <CountUp
-                    end={99.98}
-                    duration={1}
-                    prefix=""
-                    decimal=","
-                    decimals={2}
-                    onEnd={({ pauseResume, reset, start, update }) => {
-                      setTimeout(function () {
-                        start();
-                      }, 6000);
-                    }}
-                  />
-                  %
+                  {isAnimated ? (
+                    <>
+                      <CountUp
+                        end={99.98}
+                        duration={1}
+                        prefix=""
+                        decimal=","
+                        decimals={2}
+                        start={0}
+                      />
+                      %
+                    </>
+                  ) : (
+                    '+0'
+                  )}
                 </h1>
                 <p>de disponibilidade aos negócios</p>
               </div>
 
               <div className="iten">
                 <h1>
-                  <CountUp
-                    end={25}
-                    duration={1}
-                    prefix=""
-                    decimal=","
-                    decimals={0}
-                    onEnd={({ pauseResume, reset, start, update }) => {
-                      setTimeout(function () {
-                        start();
-                      }, 6000);
-                    }}
-                  />
-                  %
+                  {isAnimated ? (
+                    <>
+                      <CountUp
+                        end={25}
+                        duration={1}
+                        prefix=""
+                        decimal=","
+                        decimals={0}
+                        start={0}
+                      />
+                      %
+                    </>
+                  ) : (
+                    '+0'
+                  )}
                 </h1>
                 <p>De redução de custos por meio da otimização de recursos</p>
               </div>
 
               <div className="iten">
                 <h1>
-                  <CountUp
-                    end={40}
-                    duration={1}
-                    prefix=""
-                    decimal=","
-                    decimals={0}
-                    onEnd={({ pauseResume, reset, start, update }) => {
-                      setTimeout(function () {
-                        start();
-                      }, 6000);
-                    }}
-                  />
-                  %
+                  {isAnimated ? (
+                    <>
+                      <CountUp
+                        end={40}
+                        duration={1}
+                        prefix=""
+                        decimal=","
+                        decimals={0}
+                        start={0}
+                      />
+                      %
+                    </>
+                  ) : (
+                    '+0'
+                  )}
                 </h1>
                 <p>De incidentes remediados</p>
               </div>

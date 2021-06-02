@@ -1,12 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  width: 100vw;
-
-  background: #fff;
-
-  padding: 77px 0;
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const Content = styled.div`
   max-width: 1085px;
@@ -92,4 +86,43 @@ export const ContainerRight = styled.div`
   @media (max-width: 928px) {
     order: -1;
   }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    width: 100vw;
+
+    background: #fff;
+
+    padding: 77px 0;
+
+    ${Content} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${ContainerLeft} {
+        div.containerLeftText:nth-child(1) {
+          animation: ${animationsObj.toXAnimation(-250)} 3s;
+        }
+
+        div.containerLeftText:nth-child(2) {
+          animation: ${animationsObj.toXAnimation(-350)} 3s;
+        }
+      }
+
+      ${ContainerRight} {
+        div.containerRightContent:nth-child(1) {
+          animation: ${animationsObj.toYAnimation(350)} 3s;
+        }
+        div.containerRightContent:nth-child(2) {
+          animation: ${animationsObj.toYAnimation(250)} 3s;
+        }
+        div.containerRightContent:nth-child(3) {
+          animation: ${animationsObj.toYAnimation(150)} 3s;
+        }
+      }
+    `}
+  `}
 `;

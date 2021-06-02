@@ -1,16 +1,6 @@
 import styled, { css } from 'styled-components';
-
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  background: #fff;
-
-  @media (max-width: 928px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 interface ContainerProps {
   modifier: boolean;
@@ -162,4 +152,45 @@ export const Header = styled.div`
   @media (max-width: 390px) {
     max-width: 100%;
   }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    background: #fff;
+
+    @media (max-width: 928px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    ${ContainerImg}, ${Content} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${ContainerImg} {
+        img {
+          animation: ${animationFade} 3s;
+        }
+      }
+
+      ${Header} {
+        span {
+          animation: ${animationsObj.toYAnimation(300)} 3s;
+        }
+
+        h1 {
+          animation: ${animationsObj.toYAnimation(200)} 3s;
+        }
+
+        p {
+          animation: ${animationsObj.toYAnimation(100)} 3s;
+        }
+      }
+    `}
+  `}
 `;
