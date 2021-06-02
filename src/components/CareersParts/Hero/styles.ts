@@ -1,10 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  margin: 0 auto;
-
-  position: relative;
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const ContainerTop = styled.div`
   display: flex;
@@ -82,4 +78,31 @@ export const ContainerBottom = styled.div`
       }
     }
   }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    margin: 0 auto;
+
+    position: relative;
+
+    animation: ${animationFade} 2s;
+
+    ${ContainerBottom} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${ContainerBottom} {
+        p {
+          animation: ${animationsObj.toYAnimation(350)} 3s;
+        }
+
+        h1 {
+          animation: ${animationsObj.toYAnimation(150)} 3s;
+        }
+      }
+    `}
+  `}
 `;

@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+import {  useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-scroll';
 
@@ -8,9 +9,33 @@ export function ContainerFinish() {
   const isMobile = useMediaQuery({ maxWidth: 490 });
   const isMobileUltra = useMediaQuery({ minWidth: 1920 });
   const def = useMediaQuery({ minWidth: 491, maxWidth: 1919 });
+  const [isAnimated, setIsAnimated] = useState(false);
 
+  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
+
+  const handleScroll = () => {
+    let heightEle = window.innerHeight;
+
+    heightEle = isMobileOrTabled
+      ? window.innerHeight - 300
+      : window.innerHeight + 800;
+
+    if (!isAnimated && window.pageYOffset >= heightEle) {
+      setIsAnimated(true);
+    }
+  };
+
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    const ContainerList = document.getElementById(`infosList`)
+
+    return () =>  window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
-    <Container>
+    <Container visibled={isAnimated}>
       <ContainerTop >
         <p className="tag">#vemserproative</p>
       </ContainerTop>
@@ -34,7 +59,7 @@ export function ContainerFinish() {
           />
         )}
       </ContainerBottom>
-      <ContainerInfo>
+      <ContainerInfo id="infosList">
         <h1>
           Dez atitude <br /> <strong>Proative</strong>
         </h1>

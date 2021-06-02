@@ -1,10 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  margin: 0 auto;
-
-  position: relative;
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const ContainerTop = styled.div`
   display: flex;
@@ -137,4 +133,35 @@ export const ContainerGoTop = styled.div`
   @media (max-width: 490px) {
     margin-top: 52px;
   }
+`;
+
+export const Container = styled.div<VisibledProp | any>`
+  ${({ visibled, animationList }) => css`
+    margin: 0 auto;
+
+    position: relative;
+    ${ContainerTop}, ${ContainerBottom},  ${ContainerInfo}, ${ContainerGoTop} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${ContainerTop} {
+        animation: ${animationsObj.toYAnimation(350)} 3s;
+      }
+
+      ${ContainerBottom} {
+        animation: ${animationFade} 3s;
+      }
+      ${ContainerInfo} {
+        h1 {
+          animation: ${animationsObj.toXAnimation(-350)} 3s;
+        }
+
+        p {
+          animation: ${animationsObj.toXAnimation(-350)} 3s;
+        }
+      }
+    `}
+  `}
 `;
