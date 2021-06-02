@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   width: 100vw;
@@ -7,7 +7,7 @@ export const Container = styled.div`
 
   display: flex;
 
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
 
@@ -85,6 +85,8 @@ export const Content = styled.div`
   flex-direction: column;
   padding: 32px 0;
 
+  overflow: auto;
+
   > ul {
     list-style: none;
 
@@ -112,26 +114,68 @@ export const ButtonClose = styled.div`
   }
 `;
 
-export const Item = styled.li`
-  width: 100%;
-  padding-left: 20%;
+type ItemProps = {
+  modifiersDropdown?: boolean;
+};
 
-  height: 50px;
-  line-height: 50px;
-
-  a {
-    text-decoration: none;
-    display: inline-block;
+export const Item = styled.li<ItemProps | any>`
+  ${({ modifiersDropdown, actived }) => css`
     width: 100%;
+    padding-left: 20%;
 
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
-    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
 
-    color: #000;
-  }
+    position: relative;
 
-  &:hover {
-    background: #fff;
-  }
+    a {
+      text-decoration: none;
+      display: inline-block;
+      width: 100%;
+
+      font-size: 1.125rem;
+      line-height: 1.5625rem;
+      font-weight: normal;
+
+      color: #000;
+    }
+
+    span {
+      width: 100%;
+    }
+
+    &:hover {
+      background: #fff;
+    }
+
+    ${modifiersDropdown &&
+    css`
+      max-height: 50px;
+      width: 100%
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background-color: transparent;
+    `}
+    ${!actived &&
+    css`
+      background-color: transparent;
+    `}
+
+    ${actived &&
+    css`
+      max-height: 500px;
+      height: 100%;
+      background: #fff;
+    `}
+  `}
+`;
+
+export const ContainerLinks = styled.div<any>`
+  ${({ actived }) => css`
+    display: ${actived ? 'block' : 'none'};
+    padding-left: 1rem;
+  `}
 `;
