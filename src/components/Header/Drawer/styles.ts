@@ -143,7 +143,8 @@ export const Item = styled.li<ItemProps | any>`
       color: #000;
     }
 
-    span {
+    > span {
+      display: inline-block;
       width: 100%;
     }
 

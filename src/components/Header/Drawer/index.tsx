@@ -84,7 +84,12 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
             </LinkScroll>
           </Item>
           <Item modifiersDropdown actived={activedSolutions}>
-            <span onClick={() => setActivedSolutions(!activedSolutions)}>
+            <span
+              onClick={() => {
+                setActivedMkt(false);
+                setActivedSolutions(!activedSolutions);
+              }}
+            >
               SOLUÇÕES
             </span>
             <ContainerLinks actived={activedSolutions}>
@@ -99,7 +104,14 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
           </Item>
 
           <Item modifiersDropdown actived={activedMkt}>
-            <span onClick={() => setActivedMkt(!activedMkt)}>MERCADOS</span>
+            <span
+              onClick={() => {
+                setActivedMkt(!activedMkt);
+                setActivedSolutions(false);
+              }}
+            >
+              MERCADOS
+            </span>
             <ContainerLinks actived={activedMkt}>
               {linksTwo.map((link, index) => (
                 <li key={String(index)}>
