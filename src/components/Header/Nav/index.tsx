@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
+import { Link as LinkScroll } from 'react-scroll';
 
 import { MenuBurger } from '../Burger';
 import { DropdownMenu } from '../Dropdown';
@@ -23,7 +24,14 @@ export function Nav() {
             <Link href="/">HOME</Link>
           </li>
           <li>
-            <Link href="/">QUEM SOMOS</Link>
+            <LinkScroll
+              to="about-link"
+              duration={700}
+              smooth
+              style={{ cursor: 'pointer' }}
+            >
+              QUEM SOMOS
+            </LinkScroll>
           </li>
           <li
             onMouseEnter={() => setFocusSolutions(!focusSolutions)}

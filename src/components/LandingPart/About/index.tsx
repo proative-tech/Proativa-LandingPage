@@ -33,7 +33,7 @@ export const About = ({ children }: AboutProps) => {
   }, []);
 
   return (
-    <Container visibled={isAnimated}>
+    <Container visibled={isAnimated} id="about-link">
       <ContainerImg>
         <div className="video" data-video="img">
           <iframe

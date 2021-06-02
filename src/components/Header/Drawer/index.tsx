@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Link as LinkScroll } from 'react-scroll';
 
 import { Container, Overlay, Content, ButtonClose, Item } from './styles';
 
@@ -22,9 +23,17 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
             </Link>
           </Item>
           <Item>
-            <Link href="/" passHref>
+            <LinkScroll
+              to="about-link"
+              duration={700}
+              smooth
+              style={{ cursor: 'pointer' }}
+              onClick={() => {
+                onCloseDrawer();
+              }}
+            >
               QUEM SOMOS
-            </Link>
+            </LinkScroll>
           </Item>
           <Item>
             <Link href="/solucoes" passHref>
