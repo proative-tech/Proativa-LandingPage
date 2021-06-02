@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import { Header } from '../components/Header';
 import { Container, ContainerFormat } from '../styles/pages/Politics';
 import { Footer } from '../components/Footer';
@@ -5,6 +7,9 @@ import { Footer } from '../components/Footer';
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Proative | Politicas de Privacidade</title>
+      </Head>
       <Container>
         <Header />
         <ContainerFormat>

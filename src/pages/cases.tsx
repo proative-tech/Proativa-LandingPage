@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React, { useState, useEffect } from 'react';
 import CountUp, { useCountUp } from 'react-countup';
 import { useMediaQuery } from 'react-responsive';
@@ -33,6 +34,9 @@ export default function Index() {
   }, []);
   return (
     <>
+      <Head>
+        <title>Proative | Cases</title>
+      </Head>
       <Container>
         <Header />
         <HeroMaketOrCases id="cases-top">

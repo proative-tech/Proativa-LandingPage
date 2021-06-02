@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useWindowScroll } from 'react-use';
+import Head from 'next/head';
 
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
@@ -15,6 +16,9 @@ export default function Index() {
 
   return (
     <>
+      <Head>
+        <title>Proative | Carreiras</title>
+      </Head>
       <Container>
         <Header noPaddingBottom />
         <HeroMaketOrCases />

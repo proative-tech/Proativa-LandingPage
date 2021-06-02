@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import Head from 'next/head';
+
 import { animateScroll } from 'react-scroll';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
@@ -22,6 +24,9 @@ export default function Index() {
 
   return (
     <>
+      <Head>
+        <title>Proative | Soluções - Profissionais</title>
+      </Head>
       <Container>
         <Header />
         <HeroSolutions>

@@ -1,4 +1,6 @@
+import Head from 'next/head';
 import { Header } from '../../components/Header';
+
 import { Footer } from '../../components/Footer';
 import { Container } from '../../styles/pages/Solutions';
 
@@ -11,6 +13,9 @@ import { Consultancy } from '../../components/SolutionsPart/Consultancy';
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Proative | Soluções</title>
+      </Head>
       <Container>
         <Header noPaddingBottom />
         <HeroSolutions>

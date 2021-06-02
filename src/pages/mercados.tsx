@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
@@ -10,6 +12,9 @@ import { Container, ContainerInfos } from '../styles/pages/MarketOrCases';
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Proative | Mercados</title>
+      </Head>
       <Container>
         <Header />
         <HeroMaketOrCases id="mkt-top" to="mkt-logista">

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Header } from '../components/Header';
 import { Container, ButtonAsLink } from '../styles/pages/FaleConosco';
 import { HeroFaleConosco } from '../components/FaleConosco/Hero';
@@ -7,6 +8,9 @@ import { Button } from '../components/Button';
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Proative | Fale Conosco</title>
+      </Head>
       <Container>
         <Header />
         <HeroFaleConosco>
