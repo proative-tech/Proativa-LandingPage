@@ -1,9 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  width: 100vw;
-  background: #fff;
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const Content = styled.div`
   max-width: 1085px;
@@ -131,4 +128,28 @@ export const ContainerText = styled.div`
       }
     }
   }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    width: 100vw;
+    background: #fff;
+
+    ${ContainerImg}, ${Content} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${ContainerImg} {
+        img {
+          animation: ${animationFade} 3s;
+        }
+      }
+
+      ${ContainerText} {
+        animation: ${animationsObj.toXAnimation(-650)} 3s;
+      }
+    `}
+  `}
 `;

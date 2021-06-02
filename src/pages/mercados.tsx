@@ -109,6 +109,7 @@ export default function Index() {
           src="/images/3_market.png"
           name="logistica"
           id="mkt-contrucao"
+          pixelOffset
         >
           <header className="headerContent">
             <h1>Construção Civil</h1>
@@ -149,6 +150,7 @@ export default function Index() {
           src="/images/4_market.png"
           name="logistica"
           id="mkt-Financeiro"
+          pixelOffset
         >
           <header className="headerContent">
             <h1>Financeiro</h1>
