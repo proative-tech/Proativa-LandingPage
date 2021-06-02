@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
@@ -20,9 +20,36 @@ interface CybersecurityProps {
 export const Cybersecurity = ({ children }: CybersecurityProps) => {
   const router = useRouter();
   const is1920 = useMediaQuery({ minWidth: 1601 });
+  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
+  const [isAnimated, setIsAnimated] = useState(false);
+  const [modifier, setModifier] = useState(!!children);
+
+  const handleScroll = () => {
+    let heightEle = window.innerHeight;
+
+    if (modifier) {
+      heightEle = isMobileOrTabled
+        ? window.innerHeight - 300
+        : window.innerHeight - 200;
+    } else {
+      heightEle = isMobileOrTabled
+        ? window.innerHeight + 500
+        : window.innerHeight + 300;
+    }
+
+    if (!isAnimated && window.pageYOffset >= heightEle) {
+      setIsAnimated(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
-    <Container>
+    <Container visibled={isAnimated} modifier={modifier}>
       <Content>
         {children ? (
           <Header>{children}</Header>

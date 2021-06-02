@@ -1,5 +1,5 @@
+import { ReactNode, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { ReactNode } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Link from 'next/link';
 import { Button } from '../../Button';
@@ -20,9 +20,29 @@ interface ServiceManagedProps {
 export const ServiceManaged = ({ children }: ServiceManagedProps) => {
   const router = useRouter();
   const is1920 = useMediaQuery({ minWidth: 1601 });
+  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  const handleScroll = () => {
+    let heightEle = window.innerHeight;
+
+    heightEle = isMobileOrTabled
+      ? window.innerHeight - 400
+      : window.innerHeight - 300;
+
+    if (!isAnimated && window.pageYOffset >= heightEle) {
+      setIsAnimated(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
-    <Container id="soluciton-service">
+    <Container id="soluciton-service" visibled={isAnimated}>
       <ContainerImg>
         <img
           src={

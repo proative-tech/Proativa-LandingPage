@@ -1,16 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  width: 100vw;
-
-  background: #fff;
-
-  padding: 100px 0 80px;
-
-  @media (max-width: 578px) {
-    padding: 29px;
-  }
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const Content = styled.div`
   display: grid;
@@ -70,4 +60,39 @@ export const Info = styled.div`
 
     margin-top: 11px;
   }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    width: 100vw;
+
+    background: #fff;
+
+    padding: 100px 0 80px;
+
+    @media (max-width: 578px) {
+      padding: 29px;
+    }
+
+    //animations
+
+    ${Info} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${Content} {
+        > ${Info}:nth-child(1) {
+          animation: ${animationsObj.toYAnimation(50)} 2s;
+        }
+        > ${Info}:nth-child(2) {
+          animation: ${animationsObj.toYAnimation(70)} 3s;
+        }
+        > ${Info}:nth-child(3) {
+          animation: ${animationsObj.toYAnimation(90)} 4s;
+        }
+      }
+    `}
+  `}
 `;

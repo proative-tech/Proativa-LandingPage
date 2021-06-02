@@ -1,10 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  width: 100vw;
-
-  background: #fff;
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const Content = styled.div`
   max-width: calc(537px + 170px);
@@ -103,4 +99,34 @@ export const ContentTop = styled.div`
   @media (max-width: 382px) {
     width: 100%;
   }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    width: 100vw;
+
+    background: #fff;
+
+    ${Content} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${Content} {
+        div.containerButton {
+          animation: ${animationsObj.toXAnimation(-650)} 4s;
+        }
+      }
+
+      ${ContentTop} {
+        h1 {
+          animation: ${animationsObj.toYAnimation(150)} 2s;
+        }
+        p {
+          animation: ${animationsObj.toYAnimation(100)} 3s;
+        }
+      }
+    `}
+  `}
 `;

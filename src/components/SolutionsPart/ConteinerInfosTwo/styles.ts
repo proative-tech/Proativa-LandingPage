@@ -1,22 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  width: 100vw;
-
-  background: #f4f4f4;
-
-  padding: 100px 0 80px;
-
-  @media (max-width: 1140px) {
-    padding-left: 26px;
-    padding-right: 26px;
-  }
-
-  @media (max-width: 920px) {
-    padding-top: 52px;
-    padding-bottom: 50px;
-  }
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const Content = styled.div`
   max-width: 1085px;
@@ -71,4 +55,46 @@ export const Info = styled.div`
     max-width: 180px;
     width: 100%;
   }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    width: 100vw;
+
+    background: #f4f4f4;
+
+    padding: 100px 0 80px;
+
+    @media (max-width: 1140px) {
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+
+    @media (max-width: 920px) {
+      padding-top: 52px;
+      padding-bottom: 50px;
+    }
+
+    ${Info} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${Content} {
+        > ${Info}:nth-child(1) {
+          animation: ${animationsObj.toXAnimation(150)} 2s;
+        }
+        > ${Info}:nth-child(2) {
+          animation: ${animationsObj.toXAnimation(50)} 3s;
+        }
+        > ${Info}:nth-child(3) {
+          animation: ${animationsObj.toXAnimation(-50)} 4s;
+        }
+        > ${Info}:nth-child(4) {
+          animation: ${animationsObj.toXAnimation(-150)} 4s;
+        }
+      }
+    `}
+  `}
 `;

@@ -1,9 +1,17 @@
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
-export const Container = styled.div`
-  margin: 0 auto;
+const animationH1 = keyframes`
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
 
-  position: relative;
+  to {
+    opacity: translateY(0);
+    opacity: 1;
+  }
 `;
 
 export const ContainerTop = styled.div`
@@ -124,4 +132,31 @@ export const ContainerBottom = styled.div`
   margin-top: 50px;
 
   padding-bottom: 67px;
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    margin: 0 auto;
+
+    position: relative;
+
+    animation: ${animationFade} 0.5s;
+    ${Content} {
+      > div.content__text {
+        h1 {
+          animation: ${animationH1} 0.8s;
+        }
+
+        > p {
+          animation: ${animationH1} 1.2s;
+        }
+      }
+    }
+
+    ${ContainerImg} {
+      img {
+        animation: ${animationsObj.toXAnimation(50)} 2s;
+      }
+    }
+  `}
 `;

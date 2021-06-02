@@ -1,20 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  background: #fff;
-
-  @media (max-width: 928px) {
-    display: flex;
-    flex-direction: column;
-  }
-  @media (max-width: 490px) {
-    max-width: 100%;
-    margin-left: 0%;
-  }
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const ContainerImg = styled.div`
   max-width: 100%;
@@ -232,4 +218,41 @@ export const ContainerButton = styled.div`
   @media (max-width: 360px) {
     width: 100%;
   }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    background: #fff;
+
+    @media (max-width: 928px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width: 490px) {
+      max-width: 100%;
+      margin-left: 0%;
+    }
+
+    //animations
+
+    ${ContainerImg}, ${Content} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${ContainerImg} {
+        img {
+          animation: ${animationFade} 3s;
+        }
+      }
+
+      ${Content} {
+        animation: ${animationsObj.toXAnimation(650)} 3s;
+      }
+    `}
+  `}
 `;

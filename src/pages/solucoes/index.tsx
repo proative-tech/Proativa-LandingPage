@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <>
       <Container>
-        <Header />
+        <Header noPaddingBottom />
         <HeroSolutions>
           <div className="content__text">
             <h1>

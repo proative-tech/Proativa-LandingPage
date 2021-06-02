@@ -1,20 +1,6 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  background: #fff;
-
-  @media (min-width: 1441px) {
-    grid-template-columns: 1fr 45%;
-  }
-
-  @media (max-width: 928px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
+import styled, { css } from 'styled-components';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const ContainerImg = styled.div`
   max-width: 100%;
@@ -47,11 +33,10 @@ export const ContainerImg = styled.div`
 
     img {
       margin-left: 100px;
-      
-        display: block;
-        width: 330px;
-        height: 207px;
-      
+
+      display: block;
+      width: 330px;
+      height: 207px;
     }
   }
 
@@ -66,11 +51,10 @@ export const ContainerImg = styled.div`
 
     img {
       margin-left: 100px;
-      
-        display: block;
-        width: 110px;
-        height: 70px;
-      
+
+      display: block;
+      width: 110px;
+      height: 70px;
     }
   }
 `;
@@ -98,7 +82,7 @@ export const Content = styled.div`
     padding-top: 3.9rem;
     padding-bottom: 3.4rem;
     width: 90%;
-    margin-left: 20%
+    margin-left: 20%;
   }
 
   @media (max-width: 1343px) {
@@ -119,8 +103,7 @@ export const Content = styled.div`
     padding-bottom: 3.4rem;
 
     width: 100%;
-    margin-left: 0%
-    
+    margin-left: 0%;
   }
 `;
 
@@ -268,4 +251,39 @@ export const ContainerButton = styled.div`
   @media (max-width: 360px) {
     width: 100%;
   }
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    background: #fff;
+
+    @media (min-width: 1441px) {
+      grid-template-columns: 1fr 45%;
+    }
+
+    @media (max-width: 928px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    ${Content}, ${ContainerImg} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${ContainerImg} {
+        img {
+          animation: ${animationFade} 3s;
+        }
+      }
+
+      ${Content} {
+        animation: ${animationsObj.toXAnimation(-650)} 3s;
+      }
+    `}
+  `}
 `;

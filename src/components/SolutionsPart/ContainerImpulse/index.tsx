@@ -1,9 +1,32 @@
+import { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { Button } from '../../Button';
 import { Container, Content, ContentTop } from './styles';
 
 export const ContainerImpulse = () => {
+  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  const handleScroll = () => {
+    let heightEle = window.innerHeight;
+
+    heightEle = isMobileOrTabled
+      ? window.innerHeight + 2700
+      : window.innerHeight + 2000;
+
+    if (!isAnimated && window.pageYOffset >= heightEle) {
+      setIsAnimated(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <Container>
+    <Container visibled={isAnimated}>
       <Content>
         <ContentTop>
           <h1>

@@ -1,16 +1,6 @@
 import styled, { css } from 'styled-components';
-
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  background: #fff;
-
-  @media (max-width: 928px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 interface ContainerProps {
   modifier: boolean;
@@ -81,7 +71,7 @@ export const Content = styled.div`
   @media (max-width: 1260px) {
     padding-left: 30px;
   }
-  
+
   @media (max-width: 490px) {
     max-width: 100%;
     width: 100%;
@@ -243,3 +233,49 @@ export const ContainerButton = styled.div`
   }
 `;
 
+export const Container = styled.div<VisibledProp | any>`
+  ${({ visibled, modifier }) => css`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    background: #fff;
+
+    @media (max-width: 928px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width: 490px) {
+      max-width: 100%;
+      margin-left: 0%;
+    }
+
+    //animations
+
+    ${ContainerImg}, ${Content} {
+      opacity: ${visibled ? 1 : 0};
+    }
+
+    ${visibled &&
+    css`
+      ${ContainerImg} {
+        img {
+          animation: ${animationFade} 3s;
+        }
+      }
+
+      ${modifier &&
+      css`
+        ${Content} {
+          animation: ${animationsObj.toXAnimation(650)} 3s;
+        }
+      `}
+
+      ${!modifier &&
+      css`
+        ${Content} {
+          animation: ${animationsObj.toXAnimation(-650)} 3s;
+        }
+      `}
+    `}
+  `}
+`;

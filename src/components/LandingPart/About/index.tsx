@@ -35,7 +35,16 @@ export const About = ({ children }: AboutProps) => {
   return (
     <Container visibled={isAnimated}>
       <ContainerImg>
-        <div className="video" data-video="img" />
+        <div className="video" data-video="img">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/nyKP_hsj5WU"
+            title="Proative video promocional"
+            frameBorder="0"
+            allowFullScreen
+          />
+        </div>
       </ContainerImg>
       <Content>
         <Header>
