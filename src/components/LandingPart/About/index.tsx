@@ -39,7 +39,10 @@ export const About = ({ children }: AboutProps) => {
         const heightEle = ele.getBoundingClientRect().top;
 
         setTimeout(() => {
-          animateScroll.scrollTo(heightEle);
+          animateScroll.scrollTo(heightEle, {
+            duration: 700,
+            smooth: true,
+          });
           // refQuemSomos.current?.scrollTo('about-link', {
           //   duration: 1500,
           //   smooth: true,
