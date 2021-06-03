@@ -293,10 +293,11 @@ export const ContainerButton = styled.div`
 export const Container = styled.div<VisibledProp>`
   // animacoes
   ${({ visibled }) => css`
-    opacity: ${visibled ? 1 : 0};
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    animation: ${animationFade} 2s;
+    ${Content}, ${ContainerImg} {
+      animation: ${animationFade} 2s;
+    }
     ${visibled &&
     css`
       ${ContainerImg} {
