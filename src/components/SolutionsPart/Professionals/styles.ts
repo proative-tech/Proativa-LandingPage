@@ -233,10 +233,9 @@ export const Container = styled.div<VisibledProp>`
     css`
       ${ContainerImg} {
         img {
-          animation: ${animationFade} 3s;
+          animation: ${animationsObj.toYAnimation(70)} 3s;
         }
       }
-
       ${Content} {
         animation: ${animationsObj.toXAnimation(650)} 3s;
       }

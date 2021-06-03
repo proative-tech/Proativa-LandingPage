@@ -249,14 +249,15 @@ export const Container = styled.div<VisibledProp>`
     }
 
     //animations
-    opacity: ${visibled ? 1 : 0};
-    animation: ${animationFade} 0.5s;
+    ${Content}, ${ContainerImg} {
+      opacity: ${visibled ? 1 : 0};
+    }
 
     ${visibled &&
     css`
       ${ContainerImg} {
         img {
-          animation: ${animationFade} 3s;
+          animation: ${animationsObj.toYAnimation(70)} 3s;
         }
       }
 

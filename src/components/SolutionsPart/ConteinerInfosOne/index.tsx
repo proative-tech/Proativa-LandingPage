@@ -8,13 +8,12 @@ export const ContainerInfosOne = () => {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('containerInfosOne');
 
-    heightEle = isMobileOrTabled
-      ? window.innerHeight + 500
-      : window.innerHeight + 600;
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 300;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };
@@ -26,7 +25,7 @@ export const ContainerInfosOne = () => {
   }, []);
 
   return (
-    <Container visibled={isAnimated}>
+    <Container visibled={isAnimated} id="containerInfosOne">
       <Content>
         <Info>
           <div className="containerImg">

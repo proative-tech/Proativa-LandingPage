@@ -24,13 +24,14 @@ export const Professionals = ({ children }: CybersecurityProps) => {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById(
+      'containerProfessionals',
+    );
 
-    heightEle = isMobileOrTabled
-      ? window.innerHeight - 300
-      : window.innerHeight + 900;
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 600;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };
@@ -42,7 +43,7 @@ export const Professionals = ({ children }: CybersecurityProps) => {
   }, []);
 
   return (
-    <Container visibled={isAnimated}>
+    <Container visibled={isAnimated} id="containerProfessionals">
       <ContainerImg>
         <img
           src={

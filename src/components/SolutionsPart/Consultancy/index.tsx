@@ -24,13 +24,12 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('containerConsultancy');
 
-    heightEle = isMobileOrTabled
-      ? window.innerHeight + 2400
-      : window.innerHeight + 1400;
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 600;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };
@@ -42,7 +41,7 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
   }, []);
 
   return (
-    <Container visibled={isAnimated}>
+    <Container visibled={isAnimated} id="containerConsultancy">
       <Content>
         {children ? (
           <Header>{children}</Header>

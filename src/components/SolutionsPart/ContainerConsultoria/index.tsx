@@ -15,13 +15,12 @@ export const ContainerConsultoria = () => {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('containerCoonsultoria');
 
-    heightEle = isMobileOrTabled
-      ? window.innerHeight + 1500
-      : window.innerHeight + 1000;
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 400;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };
@@ -33,7 +32,7 @@ export const ContainerConsultoria = () => {
   }, []);
 
   return (
-    <Container visibled={isAnimated}>
+    <Container visibled={isAnimated} id="containerCoonsultoria">
       <Content>
         <Header>
           <span>Consultoria</span>

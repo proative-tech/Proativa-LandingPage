@@ -25,19 +25,14 @@ export const Cybersecurity = ({ children }: CybersecurityProps) => {
   const [modifier, setModifier] = useState(!!children);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById(
+      'containerCybersecurity',
+    );
 
-    if (modifier) {
-      heightEle = isMobileOrTabled
-        ? window.innerHeight - 300
-        : window.innerHeight - 200;
-    } else {
-      heightEle = isMobileOrTabled
-        ? window.innerHeight + 500
-        : window.innerHeight + 300;
-    }
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 600;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };
@@ -49,7 +44,11 @@ export const Cybersecurity = ({ children }: CybersecurityProps) => {
   }, []);
 
   return (
-    <Container visibled={isAnimated} modifier={modifier}>
+    <Container
+      visibled={isAnimated}
+      modifier={modifier}
+      id="containerCybersecurity"
+    >
       <Content>
         {children ? (
           <Header>{children}</Header>

@@ -24,13 +24,12 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('soluciton-service');
 
-    heightEle = isMobileOrTabled
-      ? window.innerHeight - 400
-      : window.innerHeight - 300;
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 600;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };

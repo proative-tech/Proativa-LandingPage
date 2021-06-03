@@ -7,13 +7,12 @@ export const ContainerInfosTwo = () => {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('containerInfosTow');
 
-    heightEle = isMobileOrTabled
-      ? window.innerHeight + 1200
-      : window.innerHeight + 900;
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 400;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };
@@ -25,7 +24,7 @@ export const ContainerInfosTwo = () => {
   }, []);
 
   return (
-    <Container visibled={isAnimated}>
+    <Container visibled={isAnimated} id="containerInfosTow">
       <Content>
         <Info>
           <h1>01.</h1>
