@@ -1,5 +1,7 @@
-import { useState } from 'react';
+/* eslint-disable no-extra-boolean-cast */
+import { useCallback, useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { Link as LinkScroll } from 'react-scroll';
 
@@ -16,6 +18,32 @@ export function Nav() {
 
   const isMobileOrTablet = useMediaQuery({ maxWidth: 920 });
 
+  const router = useRouter();
+  const refQuemSomos = useRef(null);
+
+  const handleClickNoIndex = useCallback(() => {
+    const storeSetItem = localStorage.getItem('@CLICK_QUEM_SOMOS');
+    if (!storeSetItem && router.asPath.indexOf('/') > -1) {
+      localStorage.setItem('@CLICK_QUEM_SOMOS', 'true');
+    }
+  }, [router.asPath]);
+
+  useEffect(() => {
+    if (router.asPath.indexOf('/') > -1) {
+      const storeSetItem = localStorage.getItem('@CLICK_QUEM_SOMOS');
+
+      if (!!storeSetItem) {
+        setTimeout(() => {
+          refQuemSomos.current.scrollTo('about-link', {
+            duration: 1500,
+            smooth: true,
+          });
+          localStorage.removeItem('@CLICK_QUEM_SOMOS');
+        }, 1000);
+      }
+    }
+  }, [router.asPath]);
+
   return (
     <Container>
       {!isMobileOrTablet && (
@@ -24,14 +52,18 @@ export function Nav() {
             <Link href="/">HOME</Link>
           </li>
           <li>
-            <LinkScroll
-              to="about-link"
-              duration={700}
-              smooth
-              style={{ cursor: 'pointer' }}
-            >
-              QUEM SOMOS
-            </LinkScroll>
+            <Link href="/">
+              <LinkScroll
+                to="about-link"
+                duration={700}
+                smooth
+                style={{ cursor: 'pointer' }}
+                onClick={handleClickNoIndex}
+                ref={refQuemSomos}
+              >
+                QUEM SOMOS
+              </LinkScroll>
+            </Link>
           </li>
           <li
             onMouseEnter={() => setFocusSolutions(!focusSolutions)}
