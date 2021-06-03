@@ -20,7 +20,7 @@ export default function Index() {
 
     heightEle = isMobileOrTabled
       ? window.innerHeight + 600
-      : window.innerHeight + 1200;
+      : window.innerHeight + 800;
 
     if (!isAnimated && window.pageYOffset >= heightEle) {
       setIsAnimated(true);

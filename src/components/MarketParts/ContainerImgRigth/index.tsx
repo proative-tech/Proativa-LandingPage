@@ -23,19 +23,12 @@ export const ContainerImgRight = ({
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById(id);
 
-    if (pixelOffset) {
-      heightEle = isMobileOrTabled
-        ? window.innerHeight + 300
-        : window.innerHeight + 1600;
-    } else {
-      heightEle = isMobileOrTabled
-        ? window.innerHeight - 300
-        : window.innerHeight - 300;
-    }
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 500;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };

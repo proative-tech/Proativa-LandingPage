@@ -4,6 +4,4 @@ export const Container = styled.div`
   background: #f4f4f4;
 `;
 
-export const ContainerInfos = styled.div`
-  margin-top: 138px;
-`;
+export const ContainerInfos = styled.div``;

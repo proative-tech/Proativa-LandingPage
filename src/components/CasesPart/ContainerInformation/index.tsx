@@ -7,13 +7,12 @@ export const ContainerInformation = () => {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('cases-container-info');
 
-    heightEle = isMobileOrTabled
-      ? window.innerHeight
-      : window.innerHeight + 700;
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 500;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };
@@ -24,7 +23,7 @@ export const ContainerInformation = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <Container visibled={isAnimated}>
+    <Container visibled={isAnimated} id="cases-container-info">
       <Content>
         <ContainerLeft>
           <div className="containerLeftText">

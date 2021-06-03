@@ -114,13 +114,13 @@ export const Container = styled.div<VisibledProp>`
 
       ${ContainerRight} {
         div.containerRightContent:nth-child(1) {
-          animation: ${animationsObj.toYAnimation(350)} 3s;
+          animation: ${animationsObj.toXAnimation(150)} 3s;
         }
         div.containerRightContent:nth-child(2) {
-          animation: ${animationsObj.toYAnimation(250)} 3s;
+          animation: ${animationsObj.toXAnimation(250)} 3s;
         }
         div.containerRightContent:nth-child(3) {
-          animation: ${animationsObj.toYAnimation(150)} 3s;
+          animation: ${animationsObj.toXAnimation(350)} 3s;
         }
       }
     `}

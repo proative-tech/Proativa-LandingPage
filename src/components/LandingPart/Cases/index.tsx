@@ -26,7 +26,7 @@ interface CasesProps {
   children?: ReactNode;
 }
 
-export function Cases({ children }: CasesProps) {
+export function Cases({ children }: CasesProps | any) {
   const carousel = useRef<CarouseRefData | any>();
 
   const isMobileOrTablet = useMediaQuery({ maxWidth: 768 });
