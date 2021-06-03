@@ -158,10 +158,11 @@ export const Header = styled.div`
 
 export const Container = styled.div<VisibledProp>`
   ${({ visibled }) => css`
-    opacity: ${visibled ? 1 : 0};
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    animation: ${animationFade} 2s;
+    ${Content}, ${ContainerImg} {
+      opacity: ${visibled ? 1 : 0};
+    }
     ${visibled &&
     css`
       ${ContainerImg} {

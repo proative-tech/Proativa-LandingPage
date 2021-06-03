@@ -36,7 +36,7 @@ export function Nav() {
       if (!!storeSetItem) {
         setTimeout(() => {
           refQuemSomos.current.scrollTo('about-link', {
-            duration: 1500,
+            duration: 700,
             smooth: true,
           });
           localStorage.removeItem('@CLICK_QUEM_SOMOS');
