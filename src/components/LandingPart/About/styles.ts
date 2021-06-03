@@ -296,7 +296,7 @@ export const Container = styled.div<VisibledProp>`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     ${Content}, ${ContainerImg} {
-      animation: ${animationFade} 2s;
+      opacity: ${visibled ? 1 : 0};
     }
     ${visibled &&
     css`
