@@ -19,9 +19,12 @@ export const About = ({ children }: AboutProps) => {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    const heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('about-link');
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 400;
+
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };

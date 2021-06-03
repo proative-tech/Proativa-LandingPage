@@ -6,9 +6,12 @@ export function Informations() {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    const heightEle = window.innerHeight - 350;
+    const ele: Element = document.getElementById('lg-container-info');
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 400;
+
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };

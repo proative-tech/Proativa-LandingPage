@@ -8,13 +8,12 @@ export const AboutThree = () => {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('about-three');
 
-    heightEle = isMobileOrTabled
-      ? window.innerHeight + 700
-      : window.innerHeight + 400;
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 200;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };
@@ -26,7 +25,7 @@ export const AboutThree = () => {
   }, []);
 
   return (
-    <Container visibled={isAnimated}>
+    <Container visibled={isAnimated} id="about-three">
       <ContainerImg>
         <img
           data-img="img"

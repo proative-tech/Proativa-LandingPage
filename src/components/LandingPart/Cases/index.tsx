@@ -39,13 +39,12 @@ export function Cases({ children }: CasesProps) {
   const [isShowElement, setIsShowElement] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('cases-ani');
 
-    heightEle = isMobileOrTabled
-      ? window.innerHeight + 700
-      : window.innerHeight + 700;
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 700;
 
-    if (!isShowElement && window.pageYOffset >= heightEle) {
+    if (!isShowElement && getWindowBottom >= heightEle) {
       setIsShowElement(true);
     }
   };
@@ -56,8 +55,14 @@ export function Cases({ children }: CasesProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <Container>
+    <Container id="cases-ani">
       <Content>
         {children ? (
           <>{children}</>

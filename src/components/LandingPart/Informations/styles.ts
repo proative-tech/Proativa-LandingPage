@@ -9,16 +9,6 @@ export type VisibledProp = {
   visibled: boolean;
 };
 
-export const Container = styled.div<VisibledProp>`
-  ${({ visibled }) => css`
-    background: #fff;
-    ${visibled &&
-    css`
-      animation: ${animationFade} 0.8s;
-    `}
-  `}
-`;
-
 export const Content = styled.div`
   max-width: 1085px;
   margin: 0 auto;
@@ -244,4 +234,16 @@ export const Divider = styled.hr`
   width: 115px;
   height: 2px;
   background: #c4c4c4;
+`;
+
+export const Container = styled.div<VisibledProp>`
+  ${({ visibled }) => css`
+    background: #fff;
+    ${visibled &&
+    css`
+      ${Content} {
+        animation: ${animationFade} 0.8s;
+      }
+    `}
+  `}
 `;
