@@ -89,20 +89,7 @@ export const Container = styled.div<VisibledProp>`
     animation: ${animationFade} 2s;
 
     ${ContainerBottom} {
-      opacity: ${visibled ? 1 : 0};
+      animation: ${animationFade} 4s;
     }
-
-    ${visibled &&
-    css`
-      ${ContainerBottom} {
-        p {
-          animation: ${animationsObj.toYAnimation(350)} 3s;
-        }
-
-        h1 {
-          animation: ${animationsObj.toYAnimation(150)} 3s;
-        }
-      }
-    `}
   `}
 `;

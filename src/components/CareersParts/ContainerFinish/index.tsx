@@ -10,18 +10,29 @@ export function ContainerFinish() {
   const isMobileUltra = useMediaQuery({ minWidth: 1920 });
   const def = useMediaQuery({ minWidth: 491, maxWidth: 1919 });
   const [isAnimated, setIsAnimated] = useState(false);
+  const [isAnimatedList, setIsAnimatedList] = useState(false);
 
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('containerFinishMain');
 
-    heightEle = isMobileOrTabled
-      ? window.innerHeight - 300
-      : window.innerHeight + 800;
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 1400;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    // listSelected
+    const eleList: Element | any = document.getElementById('infosList');
+
+    const getWindowBottomList = window.scrollY + window.innerHeight;
+    const heightEleList = eleList.getBoundingClientRect().bottom + window.scrollY - 600;
+
+
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
+    }
+
+    if (!isAnimatedList && getWindowBottomList >= heightEleList) {
+      setIsAnimatedList(true);
     }
   };
 
@@ -35,7 +46,7 @@ export function ContainerFinish() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <Container visibled={isAnimated}>
+    <Container visibled={isAnimated} visibledList={isAnimatedList} id="containerFinishMain">
       <ContainerTop >
         <p className="tag">#vemserproative</p>
       </ContainerTop>

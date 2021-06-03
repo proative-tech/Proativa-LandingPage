@@ -136,7 +136,7 @@ export const ContainerGoTop = styled.div`
 `;
 
 export const Container = styled.div<VisibledProp | any>`
-  ${({ visibled, animationList }) => css`
+  ${({ visibled, visibledList }) => css`
     margin: 0 auto;
 
     position: relative;
@@ -144,22 +144,59 @@ export const Container = styled.div<VisibledProp | any>`
       opacity: ${visibled ? 1 : 0};
     }
 
+    ${ContainerInfo} {
+      opacity: ${visibledList ? 1 : 0};
+    }
+
     ${visibled &&
     css`
       ${ContainerTop} {
-        animation: ${animationsObj.toYAnimation(350)} 3s;
+        animation: ${animationFade} 3s;
       }
 
       ${ContainerBottom} {
         animation: ${animationFade} 3s;
       }
+    `}
+
+    ${visibledList &&
+    css`
       ${ContainerInfo} {
         h1 {
-          animation: ${animationsObj.toXAnimation(-350)} 3s;
+          animation: ${animationFade} 3s;
         }
 
-        p {
-          animation: ${animationsObj.toXAnimation(-350)} 3s;
+        ul {
+          li:nth-child(1) {
+            animation: ${animationsObj.toXAnimation(-150)} 3s;
+          }
+          li:nth-child(2) {
+            animation: ${animationsObj.toXAnimation(-250)} 3s;
+          }
+          li:nth-child(3) {
+            animation: ${animationsObj.toXAnimation(-350)} 3s;
+          }
+          li:nth-child(4) {
+            animation: ${animationsObj.toXAnimation(-450)} 3s;
+          }
+          li:nth-child(5) {
+            animation: ${animationsObj.toXAnimation(-550)} 3s;
+          }
+          li:nth-child(6) {
+            animation: ${animationsObj.toXAnimation(-650)} 3s;
+          }
+          li:nth-child(7) {
+            animation: ${animationsObj.toXAnimation(-750)} 3s;
+          }
+          li:nth-child(8) {
+            animation: ${animationsObj.toXAnimation(-850)} 3s;
+          }
+          li:nth-child(9) {
+            animation: ${animationsObj.toXAnimation(-950)} 3s;
+          }
+          li:nth-child(10) {
+            animation: ${animationsObj.toXAnimation(-1050)} 3s;
+          }
         }
       }
     `}

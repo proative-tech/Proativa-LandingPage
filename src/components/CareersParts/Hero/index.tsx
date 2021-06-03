@@ -15,13 +15,12 @@ export const HeroMaketOrCases = () =>{
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    const ele: Element | any = document.getElementById('beginContent');
 
-    heightEle = isMobileOrTabled
-    ? window.innerHeight - 3900
-    : window.innerHeight - 900
+    const getWindowBottom = window.scrollY + window.innerHeight;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY;
 
-    if (!isAnimated && window.pageYOffset >= heightEle) {
+    if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
     }
   };

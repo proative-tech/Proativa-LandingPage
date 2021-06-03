@@ -108,7 +108,7 @@ export const Container = styled.div<VisibledProp>`
     ${visibled &&
     css`
       ${ContainerImg} {
-        animation: ${animationFade} 3s;
+        animation: ${animationsObj.toYAnimation(100)} 3s;
       }
 
       ${ContainerText} {
