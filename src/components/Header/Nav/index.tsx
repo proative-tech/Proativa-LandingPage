@@ -23,13 +23,14 @@ export function Nav() {
 
   const handleClickNoIndex = useCallback(() => {
     const storeSetItem = localStorage.getItem('@CLICK_QUEM_SOMOS');
-    if (!storeSetItem && router.asPath.indexOf('/') > -1) {
+
+    if (router.asPath.length > 1 && !storeSetItem) {
       localStorage.setItem('@CLICK_QUEM_SOMOS', 'true');
     }
   }, [router.asPath]);
 
   useEffect(() => {
-    if (router.asPath.indexOf('/') > -1) {
+    if (!isMobileOrTablet && router.asPath.indexOf('/') > -1) {
       const storeSetItem = localStorage.getItem('@CLICK_QUEM_SOMOS');
 
       if (!!storeSetItem) {

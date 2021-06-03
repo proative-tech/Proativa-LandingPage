@@ -1,4 +1,5 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 
 import { DrawerMenu } from '../Drawer';
@@ -7,6 +8,7 @@ import { Container } from './styles';
 
 export const MenuBurger = () => {
   const [activedDrawer, setActivedDrawer] = useState(false);
+  const router = useRouter();
 
   const onCloseDrawer = useCallback(() => {
     setActivedDrawer(!activedDrawer);

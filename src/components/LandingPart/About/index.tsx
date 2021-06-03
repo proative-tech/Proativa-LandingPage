@@ -1,13 +1,7 @@
 import { useEffect, useState, ReactNode } from 'react';
+import { useRouter } from 'next/router';
+import { animateScroll, Element } from 'react-scroll';
 
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll';
 import { Container, ContainerImg, Content, Header, Footer } from './styles';
 
 interface AboutProps {
@@ -17,6 +11,7 @@ interface AboutProps {
 
 export const About = ({ children }: AboutProps) => {
   const [isAnimated, setIsAnimated] = useState(false);
+  const router = useRouter();
 
   const handleScroll = () => {
     const ele: Element | any = document.getElementById('about-link');
@@ -34,6 +29,26 @@ export const About = ({ children }: AboutProps) => {
     return () => window.removeEventListener('scroll', handleScroll);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (router.asPath.indexOf('/') > -1) {
+      const storeSetItem = localStorage.getItem('@CLICK_QUEM_SOMOS');
+
+      if (storeSetItem) {
+        const ele: Element | any = document.getElementById('about-link');
+        const heightEle = ele.getBoundingClientRect().top;
+
+        setTimeout(() => {
+          animateScroll.scrollTo(heightEle);
+          // refQuemSomos.current?.scrollTo('about-link', {
+          //   duration: 1500,
+          //   smooth: true,
+          // });
+          localStorage.removeItem('@CLICK_QUEM_SOMOS');
+        }, 1000);
+      }
+    }
+  }, [router.asPath]);
 
   return (
     <Container visibled={isAnimated} id="about-link">

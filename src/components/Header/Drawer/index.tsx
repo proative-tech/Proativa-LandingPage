@@ -1,6 +1,8 @@
+/* eslint-disable no-extra-boolean-cast */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import { useState } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Link as LinkScroll } from 'react-scroll';
@@ -53,6 +55,17 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
   const [activedSolutions, setActivedSolutions] = useState(false);
   const [activedMkt, setActivedMkt] = useState(false);
 
+  const router = useRouter();
+  const refQuemSomos = useRef(null);
+
+  const handleClickNoIndex = useCallback(() => {
+    const storeSetItem = localStorage.getItem('@CLICK_QUEM_SOMOS');
+
+    if (router.asPath.length > 1 && !storeSetItem) {
+      localStorage.setItem('@CLICK_QUEM_SOMOS', 'true');
+    }
+  }, [router.asPath]);
+
   return (
     <Container>
       <Overlay onClick={onCloseDrawer} />
@@ -71,17 +84,21 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
             </Link>
           </Item>
           <Item>
-            <LinkScroll
-              to="about-link"
-              duration={700}
-              smooth
-              style={{ cursor: 'pointer' }}
-              onClick={() => {
-                onCloseDrawer();
-              }}
-            >
-              QUEM SOMOS
-            </LinkScroll>
+            <Link href="/" passHref>
+              <LinkScroll
+                to="about-link"
+                duration={700}
+                smooth
+                style={{ cursor: 'pointer' }}
+                onClick={() => {
+                  handleClickNoIndex();
+                  onCloseDrawer();
+                }}
+                ref={refQuemSomos}
+              >
+                QUEM SOMOS
+              </LinkScroll>
+            </Link>
           </Item>
           <Item modifiersDropdown actived={activedSolutions}>
             <span
