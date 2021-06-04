@@ -10,21 +10,15 @@ export default function Index() {
       <Head>
         <title>Proative | Blog</title>
       </Head>
-      <Container>
-        <Header noPaddingBottom />
-      </Container>
       <Wrapper>
+        <Header noPaddingBottom blogAbsolute />
         <Content>
-       
-        <iframe
-          
+          <iframe
             src="https://blog-proative.intraversa.com/"
             title="Test blog"
           />
-       
         </Content>
       </Wrapper>
-      <Footer />
     </>
   );
 }

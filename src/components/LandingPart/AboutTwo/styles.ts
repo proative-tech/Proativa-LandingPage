@@ -3,6 +3,8 @@ import { animationFade, animationsObj } from '../../../utils/animations';
 import { VisibledProp } from '../Informations/styles';
 
 export const ContainerImg = styled.div`
+  position: relative;
+
   max-width: 100%;
 
   img {
@@ -166,9 +168,7 @@ export const Container = styled.div<VisibledProp>`
     ${visibled &&
     css`
       ${ContainerImg} {
-        img[data-img] {
-          animation: ${animationsObj.toYAnimation(50)} 5s;
-        }
+        animation: ${animationsObj.toYAnimation(50)} 5s;
       }
 
       ${Header} {

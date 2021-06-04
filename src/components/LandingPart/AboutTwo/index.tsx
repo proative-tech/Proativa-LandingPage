@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
+
+import { AnimationImg } from '../../AnimationImg';
 import { Container, ContainerImg, Content, Header } from './styles';
 
 export const AboutTwo = () => {
@@ -38,6 +40,7 @@ export const AboutTwo = () => {
       </Content>
       <ContainerImg>
         <img src="/images/home2.png" alt="proative" data-img="img" />
+        <AnimationImg />
       </ContainerImg>
     </Container>
   );

@@ -8,20 +8,26 @@ import { Container, Content } from './styles';
 
 interface HeaderProps {
   noPaddingBottom?: boolean;
+  blogAbsolute?: boolean;
 }
 
-export function Header({ noPaddingBottom = false }: HeaderProps) {
+export function Header({
+  noPaddingBottom = false,
+  blogAbsolute = false,
+}: HeaderProps) {
   return (
-    <Container id="headerScroll">
-      <Content noPaddingBottom={noPaddingBottom}>
-        <h1 style={{ cursor: 'pointer' }}>
-          <Link href="/" passHref>
-            <Image src="/images/logo.svg" width={168} height={67} />
-          </Link>
-        </h1>
+    <>
+      <Container id="headerScroll">
+        <Content noPaddingBottom={noPaddingBottom} blogAbsolute={blogAbsolute}>
+          <h1 style={{ cursor: 'pointer' }}>
+            <Link href="/" passHref>
+              <Image src="/images/logo.svg" width={168} height={67} />
+            </Link>
+          </h1>
 
-        <Nav />
-      </Content>
-    </Container>
+          <Nav />
+        </Content>
+      </Container>
+    </>
   );
 }

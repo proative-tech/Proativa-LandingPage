@@ -1,8 +1,10 @@
 import styled, { css } from 'styled-components';
 import { VisibledProp } from '../Informations/styles';
-import { animationFade, animationsObj } from '../../../utils/animations';
+import { animationsObj } from '../../../utils/animations';
 
 export const ContainerImg = styled.div`
+  position: relative;
+
   max-width: 100%;
 
   img {
@@ -11,12 +13,12 @@ export const ContainerImg = styled.div`
     height: 100%;
   }
 
-  div {
+  /* > div {
     content: '';
     background: #e5e5e5;
     width: 100%;
     height: 414px;
-  }
+  } */
 `;
 
 export const Content = styled.div`
@@ -54,6 +56,8 @@ export const Content = styled.div`
 
 export const Footer = styled.div`
   margin-top: 2.5rem;
+
+  max-width: 70%;
 
   h3 {
     font-size: 2.25rem;
@@ -131,9 +135,7 @@ export const Container = styled.div<VisibledProp>`
     ${visibled &&
     css`
       ${ContainerImg} {
-        img[data-img] {
-          animation: ${animationsObj.toYAnimation(50)} 7s;
-        }
+        animation: ${animationsObj.toYAnimation(50)} 7s;
       }
 
       ${Footer} {

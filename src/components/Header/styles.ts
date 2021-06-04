@@ -6,6 +6,7 @@ export const Container = styled.div`
 
 interface ContentProps {
   noPaddingBottom: boolean;
+  blogAbsolute: boolean;
 }
 
 export const Content = styled.div<ContentProps>`
@@ -22,6 +23,17 @@ export const Content = styled.div<ContentProps>`
     css`
       padding-bottom: 0 !important;
     `}
+
+  ${({ blogAbsolute }) =>
+    blogAbsolute &&
+    css`
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    `}
+
+
 
   display: flex;
   align-items: center;

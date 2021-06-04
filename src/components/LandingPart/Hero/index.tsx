@@ -24,13 +24,12 @@ function Hero() {
         <Content>
           <div className="content__text">
             <h1>
-              Impulsionando operações com Serviços Gerenciados que focam o
-              negócio.
+              Uma jornada rumo à excelência, impulsionando Operações e
+              Resultados.
             </h1>
             <p>
-              Mais informações permitem decisões mais precisas. As soluções da
-              Proative usam os dados disponíveis para produzir as melhores
-              tomadas de decisões.
+              Trazemos ordem e simplicidade a ambientes complexos, facilitando a
+              tomada de decisão e otimizando os resultados do seu negócio.
             </p>
           </div>
 
