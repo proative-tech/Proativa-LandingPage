@@ -8,6 +8,10 @@ export const ContainerTop = styled.div`
   align-items: center;
   justify-content: center;
 
+  button.styles__Container-sc-17cie9x-0.IJXpp {
+    width: 300px;
+}
+
   margin-top: 60px;
   margin-bottom: 116px;
 

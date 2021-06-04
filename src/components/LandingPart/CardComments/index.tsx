@@ -14,19 +14,16 @@ export function CardComments() {
 
       <div className="note">
         <p>
-          <strong>"</strong>O que mais nos chamou a atenção foi a transparência
-          e a confiança da empresa. Criamos uma relação de comprometimento,
-          ética profissional e com total prioridade no nosso atendimento. Foi
-          isso que mais nos encantou.”
+          <strong>"</strong>A entrega da ProAtiveestá além do monitoramento de dispositivos. Com a flexibilidade na construção de dashboards, possibilitou melhorias importantes e não somente uma visão para Capacity Planning de TI.”
         </p>
 
         <div className="profileMobile">
-          <strong>Adriano Santos</strong>
-          <p>Gestor executivo</p>
+          <strong>Renato Barbosa</strong>
+          <p>Coordenador de Infraestrutura</p>
         </div>
 
         <div className="empresa">
-          <p>Unimed Salto - Itu</p>
+          <p>Tecnisa</p>
         </div>
       </div>
     </Container>
