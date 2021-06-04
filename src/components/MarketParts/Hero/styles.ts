@@ -140,8 +140,8 @@ export const Container = styled.div<VisibledProp>`
 
     position: relative;
 
-    animation: ${animationFade} 0.5s;
     ${Content} {
+      animation: ${animationFade} 0.5s;
       > div.content__text {
         h1 {
           animation: ${animationH1} 0.8s;

@@ -25,7 +25,7 @@ export const ContainerBottom = styled.div`
 
   margin-top: 60px;
 
-  > p {
+  > a {
     margin-bottom: 1.75rem;
 
     font-size: 2.375rem;
@@ -33,6 +33,8 @@ export const ContainerBottom = styled.div`
     font-family: 'Source Sans Pro';
     color: #eb0029;
     font-weight: bold;
+
+    text-decoration: none;
   }
 
   div.containerMain {

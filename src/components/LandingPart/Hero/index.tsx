@@ -35,7 +35,9 @@ function Hero() {
 
           <div className="content__btns">
             <div className="containerBtn">
-              <Button type="button">Conheça nossas soluções</Button>
+              <Button type="button" onClick={() => router.push('/solucoes')}>
+                Conheça nossas soluções
+              </Button>
             </div>
             <div className="containerBtn">
               <Button
