@@ -28,7 +28,7 @@ export default function Index() {
       </Head>
       <Container>
         <Header />
-        <HeroSolutions>
+        <HeroSolutions idMoveScroll="soluciton-service">
           <div className="content__text">
             <h1>
               Service Managed*

@@ -29,7 +29,7 @@ export default function Index() {
       </Head>
       <Container>
         <Header />
-        <HeroSolutions>
+        <HeroSolutions idMoveScroll="containerCybersecurity">
           <div className="content__text">
             <h1>
               Cybersecurity*

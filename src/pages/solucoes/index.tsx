@@ -18,7 +18,7 @@ export default function Index() {
       </Head>
       <Container>
         <Header noPaddingBottom />
-        <HeroSolutions>
+        <HeroSolutions idMoveScroll="soluciton-service">
           <div className="content__text">
             <h1>
               Soluções Proative para gerenciamento de sistemas e segurança da

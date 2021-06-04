@@ -14,9 +14,10 @@ import {
 
 interface HeroSolutionProps {
   children: ReactNode;
+  idMoveScroll: string;
 }
 
-export function HeroSolutions({ children }: HeroSolutionProps) {
+export function HeroSolutions({ children, idMoveScroll }: HeroSolutionProps) {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 920 });
   const router = useRouter();
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
@@ -52,7 +53,7 @@ export function HeroSolutions({ children }: HeroSolutionProps) {
       </ContainerTop>
       <ContainerBottom>
         <Link
-          to="soluciton-service"
+          to={idMoveScroll}
           duration={700}
           smooth
           style={{ cursor: 'pointer' }}

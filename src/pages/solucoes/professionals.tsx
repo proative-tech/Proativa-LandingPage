@@ -29,7 +29,7 @@ export default function Index() {
       </Head>
       <Container>
         <Header />
-        <HeroSolutions>
+        <HeroSolutions idMoveScroll="containerProfessionals">
           <div className="content__text">
             <h1>
               Serviços Profissionais Um título explicativo para service manage
