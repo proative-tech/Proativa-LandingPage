@@ -30,7 +30,7 @@ export const AboutTwo = () => {
     <Container visibled={isAnimated} id="about-two">
       <Content>
         <Header>
-          <h1>Governança de TI impulsionando e colaborando seu negócio.</h1>
+          <h1>Governança de TI impulsionando e colaborando com o negócio.</h1>
           <p>
           Nosso principal objetivo em Governança de TI é alinhar a Tecnologia da Informação aos requisitos do negócio, levando em consideração soluções que agreguem valor e qualidade, integrando e automatizando os fluxos de trabalho, com garantia de continuidade dos serviços.
           </p>
