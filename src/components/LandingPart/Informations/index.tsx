@@ -37,7 +37,7 @@ export function Informations() {
         <ContainerInfos visibled={isAnimated}>
           <div className="containerInfo">
             <div className="containerImg">
-              <img src="/images/01_foguete.svg" alt="Seja Proativo" />
+              <img src="/images/teamidea.svg" alt="Seja Proativo" />
             </div>
             <p className="title">Cocriamos Valor</p>
             <p>Lentes para gerar valor e potencializar negócios.</p>
@@ -45,7 +45,7 @@ export function Informations() {
 
           <div className="containerInfo">
             <div className="containerImg">
-              <img src="/images/02_relogio.svg" alt="Diminua o Downtime" />
+              <img src="/images/analise.svg" alt="Diminua o Downtime" />
             </div>
             <p className="title">Continuidade</p>
             <p>Garantimos a continuidade do seu negócio.</p>
@@ -53,7 +53,7 @@ export function Informations() {
 
           <div className="containerInfo">
             <div className="containerImg">
-              <img src="/images/03_alvo.svg" alt="Maior produtividade" />
+              <img src="/images/preferencias.svg" alt="Maior produtividade" />
             </div>
             <p className="title">Gestão e Agilidade</p>
             <p>
@@ -64,7 +64,7 @@ export function Informations() {
 
           <div className="containerInfo">
             <div className="containerImg">
-              <img src="/images/04_lampada.svg" alt="Melhore sua Gestão" />
+              <img src="/images/medalha.svg" alt="Melhore sua Gestão" />
             </div>
             <p className="title">Garantimos Qualidade</p>
             <p>

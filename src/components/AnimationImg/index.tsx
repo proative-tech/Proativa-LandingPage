@@ -6,18 +6,15 @@ import * as S from './styles';
 
 type AnimationProps = {
   visibled?: boolean;
+  isHover?: boolean;
 };
 
-export const AnimationImg = ({ visibled = false }: AnimationProps) => {
-  const [isHover, setIsHover] = useState(false);
-
+export const AnimationImg = ({
+  visibled = false,
+  isHover = false,
+}: AnimationProps) => {
   return (
-    <S.Wrapper
-      isHover={isHover}
-      visibled={visibled}
-      onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
-    >
+    <S.Wrapper isHover={isHover} visibled={visibled}>
       {isHover ? (
         <>
           <RiAddFill />

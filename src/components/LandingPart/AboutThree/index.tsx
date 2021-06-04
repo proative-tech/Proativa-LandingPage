@@ -8,6 +8,7 @@ export const AboutThree = () => {
   const isMobile = useMediaQuery({ maxWidth: 490 });
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
   const [isAnimated, setIsAnimated] = useState(false);
+  const [isHover, setIsHover] = useState(false);
 
   const handleScroll = () => {
     const ele: Element | any = document.getElementById('about-three');
@@ -28,13 +29,16 @@ export const AboutThree = () => {
 
   return (
     <Container visibled={isAnimated} id="about-three">
-      <ContainerImg>
+      <ContainerImg
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+      >
         <img
           data-img="img"
           src={isMobile ? '/images/about-3-m.png' : '/images/about-3-web.png'}
           alt="proative"
         />
-        <AnimationImg />
+        <AnimationImg isHover={isHover} />
       </ContainerImg>
 
       <Content>

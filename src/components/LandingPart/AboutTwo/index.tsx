@@ -7,6 +7,7 @@ import { Container, ContainerImg, Content, Header } from './styles';
 export const AboutTwo = () => {
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
   const [isAnimated, setIsAnimated] = useState(false);
+  const [isHover, setIsHover] = useState(false);
 
   const handleScroll = () => {
     const ele: Element | any = document.getElementById('about-two');
@@ -38,9 +39,12 @@ export const AboutTwo = () => {
           </p>
         </Header>
       </Content>
-      <ContainerImg>
+      <ContainerImg
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+      >
         <img src="/images/home2.png" alt="proative" data-img="img" />
-        <AnimationImg />
+        <AnimationImg isHover={isHover} />
       </ContainerImg>
     </Container>
   );
