@@ -10,12 +10,13 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-  max-width: 1028px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  
+
+
+  margin: 0; padding: 0; height: 100%; overflow: hidden;
 
   > iframe {
+    
     width: 100%;
     height: 100%;
     border: none;

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Header } from '../components/Header';
 
 import { Container, Wrapper, Content } from '../styles/pages/Blog';
+import { Footer } from '../components/Footer';
 
 export default function Index() {
   return (
@@ -14,12 +15,16 @@ export default function Index() {
       </Container>
       <Wrapper>
         <Content>
-          <iframe
-            src="https://google-webfonts-helper.herokuapp.com/fonts/poppins?subsets=latin"
+       
+        <iframe
+          
+            src="https://blog-proative.intraversa.com/"
             title="Test blog"
           />
+       
         </Content>
       </Wrapper>
+      <Footer />
     </>
   );
 }
