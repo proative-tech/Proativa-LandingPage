@@ -36,7 +36,7 @@ export const HeroMaketOrCases = () =>{
       <ContainerTop>
         {(isMobile && !def) && (
           <img
-            src="/images/Imagem_Carreiras01@2x.png"
+            src="/images/Imagem_Carreiras01.png"
             alt="Imagem de 3 pessoas conversando em pé."
           />
         )}
@@ -57,8 +57,7 @@ export const HeroMaketOrCases = () =>{
         <a href="https://vemserproative.solides.jobs/" >
         <h1>
           <p className="tag">Somos feitos de pessoas <br /> que fazem acontecer.</p>
-        </h1>
-
+        </h1>   
         </a>
 
         <div className="containerMain">
