@@ -55,10 +55,9 @@ export const HeroMaketOrCases = () =>{
       </ContainerTop>
       <ContainerBottom>
         <a href="https://vemserproative.solides.jobs/" >
-        <h1>
-          <p className="tag">Somos feitos de pessoas <br /> que fazem acontecer.</p>
-        </h1>
-
+          <h1>
+            <p className="tag">Somos feitos de pessoas <br /> que fazem acontecer.</p>
+          </h1>
         </a>
 
         <div className="containerMain">

@@ -7,7 +7,6 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   width: 100vw;
   height: 1300px;
-  
 
   position: relative;
 

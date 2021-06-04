@@ -75,24 +75,26 @@ export const Header = styled.div`
   }
 
   p {
-    font-size: 0.875rem;
-    // line-height: 34px;
+    font-size: 1rem;
+    line-height: 30px;
     color: #434343;
     text-align: right;
     margin-top: 2rem;
   }
 
   @media (min-width: 1441px) {
-    max-width: 73%;
+    max-width: 536px;
+
+    h1 {
+      max-width: 536px;
+    }
+
+    p {
+      max-width: 441px;
+
+      margin-left: auto;
+    }
     margin-left: auto;
-  }
-
-  @media (min-width: 1518px) {
-    max-width: 80%;
-  }
-
-  @media (min-width: 1772px) {
-    max-width: 70%;
   }
 
   @media (max-width: 1440px) {
