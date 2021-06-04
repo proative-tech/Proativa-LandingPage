@@ -26,15 +26,17 @@ export const ContainerBottom = styled.div`
   margin-top: 60px;
 
   > a {
-    margin-bottom: 1.75rem;
-
-    font-size: 2.375rem;
-    line-height: 1.1875rem;
-    font-family: 'Source Sans Pro';
-    color: #eb0029;
-    font-weight: bold;
-
     text-decoration: none;
+    h1 {
+      margin-bottom: 1.75rem;
+
+      font-size: 2.375rem;
+      line-height: 2.5rem;
+      font-family: 'Source Sans Pro';
+      color: #eb0029;
+      font-weight: 600;
+      text-align: center;
+    }
   }
 
   div.containerMain {

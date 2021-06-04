@@ -6,8 +6,12 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   width: 100vw;
+<<<<<<< HEAD
   height: 70vw;
   
+=======
+  height: 1300px;
+>>>>>>> 59e4d3f546519db8003996dbaf793ccc85a68495
 
   position: relative;
 
