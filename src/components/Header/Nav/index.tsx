@@ -89,7 +89,7 @@ export function Nav() {
               />
             )}
           </li>
-          <li
+          {/* <li
             onMouseEnter={() => setFocusMerket(!focusMarket)}
             onMouseLeave={() => setFocusMerket(!focusMarket)}
           >
@@ -121,7 +121,7 @@ export function Nav() {
           </li>
           <li>
             <Link href="/cases">CASES</Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/carreiras">CARREIRAS</Link>
           </li>
@@ -141,7 +141,7 @@ export function Nav() {
                 links={[
                   { name: 'Clientes', href: '/' },
                   { name: 'Parceiros', href: '/' },
-                  { name: 'Colaboradores', href: '/' },
+                  // { name: 'Colaboradores', href: '/' },
                 ]}
               />
             )}

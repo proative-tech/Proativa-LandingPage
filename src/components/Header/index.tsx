@@ -24,7 +24,6 @@ export function Header({
               <Image src="/images/logo.svg" width={168} height={67} />
             </Link>
           </h1>
-
           <Nav />
         </Content>
       </Container>

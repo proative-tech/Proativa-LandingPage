@@ -42,7 +42,7 @@ export default function Index() {
         </ContainerImgRight>
         <ContainerImgLeft name="logistica">
           <header className="headerContent">
-            <h1>Sobre nós</h1>
+            <h1>Inteligência Coletiva</h1>
             <p>
               Nosso histórico consolida nossa experiência e nossos valores
               orientam tudo o que fazemos, incluindo como interagimos com nossos

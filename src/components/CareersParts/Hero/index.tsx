@@ -36,26 +36,29 @@ export const HeroMaketOrCases = () =>{
       <ContainerTop>
         {(isMobile && !def) && (
           <img
-            src="/images/carreiras-mobile.png"
+            src="/images/Imagem_Carreiras01@2x.png"
             alt="Imagem de 3 pessoas conversando em pé."
           />
         )}
         {def && (
           <img
-            src="/images/carreiras-web-1440.png"
+            src="/images/Imagem_Carreiras01.png"
             alt="Imagem de 3 pessoas conversando em pé."
           />
         )}
         {(!def && isMobileUltra) && (
           <img
-            src="/images/carreiras-1920.png"
+            src="/images/Imagem_Carreiras01.png"
             alt="Imagem de 3 pessoas conversando em pé."
           />
         )}
       </ContainerTop>
       <ContainerBottom>
-        <a href="https://www.vemserproative.solides.jobs/" >
-          <p className="tag">#vemserproative</p>
+        <a href="https://vemserproative.solides.jobs/" >
+        <h1>
+          <p className="tag">Somos feitos de pessoas <br /> que fazem acontecer.</p>
+        </h1>
+
         </a>
 
         <div className="containerMain">

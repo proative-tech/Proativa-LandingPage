@@ -6,7 +6,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 1400px;
   overflow: hidden;
 
   position: relative;
