@@ -166,6 +166,11 @@ export const ContainerInfos = styled.div<VisibledProp>`
   > div.containerInfo:nth-child(2) {
     ${({ visibled }) => css`
       opacity: ${visibled ? 1 : 0};
+
+      img {
+        height: 98px;
+        width: 98px;
+      }
       ${visibled &&
       css`
         animation: ${animationsObj.toYAnimation(50)} 4s;
@@ -176,6 +181,11 @@ export const ContainerInfos = styled.div<VisibledProp>`
   > div.containerInfo:nth-child(3) {
     ${({ visibled }) => css`
       opacity: ${visibled ? 1 : 0};
+
+      img {
+        height: 98px;
+        width: 98px;
+      }
       ${visibled &&
       css`
         animation: ${animationsObj.toYAnimation(50)} 5s;
