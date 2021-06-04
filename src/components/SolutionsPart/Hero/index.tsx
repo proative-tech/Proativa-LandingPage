@@ -47,7 +47,7 @@ export function HeroSolutions({ children, idMoveScroll }: HeroSolutionProps) {
         <Content>{children}</Content>
         {!isMobileOrTablet && (
           <ContainerImg>
-            <img src="/images/herosolution.svg" alt="Proativa" />
+            <img src="/images/hero3.svg" alt="Proativa" />
           </ContainerImg>
         )}
       </ContainerTop>

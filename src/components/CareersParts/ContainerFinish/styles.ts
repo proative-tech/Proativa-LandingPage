@@ -11,6 +11,14 @@ export const ContainerTop = styled.div`
   margin-top: 60px;
   margin-bottom: 116px;
 
+  p.tag {
+    color: #eb0029;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   > p {
     margin-bottom: 1.75rem;
 
