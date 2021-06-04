@@ -11,7 +11,7 @@ export default function Index() {
         <title>Proative | Blog</title>
       </Head>
       <Wrapper>
-        <Header noPaddingBottom blogAbsolute />
+        <Header noPaddingBottom />
         <Content>
           <iframe
             src="https://blog-proative.intraversa.com/"
@@ -19,6 +19,7 @@ export default function Index() {
           />
         </Content>
       </Wrapper>
+      <Footer />
     </>
   );
 }
