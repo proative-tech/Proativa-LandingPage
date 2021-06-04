@@ -123,11 +123,11 @@ export const ContainerInfos = styled.div<VisibledProp>`
       align-items: center;
 
       margin-bottom: 12px;
-
+      /*
       img {
         height: 80px;
         width: 80px;
-      }
+      } */
     }
 
     p.title {
@@ -149,6 +149,13 @@ export const ContainerInfos = styled.div<VisibledProp>`
   > div.containerInfo:nth-child(1) {
     ${({ visibled }) => css`
       opacity: ${visibled ? 1 : 0};
+      max-width: 230px;
+
+      img {
+        height: 98px;
+        width: 98px;
+      }
+
       ${visibled &&
       css`
         animation: ${animationsObj.toYAnimation(50)} 3s;
@@ -179,6 +186,13 @@ export const ContainerInfos = styled.div<VisibledProp>`
   > div.containerInfo:nth-child(4) {
     ${({ visibled }) => css`
       opacity: ${visibled ? 1 : 0};
+      max-width: 230px;
+
+      img {
+        height: 98px;
+        width: 98px;
+      }
+
       ${visibled &&
       css`
         animation: ${animationsObj.toYAnimation(50)} 6s;
