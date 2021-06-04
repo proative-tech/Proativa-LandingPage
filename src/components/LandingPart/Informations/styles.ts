@@ -123,6 +123,11 @@ export const ContainerInfos = styled.div<VisibledProp>`
       align-items: center;
 
       margin-bottom: 12px;
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
     }
 
     p.title {
