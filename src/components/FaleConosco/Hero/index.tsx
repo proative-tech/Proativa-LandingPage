@@ -25,7 +25,7 @@ export function HeroFaleConosco({ children }: HeroSolutionProps) {
         <Content>{children}</Content>
         {!isMobileOrTablet && (
           <ContainerImg>
-            <img src="/images/herosolution.svg" alt="Proativa" />
+            <img src="/images/faleconosco4.svg" alt="Proativa" />
           </ContainerImg>
         )}
       </ContainerTop>
