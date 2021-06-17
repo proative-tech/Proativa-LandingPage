@@ -31,23 +31,9 @@ export function CardComments({
       </div>
 
       <div className="note">
-<<<<<<< HEAD
         <div className="contentNote">
           <strong>"</strong>
           <p>{comment}</p>
-=======
-        <p>
-          <strong>"</strong>A entrega da ProAtiveestá além do monitoramento de dispositivos. Com a flexibilidade na construção de dashboards, possibilitou melhorias importantes e não somente uma visão para Capacity Planning de TI.”
-        </p>
-
-        <div className="profileMobile">
-          <strong>Renato Barbosa</strong>
-          <p>Coordenador de Infraestrutura</p>
-        </div>
-
-        <div className="empresa">
-          <p>Tecnisa</p>
->>>>>>> 19153985b632347ec57923e406fe6ebdca4874df
         </div>
       </div>
       <div />
