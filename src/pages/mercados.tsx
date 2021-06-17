@@ -16,7 +16,7 @@ export default function Index() {
         <title>Proative | Mercados</title>
       </Head>
       <Container>
-        <Header />
+        <Header bgColor="#f4f4f4" />
         <HeroMaketOrCases id="mkt-top" to="mkt-logista">
           <div className="content__text">
             <h1>Mercados de Atuação</h1>

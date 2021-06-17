@@ -4,20 +4,24 @@ import Image from 'next/image';
 
 import { Nav } from './Nav';
 
-import { Container, Content } from './styles';
+import { Container, Content, Both } from './styles';
 
-interface HeaderProps {
+export interface HeaderProps {
   noPaddingBottom?: boolean;
   blogAbsolute?: boolean;
+  bgColor?: string;
+  noFixed?: boolean;
 }
 
 export function Header({
   noPaddingBottom = false,
   blogAbsolute = false,
+  noFixed = false,
+  bgColor,
 }: HeaderProps) {
   return (
     <>
-      <Container id="headerScroll">
+      <Container noFixed={noFixed} bgColor={bgColor}>
         <Content noPaddingBottom={noPaddingBottom} blogAbsolute={blogAbsolute}>
           <h1 style={{ cursor: 'pointer' }}>
             <Link href="/" passHref>
@@ -27,6 +31,8 @@ export function Header({
           <Nav />
         </Content>
       </Container>
+
+      {!noFixed && <Both id="headerScroll" />}
     </>
   );
 }

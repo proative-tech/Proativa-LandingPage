@@ -12,7 +12,7 @@ export default function Index() {
         <title>Proative | Fale Conosco</title>
       </Head>
       <Container>
-        <Header />
+        <Header bgColor="#fff" />
         <HeroFaleConosco>
           <div className="content__text">
             <h1>
@@ -23,7 +23,10 @@ export default function Index() {
               Clique no botão abaixo para solicitar o contato de um deles.
             </p>
 
-            <ButtonAsLink as="a" href="mailto:contato@proativetec.com.br?subject=Email para contato&body=Escreva aqui sua solicitação. Nossa equipe entrará em contato assim que puder">
+            <ButtonAsLink
+              as="a"
+              href="mailto:contato@proativetec.com.br?subject=Email para contato&body=Escreva aqui sua solicitação. Nossa equipe entrará em contato assim que puder"
+            >
               Solicitar contato
             </ButtonAsLink>
 

@@ -6,11 +6,6 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  max-width: 1146px;
-  margin: 0 auto;
-
-  padding: 0 32px;
-
   .section-main {
     padding: 7rem 0 3rem 0;
     width: 100%;
@@ -84,8 +79,6 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 0 2rem;
-
     .section-main {
       padding-top: 62px;
       padding-bottom: 1.5rem;
@@ -164,6 +157,18 @@ export const ContainerCarousel = styled.div`
       }
     }
   }
+
+  @media (max-width: 490px) {
+    div.rec-slider-container {
+      div.rec-swipable {
+        .rec-carousel-item {
+          .rec {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+  }
 `;
 
 export const ContainerBottomCarousel = styled.div`
@@ -193,5 +198,27 @@ export const ContainerBottomCarousel = styled.div`
     border-radius: 50%;
 
     margin: 0 17px;
+  }
+`;
+
+export const ContainerClients = styled.div`
+  max-width: 1146px;
+  margin: 0 auto;
+
+  padding: 0 32px;
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
+`;
+
+export const ContainerTop = styled.div`
+  max-width: 1146px;
+  margin: 0 auto;
+
+  padding: 0 32px;
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
   }
 `;

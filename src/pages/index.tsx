@@ -17,7 +17,7 @@ export default function Index() {
         <title>Proative | Home</title>
       </Head>
       <Container>
-        <Header />
+        <Header bgColor="#fff" />
         <Hero />
         <Informations />
         <About />

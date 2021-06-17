@@ -1,33 +1,50 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import { Container } from './styles';
 
-export function CardComments() {
+type CardCommentsProps = {
+  comment: string;
+  clientCompany: string;
+  nameClient: string;
+  areaClient: string;
+  src: string;
+};
+
+export function CardComments({
+  comment,
+  clientCompany,
+  nameClient,
+  areaClient,
+  src,
+}: CardCommentsProps) {
+  const isMobile = useMediaQuery({ maxWidth: 490 });
+
   return (
     <Container>
       <div className="profile">
-        <div className="img" />
+        <img src={src} alt={clientCompany} />
         <br />
-        <strong>Adriano Santos</strong>
-        <p>Gestor executivo</p>
+        <div className="empresa">
+          <p>{clientCompany}</p>
+        </div>
       </div>
 
       <div className="note">
-        <p>
-          <strong>"</strong>O que mais nos chamou a atenção foi a transparência
-          e a confiança da empresa. Criamos uma relação de comprometimento,
-          ética profissional e com total prioridade no nosso atendimento. Foi
-          isso que mais nos encantou.”
-        </p>
-
-        <div className="profileMobile">
-          <strong>Adriano Santos</strong>
-          <p>Gestor executivo</p>
+        <div className="contentNote">
+          <strong>"</strong>
+          <p>{comment}</p>
         </div>
-
-        <div className="empresa">
-          <p>Unimed Salto - Itu</p>
-        </div>
+      </div>
+      <div />
+      <div className="infomationsClient">
+        <strong>{nameClient}</strong>
+        <p>{areaClient}</p>
+        {isMobile && (
+          <div className="empresa">
+            <p>{clientCompany}</p>
+          </div>
+        )}
       </div>
     </Container>
   );

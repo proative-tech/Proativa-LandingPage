@@ -20,7 +20,7 @@ export default function Index() {
         <title>Proative | Carreiras</title>
       </Head>
       <Container>
-        <Header noPaddingBottom />
+        <Header noPaddingBottom bgColor="#fff" />
         <HeroMaketOrCases />
       </Container>
       <ContainerInfos>

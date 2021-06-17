@@ -11,7 +11,7 @@ export default function Index() {
         <title>Proative | Blog</title>
       </Head>
       <Wrapper>
-        <Header noPaddingBottom />
+        <Header noPaddingBottom noFixed bgColor="#fafafa" />
         <Content>
           <iframe
             src="https://blog-proative.intraversa.com/"

@@ -1,7 +1,20 @@
 import styled, { css } from 'styled-components';
+import { HeaderProps } from '.';
 
-export const Container = styled.div`
-  width: 100vw;
+export const Container = styled.div<HeaderProps>`
+  ${({ bgColor, noFixed }) => css`
+    width: 100vw;
+    background-color: ${bgColor};
+    z-index: 50;
+
+    ${!noFixed &&
+    css`
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    `}
+  `}
 `;
 
 interface ContentProps {
@@ -16,7 +29,7 @@ export const Content = styled.div<ContentProps>`
 
   margin: 0 auto;
 
-  padding: 44px 0;
+  padding: 1rem 0 0rem;
 
   ${props =>
     props.noPaddingBottom &&
@@ -38,4 +51,9 @@ export const Content = styled.div<ContentProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
+
+export const Both = styled.div`
+  height: 170px;
+  padding: 44px 0;
 `;
