@@ -8,8 +8,19 @@ export const ContainerTop = styled.div`
   align-items: center;
   justify-content: center;
 
+  button {
+    width: 300px;
+}
   margin-top: 60px;
   margin-bottom: 116px;
+
+  p.tag {
+    color: #eb0029;
+  }
+
+  a {
+    text-decoration: none;
+  }
 
   > p {
     margin-bottom: 1.75rem;

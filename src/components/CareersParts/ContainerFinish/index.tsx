@@ -1,11 +1,14 @@
 /* eslint-disable prettier/prettier */
+import { useRouter } from 'next/router';
 import {  useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive';
+import { Button } from '../../Button';
 import { Link } from 'react-scroll';
 
 import { Container, ContainerTop, ContainerBottom, ContainerInfo, ContainerGoTop } from './styles';
 
 export function ContainerFinish() {
+  const router = useRouter();
   const isMobile = useMediaQuery({ maxWidth: 490 });
   const isMobileUltra = useMediaQuery({ minWidth: 1920 });
   const def = useMediaQuery({ minWidth: 491, maxWidth: 1919 });
@@ -50,7 +53,9 @@ export function ContainerFinish() {
       <ContainerTop >
       <a href="https://vemserproative.solides.jobs/" >
         <h1>
-          <p className="tag">#vemserproative</p>
+        <Button type="button" onClick={() => router.push('/solucoes')}>
+                #vemserproative
+              </Button>
         </h1>
         </a>
       </ContainerTop>
@@ -76,7 +81,7 @@ export function ContainerFinish() {
       </ContainerBottom>
       <ContainerInfo id="infosList">
         <h1>
-          Dez atitude <br /> <strong>Proative</strong>
+          Dez atitudes <br /> <strong>Proative</strong>
         </h1>
         <div className="containerMainInfo">
           <ul>
@@ -93,6 +98,15 @@ export function ContainerFinish() {
           </ul>
         </div>
       </ContainerInfo>
+      <ContainerTop >
+      <a href="https://vemserproative.solides.jobs/" >
+        <h1>
+        <Button id="carreiras2" type="button" onClick={() => router.push('/solucoes')}>
+        Conheça nossas vagas
+              </Button>
+        </h1>
+        </a>
+      </ContainerTop>
       <ContainerGoTop>
         <Link to="headerScroll" smooth duration={700} style={{ display: 'inline-block', zIndex: 20, width: 60, height: 40, cursor: 'pointer' }}>
           <img src="/images/arrow-go-top.svg" alt="seta para cima" />
