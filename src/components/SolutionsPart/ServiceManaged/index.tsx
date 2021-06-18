@@ -2,7 +2,7 @@ import { ReactNode, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import Link from 'next/link';
-import { Button } from '../../Button';
+import { AnimationImg } from '../AnimationImg';
 import {
   Wrapper,
   Container,
@@ -46,12 +46,7 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
     <Wrapper>
       <Container id="soluciton-service" visibled={isAnimated}>
         <ContainerImg>
-          <img
-            src={
-              is1920 ? '/images/servicesManaged1920.png' : '/images/teste.jpeg'
-            }
-            alt="proative"
-          />
+          <AnimationImg url="/images/servicesManaged1920.png" />
         </ContainerImg>
 
         <Content>
@@ -97,9 +92,10 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
                 </p>
               </Footer>
               <ContainerButton>
-                <Link scroll={false} href="/solucoes/service-manager" passHref>
-                  <ButtonText label="Saiba mais sobre Services Managed" />
-                </Link>
+                <ButtonText
+                  label="Saiba mais sobre Services Managed"
+                  href="/solucoes/service-manager"
+                />
               </ContainerButton>
             </>
           )}

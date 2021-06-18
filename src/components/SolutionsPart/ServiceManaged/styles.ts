@@ -11,11 +11,32 @@ export const Wrapper = styled.div`
 
 export const ContainerImg = styled.div`
   max-width: 100%;
+  overflow: hidden;
+
+  > div {
+    content: '';
+    background: url('/images/servicesManaged1920.png') #fafafa;
+    background-size: cover;
+    background-position: center left;
+    width: 110%;
+    height: 629px;
+    position: relative;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateX(-50px);
+    }
+  }
 
   img {
-    display: block;
-    width: 100%;
+    /* max-width: 100%; */
     max-height: 629px;
+  }
+
+  &:hover {
+    img {
+      transform: translateX(-50px);
+    }
   }
 
   @media (min-width: 1441px) {

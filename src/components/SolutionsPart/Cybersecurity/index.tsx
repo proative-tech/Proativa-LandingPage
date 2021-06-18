@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { ButtonText } from '../ButtonText';
+import { AnimationImg } from '../AnimationImg';
 import {
   Wrapper,
   Container,
@@ -52,10 +53,7 @@ export const Cybersecurity = ({ children }: CybersecurityProps) => {
         id="containerCybersecurity"
       >
         <ContainerImg modifier={!!children}>
-          <img
-            src={is1920 ? '/images/cyber1920.png' : '/images/teste2.png'}
-            alt="proative"
-          />
+          <AnimationImg url="/images/teste2.png" />
         </ContainerImg>
         <Content>
           {children ? (
@@ -96,9 +94,10 @@ export const Cybersecurity = ({ children }: CybersecurityProps) => {
                 <p>Os dados de serem expostos ou roubados, em tempo real.</p>
               </Footer>
               <ContainerButton>
-                <Link scroll={false} href="/solucoes/cybersecurity" passHref>
-                  <ButtonText label="Saiba mais sobre Cybersecurity" />
-                </Link>
+                <ButtonText
+                  label="Saiba mais sobre Cybersecurity"
+                  href="/solucoes/cybersecurity"
+                />
               </ContainerButton>
             </>
           )}

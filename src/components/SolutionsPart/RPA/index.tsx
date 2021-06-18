@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { ButtonText } from '../ButtonText';
+import { AnimationImg } from '../AnimationImg';
 import {
   Wrapper,
   Container,
@@ -52,7 +53,7 @@ export const RPA = ({ children }: CybersecurityProps) => {
         id="containerCybersecurity"
       >
         <ContainerImg modifier={!!children}>
-          <img src="/images/imagemrpa.jpeg" alt="proative" />
+          <AnimationImg url="/images/imagemrpa.jpeg" />
         </ContainerImg>
         <Content>
           {children ? (
@@ -85,9 +86,10 @@ export const RPA = ({ children }: CybersecurityProps) => {
               </Footer>
 
               <ContainerButton>
-                <Link scroll={false} href="/solucoes/cybersecurity" passHref>
-                  <ButtonText label="Saiba mais sobre RPA" />
-                </Link>
+                <ButtonText
+                  label="Saiba mais sobre RPA"
+                  href="/solucoes/cybersecurity"
+                />
               </ContainerButton>
             </>
           )}

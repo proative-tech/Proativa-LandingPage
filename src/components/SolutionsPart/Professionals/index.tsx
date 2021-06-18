@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { ButtonText } from '../ButtonText';
+import { AnimationImg } from '../AnimationImg';
 import {
   Wrapper,
   Container,
@@ -82,25 +83,17 @@ export const Professionals = ({ children }: CybersecurityProps) => {
                 </li>
               </ListVant>
               <ContainerButton>
-                <Link scroll={false} href="/solucoes/professionals" passHref>
-                  <ButtonText
-                    label="  Saiba mais sobre Serviços Profissionais"
-                    directionArrow="right"
-                  />
-                </Link>
+                <ButtonText
+                  label="  Saiba mais sobre Serviços Profissionais"
+                  directionArrow="right"
+                  href="/solucoes/professionals"
+                />
               </ContainerButton>
             </>
           )}
         </Content>
         <ContainerImg>
-          <img
-            src={
-              is1920
-                ? '/images/servicosProfissionais1920.png'
-                : '/images/servico_profissional1440.png'
-            }
-            alt="proative"
-          />
+          <AnimationImg url="/images/servicosProfissionais1920.png" />
         </ContainerImg>
       </Container>
     </Wrapper>

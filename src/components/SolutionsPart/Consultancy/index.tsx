@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { ButtonText } from '../ButtonText';
+import { AnimationImg } from '../AnimationImg';
 import {
   Wrapper,
   WrapperFooters,
@@ -77,26 +78,18 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
                 </Footer>
               </WrapperFooters>
               <ContainerButton>
-                <Link scroll={false} href="/solucoes/consultancy" passHref>
-                  <ButtonText
-                    label="Saiba mais sobre Consultoria"
-                    directionArrow="right"
-                  />
-                </Link>
+                <ButtonText
+                  label="Saiba mais sobre Consultoria"
+                  directionArrow="right"
+                  href="/solucoes/consultancy"
+                />
               </ContainerButton>
             </>
           )}
         </Content>
 
         <ContainerImg modifier={!!children}>
-          <img
-            src={
-              is1920
-                ? '/images/consultoria1920.png'
-                : '/images/consultoria1440.png'
-            }
-            alt="proative"
-          />
+          <AnimationImg url="/images/consultoria1920.png" />
         </ContainerImg>
       </Container>
     </Wrapper>

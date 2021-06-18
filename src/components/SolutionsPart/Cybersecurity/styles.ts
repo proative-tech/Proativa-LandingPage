@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
 
 export const ContainerImg = styled.div<ContainerProps>`
   max-width: 100%;
+  overflow: hidden;
 
   img {
     display: block;

@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+
 import { ButtonTextProps } from '.';
 
 export const WrapperIcon = styled.div``;
@@ -30,7 +31,7 @@ const modifiers = {
   `,
 };
 
-export const Wrapper = styled.a<Pick<ButtonTextProps, 'directionArrow'>>`
+export const Wrapper = styled.div<Pick<ButtonTextProps, 'directionArrow'>>`
   ${({ directionArrow }) => css`
     display: flex;
     ${modifiers[directionArrow]()}
@@ -38,6 +39,11 @@ export const Wrapper = styled.a<Pick<ButtonTextProps, 'directionArrow'>>`
     position: relative;
 
     cursor: pointer;
+
+    > a {
+      display: flex;
+      text-decoration: none;
+    }
 
     &::after {
       content: '';
