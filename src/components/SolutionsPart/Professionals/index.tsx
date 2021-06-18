@@ -2,8 +2,9 @@ import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
-import { Button } from '../../Button';
+import { ButtonText } from '../ButtonText';
 import {
+  Wrapper,
   Container,
   ContainerImg,
   Content,
@@ -43,63 +44,65 @@ export const Professionals = ({ children }: CybersecurityProps) => {
   }, []);
 
   return (
-    <Container visibled={isAnimated} id="containerProfessionals">
-      <ContainerImg>
-        <img
-          src={
-            is1920
-              ? '/images/servicosProfissionais1920.png'
-              : '/images/servico_profissional1440.png'
-          }
-          alt="proative"
-        />
-      </ContainerImg>
-      <Content>
-        {children ? (
-          <Header>{children}</Header>
-        ) : (
-          <>
-            <Header>
-              <span>Serviços Profissionais</span>
-              <h1>
-                Possuímos profissionais capacitados e certificados para executar
-                as atividades críticas do seu ambiente.
-              </h1>
-              <p>
-                Além dos projetos, também provemos serviços residentes, por meio
-                de um processo de recrutamento e seleção desenvolvido com
-                agilidade e assertividade, com modelo de gestão por SLA e XLA
-                (Service Level Agreement e Experience Level Agreement), aderente
-                às melhores práticas de Governança de TI, para impulsionar seu
-                negócio.
-              </p>
-            </Header>
-            <ListVant>
-              <li>
-                <strong>1.</strong> Redução de custos com contratação de
-                profissionais.
-              </li>
-              <li>
-                <strong>2.</strong> Rapidez na alocação de profissionais.
-              </li>
-              <li>
-                <strong>3.</strong> Gerenciamento dos serviços através de SLA e
-                XLA
-              </li>
-              <li>
-                <strong>4.</strong> Capacitação Técnica..
-              </li>
-            </ListVant>
-            <ContainerButton>
-              <Link scroll={false} href="/solucoes/professionals" passHref>
-                <Button type="button">
-                  Saiba mais sobre Serviços Profissionais
-                </Button>
-              </Link>
-            </ContainerButton>
-          </>
-        )}
-      </Content>
-    </Container>
+    <Wrapper>
+      <Container visibled={isAnimated} id="containerProfessionals">
+        <Content>
+          {children ? (
+            <Header>{children}</Header>
+          ) : (
+            <>
+              <Header>
+                <span>Professional Services</span>
+                <h1>
+                  Nossos Serviços Profissionais abrangem uma ampla gama de
+                  especializações que são prestados por nossa equipe e nossos
+                  parceiros.
+                </h1>
+                <p>
+                  Quando se trata de transformação digital, a tecnologia por si
+                  só não é suficiente. Para realmente transformar uma
+                  organização requer uma combinação de pessoas, processos e
+                  tecnologia. Encontrar a combinação certa pode ser um desafio.
+                  É por isso que oferecemos o Proative Professional Services.
+                </p>
+              </Header>
+              <ListVant>
+                <li>
+                  <strong>1.</strong> Serviços de Implementação
+                </li>
+                <li>
+                  <strong>2.</strong> Migração & PMO
+                </li>
+                <li>
+                  <strong>3.</strong> Serviços Gerenciados - Profissional
+                  Residente XLA
+                </li>
+                <li>
+                  <strong>4.</strong> Serviços Expressos
+                </li>
+              </ListVant>
+              <ContainerButton>
+                <Link scroll={false} href="/solucoes/professionals" passHref>
+                  <ButtonText
+                    label="  Saiba mais sobre Serviços Profissionais"
+                    directionArrow="right"
+                  />
+                </Link>
+              </ContainerButton>
+            </>
+          )}
+        </Content>
+        <ContainerImg>
+          <img
+            src={
+              is1920
+                ? '/images/servicosProfissionais1920.png'
+                : '/images/servico_profissional1440.png'
+            }
+            alt="proative"
+          />
+        </ContainerImg>
+      </Container>
+    </Wrapper>
   );
 };

@@ -6,13 +6,20 @@ interface ContainerProps {
   modifier: boolean;
 }
 
+export const Wrapper = styled.div`
+  width: 100vw;
+  background: #fff;
+
+  padding-top: 3rem;
+`;
+
 export const ContainerImg = styled.div<ContainerProps>`
   max-width: 100%;
 
   img {
     display: block;
     width: 100%;
-    height: 100%;
+    max-height: 671px;
   }
 
   ${({ modifier }) =>
@@ -21,8 +28,10 @@ export const ContainerImg = styled.div<ContainerProps>`
       order: -1;
     `}
   @media (min-width: 1441px) {
-    max-height: 820px;
-    height: 100%;
+    img {
+      max-height: 715px;
+      height: 100%;
+    }
   }
 
   @media (max-width: 928px) {
@@ -31,8 +40,7 @@ export const ContainerImg = styled.div<ContainerProps>`
 `;
 
 export const Content = styled.div`
-  padding: 4.9rem 4rem 63px;
-  width: 92%;
+  padding-left: 65px;
 
   height: 100%;
 
@@ -44,12 +52,6 @@ export const Content = styled.div`
     max-width: 780px;
     width: 100%;
     margin-left: auto;
-  }
-
-  @media (max-width: 1440px) {
-    max-width: 80%;
-    width: 100%;
-    margin-left: 10%;
   }
 
   @media (max-width: 1399px) {
@@ -82,17 +84,19 @@ export const Content = styled.div`
 export const Header = styled.div`
   margin-bottom: 25px;
 
+  max-width: 445px;
+
   span {
     font-size: 1rem;
     line-height: 1.1875rem;
     color: #eb0029;
-    font-weight: 300;
+    font-weight: 600;
     font-family: 'Source Sans Pro';
   }
 
   h1 {
-    font-size: 2.25rem;
-    line-height: 3.125rem;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
     font-family: 'Source Sans Pro';
   }
 
@@ -166,11 +170,13 @@ export const Header = styled.div`
 export const Footer = styled.div`
   margin-top: 12px;
 
+  max-width: 445px;
+
   h3 {
     font-size: 1rem;
     line-height: 1.3125rem;
 
-    color: #eb0029;
+    color: #000;
   }
 
   p {
@@ -235,10 +241,19 @@ export const ContainerButton = styled.div`
 
 export const Container = styled.div<VisibledProp | any>`
   ${({ visibled, modifier }) => css`
+    max-width: 1084px;
+    width: 100%;
+
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     background: #fff;
+
+    @media (min-width: 1441px) {
+      max-width: 1214px;
+    }
 
     @media (max-width: 928px) {
       display: flex;
@@ -273,7 +288,7 @@ export const Container = styled.div<VisibledProp | any>`
       ${!modifier &&
       css`
         ${Content} {
-          animation: ${animationsObj.toXAnimation(-650)} 3s;
+          animation: ${animationsObj.toXAnimation(650)} 3s;
         }
       `}
     `}

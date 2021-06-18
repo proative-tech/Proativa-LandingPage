@@ -18,7 +18,7 @@ interface CybersecurityProps {
   children?: ReactNode;
 }
 
-export const Cybersecurity = ({ children }: CybersecurityProps) => {
+export const RPA = ({ children }: CybersecurityProps) => {
   const router = useRouter();
   const is1920 = useMediaQuery({ minWidth: 1601 });
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
@@ -63,38 +63,30 @@ export const Cybersecurity = ({ children }: CybersecurityProps) => {
           ) : (
             <>
               <Header>
-                <span>Cyber Security Services</span>
-                <h1>
-                  Manter a segurança cibernética em um cenário de ameaças em
-                  constante evolução é um desafio para todas as organizações.
-                </h1>
+                <span>RPA - Robotic Process Automation</span>
+                <h1>Procurando uma solução para automatizar processos?</h1>
                 <p>
-                  Sua organização devidamente segura. Buscamos reduzir o impacto
-                  de ameaças para seu negócio, independentemente de onde estiver
-                  os seus dados ou informações. Nossos serviços gerenciados de
-                  segurança possibilitam que o seu empreendimento possa operar
-                  com segurança mesmo que remotamente. E, com isso, permite o
-                  funcionamento adequado do seu negócio.
+                  Podemos tornar seus processos mais inteligentes, rápidos e
+                  eficientes, eliminando erros e aumentando a produtividade
+                  automatizando e otimizando processos e aplicações corporativas
+                  para diferentes tipos de indústrias.
                 </p>
               </Header>
               <Footer>
-                <h3>Descubra</h3>
+                <h3>Automatização</h3>
                 <p>
-                  Onde os dados residem: nuvem, email, endpoints e
-                  armazenamento.
+                  Analisamos seu processo e buscamos automatizá-lo por
+                  intermédio de robotização ou workflows
                 </p>
               </Footer>
               <Footer>
-                <h3>Monitore</h3>
+                <h3>Integração</h3>
                 <p>
-                  Como os dados estão sendo usados dentro e fora da rede
-                  corporativa.
+                  Integramos sistemas que não possuem APIs ou interface de
+                  dados.
                 </p>
               </Footer>
-              <Footer>
-                <h3>Proteja</h3>
-                <p>Os dados de serem expostos ou roubados, em tempo real.</p>
-              </Footer>
+
               <ContainerButton>
                 <Link scroll={false} href="/solucoes/cybersecurity" passHref>
                   <ButtonText label="Saiba mais sobre Cybersecurity" />

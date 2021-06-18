@@ -2,8 +2,10 @@ import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
-import { Button } from '../../Button';
+import { ButtonText } from '../ButtonText';
 import {
+  Wrapper,
+  WrapperFooters,
   Container,
   ContainerImg,
   Content,
@@ -41,68 +43,62 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
   }, []);
 
   return (
-    <Container visibled={isAnimated} id="containerConsultancy">
-      <Content>
-        {children ? (
-          <Header>{children}</Header>
-        ) : (
-          <>
-            <Header>
-              <span>Consultoria</span>
-              <h1>
-                Identificamos suas necessidades e ajudamos a criar, estruturar e
-                manter os procedimentos adequados para sua empresa.
-              </h1>
-              <p>
-                Somos o parceiro estratégico ideal para suas necessidades de
-                governança de TI e Qualidade. Atendemos todos os portes e
-                segmentos.
-              </p>
-            </Header>
-            <Footer>
-              <h3>Governança de TI</h3>
-              <p>
-                Lorem ipsum dolore. Lorem ipsum dolore.Lorem ipsum dolore. Lorem
-                ipsum dolore. Lorem ipsum dolore.
-              </p>
-            </Footer>
-            <Footer>
-              <h3>Controle de Qualidade</h3>
-              <p>
-                Lorem ipsum dolore. Lorem ipsum dolore.Lorem ipsum dolore. Lorem
-                ipsum dolore. Lorem ipsum dolore.
-              </p>
-            </Footer>
-            {/* <Footer>
-              <h3>Reports BI</h3>
-              <p>
-                Lorem ipsum dolore. Lorem ipsum dolore.Lorem ipsum dolore. Lorem
-                ipsum dolore. Lorem ipsum dolore.
-              </p>
-            </Footer>
-            <Footer>
-              <h3>Reports SLAM</h3>
-              <p>Os dados de serem expostos ou roubados, em tempo real.</p>
-            </Footer> */}
+    <Wrapper>
+      <Container visibled={isAnimated} id="containerConsultancy">
+        <Content>
+          {children ? (
+            <Header>{children}</Header>
+          ) : (
+            <>
+              <Header>
+                <span>Consulting Services</span>
+                <h1>
+                  Identificamos suas necessidades e ajudamos a criar, estruturar
+                  e manter os procedimentos adequados para sua empresa.
+                </h1>
+                <p>
+                  Somos o parceiro estratégico ideal para suas necessidades de
+                  governança de TI e Qualidade. Atendemos todos os portes e
+                  segmentos.
+                </p>
+              </Header>
+              <WrapperFooters>
+                <Footer>
+                  <h3>01. Serviços de Implementação</h3>
+                </Footer>
+                <Footer>
+                  <h3>02. Migração & PMO</h3>
+                </Footer>
+                <Footer>
+                  <h3>03. Serviços Gerenciados - Profissional Residente</h3>
+                </Footer>
+                <Footer>
+                  <h3>04. Serviços Expressos</h3>
+                </Footer>
+              </WrapperFooters>
+              <ContainerButton>
+                <Link scroll={false} href="/solucoes/consultancy" passHref>
+                  <ButtonText
+                    label="Saiba mais sobre Consultoria"
+                    directionArrow="right"
+                  />
+                </Link>
+              </ContainerButton>
+            </>
+          )}
+        </Content>
 
-            <ContainerButton>
-              <Link scroll={false} href="/solucoes/consultancy" passHref>
-                <Button type="button">Saiba mais sobre Consultoria</Button>
-              </Link>
-            </ContainerButton>
-          </>
-        )}
-      </Content>
-      <ContainerImg modifier={!!children}>
-        <img
-          src={
-            is1920
-              ? '/images/consultoria1920.png'
-              : '/images/consultoria1440.png'
-          }
-          alt="proative"
-        />
-      </ContainerImg>
-    </Container>
+        <ContainerImg modifier={!!children}>
+          <img
+            src={
+              is1920
+                ? '/images/consultoria1920.png'
+                : '/images/consultoria1440.png'
+            }
+            alt="proative"
+          />
+        </ContainerImg>
+      </Container>
+    </Wrapper>
   );
 };

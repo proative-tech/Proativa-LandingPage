@@ -2,35 +2,42 @@ import styled, { css } from 'styled-components';
 import { animationFade, animationsObj } from '../../../utils/animations';
 import { VisibledProp } from '../../LandingPart/Informations/styles';
 
+export const Wrapper = styled.div`
+  width: 100vw;
+  background: #fff;
+
+  padding-top: 3rem;
+`;
+
 export const ContainerImg = styled.div`
   max-width: 100%;
 
   img {
     display: block;
     width: 100%;
-    height: 100%;
+    max-height: 616px;
+  }
+
+  @media (min-width: 1441px) {
+    img {
+      max-height: 635px;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 928px) {
+    order: -1;
   }
 `;
 
 export const Content = styled.div`
-  padding: 4.9rem 4rem 63px;
-  width: 92%;
+  padding-right: 75px;
 
   height: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  @media (min-width: 1441px) {
-    max-width: 780px;
-    width: 100%;
-  }
-
-  @media (max-width: 1440px) {
-    max-width: 80%;
-    width: 100%;
-  }
 
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
@@ -61,17 +68,19 @@ export const Content = styled.div`
 export const Header = styled.div`
   margin-bottom: 25px;
 
+  max-width: 28.6rem;
+
   span {
     font-size: 1rem;
     line-height: 1.1875rem;
     color: #eb0029;
-    font-weight: 300;
+    font-weight: 600;
     font-family: 'Source Sans Pro';
   }
 
   h1 {
-    font-size: 2.25rem;
-    line-height: 3.125rem;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
     font-family: 'Source Sans Pro';
   }
 
@@ -85,21 +94,8 @@ export const Header = styled.div`
     width: 90%;
   }
 
-  @media (min-width: 1772px) {
-    max-width: 70%;
-  }
-
-  @media (min-width: 1518px) {
-    max-width: 80%;
-  }
-
   @media (min-width: 1441px) {
-    p {
-      font-size: 16px;
-      line-height: 30px;
-
-      width: 85%;
-    }
+    max-width: 474px;
   }
 
   @media (min-width: 1441px) {
@@ -156,16 +152,18 @@ export const Header = styled.div`
 export const ListVant = styled.ul`
   list-style: none;
 
-  padding-left: 1rem;
-
   margin-bottom: 40px;
 
+  width: 100%;
+
   li {
-    color: #666666;
-    font-size: 0.875rem;
+    font-weight: bold;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.1875rem;
 
     strong {
-      color: #eb0029;
+      color: #000;
 
       font-size: 1rem;
 
@@ -178,7 +176,7 @@ export const ListVant = styled.ul`
   }
 
   li + li {
-    margin-top: 8px;
+    margin-top: 10px;
   }
 `;
 
@@ -211,10 +209,19 @@ export const ContainerButton = styled.div`
 
 export const Container = styled.div<VisibledProp>`
   ${({ visibled }) => css`
+    max-width: 1084px;
+    width: 100%;
+
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     background: #fff;
+
+    @media (min-width: 1441px) {
+      max-width: 1214px;
+    }
 
     @media (max-width: 928px) {
       display: flex;
@@ -237,7 +244,7 @@ export const Container = styled.div<VisibledProp>`
         }
       }
       ${Content} {
-        animation: ${animationsObj.toXAnimation(650)} 3s;
+        animation: ${animationsObj.toXAnimation(-650)} 3s;
       }
     `}
   `}

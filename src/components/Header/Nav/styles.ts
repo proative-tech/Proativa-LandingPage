@@ -41,7 +41,7 @@ export const Container = styled.div`
 
       &:hover::after {
         transform: scale(1, 1);
-      } 
+      }
     }
   }
 `;

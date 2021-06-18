@@ -2,33 +2,45 @@ import styled, { css } from 'styled-components';
 import { animationFade, animationsObj } from '../../../utils/animations';
 import { VisibledProp } from '../../LandingPart/Informations/styles';
 
+interface ContainerProps {
+  modifier: boolean;
+}
+
 export const Wrapper = styled.div`
   width: 100vw;
   background: #fff;
 
-  padding-top: 1rem;
+  padding-top: 3rem;
 `;
 
-export const ContainerImg = styled.div`
+export const ContainerImg = styled.div<ContainerProps>`
   max-width: 100%;
 
   img {
     display: block;
     width: 100%;
-    max-height: 629px;
+    max-height: 522px;
   }
 
+  ${({ modifier }) =>
+    modifier &&
+    css`
+      order: -1;
+    `}
   @media (min-width: 1441px) {
     img {
-      max-width: 633px;
-      max-height: 670px;
+      max-height: 564px;
       height: 100%;
     }
+  }
+
+  @media (max-width: 928px) {
+    order: -1;
   }
 `;
 
 export const Content = styled.div`
-  padding-left: 69px;
+  padding-left: 65px;
 
   height: 100%;
 
@@ -39,6 +51,7 @@ export const Content = styled.div`
   @media (min-width: 1441px) {
     max-width: 780px;
     width: 100%;
+    margin-left: auto;
   }
 
   @media (max-width: 1399px) {
@@ -60,12 +73,18 @@ export const Content = styled.div`
   @media (max-width: 1260px) {
     padding-left: 30px;
   }
+
+  @media (max-width: 490px) {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0%;
+  }
 `;
 
 export const Header = styled.div`
   margin-bottom: 25px;
 
-  max-width: 28rem;
+  max-width: 445px;
 
   span {
     font-size: 1rem;
@@ -86,30 +105,24 @@ export const Header = styled.div`
     line-height: 1.5625rem;
     color: #434343;
 
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+
+    width: 90%;
   }
 
-  p.textPage {
-    font-size: 1rem;
-    line-height: 1.875rem;
-    color: #434343;
-
-    & + p.textPage {
-      margin-top: 2rem;
-    }
+  @media (min-width: 1546px) {
+    max-width: 80%;
   }
-
-  /*
-  @media (min-width: 1558px) {
-    max-width: 83%;
-
-    p {
-      width: 70%;
-    }
-  } */
 
   @media (min-width: 1441px) {
-    max-width: 474px;
+    max-width: 85%;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.875rem;
+
+      width: 80%;
+    }
   }
 
   @media (max-width: 1260px) {
@@ -146,8 +159,6 @@ export const Header = styled.div`
     p {
       font-size: 12px;
       line-height: 24px;
-
-      margin-right: 0;
     }
   }
 
@@ -164,6 +175,8 @@ export const Footer = styled.div`
   h3 {
     font-size: 1rem;
     line-height: 1.3125rem;
+
+    color: #000;
   }
 
   p {
@@ -172,8 +185,16 @@ export const Footer = styled.div`
     color: #434343;
   }
 
+  @media (min-width: 1772px) {
+    max-width: 70%;
+  }
+
+  @media (min-width: 1518px) {
+    max-width: 80%;
+  }
+
   @media (min-width: 1441px) {
-    max-width: 441px;
+    max-width: 83%;
   }
 
   @media (max-width: 928px) {
@@ -202,10 +223,10 @@ export const ContainerButton = styled.div`
   }
 
   @media (max-width: 1440px) {
-    width: 70%;
+    width: 90%;
   }
 
-  @media (max-width: 920px) {
+  @media (max-width: 928px) {
     width: 70%;
   }
 
@@ -218,8 +239,8 @@ export const ContainerButton = styled.div`
   }
 `;
 
-export const Container = styled.div<VisibledProp>`
-  ${({ visibled }) => css`
+export const Container = styled.div<VisibledProp | any>`
+  ${({ visibled, modifier }) => css`
     max-width: 1084px;
     width: 100%;
 
@@ -227,6 +248,8 @@ export const Container = styled.div<VisibledProp>`
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    background: #fff;
 
     @media (min-width: 1441px) {
       max-width: 1214px;
@@ -255,9 +278,19 @@ export const Container = styled.div<VisibledProp>`
         }
       }
 
-      ${Content} {
-        animation: ${animationsObj.toXAnimation(650)} 3s;
-      }
+      ${modifier &&
+      css`
+        ${Content} {
+          animation: ${animationsObj.toXAnimation(650)} 3s;
+        }
+      `}
+
+      ${!modifier &&
+      css`
+        ${Content} {
+          animation: ${animationsObj.toXAnimation(650)} 3s;
+        }
+      `}
     `}
   `}
 `;

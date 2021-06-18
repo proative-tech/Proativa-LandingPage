@@ -6,13 +6,20 @@ interface ContainerProps {
   modifier: boolean;
 }
 
+export const Wrapper = styled.div`
+  width: 100vw;
+  background: #fff;
+
+  padding-top: 3rem;
+`;
+
 export const ContainerImg = styled.div<ContainerProps>`
   max-width: 100%;
 
   img {
     display: block;
     width: 100%;
-    height: 100%;
+    max-height: 491px;
   }
 
   ${({ modifier }) =>
@@ -20,9 +27,12 @@ export const ContainerImg = styled.div<ContainerProps>`
     css`
       order: -1;
     `}
+
   @media (min-width: 1441px) {
-    max-height: 820px;
-    height: 100%;
+    img {
+      max-height: 505px;
+      height: 100%;
+    }
   }
 
   @media (max-width: 928px) {
@@ -31,8 +41,7 @@ export const ContainerImg = styled.div<ContainerProps>`
 `;
 
 export const Content = styled.div`
-  padding: 4.9rem 4rem 63px;
-  width: 92%;
+  padding-right: 72px;
 
   height: 100%;
 
@@ -80,18 +89,19 @@ export const Content = styled.div`
 
 export const Header = styled.div`
   margin-bottom: 25px;
+  max-width: 27.7rem;
 
   span {
     font-size: 1rem;
     line-height: 1.1875rem;
     color: #eb0029;
-    font-weight: 300;
+    font-weight: 600;
     font-family: 'Source Sans Pro';
   }
 
   h1 {
-    font-size: 2.25rem;
-    line-height: 3.125rem;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
     font-family: 'Source Sans Pro';
   }
 
@@ -105,19 +115,8 @@ export const Header = styled.div`
     width: 90%;
   }
 
-  @media (min-width: 1546px) {
-    max-width: 80%;
-  }
-
   @media (min-width: 1441px) {
-    max-width: 85%;
-
-    p {
-      font-size: 1rem;
-      line-height: 1.875rem;
-
-      width: 80%;
-    }
+    max-width: 29rem;
   }
 
   @media (max-width: 1260px) {
@@ -163,13 +162,11 @@ export const Header = styled.div`
 `;
 
 export const Footer = styled.div`
-  margin-top: 12px;
-
   h3 {
     font-size: 1rem;
     line-height: 1.3125rem;
 
-    color: #eb0029;
+    color: #000000;
   }
 
   p {
@@ -237,7 +234,16 @@ export const Container = styled.div<VisibledProp>`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    max-width: 1084px;
+    width: 100%;
+
+    margin: 0 auto;
+
     background: #fff;
+
+    @media (min-width: 1441px) {
+      max-width: 1214px;
+    }
 
     @media (max-width: 928px) {
       display: flex;
@@ -266,4 +272,10 @@ export const Container = styled.div<VisibledProp>`
       }
     `}
   `}
+`;
+
+export const WrapperFooters = styled.div`
+  > div + div {
+    margin-top: 0.875rem;
+  }
 `;
