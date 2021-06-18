@@ -13,6 +13,10 @@ export const Wrapper = styled.div`
   background: #fff;
 
   padding-top: 4.5rem;
+
+  @media (max-width: 928px) {
+    padding-top: 0;
+  }
 `;
 
 export const ContainerImg = styled.div<ContainerProps>`
