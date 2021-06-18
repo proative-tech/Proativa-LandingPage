@@ -28,7 +28,7 @@ export default function Index() {
         <title>Proative | Soluções - Profissionais</title>
       </Head>
       <Container>
-        <Header bgColor="#f4f4f4" />
+        <Header bgColor="#fff" />
         <HeroSolutions idMoveScroll="containerProfessionals">
           <div className="content__text">
             <h1>

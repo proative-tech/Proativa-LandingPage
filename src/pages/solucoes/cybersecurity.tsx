@@ -28,7 +28,7 @@ export default function Index() {
         <title>Proative | Soluções - Cybersecutiry</title>
       </Head>
       <Container>
-        <Header bgColor="#f4f4f4" />
+        <Header bgColor="#fff" />
         <HeroSolutions idMoveScroll="containerCybersecurity">
           <div className="content__text">
             <h1>

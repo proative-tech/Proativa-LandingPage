@@ -27,7 +27,7 @@ export default function Index() {
         <title>Proative | Soluções - Service Manager</title>
       </Head>
       <Container>
-        <Header bgColor="#f4f4f4" />
+        <Header bgColor="#fff" />
         <HeroSolutions idMoveScroll="soluciton-service">
           <div className="content__text">
             <h1>

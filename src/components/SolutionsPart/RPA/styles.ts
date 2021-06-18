@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   width: 100vw;
   background: #fff;
 
-  padding-top: 3rem;
+  padding-top: 4.5rem;
 `;
 
 export const ContainerImg = styled.div<ContainerProps>`
