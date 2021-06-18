@@ -196,26 +196,8 @@ export const Footer = styled.div`
 
 export const ContainerButton = styled.div`
   margin-top: 30px;
-
-  @media (min-width: 1441px) {
-    width: 60%;
-  }
-
-  @media (max-width: 1440px) {
-    width: 70%;
-  }
-
-  @media (max-width: 920px) {
-    width: 70%;
-  }
-
-  @media (max-width: 490px) {
-    width: 95%;
-  }
-
-  @media (max-width: 360px) {
-    width: 100%;
-  }
+  display: flex;
+  justify-content: flex-start;
 `;
 
 export const Container = styled.div<VisibledProp>`
@@ -230,6 +212,7 @@ export const Container = styled.div<VisibledProp>`
 
     @media (min-width: 1441px) {
       max-width: 1214px;
+      grid-template-columns: 55% 45%;
     }
 
     @media (max-width: 928px) {

@@ -42,7 +42,7 @@ export const Wrapper = styled.a<Pick<ButtonTextProps, 'directionArrow'>>`
     &::after {
       content: '';
       display: block;
-      width: 95%;
+      width: 100%;
       height: 0.12rem;
       background: #eb0029;
       transform: scale(0, 1);

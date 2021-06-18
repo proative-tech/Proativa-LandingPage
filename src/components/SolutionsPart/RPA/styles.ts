@@ -20,6 +20,7 @@ export const ContainerImg = styled.div<ContainerProps>`
     display: block;
     width: 100%;
     max-height: 522px;
+    height: 100%;
   }
 
   ${({ modifier }) =>
@@ -27,6 +28,7 @@ export const ContainerImg = styled.div<ContainerProps>`
     css`
       order: -1;
     `}
+
   @media (min-width: 1441px) {
     img {
       max-height: 564px;
@@ -108,21 +110,6 @@ export const Header = styled.div`
     margin-top: 1rem;
 
     width: 90%;
-  }
-
-  @media (min-width: 1546px) {
-    max-width: 80%;
-  }
-
-  @media (min-width: 1441px) {
-    max-width: 85%;
-
-    p {
-      font-size: 1rem;
-      line-height: 1.875rem;
-
-      width: 80%;
-    }
   }
 
   @media (max-width: 1260px) {
@@ -217,26 +204,8 @@ export const Footer = styled.div`
 
 export const ContainerButton = styled.div`
   margin-top: 30px;
-
-  @media (min-width: 1441px) {
-    width: 60%;
-  }
-
-  @media (max-width: 1440px) {
-    width: 90%;
-  }
-
-  @media (max-width: 928px) {
-    width: 70%;
-  }
-
-  @media (max-width: 490px) {
-    width: 95%;
-  }
-
-  @media (max-width: 360px) {
-    width: 100%;
-  }
+  display: flex;
+  justify-content: flex-start;
 `;
 
 export const Container = styled.div<VisibledProp | any>`
@@ -253,6 +222,7 @@ export const Container = styled.div<VisibledProp | any>`
 
     @media (min-width: 1441px) {
       max-width: 1214px;
+      grid-template-columns: 55% 45%;
     }
 
     @media (max-width: 928px) {

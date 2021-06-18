@@ -52,10 +52,7 @@ export const RPA = ({ children }: CybersecurityProps) => {
         id="containerCybersecurity"
       >
         <ContainerImg modifier={!!children}>
-          <img
-            src={is1920 ? '/images/cyber1920.png' : '/images/teste2.png'}
-            alt="proative"
-          />
+          <img src="/images/imagemrpa.jpeg" alt="proative" />
         </ContainerImg>
         <Content>
           {children ? (
@@ -89,7 +86,7 @@ export const RPA = ({ children }: CybersecurityProps) => {
 
               <ContainerButton>
                 <Link scroll={false} href="/solucoes/cybersecurity" passHref>
-                  <ButtonText label="Saiba mais sobre Cybersecurity" />
+                  <ButtonText label="Saiba mais sobre RPA" />
                 </Link>
               </ContainerButton>
             </>
