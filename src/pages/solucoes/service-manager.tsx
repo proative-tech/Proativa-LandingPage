@@ -7,9 +7,7 @@ import { Container } from '../../styles/pages/Solutions';
 
 import { HeroSolutions } from '../../components/SolutionsPart/Hero';
 import { ServiceManaged } from '../../components/SolutionsPart/ServiceManaged';
-import { Cybersecurity } from '../../components/SolutionsPart/Cybersecurity';
-import { Professionals } from '../../components/SolutionsPart/Professionals';
-import { Consultancy } from '../../components/SolutionsPart/Consultancy';
+
 import { ContainerInfosOne } from '../../components/SolutionsPart/ConteinerInfosOne';
 import { ContainerInfosTwo } from '../../components/SolutionsPart/ConteinerInfosTwo';
 import { ContainerConsultoria } from '../../components/SolutionsPart/ContainerConsultoria';
@@ -30,13 +28,14 @@ export default function Index() {
         <Header bgColor="#fff" />
         <HeroSolutions idMoveScroll="soluciton-service">
           <div className="content__text">
-            <h1>
-              Service Managed*
-              <br /> Um título explicativo para service manage com qualidades
-            </h1>
+            <h2>
+              Nosso Service Managed traz experiência e seriedade para sua
+              jornada de transformação digital, além de apoiá-lo nas tomadas de
+              decisões para construir novos e modernos ambientes.
+            </h2>
             <p>
               Nosso Centro de Command serve como um hub para todos os dados
-              críticos da sua empresa para que ele possa ser acessado por todos
+              críticos da sua empresa para que ele possa ser acessado por todas
               as unidades de negócios, transformando dados globais em insights
               significativos.
             </p>
@@ -70,7 +69,6 @@ export default function Index() {
         </ServiceManaged>
         <ContainerInfosOne />
         <ContainerInfosTwo />
-        <ContainerConsultoria />
         <ContainerEscritorio />
         <ContainerImpulse />
       </Container>

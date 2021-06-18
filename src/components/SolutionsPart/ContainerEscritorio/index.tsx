@@ -1,22 +1,38 @@
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
+import { ButtonText } from '../ButtonText';
+import { AnimationImg } from '../AnimationImg';
 import {
+  Wrapper,
   Container,
-  ContainerContent,
   ContainerImg,
   Content,
   Header,
+  Footer,
+  ContainerButton,
 } from './styles';
 
-export const ContainerEscritorio = () => {
+interface CybersecurityProps {
+  // eslint-disable-next-line react/require-default-props
+  children?: ReactNode;
+}
+
+export const ContainerEscritorio = ({ children }: CybersecurityProps) => {
+  const router = useRouter();
+  const is1920 = useMediaQuery({ minWidth: 1601 });
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
   const [isAnimated, setIsAnimated] = useState(false);
+  const [modifier, setModifier] = useState(!!children);
 
   const handleScroll = () => {
-    const ele: Element | any = document.getElementById('containerEscritorio');
+    const ele: Element | any = document.getElementById(
+      'containerCybersecurity',
+    );
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 400;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 600;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
@@ -30,27 +46,55 @@ export const ContainerEscritorio = () => {
   }, []);
 
   return (
-    <Container visibled={isAnimated} id="containerEscritorio">
-      <ContainerContent>
-        <ContainerImg>
-          <img src="/images/escritorio.png" alt="proative" />
+    <Wrapper>
+      <Container
+        visibled={isAnimated}
+        modifier={modifier}
+        id="containerCybersecurity"
+      >
+        <ContainerImg modifier={!!children}>
+          <AnimationImg
+            url="/images/carreira-cont-1.png"
+            height={553}
+            heightUW={626}
+          />
         </ContainerImg>
         <Content>
-          <Header>
-            <h1>
-              Identificamos suas necessidades e ajudamos a criar, estruturar e
-              manter os procedimentos adequados para sua empresa.
-            </h1>
-            <p>
-              Somos o parceiro estratégico ideal para suas necessidades de
-              governança de TI e Qualidade. Atendemos todos os portes e
-              segmentos. Somos o parceiro estratégico ideal para suas
-              necessidades de governança de TI e Qualidade. Atendemos todos os
-              portes e segmentos.
-            </p>
-          </Header>
+          {children ? (
+            <Header>{children}</Header>
+          ) : (
+            <>
+              <Header>
+                <h1>
+                  Gerenciamento de App para trabalho remoto e saude digital.
+                </h1>
+                <p>
+                  Trabalho remoto e bem-estar digital. Apoiando o bem-estar
+                  digital dos colaboradores.
+                </p>
+              </Header>
+              <div>
+                <Footer>
+                  <h3>Analisar o comportamento do usuário.</h3>
+                </Footer>
+                <Footer>
+                  <h3>Medir o bem-estar digital.</h3>
+                </Footer>
+                <Footer>
+                  <h3>Informar e educar.</h3>
+                </Footer>
+              </div>
+              <Header style={{ marginTop: 16 }}>
+                <p>
+                  Com a nossa solução você pode garantir um controle remoto
+                  eficaz, trabalhar, aumentar a produtividade e manter o
+                  bem-estar digital de seus colaboradores na era do novo normal.
+                </p>
+              </Header>
+            </>
+          )}
         </Content>
-      </ContainerContent>
-    </Container>
+      </Container>
+    </Wrapper>
   );
 };

@@ -5,7 +5,7 @@ import * as S from './styles';
 
 export type ButtonTextProps = {
   label: string;
-  directionArrow?: 'left' | 'right';
+  directionArrow?: 'left' | 'right' | 'top';
   href: string;
 };
 

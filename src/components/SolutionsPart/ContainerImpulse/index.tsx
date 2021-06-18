@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { Button } from '../../Button';
+import { ButtonText } from '../ButtonText';
 import { Container, Content, ContentTop } from './styles';
 
 export const ContainerImpulse = () => {
@@ -39,7 +39,11 @@ export const ContainerImpulse = () => {
         </ContentTop>
 
         <div className="containerButton">
-          <Button type="button">Fale Conosco</Button>
+          <ButtonText
+            label="Entre em contato sobre Service Managed"
+            href="/fale-conosco"
+            directionArrow="top"
+          />
         </div>
       </Content>
     </Container>

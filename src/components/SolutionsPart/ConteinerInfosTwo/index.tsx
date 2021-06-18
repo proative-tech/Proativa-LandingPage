@@ -28,34 +28,44 @@ export const ContainerInfosTwo = () => {
       <Content>
         <Info>
           <h1>01.</h1>
-          <h3>Monitoração de Infraestrutura</h3>
+          <h3>Command Center 24x7</h3>
           <p>
-            Solução completa de monitoramento e gerenciamento para todo o
-            ambiente de TI.
+            Monitoração e Observabilidade para toda camada de infraestrutura,
+            IOT, aplicações, operações, processos de negócio, segurança da
+            informação, automação, melhor experiência e gestão para o espaço de
+            trabalho digital com mais controle, menos risco e complexidade.
           </p>
         </Info>
         <Info>
           <h1>02.</h1>
-          <h3>Monitoração e Observabilidade de Aplicações</h3>
+          <h3>Service Desk</h3>
           <p>
-            Visão completa sobre a experiência do uso das aplicações e
-            Microserviços.
+            Centralizamos todas as necessidades dos nossos clientes em relação a
+            tecnologia da informação em um só lugar, oferecendo o suporte
+            técnico na área, mas também um auxílio estratégico, com
+            especialistas, realizando tanto o atendimento de 1 nível como o de 2
+            nível.
           </p>
         </Info>
         <Info>
           <h1>03.</h1>
-          <h3>Monitoração de IOT</h3>
+          <h3>Field Services</h3>
           <p>
-            Monitore seus dispositivos IoT e serviços de back-end em uma única
-            plataforma unificada.
+            Atendimento de campo especializado de conectividade, serviços de TI,
+            projeto de cabeamento estruturado para um novo lançamento ou
+            atualização de escritório. Nosso time de field garante que todas as
+            correções ou implementações estejam alinhadas com suas necessidades
+            mais amplas de infraestrutura e segurança. Temos uma rede nacional
+            de profissionais qualificados com rápido tempo de resposta.
           </p>
         </Info>
         <Info>
           <h1>04.</h1>
-          <h3>Monitoração de Processos de Negócios </h3>
+          <h3>DevOps</h3>
           <p>
-            Gerenciar os seus indicadores em tempo real garantindo precisão e
-            rapidez.
+            DevOps as a Service para seu fluxo de valor de ponta a ponta.
+            Otimize a entrega de software e obtenha melhores resultados de
+            negócios.
           </p>
         </Info>
       </Content>

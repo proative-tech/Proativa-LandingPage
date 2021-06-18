@@ -8,7 +8,7 @@ export const Content = styled.div`
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3.375rem;
+  gap: 3.315rem;
 
   margin: 0 auto;
 
@@ -40,7 +40,7 @@ export const Info = styled.div`
   }
 
   p {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     line-height: 1.5625rem;
   }
 

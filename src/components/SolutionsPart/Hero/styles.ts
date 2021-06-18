@@ -65,6 +65,12 @@ export const Content = styled.section`
       font-family: 'Source Sans Pro';
     }
 
+    h2 {
+      font-size: 2.375rem;
+      line-height: 3.2rem;
+      font-family: 'Source Sans Pro';
+    }
+
     p {
       font-size: 1rem;
       line-height: 1.75rem;

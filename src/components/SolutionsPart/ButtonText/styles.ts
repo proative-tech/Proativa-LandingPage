@@ -29,6 +29,15 @@ const modifiers = {
       margin-right: 1rem;
     }
   `,
+  top: () => css`
+    ${WrapperIcon} {
+      transform: rotate(270deg);
+    }
+
+    ${WrapperButton} {
+      margin-left: 1rem;
+    }
+  `,
 };
 
 export const Wrapper = styled.div<Pick<ButtonTextProps, 'directionArrow'>>`

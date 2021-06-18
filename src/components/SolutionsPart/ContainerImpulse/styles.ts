@@ -12,7 +12,8 @@ export const Content = styled.div`
   padding-left: 170px;
 
   div.containerButton {
-    width: 267px;
+    display: flex;
+    justify-content: flex-start;
   }
 
   @media (max-width: 820px) {
@@ -45,6 +46,9 @@ export const Content = styled.div`
 `;
 
 export const ContentTop = styled.div`
+  max-width: 525px;
+  width: 100%;
+
   &::before {
     content: '';
     position: absolute;
@@ -57,13 +61,13 @@ export const ContentTop = styled.div`
   h1 {
     font-size: 2.8125rem;
     line-height: 3.125rem;
-    color: #707070;
+    color: #36393b;
   }
 
   p {
     font-size: 1.125rem;
     line-height: 2.1875rem;
-    color: #707070;
+    color: #6a6a6a;
 
     margin: 30px 0 50px;
   }
@@ -106,6 +110,8 @@ export const Container = styled.div<VisibledProp>`
     width: 100vw;
 
     background: #fff;
+
+    margin-top: 5.75rem;
 
     ${Content} {
       opacity: ${visibled ? 1 : 0};
