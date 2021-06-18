@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import Cookies from 'js-cookie';
 
 import * as S from './styles';
 
 export const FloatButton = () => {
+  const cookie = Cookies.get('cookieTesteProative');
+
   const [isAnimated, setIsAnimated] = useState(false);
+  const [isCookieActived, setIsCookieActived] = useState(false);
 
   const handleScroll = () => {
     const getWindowBottom = window.scrollY > 250;
@@ -22,8 +26,15 @@ export const FloatButton = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    const cookieAux = cookie !== undefined;
+    setIsCookieActived(cookieAux);
+
+    console.log(cookieAux);
+  }, [cookie]);
+
   return (
-    <S.Wrapper isAnimated={isAnimated}>
+    <S.Wrapper isAnimated={isAnimated} isCookieActived={isCookieActived}>
       <Link
         to="headerScroll"
         smooth

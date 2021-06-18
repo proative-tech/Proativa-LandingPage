@@ -2,17 +2,22 @@ import styled, { css } from 'styled-components';
 
 type WrapperProps = {
   isAnimated: boolean;
+  isCookieActived: boolean;
 };
 
 export const Wrapper = styled.div<WrapperProps>`
-  ${({ isAnimated }) => css`
+  ${({ isAnimated, isCookieActived }) => css`
     position: fixed;
-    bottom: 40px;
+    bottom: ${!isCookieActived ? '174px' : '40px'};
     right: 28px;
 
     opacity: 0;
 
     transition: opacity 0.6s ease;
+
+    @media (max-width: 550px) {
+      bottom: ${!isCookieActived ? '240px' : '40px'};
+    }
 
     ${isAnimated &&
     css`
