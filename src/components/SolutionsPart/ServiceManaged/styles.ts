@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components';
-import { animationFade, animationsObj } from '../../../utils/animations';
+import { animationsObj } from '../../../utils/animations';
 import { VisibledProp } from '../../LandingPart/Informations/styles';
+
+import * as StylesAnimationImg from '../AnimationImg/styles';
 
 export const Wrapper = styled.div`
   width: 100vw;
@@ -12,32 +14,6 @@ export const Wrapper = styled.div`
 export const ContainerImg = styled.div`
   max-width: 100%;
   overflow: hidden;
-
-  > div {
-    content: '';
-    background: url('/images/servicesManaged1920.png') #fafafa;
-    background-size: cover;
-    background-position: center left;
-    width: 110%;
-    height: 629px;
-    position: relative;
-    transition: transform 0.3s;
-
-    &:hover {
-      transform: translateX(-50px);
-    }
-  }
-
-  img {
-    /* max-width: 100%; */
-    max-height: 629px;
-  }
-
-  &:hover {
-    img {
-      transform: translateX(-50px);
-    }
-  }
 
   @media (min-width: 1441px) {
     img {
@@ -247,16 +223,14 @@ export const Container = styled.div<VisibledProp>`
 
     //animations
 
-    ${ContainerImg}, ${Content} {
+    ${StylesAnimationImg.Wrapper}, ${Content} {
       opacity: ${visibled ? 1 : 0};
     }
 
     ${visibled &&
     css`
-      ${ContainerImg} {
-        img {
-          animation: ${animationsObj.toYAnimation(70)} 3s;
-        }
+      ${StylesAnimationImg.Wrapper} {
+        animation: ${animationsObj.toYAnimation(70)} 3s;
       }
 
       ${Content} {

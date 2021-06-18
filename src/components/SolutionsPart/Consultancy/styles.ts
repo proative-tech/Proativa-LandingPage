@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components';
 import { animationFade, animationsObj } from '../../../utils/animations';
 import { VisibledProp } from '../../LandingPart/Informations/styles';
 
+import * as StylesAnimationImg from '../AnimationImg/styles';
+
 interface ContainerProps {
   modifier: boolean;
 }
@@ -38,6 +40,10 @@ export const ContainerImg = styled.div<ContainerProps>`
 
   @media (max-width: 928px) {
     order: -1;
+
+    ${StylesAnimationImg.Wrapper} {
+      height: 400px;
+    }
   }
 `;
 
@@ -238,16 +244,14 @@ export const Container = styled.div<VisibledProp>`
     }
 
     //animations
-    ${Content}, ${ContainerImg} {
+    ${Content}, ${StylesAnimationImg.Wrapper} {
       opacity: ${visibled ? 1 : 0};
     }
 
     ${visibled &&
     css`
-      ${ContainerImg} {
-        img {
-          animation: ${animationsObj.toYAnimation(70)} 3s;
-        }
+      ${StylesAnimationImg.Wrapper} {
+        animation: ${animationsObj.toYAnimation(70)} 3s;
       }
 
       ${Content} {

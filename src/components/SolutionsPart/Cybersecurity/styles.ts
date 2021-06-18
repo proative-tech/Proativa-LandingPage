@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components';
 import { animationFade, animationsObj } from '../../../utils/animations';
 import { VisibledProp } from '../../LandingPart/Informations/styles';
 
+import * as StylesAnimationImg from '../AnimationImg/styles';
+
 interface ContainerProps {
   modifier: boolean;
 }
@@ -250,16 +252,14 @@ export const Container = styled.div<VisibledProp | any>`
 
     //animations
 
-    ${ContainerImg}, ${Content} {
+    ${StylesAnimationImg.Wrapper}, ${Content} {
       opacity: ${visibled ? 1 : 0};
     }
 
     ${visibled &&
     css`
-      ${ContainerImg} {
-        img {
-          animation: ${animationsObj.toYAnimation(70)} 3s;
-        }
+      ${StylesAnimationImg.Wrapper} {
+        animation: ${animationsObj.toYAnimation(70)} 3s;
       }
 
       ${modifier &&

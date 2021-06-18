@@ -46,7 +46,11 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
     <Wrapper>
       <Container id="soluciton-service" visibled={isAnimated}>
         <ContainerImg>
-          <AnimationImg url="/images/servicesManaged1920.png" />
+          <AnimationImg
+            height={629}
+            heightUW={670}
+            url="/images/servicesManaged1920.png"
+          />
         </ContainerImg>
 
         <Content>
