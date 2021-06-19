@@ -26,7 +26,7 @@ export const ContainerCarousel = styled.div`
 
   .containerREC {
     button.rec-arrow {
-      display: none;
+      display: none !important;
     }
 
     div.rec-pagination {

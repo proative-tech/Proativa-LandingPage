@@ -45,7 +45,8 @@ export function Cases({ children }: CasesProps | any) {
     const ele: Element | any = document.getElementById('cases-ani');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 800;
+    const heightEle =
+      ele.getBoundingClientRect().bottom + window.scrollY - 1300;
 
     if (!isShowElement && getWindowBottom >= heightEle) {
       setIsShowElement(true);

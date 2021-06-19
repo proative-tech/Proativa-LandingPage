@@ -302,16 +302,16 @@ export const Container = styled.div<VisibledProp>`
     css`
       ${ContainerImg} {
         div[data-video] {
-          animation: ${animationsObj.toLeftFromRight(-150)} 3s;
+          animation: ${animationsObj.toLeftFromRight(-150)} 1.2s;
         }
       }
 
       ${Header} {
-        animation: ${animationsObj.toLeftFromRight(650)} 2s;
+        animation: ${animationsObj.toLeftFromRight(650)} 1.2s;
       }
 
       ${Footer} {
-        animation: ${animationsObj.toLeftFromRight(650)} 2s;
+        animation: ${animationsObj.toLeftFromRight(650)} 1.2s;
       }
     `}
   `}

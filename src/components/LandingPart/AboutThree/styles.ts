@@ -135,11 +135,11 @@ export const Container = styled.div<VisibledProp>`
     ${visibled &&
     css`
       ${ContainerImg} {
-        animation: ${animationsObj.toYAnimation(50)} 7s;
+        animation: ${animationsObj.toYAnimation(50)} 1.2s;
       }
 
       ${Footer} {
-        animation: ${animationsObj.toXAnimation(650)} 2s;
+        animation: ${animationsObj.toXAnimation(650)} 1.2s;
       }
     `}
   `}
