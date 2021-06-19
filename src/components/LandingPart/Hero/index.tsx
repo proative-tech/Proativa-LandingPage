@@ -74,6 +74,7 @@ function Hero() {
             to="lg-container-info"
             smooth
             duration={700}
+            offset={-50}
             style={{
               display: 'inline-block',
               zIndex: 20,

@@ -29,8 +29,6 @@ export const FloatButton = () => {
   useEffect(() => {
     const cookieAux = cookie !== undefined;
     setIsCookieActived(cookieAux);
-
-    console.log(cookieAux);
   }, [cookie]);
 
   return (

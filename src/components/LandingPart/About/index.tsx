@@ -36,7 +36,7 @@ export const About = ({ children }: AboutProps) => {
 
       if (storeSetItem) {
         const ele: Element | any = document.getElementById('about-link');
-        const heightEle = ele.getBoundingClientRect().top;
+        const heightEle = ele.getBoundingClientRect().top - 50;
 
         setTimeout(() => {
           animateScroll.scrollTo(heightEle, {
@@ -75,15 +75,16 @@ export const About = ({ children }: AboutProps) => {
             de serviços gerenciados.
           </h1>
           <p>
-          Provemos soluções customizadas de acordo com cada necessidade para Projetos e Consultoria em Governança Corporativa e de TI, aceleramos operações que já estão rodando e maduras, inserindo componentes de IOT, Analítics, Big Data e data Lake, extraindo insigths significativos para o negócio. Cuidamos e impulsionamos operações Anywhere, garantido disponibilidade e continuidade sobre a disciplina do ITIL4 de gestão de Operações unindo pessoas, processos e tecnologia.
+            Provemos soluções customizadas de acordo com cada necessidade para
+            Projetos e Consultoria em Governança Corporativa e de TI, aceleramos
+            operações que já estão rodando e maduras, inserindo componentes de
+            IOT, Analítics, Big Data e data Lake, extraindo insigths
+            significativos para o negócio. Cuidamos e impulsionamos operações
+            Anywhere, garantido disponibilidade e continuidade sobre a
+            disciplina do ITIL4 de gestão de Operações unindo pessoas, processos
+            e tecnologia.
           </p>
         </Header>
-        <Footer>
-          <h3>História</h3>
-          <p>
-          Desde 2007, a nossa missão tem sido tornar as operações dos nossos clientes mais simples, eficientes e eficazes, facilitando as tomadas de decisões e potencializando o crescimento do negócio.
-          </p>
-        </Footer>
       </Content>
     </Container>
   );

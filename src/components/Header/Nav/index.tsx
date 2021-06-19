@@ -57,6 +57,7 @@ export function Nav() {
               <LinkScroll
                 to="about-link"
                 duration={700}
+                offset={-50}
                 smooth
                 style={{ cursor: 'pointer' }}
                 onClick={handleClickNoIndex}

@@ -158,6 +158,10 @@ export const Container = styled.div<VisibledProp>`
           animation: ${animationH1} 1.2s;
         }
       }
+
+      div.info__text {
+        animation: ${animationH1} 1.4s;
+      }
     }
 
     ${ContainerImg} {

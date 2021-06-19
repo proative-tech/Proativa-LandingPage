@@ -88,6 +88,7 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
               <LinkScroll
                 to="about-link"
                 duration={700}
+                offset={-90}
                 smooth
                 style={{ cursor: 'pointer' }}
                 onClick={() => {
@@ -120,7 +121,7 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
             </ContainerLinks>
           </Item>
 
-          <Item modifiersDropdown actived={activedMkt}>
+          {/* <Item modifiersDropdown actived={activedMkt}>
             <span
               onClick={() => {
                 setActivedMkt(!activedMkt);
@@ -149,13 +150,13 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
                 </li>
               ))}
             </ContainerLinks>
-          </Item>
+          </Item> */}
 
-          <Item>
+          {/* <Item>
             <Link href="/cases" passHref>
               CASES
             </Link>
-          </Item>
+          </Item> */}
           <Item>
             <Link href="/carreiras" passHref>
               CARREIRAS

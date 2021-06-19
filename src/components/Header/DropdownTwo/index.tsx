@@ -33,6 +33,7 @@ export const DropdownMenuTwo = ({ links = [] }: DropdownMenuProps) => {
             <LinkScroll
               to={`${link.to}`}
               duration={700}
+              offset={-50}
               smooth
               style={{ cursor: 'pointer' }}
               href={link.href}

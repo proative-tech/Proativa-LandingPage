@@ -2,10 +2,17 @@ import styled, { css } from 'styled-components';
 import { HeaderProps } from '.';
 
 export const Container = styled.div<HeaderProps>`
-  ${({ bgColor, noFixed }) => css`
+  ${({ bgColor, noFixed, bgChangeScroll }) => css`
     width: 100vw;
     background-color: ${bgColor};
     z-index: 50;
+
+    transition: background-color 0.2s;
+
+    ${bgChangeScroll &&
+    css`
+      background-color: #f4f4f4;
+    `}
 
     ${!noFixed &&
     css`
