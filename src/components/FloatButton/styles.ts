@@ -23,5 +23,9 @@ export const Wrapper = styled.div<WrapperProps>`
     css`
       opacity: 1;
     `};
+
+    @media (max-width: 550px) {
+      right: 16px;
+    }
   `}
 `;

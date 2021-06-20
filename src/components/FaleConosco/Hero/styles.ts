@@ -60,6 +60,7 @@ export const Content = styled.section`
   > div.content__text {
     margin-bottom: 3.125rem;
     margin-left: 1rem;
+    margin-top: 3rem !important;
 
     h1 {
       font-size: 2.35rem;

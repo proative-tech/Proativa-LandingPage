@@ -32,7 +32,8 @@ export const RPA = ({ children }: CybersecurityProps) => {
     );
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY + 900;
+    const heightEle =
+      ele.getBoundingClientRect().bottom + window.scrollY + 1200;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
