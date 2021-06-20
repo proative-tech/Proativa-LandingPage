@@ -286,10 +286,10 @@ export const ContentMain = styled.div<ContentMainProps>`
   height: 278px;
 
   background: ${props =>
-      props.isMobileOrTablet
-        ? "url('/images/bg_ondulacaoMobile.svg')"
-        : "url('/images/bg_ondulacao1.svg')"}
-    #f4f4f4;
+    props.isMobileOrTablet
+      ? "url('/images/bg_ondulacaoMobile.svg')"
+      : "url('/images/bg_ondulacao1.svg')"};
+
   background-size: cover;
 
   > div {

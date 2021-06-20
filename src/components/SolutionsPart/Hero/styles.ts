@@ -106,6 +106,11 @@ export const Content = styled.section`
         line-height: 34px;
       }
 
+      h2 {
+        font-size: 22px;
+        line-height: 34px;
+      }
+
       p {
         font-size: 12px;
         line-height: 24px;
@@ -160,13 +165,13 @@ export const Container = styled.div<VisibledProp>`
       }
 
       div.info__text {
-        animation: ${animationH1} 1.4s;
+        animation: ${animationH1} 1.2s;
       }
     }
 
     ${ContainerImg} {
       img {
-        animation: ${animationsObj.toXAnimation(50)} 2s;
+        animation: ${animationsObj.toXAnimation(50)} 1.2s;
       }
     }
   `}

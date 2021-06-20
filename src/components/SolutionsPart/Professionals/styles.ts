@@ -220,10 +220,10 @@ export const Container = styled.div<VisibledProp>`
     ${visibled &&
     css`
       ${StylesAnimationImg.Wrapper} {
-        animation: ${animationsObj.toYAnimation(70)} 3s;
+        animation: ${animationsObj.toYAnimation(70)} 1.2s;
       }
       ${Content} {
-        animation: ${animationsObj.toXAnimation(-650)} 3s;
+        animation: ${animationsObj.toXAnimation(-650)} 1.2s;
       }
     `}
   `}
