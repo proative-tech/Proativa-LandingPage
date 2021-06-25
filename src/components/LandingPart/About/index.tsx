@@ -17,7 +17,8 @@ export const About = ({ children }: AboutProps) => {
     const ele: Element | any = document.getElementById('about-link');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 400;
+    // const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 400;
+    const heightEle = ele.getBoundingClientRect().top + window.scrollY + 100;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);

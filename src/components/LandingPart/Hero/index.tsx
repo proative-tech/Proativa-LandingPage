@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-scroll';

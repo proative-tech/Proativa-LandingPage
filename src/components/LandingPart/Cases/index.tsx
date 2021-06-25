@@ -5,8 +5,6 @@ import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel';
 import { useMediaQuery } from 'react-responsive';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 
-import VisibilitySensor from 'react-visibility-sensor';
-
 import CountUp, { useCountUp } from 'react-countup';
 
 import {
@@ -17,6 +15,7 @@ import {
   ContainerClients,
   ContainerTop,
 } from './styles';
+
 import { CardComments } from '../CardComments';
 import { Partners } from '../Partners';
 

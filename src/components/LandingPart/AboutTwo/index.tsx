@@ -13,7 +13,8 @@ export const AboutTwo = () => {
     const ele: Element | any = document.getElementById('about-two');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 200;
+    // const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 200;
+    const heightEle = ele.getBoundingClientRect().top + window.scrollY + 100;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
@@ -32,7 +33,10 @@ export const AboutTwo = () => {
         <Header>
           <h1>Governança de TI impulsionando e colaborando com o negócio.</h1>
           <p>
-          Nosso principal objetivo em Governança de TI é alinhar a Tecnologia da Informação aos requisitos do negócio, levando em consideração soluções que agreguem valor e qualidade, integrando e automatizando os fluxos de trabalho, com garantia de continuidade dos serviços.
+            Nosso principal objetivo em Governança de TI é alinhar a Tecnologia
+            da Informação aos requisitos do negócio, levando em consideração
+            soluções que agreguem valor e qualidade, integrando e automatizando
+            os fluxos de trabalho, com garantia de continuidade dos serviços.
           </p>
         </Header>
       </Content>

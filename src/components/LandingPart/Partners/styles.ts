@@ -3,30 +3,10 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   background-color: #f4f4f4;
   width: 100%;
-`;
-
-export const Content = styled.div`
-  max-width: 1146px;
-  margin: 0 auto;
-
-  padding: 32px 32px 90px;
-
-  margin-bottom: 82px;
-
-  @media (max-width: 845px) {
-    padding: 32px 32px 42px;
-  }
-`;
-
-export const ContainerCarousel = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   .containerREC {
     button.rec-arrow {
-      display: none !important;
+      display: none;
     }
 
     div.rec-pagination {
@@ -46,6 +26,73 @@ export const ContainerCarousel = styled.div`
       }
     }
   }
+
+  @media (max-width: 490px) {
+    div.rec-slider-container {
+      div.rec-swipable {
+        .rec-carousel-item {
+          .rec {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const Content = styled.div`
+  max-width: 1146px;
+  margin: 0 auto;
+
+  padding: 32px 32px 90px;
+
+  margin-bottom: 82px;
+
+  @media (max-width: 845px) {
+    padding: 32px 32px 42px;
+  }
+
+  .containerREC {
+    button.rec-arrow {
+      display: none;
+    }
+
+    div.rec-pagination {
+      margin-top: 3rem;
+
+      button.rec-dot {
+        background: #c4c4c4;
+        border: none;
+        box-shadow: none;
+
+        width: 6px;
+        height: 6px;
+      }
+
+      button.rec-dot_active {
+        background: #eb0029;
+      }
+    }
+  }
+
+  @media (max-width: 490px) {
+    div.rec-slider-container {
+      div.rec-swipable {
+        .rec-carousel-item {
+          .rec {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const ContainerCarousel = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ContainerBottomCarousel = styled.div`
