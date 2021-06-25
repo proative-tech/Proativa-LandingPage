@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
-import { useMediaQuery } from 'react-responsive';
 
 import * as S from './styles';
 
@@ -11,7 +10,6 @@ interface CarouseRefData extends ReactElasticCarouselProps {
 }
 
 export const Partners = () => {
-  const isMobileOrTablet = useMediaQuery({ maxWidth: 845 });
   const carousel = useRef<CarouseRefData | any>();
 
   return (
@@ -22,10 +20,17 @@ export const Partners = () => {
           <h4>Parceiros Estratégicos da Proative Technology</h4>
         </S.Header>
 
-        {!isMobileOrTablet && (
-          <S.ContainerPartners>
+        <S.ContainerCarousel>
+          <Carousel
+            isRTL={false}
+            className="containerREC"
+            itemsToShow={1}
+            itemPadding={[0, 24]}
+            ref={carousel}
+            pagination={false}
+          >
             <S.ContainerImg>
-              <img src="/images/par-flexxible.svg" alt="Automation Edge" />
+              <img src="/images/par-automation.svg" alt="Automation Edge" />
             </S.ContainerImg>
             <S.ContainerImg>
               <img src="/images/par-gantech.svg" alt="Automation Edge" />
@@ -33,46 +38,29 @@ export const Partners = () => {
             <S.ContainerImg>
               <img src="/images/par-flexxible.svg" alt="Automation Edge" />
             </S.ContainerImg>
-          </S.ContainerPartners>
-        )}
+          </Carousel>
+          <S.ContainerBottomCarousel>
+            <button type="button" onClick={() => carousel.current.slidePrev()}>
+              <FiChevronLeft size={24} color="#000" />
+            </button>
+            <div />
+            <button type="button" onClick={() => carousel.current.slideNext()}>
+              <FiChevronRight size={24} color="#000" />
+            </button>
+          </S.ContainerBottomCarousel>
+        </S.ContainerCarousel>
 
-        {isMobileOrTablet && (
-          <S.ContainerCarousel>
-            <Carousel
-              isRTL={false}
-              className="containerREC"
-              itemsToShow={1}
-              itemPadding={[0, 24]}
-              ref={carousel}
-              pagination={false}
-            >
-              <S.ContainerImg>
-                <img src="/images/par-flexxible.svg" alt="Automation Edge" />
-              </S.ContainerImg>
-              <S.ContainerImg>
-                <img src="/images/par-gantech.svg" alt="Automation Edge" />
-              </S.ContainerImg>
-              <S.ContainerImg>
-                <img src="/images/par-flexxible.svg" alt="Automation Edge" />
-              </S.ContainerImg>
-            </Carousel>
-            <S.ContainerBottomCarousel>
-              <button
-                type="button"
-                onClick={() => carousel.current.slidePrev()}
-              >
-                <FiChevronLeft size={24} color="#000" />
-              </button>
-              <div />
-              <button
-                type="button"
-                onClick={() => carousel.current.slideNext()}
-              >
-                <FiChevronRight size={24} color="#000" />
-              </button>
-            </S.ContainerBottomCarousel>
-          </S.ContainerCarousel>
-        )}
+        <S.ContainerPartners>
+          <div>
+            <img src="/images/par-automation.svg" alt="Automation Edge" />
+          </div>
+          <div>
+            <img src="/images/par-gantech.svg" alt="Automation Edge" />
+          </div>
+          <div>
+            <img src="/images/par-flexxible.svg" alt="Automation Edge" />
+          </div>
+        </S.ContainerPartners>
       </S.Content>
     </S.Wrapper>
   );

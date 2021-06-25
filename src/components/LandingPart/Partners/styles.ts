@@ -93,6 +93,47 @@ export const ContainerCarousel = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  display: none;
+
+  .containerREC {
+    button.rec-arrow {
+      display: none;
+    }
+
+    div.rec-pagination {
+      margin-top: 3rem;
+
+      button.rec-dot {
+        background: #c4c4c4;
+        border: none;
+        box-shadow: none;
+
+        width: 6px;
+        height: 6px;
+      }
+
+      button.rec-dot_active {
+        background: #eb0029;
+      }
+    }
+  }
+
+  @media (max-width: 845px) {
+    display: block;
+  }
+
+  @media (max-width: 490px) {
+    div.rec-slider-container {
+      div.rec-swipable {
+        .rec-carousel-item {
+          .rec {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+  }
 `;
 
 export const ContainerBottomCarousel = styled.div`
@@ -165,4 +206,8 @@ export const ContainerPartners = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 845px) {
+    display: none;
+  }
 `;
