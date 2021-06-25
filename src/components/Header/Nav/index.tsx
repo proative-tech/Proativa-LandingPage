@@ -53,7 +53,7 @@ export function Nav() {
             <Link href="/">HOME</Link>
           </li>
           <li>
-            <Link href="/">
+            <Link scroll href="/">
               <LinkScroll
                 to="about-link"
                 duration={700}
@@ -71,7 +71,9 @@ export function Nav() {
             onMouseEnter={() => setFocusSolutions(!focusSolutions)}
             onMouseLeave={() => setFocusSolutions(!focusSolutions)}
           >
-            <Link href="/solucoes">SOLUÇÕES</Link>
+            <Link scroll href="/solucoes">
+              SOLUÇÕES
+            </Link>
             {focusSolutions && (
               <DropdownMenu
                 links={[
@@ -124,10 +126,14 @@ export function Nav() {
             <Link href="/cases">CASES</Link>
           </li> */}
           <li>
-            <Link href="/carreiras">CARREIRAS</Link>
+            <Link scroll href="/carreiras">
+              CARREIRAS
+            </Link>
           </li>
           <li>
-            <Link href="/blog">BLOG</Link>
+            <Link scroll href="/blog">
+              BLOG
+            </Link>
           </li>
           <li>
             <Link href="/fale-conosco">FALE CONOSCO</Link>
@@ -136,12 +142,20 @@ export function Nav() {
             onMouseEnter={() => setFocusPortais(!focusPortais)}
             onMouseLeave={() => setFocusPortais(!focusPortais)}
           >
-            <Link href="/">PORTAIS</Link>
+            <Link scroll href="/">
+              PORTAIS
+            </Link>
             {focusPortais && (
               <DropdownMenu
                 links={[
-                  { name: 'Clientes', href: 'https://portalproativetec.topdesk.net/' },
-                  { name: 'Parceiros', href: 'https://portalproativetec.topdesk.net/' },
+                  {
+                    name: 'Clientes',
+                    href: 'https://portalproativetec.topdesk.net/',
+                  },
+                  {
+                    name: 'Parceiros',
+                    href: 'https://portalproativetec.topdesk.net/',
+                  },
                   // { name: 'Colaboradores', href: '/' },
                 ]}
               />

@@ -113,7 +113,7 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
             <ContainerLinks actived={activedSolutions}>
               {links.map((link, index) => (
                 <li key={String(index)}>
-                  <Link href={link.href} passHref scroll={false}>
+                  <Link href={link.href} passHref>
                     {link.name}
                   </Link>
                 </li>

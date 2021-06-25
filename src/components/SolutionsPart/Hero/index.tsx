@@ -24,7 +24,7 @@ export function HeroSolutions({ children, idMoveScroll }: HeroSolutionProps) {
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    let heightEle = window.innerHeight;
+    let heightEle: any = window.innerHeight;
 
     heightEle = isMobileOrTabled
       ? window.innerHeight + 700
@@ -42,7 +42,7 @@ export function HeroSolutions({ children, idMoveScroll }: HeroSolutionProps) {
   }, []);
 
   return (
-    <Container visibled={isAnimated}>
+    <Container id="heroSolutions" visibled={isAnimated}>
       <ContainerTop>
         <Content>{children}</Content>
         {!isMobileOrTablet && (
