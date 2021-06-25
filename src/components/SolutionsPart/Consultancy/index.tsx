@@ -65,16 +65,16 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
               </Header>
               <WrapperFooters>
                 <Footer>
-                  <h3>01. Serviços de Implementação</h3>
+                  <h3>01. IT Governance Consultant</h3>
                 </Footer>
                 <Footer>
-                  <h3>02. Migração & PMO</h3>
+                  <h3>02. Quality Control</h3>
                 </Footer>
                 <Footer>
-                  <h3>03. Serviços Gerenciados - Profissional Residente</h3>
+                  <h3>03. KPI & SLA Control</h3>
                 </Footer>
                 <Footer>
-                  <h3>04. Serviços Expressos</h3>
+                  <h3>04. Service Intelligence</h3>
                 </Footer>
               </WrapperFooters>
               <ContainerButton>

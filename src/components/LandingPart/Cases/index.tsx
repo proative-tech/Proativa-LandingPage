@@ -75,7 +75,7 @@ export function Cases({ children }: CasesProps | any) {
             <>
               <section className="section-main">
                 <h3>Cobertura Completa</h3>
-                <p>Atendimento em todo território naciona.</p>
+                <p>Atendimento em todo território nacional.</p>
               </section>
 
               <section className="section-item">

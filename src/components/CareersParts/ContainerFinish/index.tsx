@@ -5,7 +5,10 @@ import { useMediaQuery } from 'react-responsive';
 import { Button } from '../../Button';
 import { Link } from 'react-scroll';
 
-import { Container, ContainerTop, ContainerBottom, ContainerInfo, ContainerGoTop } from './styles';
+import { ButtonText } from '../../SolutionsPart/ButtonText';
+
+import { Container,ContainerButton, ContainerTop, ContainerBottom, ContainerInfo, ContainerGoTop } from './styles';
+
 
 export function ContainerFinish() {
   const router = useRouter();
@@ -51,13 +54,15 @@ export function ContainerFinish() {
   return (
     <Container visibled={isAnimated} visibledList={isAnimatedList} id="containerFinishMain">
       <ContainerTop >
-      <a href="https://vemserproative.solides.jobs/" >
-        <h1>
-        <Button type="button" onClick={() => router.push('/solucoes')}>
-                #vemserproative
-              </Button>
-        </h1>
-        </a>
+      
+        <p>
+        <a href="https://vemserproative.solides.jobs/" >
+        #vemserproative
+                </a>
+          
+          </p>
+        
+        
       </ContainerTop>
       <ContainerBottom>
         {(isMobile && !def) && (
@@ -99,13 +104,16 @@ export function ContainerFinish() {
         </div>
       </ContainerInfo>
       <ContainerTop >
-      <a href="https://vemserproative.solides.jobs/" >
-        <h1>
-        <Button id="carreiras2" type="button" onClick={() => router.push('/solucoes')}>
-        Conheça nossas vagas
-              </Button>
-        </h1>
-        </a>
+      <ContainerButton>
+                <ButtonText
+                  label="Conheça nossas Vagas"
+                  directionArrow="right"
+                  href="https://vemserproative.solides.jobs/"
+                />
+              </ContainerButton>
+   
+     
+             
       </ContainerTop>
       <ContainerGoTop>
         <Link to="headerScroll" smooth duration={700} style={{ display: 'inline-block', zIndex: 20, width: 60, height: 40, cursor: 'pointer' }}>

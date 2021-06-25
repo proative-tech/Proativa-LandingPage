@@ -24,12 +24,10 @@ function Hero() {
         <Content>
           <div className="content__text">
             <h1>
-              Uma jornada rumo à excelência, impulsionando Operações e
-              Resultados.
+            Lentes para gerar valor e potencializar negócios.
             </h1>
             <p>
-              Trazemos ordem e simplicidade a ambientes complexos, facilitando a
-              tomada de decisão e otimizando os resultados do seu negócio.
+            Trazemos ordem e simplicidade a ambientes complexos, facilitando a tomada de decisão e otimizando os resultados do seu negócio.
             </p>
           </div>
 
@@ -52,8 +50,8 @@ function Hero() {
 
           {!isMobileOrTablet && (
             <div className="content__socialMedia">
-              <a href="/">Youtube</a>
-              <a href="/">linkedIn</a>
+              <a href="https://www.youtube.com/channel/UC4gXi-wVzJhb5jehBUgCb9A">Youtube</a>
+              <a href="https://www.linkedin.com/company/proativetechnology/">linkedIn</a>
             </div>
           )}
         </Content>

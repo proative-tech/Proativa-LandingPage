@@ -9,7 +9,7 @@ export function Informations() {
     const ele: Element = document.getElementById('lg-container-info');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 400;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 500;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);

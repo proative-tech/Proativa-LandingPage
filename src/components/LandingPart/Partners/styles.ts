@@ -85,6 +85,10 @@ export const Header = styled.div`
   flex-direction: column;
   align-items: center;
 
+  #flex{
+    margin-left: -100px
+  }
+
   h2 {
     font-size: 2rem;
     line-height: 2.375rem;
@@ -107,11 +111,11 @@ export const ContainerImg = styled.div`
   @media (max-width: 845px) {
     width: 100%;
     height: 120px;
-
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
 `;
 
 export const ContainerPartners = styled.div`

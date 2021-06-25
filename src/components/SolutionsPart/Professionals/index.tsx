@@ -69,7 +69,7 @@ export const Professionals = ({ children }: CybersecurityProps) => {
               </Header>
               <ListVant>
                 <li>
-                  <strong>1.</strong> Serviços de Implementação
+                  <strong>1.</strong> IT Governance Consultant
                 </li>
                 <li>
                   <strong>2.</strong> Migração & PMO

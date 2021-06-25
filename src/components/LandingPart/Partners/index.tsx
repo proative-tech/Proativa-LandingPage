@@ -25,13 +25,13 @@ export const Partners = () => {
         {!isMobileOrTablet && (
           <S.ContainerPartners>
             <S.ContainerImg>
-              <img src="/images/par-flexxible.svg" alt="Automation Edge" />
+              <img src="/images/par-automation.svg" alt="Automation" />
             </S.ContainerImg>
             <S.ContainerImg>
-              <img src="/images/par-gantech.svg" alt="Automation Edge" />
+              <img src="/images/par-gantech.svg" alt="Gantech" />
             </S.ContainerImg>
             <S.ContainerImg>
-              <img src="/images/par-flexxible.svg" alt="Automation Edge" />
+              <img id="flex" src="/images/par-flexxible.svg" alt="Flexxible" />
             </S.ContainerImg>
           </S.ContainerPartners>
         )}
@@ -47,7 +47,7 @@ export const Partners = () => {
               pagination={false}
             >
               <S.ContainerImg>
-                <img src="/images/par-flexxible.svg" alt="Automation Edge" />
+                <img src="/images/par-automation.svg" alt="Automation Edge" />
               </S.ContainerImg>
               <S.ContainerImg>
                 <img src="/images/par-gantech.svg" alt="Automation Edge" />

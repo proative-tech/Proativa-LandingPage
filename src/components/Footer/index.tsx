@@ -37,9 +37,9 @@ export const Footer = () => {
                   <p>contato@proativetec.com.br</p>
                 </div>
                 <div>
-                  <a href="/">Youtube</a>
+                  <a href="https://www.youtube.com/channel/UC4gXi-wVzJhb5jehBUgCb9A">Youtube</a>
                   <a href="/" />
-                  <a href="/">linkedln</a>
+                  <a href="https://www.linkedin.com/company/proativetechnology/">linkedln</a>
                 </div>
               </div>
             </div>
