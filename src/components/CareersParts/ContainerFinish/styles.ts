@@ -20,6 +20,7 @@ export const ContainerTop = styled.div`
 
   a {
     text-decoration: none;
+    color: #eb0029;
   }
 
   > p {
@@ -93,7 +94,7 @@ export const ContainerInfo = styled.div`
       list-style: none;
       li {
         p {
-          font-size: 1.875rem;
+          font-size: 1.5rem;
 
           font-weight: bold;
           font-family: 'Source Sans Pro';
@@ -213,3 +214,12 @@ export const Container = styled.div<VisibledProp | any>`
     `}
   `}
 `;
+
+export const ContainerButton = styled.div`
+  margin-top: 30px;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: flex-start;
+`;
+
+

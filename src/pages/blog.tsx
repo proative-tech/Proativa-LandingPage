@@ -15,7 +15,7 @@ export default function Index() {
         <Content>
           <iframe
             src="https://blog-proative.intraversa.com/"
-            title="Test blog"
+            title="Proative Blog"
           />
         </Content>
       </Wrapper>

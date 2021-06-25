@@ -29,8 +29,12 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
     const ele: Element | any = document.getElementById('soluciton-service');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
+<<<<<<< HEAD
     // const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 600;
     const heightEle = ele.getBoundingClientRect().top + window.scrollY + 100;
+=======
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 1000;
+>>>>>>> 3e47afffaa2c146fed1ed2ff57c88d87478c158b
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
@@ -60,7 +64,7 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
           ) : (
             <>
               <Header>
-                <span>Services Managed</span>
+                <span>Managed Services</span>
                 <h1>
                   Imagine sair do seu escritório todos os dias, sabendo que a
                   segurança e a continuidade do seu negócio estão em boas mãos?
@@ -98,7 +102,7 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
               </Footer>
               <ContainerButton>
                 <ButtonText
-                  label="Saiba mais sobre Services Managed"
+                  label="Saiba mais sobre Managed Services"
                   href="/solucoes/service-manager"
                 />
               </ContainerButton>

@@ -19,7 +19,7 @@ import {
 const links = [
   { name: 'Todas Soluções', href: '/solucoes' },
   {
-    name: 'Services Managed',
+    name: 'Managed Services',
     href: '/solucoes/service-manager',
   },
   { name: 'Cybersecurity', href: '/solucoes/cybersecurity' },

@@ -11,8 +11,12 @@ export const ContainerInfosOne = () => {
     const ele: Element | any = document.getElementById('containerInfosOne');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
+<<<<<<< HEAD
     // const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 300;
     const heightEle = ele.getBoundingClientRect().top + window.scrollY + 100;
+=======
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 1000;
+>>>>>>> 3e47afffaa2c146fed1ed2ff57c88d87478c158b
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);

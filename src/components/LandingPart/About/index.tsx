@@ -72,18 +72,10 @@ export const About = ({ children }: AboutProps) => {
         <Header>
           <span>Sobre a Proative Technology</span>
           <h1>
-            Somos uma empresa de tecnologia especializada em soluções inovadoras
-            de serviços gerenciados.
+          Somos uma empresa de tecnologia especializada em serviços gerenciados.
           </h1>
           <p>
-            Provemos soluções customizadas de acordo com cada necessidade para
-            Projetos e Consultoria em Governança Corporativa e de TI, aceleramos
-            operações que já estão rodando e maduras, inserindo componentes de
-            IOT, Analítics, Big Data e data Lake, extraindo insigths
-            significativos para o negócio. Cuidamos e impulsionamos operações
-            Anywhere, garantido disponibilidade e continuidade sobre a
-            disciplina do ITIL4 de gestão de Operações unindo pessoas, processos
-            e tecnologia.
+          Provemos soluções customizadas de acordo com cada necessidade para Projetos e Consultoria em Governança Corporativa e de TI, aceleramos operações que já estão rodando e maduras, inserindo componentes de IOT, Analítics, Big Data e data Lake, extraindo insigths significativos para o negócio. Cuidamos e impulsionamos operações Anywhere, garantido disponibilidade e continuidade sobre a disciplina do ITIL4 de gestão de Operações unindo pessoas, processos e tecnologia.
           </p>
         </Header>
       </Content>

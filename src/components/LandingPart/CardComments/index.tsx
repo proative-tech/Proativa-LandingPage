@@ -33,7 +33,7 @@ export function CardComments({
       <div className="note">
         <div className="contentNote">
           <strong>"</strong>
-          <p>{comment}</p>
+          <p>{comment}"</p>
         </div>
       </div>
       <div />

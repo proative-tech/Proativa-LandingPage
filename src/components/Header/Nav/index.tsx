@@ -77,7 +77,7 @@ export function Nav() {
                 links={[
                   { name: 'Todas Soluções', href: '/solucoes' },
                   {
-                    name: 'Services Managed',
+                    name: 'Managed Services',
                     href: '/solucoes/service-manager',
                   },
                   { name: 'Cybersecurity', href: '/solucoes/cybersecurity' },
@@ -140,8 +140,8 @@ export function Nav() {
             {focusPortais && (
               <DropdownMenu
                 links={[
-                  { name: 'Clientes', href: '/' },
-                  { name: 'Parceiros', href: '/' },
+                  { name: 'Clientes', href: 'https://portalproativetec.topdesk.net/' },
+                  { name: 'Parceiros', href: 'https://portalproativetec.topdesk.net/' },
                   // { name: 'Colaboradores', href: '/' },
                 ]}
               />
