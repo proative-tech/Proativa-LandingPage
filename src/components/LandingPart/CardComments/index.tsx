@@ -39,7 +39,7 @@ export function CardComments({
       <div />
       <div className="infomationsClient">
         <strong>{nameClient}</strong>
-        <p>{areaClient}</p>
+        <strong>{areaClient}</strong>
         {isMobile && (
           <div className="empresa">
             <p>{clientCompany}</p>

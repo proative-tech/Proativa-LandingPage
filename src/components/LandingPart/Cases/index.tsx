@@ -144,7 +144,7 @@ export function Cases({ children }: CasesProps | any) {
         <ContainerClients>
           <section className="section-client">
             <h3>O que os clientes dizem</h3>
-            <p>Sobre os serviços e soluções Proative</p>
+            <p>Sobre os serviços e soluções Proative Technology</p>
           </section>
 
           {!isMobileOrTablet && (
