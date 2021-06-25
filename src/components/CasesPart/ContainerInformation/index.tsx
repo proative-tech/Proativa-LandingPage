@@ -10,7 +10,7 @@ export const ContainerInformation = () => {
     const ele: Element | any = document.getElementById('cases-container-info');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 500;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 2000;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);

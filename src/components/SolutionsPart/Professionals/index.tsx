@@ -31,7 +31,7 @@ export const Professionals = ({ children }: CybersecurityProps) => {
     );
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 600;
+    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 1000;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
