@@ -30,17 +30,13 @@ export const Partners = () => {
             pagination={false}
           >
             <S.ContainerImg>
-<<<<<<< HEAD
               <img src="/images/par-automation.svg" alt="Automation Edge" />
-=======
-              <img src="/images/par-automation.svg" alt="Automation" />
->>>>>>> 3e47afffaa2c146fed1ed2ff57c88d87478c158b
             </S.ContainerImg>
             <S.ContainerImg>
               <img src="/images/par-gantech.svg" alt="Gantech" />
             </S.ContainerImg>
             <S.ContainerImg>
-              <img id="flex" src="/images/par-flexxible.svg" alt="Flexxible" />
+              <img src="/images/par-flexxible.svg" alt="Flexxible" />
             </S.ContainerImg>
           </Carousel>
           <S.ContainerBottomCarousel>
@@ -54,57 +50,21 @@ export const Partners = () => {
           </S.ContainerBottomCarousel>
         </S.ContainerCarousel>
 
-<<<<<<< HEAD
         <S.ContainerPartners>
-          <div>
+          <S.ContainerImg>
             <img src="/images/par-automation.svg" alt="Automation Edge" />
-          </div>
-          <div>
-            <img src="/images/par-gantech.svg" alt="Automation Edge" />
-          </div>
-          <div>
+          </S.ContainerImg>
+          <S.ContainerImg>
+            <img
+              id="flex"
+              src="/images/par-gantech.svg"
+              alt="Automation Edge"
+            />
+          </S.ContainerImg>
+          <S.ContainerImg>
             <img src="/images/par-flexxible.svg" alt="Automation Edge" />
-          </div>
+          </S.ContainerImg>
         </S.ContainerPartners>
-=======
-        {isMobileOrTablet && (
-          <S.ContainerCarousel>
-            <Carousel
-              isRTL={false}
-              className="containerREC"
-              itemsToShow={1}
-              itemPadding={[0, 24]}
-              ref={carousel}
-              pagination={false}
-            >
-              <S.ContainerImg>
-                <img src="/images/par-automation.svg" alt="Automation Edge" />
-              </S.ContainerImg>
-              <S.ContainerImg>
-                <img src="/images/par-gantech.svg" alt="Automation Edge" />
-              </S.ContainerImg>
-              <S.ContainerImg>
-                <img src="/images/par-flexxible.svg" alt="Automation Edge" />
-              </S.ContainerImg>
-            </Carousel>
-            <S.ContainerBottomCarousel>
-              <button
-                type="button"
-                onClick={() => carousel.current.slidePrev()}
-              >
-                <FiChevronLeft size={24} color="#000" />
-              </button>
-              <div />
-              <button
-                type="button"
-                onClick={() => carousel.current.slideNext()}
-              >
-                <FiChevronRight size={24} color="#000" />
-              </button>
-            </S.ContainerBottomCarousel>
-          </S.ContainerCarousel>
-        )}
->>>>>>> 3e47afffaa2c146fed1ed2ff57c88d87478c158b
       </S.Content>
     </S.Wrapper>
   );

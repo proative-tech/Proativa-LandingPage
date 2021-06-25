@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   background-color: #f4f4f4;
   width: 100%;
 
-  .containerREC {
+  /* .containerREC {
     button.rec-arrow {
       display: none;
     }
@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
         }
       }
     }
-  }
+  } */
 `;
 
 export const Content = styled.div`
@@ -47,8 +47,6 @@ export const Content = styled.div`
   padding: 32px 32px 90px;
 
   margin-bottom: 82px;
-
-
 
   @media (max-width: 845px) {
     padding: 32px 32px 42px;
@@ -175,7 +173,6 @@ export const Header = styled.div`
   flex-direction: column;
   align-items: center;
 
-
   h2 {
     font-size: 2rem;
     line-height: 2.375rem;
@@ -202,10 +199,9 @@ export const ContainerImg = styled.div`
     align-items: center;
     justify-content: center;
   }
-  img#flex{
-    margin-left: -100px
+  img#flex {
+    margin-left: 100px;
   }
-
 `;
 
 export const ContainerPartners = styled.div`
