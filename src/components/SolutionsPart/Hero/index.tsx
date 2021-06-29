@@ -19,7 +19,7 @@ interface HeroSolutionProps {
 
 export function HeroSolutions({ children, idMoveScroll }: HeroSolutionProps) {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 920 });
-  const router = useRouter();
+  const isFullWide = useMediaQuery({ minWidth: 1441 });
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
   const [isAnimated, setIsAnimated] = useState(false);
 

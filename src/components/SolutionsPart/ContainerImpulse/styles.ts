@@ -3,13 +3,13 @@ import { animationFade, animationsObj } from '../../../utils/animations';
 import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const Content = styled.div`
-  max-width: calc(537px + 170px);
+  max-width: 850px;
   width: 100%;
 
   margin: 0 auto;
 
   position: relative;
-  padding-left: 170px;
+  padding-left: 150px;
 
   div.containerButton {
     display: flex;
@@ -46,7 +46,7 @@ export const Content = styled.div`
 `;
 
 export const ContentTop = styled.div`
-  max-width: 525px;
+  max-width: 650px;
   width: 100%;
 
   &::before {
@@ -61,6 +61,7 @@ export const ContentTop = styled.div`
   h1 {
     font-size: 2.8125rem;
     line-height: 3.125rem;
+    font-weight: 600;
     color: #36393b;
   }
 
@@ -70,6 +71,8 @@ export const ContentTop = styled.div`
     color: #6a6a6a;
 
     margin: 30px 0 50px;
+
+    max-width: 403px;
   }
 
   @media (max-width: 820px) {
@@ -112,6 +115,9 @@ export const Container = styled.div<VisibledProp>`
     background: #fff;
 
     margin-top: 5.75rem;
+
+    margin-left: auto;
+    margin-right: auto;
 
     ${Content} {
       opacity: ${visibled ? 1 : 0};

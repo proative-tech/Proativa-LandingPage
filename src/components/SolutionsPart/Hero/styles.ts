@@ -16,9 +16,10 @@ const animationH1 = keyframes`
 
 export const ContainerTop = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 54% 46%;
 
   @media (max-width: 1264px) {
+    display: grid;
     grid-template-columns: 1fr 45%;
   }
 
@@ -51,7 +52,9 @@ export const ContainerTop = styled.div`
 `;
 
 export const Content = styled.section`
-  width: 70%;
+  max-width: 535px;
+  width: 100%;
+  margin-left: auto;
 
   justify-self: flex-end;
   align-self: center;
@@ -61,12 +64,12 @@ export const Content = styled.section`
 
     h1 {
       font-size: 3rem;
-      line-height: 3.5625rem;
+      line-height: 2.82rem;
       font-family: 'Source Sans Pro';
     }
 
     h2 {
-      font-size: 2.375rem;
+      font-size: 2rem;
       line-height: 3.2rem;
       font-family: 'Source Sans Pro';
     }
@@ -82,12 +85,23 @@ export const Content = styled.section`
   }
 
   @media (min-width: 1441px) {
-    max-width: 485px;
-    width: 100%;
+    max-width: 632px;
 
     p {
       font-size: 16px;
       line-height: 28px;
+    }
+
+    > div.content__text {
+      h2 {
+        font-size: 2.625rem;
+        line-height: 3.875rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 2.1875rem;
+      }
     }
   }
 
@@ -125,13 +139,19 @@ export const ContainerImg = styled.section`
 
   justify-self: flex-end;
 
-  width: 80%;
+  width: 87%;
 
   @media (min-width: 1441px) {
     width: 100%;
 
     display: flex;
     justify-content: flex-end;
+
+    margin-left: 50px;
+
+    img {
+      width: 95%;
+    }
   }
 `;
 

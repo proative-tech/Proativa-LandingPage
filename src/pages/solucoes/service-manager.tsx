@@ -29,15 +29,12 @@ export default function Index() {
         <HeroSolutions idMoveScroll="soluciton-service">
           <div className="content__text">
             <h2>
-              Nosso Service Managed traz experiência e seriedade para sua
-              jornada de transformação digital, além de apoiá-lo nas tomadas de
-              decisões para construir novos e modernos ambientes.
+              Nosso Managed Services traz experiência e seriedade para sua
+              jornada de transformação digital.
             </h2>
             <p>
-              Nosso Centro de Command serve como um hub para todos os dados
-              críticos da sua empresa para que ele possa ser acessado por todas
-              as unidades de negócios, transformando dados globais em insights
-              significativos.
+              Além de apoiá-lo nas tomadas de decisões para construir novos e
+              modernos ambientes.
             </p>
           </div>
         </HeroSolutions>
