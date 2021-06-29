@@ -6,10 +6,9 @@ import { Container, Content, ContentTop } from './styles';
 
 type Props = {
   children?: React.ReactNode;
-  labelBtn?: string;
 };
 
-export const ContainerImpulse = ({ children, labelBtn }: Props) => {
+export const ContainerBarLeft = ({ children }: Props) => {
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
   const [isAnimated, setIsAnimated] = useState(false);
 
@@ -35,17 +34,7 @@ export const ContainerImpulse = ({ children, labelBtn }: Props) => {
     <Container visibled={isAnimated} id="containerImpulse">
       <Content>
         {children ? (
-          <>
-            <ContentTop>{children}</ContentTop>
-
-            <div className="containerButton">
-              <ButtonText
-                label={labelBtn}
-                href="/fale-conosco"
-                directionArrow="top"
-              />
-            </div>
-          </>
+          <ContentTop>{children}</ContentTop>
         ) : (
           <>
             <ContentTop>

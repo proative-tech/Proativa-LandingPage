@@ -84,6 +84,16 @@ export const Content = styled.section`
     }
   }
 
+  &.cyber {
+    max-width: 510px;
+
+    > div.content__text {
+      p {
+        max-width: 80%;
+      }
+    }
+  }
+
   @media (min-width: 1441px) {
     max-width: 632px;
 

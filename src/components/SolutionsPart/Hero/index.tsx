@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import { ReactNode, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Link } from 'react-scroll';
@@ -15,9 +16,14 @@ import {
 interface HeroSolutionProps {
   children: ReactNode;
   idMoveScroll: string;
+  className?: string;
 }
 
-export function HeroSolutions({ children, idMoveScroll }: HeroSolutionProps) {
+export function HeroSolutions({
+  children,
+  idMoveScroll,
+  className = '',
+}: HeroSolutionProps) {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 920 });
   const isFullWide = useMediaQuery({ minWidth: 1441 });
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
@@ -44,7 +50,7 @@ export function HeroSolutions({ children, idMoveScroll }: HeroSolutionProps) {
   return (
     <Container id="heroSolutions" visibled={isAnimated}>
       <ContainerTop>
-        <Content>{children}</Content>
+        <Content className={className}>{children}</Content>
         {!isMobileOrTablet && (
           <ContainerImg>
             <img src="/images/hero3.svg" alt="Proativa" />

@@ -30,16 +30,15 @@ export default function Index() {
         <Header bgColor="#fff" />
         <HeroSolutions idMoveScroll="containerConsultancy">
           <div className="content__text">
-            <h1>
-              Cybersecurity*
-              <br />
-              Um título explicativo para service manage com qualidades
-            </h1>
+            <h2>
+              Consulting Services: <br />
+              Faça da TI um impulsionador de crescimento.
+            </h2>
             <p>
-              Nosso Centro de Command serve como um hub para todos os dados
-              críticos da sua empresa para que ele possa ser acessado por todos
-              as unidades de negócios, transformando dados globais em insights
-              significativos.
+              Com forte experiência em serviços de consultoria, aumentamos a
+              maturidade de TI do seu negócio, trazendo resultados com
+              estratégias e soluções para atingir seu objetivo gerando o máximo
+              valor.
             </p>
           </div>
         </HeroSolutions>
