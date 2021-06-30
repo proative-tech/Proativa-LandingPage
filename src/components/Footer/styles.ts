@@ -114,6 +114,10 @@ export const Container = styled.div`
       color: #c4c4c4;
     }
   }
+  
+  a {
+    font-weight: bold;
+  }
 
   .footer {
     width: 100%;
@@ -189,6 +193,9 @@ export const Container = styled.div`
         display: block;
       }
     }
+    a {
+      font-weight: bold;
+    }
   }
 
   @media (max-width: 864px) {
@@ -200,6 +207,9 @@ export const Container = styled.div`
       img {
         margin-left: -20px;
       }
+    }
+    a {
+      font-weight: bold;
     }
   }
 
@@ -221,6 +231,9 @@ export const Container = styled.div`
           margin-left: 40px;
         }
       }
+    }
+    a {
+      font-weight: bold;
     }
   }
 
@@ -258,6 +271,9 @@ export const Container = styled.div`
       span {
         display: none;
       }
+    }
+    a {
+      font-weight: bold;
     }
   }
 
