@@ -64,7 +64,7 @@ export const Content = styled.section`
 
     h1 {
       font-size: 3rem;
-      line-height: 2.82rem;
+      line-height: 3.5rem;
       font-family: 'Source Sans Pro';
     }
 

@@ -48,6 +48,12 @@ export default function Index() {
           </h1>
 
           <p className="textPage">
+            Nosso Command Center serve como um hub para todos os dados críticos
+            da sua empresa para que ele possa ser acessado por todas as unidades
+            de negócios, transformando dados globais em insights significativos.
+          </p>
+
+          <p className="textPage">
             Arquitetura de solução com alta capacidade de abrangência para
             monitoramento e gerenciamento, soluções integradas que garantem
             aderência as boas práticas e automação de rotinas operacionais.
@@ -59,12 +65,6 @@ export default function Index() {
             negócio para monitoramento proativo, além de contar com
             profissionais técnicos multidisciplinares e gerenciamento
             centralizado de serviços.
-          </p>
-
-          <p className="textPage">
-            Modelo de Governança que permite a aplicação de processos de
-            melhoria contínua e alta capacidade de personalização de regras de
-            negócio para monitoramento proativo.
           </p>
         </ServiceManaged>
         <ContainerInfosOne />
