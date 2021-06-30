@@ -269,6 +269,9 @@ export const Container = styled.div`
         }
       }
     }
+    a {
+      font-weight: bold;
+    }
   }
 `;
 
