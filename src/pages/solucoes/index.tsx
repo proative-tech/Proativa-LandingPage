@@ -27,7 +27,7 @@ export default function Index() {
             <h1>
               Com uma equipe multidisciplinar entendemos as suas necessidades.
             </h1>
-            <p style={{ maxWidth: 380 }}>
+            <p>
               Desenhamos soluções customizáveis e mais competitivas para
               serviços gerenciados de infraestrutura, aplicações, operações,
               processos de negócio, devops, segurança da informação, automação e
