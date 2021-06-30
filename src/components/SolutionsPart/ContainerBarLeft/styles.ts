@@ -125,16 +125,16 @@ export const Container = styled.div<VisibledProp>`
     css`
       ${Content} {
         div.containerButton {
-          animation: ${animationsObj.toXAnimation(-650)} 4s;
+          animation: ${animationsObj.toXAnimation(-650)} 1.2s;
         }
       }
 
       ${ContentTop} {
         h1 {
-          animation: ${animationsObj.toYAnimation(150)} 2s;
+          animation: ${animationsObj.toYAnimation(150)} 1.2s;
         }
         p {
-          animation: ${animationsObj.toYAnimation(100)} 3s;
+          animation: ${animationsObj.toYAnimation(100)} 1.2s;
         }
       }
     `}

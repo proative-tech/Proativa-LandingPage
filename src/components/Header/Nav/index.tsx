@@ -71,7 +71,7 @@ export function Nav() {
             onMouseEnter={() => setFocusSolutions(!focusSolutions)}
             onMouseLeave={() => setFocusSolutions(!focusSolutions)}
           >
-            <Link scroll href="/solucoes">
+            <Link scroll={false} href="/solucoes">
               SOLUÇÕES
             </Link>
             {focusSolutions && (

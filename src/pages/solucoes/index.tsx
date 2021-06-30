@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import { animateScroll } from 'react-scroll';
+
 import Head from 'next/head';
 import { Header } from '../../components/Header';
 
@@ -12,6 +15,9 @@ import { Consultancy } from '../../components/SolutionsPart/Consultancy';
 import { RPA } from '../../components/SolutionsPart/RPA';
 
 export default function Index() {
+  useEffect(() => {
+    animateScroll.scrollToTop();
+  }, []);
   return (
     <>
       <Head>

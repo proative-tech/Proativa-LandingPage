@@ -250,7 +250,7 @@ export const Container = styled.div<VisibledProp | any>`
     ${visibled &&
     css`
       ${StylesAnimationImg.Wrapper} {
-        animation: ${animationsObj.toYAnimation(70)} 3s;
+        animation: ${animationsObj.toYAnimation(70)} 1.2s;
       }
 
       ${modifier &&

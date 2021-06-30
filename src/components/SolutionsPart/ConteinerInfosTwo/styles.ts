@@ -83,16 +83,16 @@ export const Container = styled.div<VisibledProp>`
     css`
       ${Content} {
         > ${Info}:nth-child(1) {
-          animation: ${animationsObj.toXAnimation(150)} 2s;
+          animation: ${animationsObj.toXAnimation(150)} 1.2s;
         }
         > ${Info}:nth-child(2) {
-          animation: ${animationsObj.toXAnimation(50)} 3s;
+          animation: ${animationsObj.toXAnimation(50)} 1.2s;
         }
         > ${Info}:nth-child(3) {
-          animation: ${animationsObj.toXAnimation(-50)} 4s;
+          animation: ${animationsObj.toXAnimation(-50)} 1.2s;
         }
         > ${Info}:nth-child(4) {
-          animation: ${animationsObj.toXAnimation(-150)} 4s;
+          animation: ${animationsObj.toXAnimation(-150)} 1.2s;
         }
       }
     `}

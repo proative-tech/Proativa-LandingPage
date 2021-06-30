@@ -163,6 +163,12 @@ export const ContentBottom = styled.div`
       margin-left: -30px;
     }
   }
+
+  @media (max-width: 580px) {
+    div.contentBottomImg {
+      display: none;
+    }
+  }
 `;
 
 export const Container = styled.div<VisibledProp>`
@@ -187,34 +193,34 @@ export const Container = styled.div<VisibledProp>`
     css`
       ${ContentTop} {
         > h2 {
-          animation: ${animationsObj.toXAnimation(-50)} 2s;
+          animation: ${animationsObj.toXAnimation(-50)} 1.2s;
         }
 
         div.row:nth-child(2) {
           > ${Info}:nth-child(1) {
-            animation: ${animationsObj.toYAnimation(50)} 2s;
+            animation: ${animationsObj.toYAnimation(50)} 1.2s;
           }
           > ${Info}:nth-child(2) {
-            animation: ${animationsObj.toYAnimation(70)} 3s;
+            animation: ${animationsObj.toYAnimation(70)} 1.2s;
           }
           > ${Info}:nth-child(3) {
-            animation: ${animationsObj.toYAnimation(90)} 4s;
+            animation: ${animationsObj.toYAnimation(90)} 1.2s;
           }
         }
 
         div.row:nth-child(3) {
           > ${Info}:nth-child(1) {
-            animation: ${animationsObj.toYAnimation(50)} 2s;
+            animation: ${animationsObj.toYAnimation(50)} 1.2s;
           }
           > ${Info}:nth-child(2) {
-            animation: ${animationsObj.toYAnimation(70)} 3s;
+            animation: ${animationsObj.toYAnimation(70)} 1.2s;
           }
         }
       }
 
       ${ContentBottom} {
         div.contentBottomMain {
-          animation: ${animationsObj.toYAnimation(70)} 2s;
+          animation: ${animationsObj.toYAnimation(70)} 1.2s;
         }
 
         div.contentBottomImg {
