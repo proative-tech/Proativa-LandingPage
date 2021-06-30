@@ -43,7 +43,7 @@ export const ContainerInfosOne = () => {
             <img src="/images/2-icon-inf.svg" alt="Seja Proativo" />
           </div>
           <p className="title">Predição</p>
-          <p>Monitoramento e Inteligeência como Preditores</p>
+          <p>Monitoramento e Inteligência como Preditores</p>
         </Info>
         <Info>
           <div className="containerImg">

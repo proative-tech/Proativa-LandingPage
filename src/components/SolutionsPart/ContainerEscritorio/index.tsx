@@ -67,11 +67,11 @@ export const ContainerEscritorio = ({ children }: CybersecurityProps) => {
             <>
               <Header>
                 <h1>
-                  Gerenciamento de App para trabalho remoto e saude digital.
+                  Gerenciamento de App para trabalho remoto e saúde digital.
                 </h1>
                 <p>
-                  Trabalho remoto e bem-estar digital. Apoiando o bem-estar
-                  digital dos colaboradores.
+                  Trabalho remoto e bem-estar digital. <br /> Apoiando o
+                  bem-estar digital dos colaboradores.
                 </p>
               </Header>
               <div>
