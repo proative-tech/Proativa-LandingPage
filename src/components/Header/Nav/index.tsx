@@ -97,7 +97,7 @@ export function Nav() {
 
                   {
                     name: 'RPA',
-                    href: '/solucoes/consultancy',
+                    href: '/solucoes/rpa',
                   },
                 ]}
               />

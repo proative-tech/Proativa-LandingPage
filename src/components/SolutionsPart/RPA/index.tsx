@@ -89,10 +89,7 @@ export const RPA = ({ children }: CybersecurityProps) => {
               </Footer>
 
               <ContainerButton>
-                <ButtonText
-                  label="Saiba mais sobre RPA"
-                  href="/solucoes/cybersecurity"
-                />
+                <ButtonText label="Saiba mais sobre RPA" href="/solucoes/rpa" />
               </ContainerButton>
             </>
           )}

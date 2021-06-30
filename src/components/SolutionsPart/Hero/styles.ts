@@ -104,8 +104,19 @@ export const Content = styled.section`
     }
   }
 
+  &.rpa {
+    max-width: 480px;
+
+    > div.content__text {
+      p {
+        max-width: 90%;
+      }
+    }
+  }
+
   &.consultancyID {
-    max-width: 430px;
+    max-width: 480px;
+    padding-right: 50px;
 
     > div.content__text {
       p {
@@ -116,6 +127,8 @@ export const Content = styled.section`
 
   @media (min-width: 1441px) {
     max-width: 632px;
+
+    margin-right: 0;
 
     p {
       font-size: 16px;
@@ -154,6 +167,16 @@ export const Content = styled.section`
       }
     }
 
+    &.rpa {
+      max-width: 600px;
+
+      > div.content__text {
+        p {
+          max-width: 90%;
+        }
+      }
+    }
+
     &.consultancyID {
       max-width: 560px;
 
@@ -163,6 +186,10 @@ export const Content = styled.section`
         }
       }
     }
+  }
+
+  @media (max-width: 1440px) {
+    margin-right: 100px;
   }
 
   @media (max-width: 1378px) {

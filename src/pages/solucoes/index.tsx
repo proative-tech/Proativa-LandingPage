@@ -19,12 +19,15 @@ export default function Index() {
       </Head>
       <Container>
         <Header noPaddingBottom bgColor="#fff" />
-        <HeroSolutions idMoveScroll="soluciton-service">
+        <HeroSolutions
+          idMoveScroll="soluciton-service"
+          className="consultancyID"
+        >
           <div className="content__text">
             <h1>
               Com uma equipe multidisciplinar entendemos as suas necessidades.
             </h1>
-            <p>
+            <p style={{ maxWidth: 380 }}>
               Desenhamos soluções customizáveis e mais competitivas para
               serviços gerenciados de infraestrutura, aplicações, operações,
               processos de negócio, devops, segurança da informação, automação e
