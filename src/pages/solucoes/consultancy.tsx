@@ -10,7 +10,7 @@ import { ServiceManaged } from '../../components/SolutionsPart/ServiceManaged';
 import { Cybersecurity } from '../../components/SolutionsPart/Cybersecurity';
 import { Professionals } from '../../components/SolutionsPart/Professionals';
 import { Consultancy } from '../../components/SolutionsPart/Consultancy';
-import { ContainerInfosOne } from '../../components/SolutionsPart/ConteinerInfosOne';
+import { ContainerInfoConsul } from '../../components/SolutionsPart/ContainerInfoConsul';
 import { ContainerInfosTwo } from '../../components/SolutionsPart/ConteinerInfosTwo';
 import { ContainerConsultoria } from '../../components/SolutionsPart/ContainerConsultoria';
 import { ContainerImpulse } from '../../components/SolutionsPart/ContainerImpulse';
@@ -45,33 +45,29 @@ export default function Index() {
             </p>
           </div>
         </HeroSolutions>
-        <Cybersecurity>
-          <h1>
-            Next-Generation Command Center - A integração é a chave para
-            insights superiores.
+        <Consultancy>
+          <h1 style={{ maxWidth: 418 }}>
+            TI Impulsionando e colaborando com o negócio.
           </h1>
 
           <p className="textPage">
-            Arquitetura de solução com alta capacidade de abrangência para
-            monitoramento e gerenciamento, soluções integradas que garantem
-            aderência as boas práticas e automação de rotinas operacionais.
+            Nosso principal objetivo em Governança é alinhar a Tecnologia e a
+            Informação aos requisitos do negócio, levando em consideração
+            soluções que agreguem valor, com garantia de continuidade dos
+            serviços, minimizando as ameaças, potencializando as oportunidades
+            que TI pode proporcionar ao negócio, assegurando a otimização dos
+            recursos.
           </p>
 
           <p className="textPage">
-            Modelo de Governança que permite a aplicação de processos de
-            melhoria contínua e alta capacidade de personalização de regras de
-            negócio para monitoramento proativo, além de contar com
-            profissionais técnicos multidisciplinares e gerenciamento
-            centralizado de serviços.
+            Nós identificamos através de um diagnóstico em qual nível sua
+            empresa se encontra, essa informação é essencial para implantar uma
+            governança de TI adequada, além de avaliar as práticas internas e
+            elaborar ações de melhorias para que a sua TI consiga acompanhar as
+            exigências do mercado e ofereça os benefícios esperados.
           </p>
-
-          <p className="textPage">
-            Modelo de Governança que permite a aplicação de processos de
-            melhoria contínua e alta capacidade de personalização de regras de
-            negócio para monitoramento proativo.
-          </p>
-        </Cybersecurity>
-        <ContainerInfosOne />
+        </Consultancy>
+        <ContainerInfoConsul />
 
         <ContainerInfosTwo
           infos={[

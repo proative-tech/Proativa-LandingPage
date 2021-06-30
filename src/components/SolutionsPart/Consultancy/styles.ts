@@ -28,6 +28,7 @@ export const ContainerImg = styled.div<ContainerProps>`
   ${({ modifier }) =>
     modifier &&
     css`
+      margin-right: 75px;
       order: -1;
     `}
 
@@ -40,6 +41,7 @@ export const ContainerImg = styled.div<ContainerProps>`
 
   @media (max-width: 928px) {
     order: -1;
+    margin-right: 0;
 
     ${StylesAnimationImg.Wrapper} {
       height: 400px;
@@ -218,8 +220,13 @@ export const ContainerButton = styled.div`
   justify-content: flex-start;
 `;
 
-export const Container = styled.div<VisibledProp>`
-  ${({ visibled }) => css`
+type ContainerPropsTwo = {
+  visibled: boolean;
+  inverter: boolean;
+};
+
+export const Container = styled.div<ContainerPropsTwo>`
+  ${({ visibled, inverter }) => css`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -250,13 +257,23 @@ export const Container = styled.div<VisibledProp>`
 
     ${visibled &&
     css`
-      ${StylesAnimationImg.Wrapper} {
-        animation: ${animationsObj.toYAnimation(70)} 1.2s;
-      }
-
-      ${Content} {
-        animation: ${animationsObj.toXAnimation(-650)} 1.2s;
-      }
+      ${inverter
+        ? css`
+            ${StylesAnimationImg.Wrapper} {
+              animation: ${animationsObj.toYAnimation(70)} 1.2s;
+            }
+            ${Content} {
+              animation: ${animationsObj.toXAnimation(650)} 1.2s;
+            }
+          `
+        : css`
+            ${StylesAnimationImg.Wrapper} {
+              animation: ${animationsObj.toYAnimation(70)} 1.2s;
+            }
+            ${Content} {
+              animation: ${animationsObj.toXAnimation(-650)} 1.2s;
+            }
+          `}
     `}
   `}
 `;

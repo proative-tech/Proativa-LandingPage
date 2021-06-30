@@ -47,7 +47,11 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
 
   return (
     <Wrapper>
-      <Container visibled={isAnimated} id="containerConsultancy">
+      <Container
+        visibled={isAnimated}
+        id="containerConsultancy"
+        inverter={!!children}
+      >
         <Content>
           {children ? (
             <Header>{children}</Header>

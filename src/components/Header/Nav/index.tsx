@@ -79,15 +79,26 @@ export function Nav() {
                 links={[
                   { name: 'Todas Soluções', href: '/solucoes' },
                   {
-                    name: 'Managed Services',
+                    name: 'Service Managed',
                     href: '/solucoes/service-manager',
                   },
-                  { name: 'Cybersecurity', href: '/solucoes/cybersecurity' },
                   {
-                    name: 'Serviços Profissionais',
+                    name: 'Consulting Services',
+                    href: '/solucoes/consultancy',
+                  },
+                  {
+                    name: 'Cyber Security Services',
+                    href: '/solucoes/cybersecurity',
+                  },
+                  {
+                    name: 'Professional Services',
                     href: '/solucoes/professionals',
                   },
-                  { name: 'Consultoria', href: '/solucoes/consultancy' },
+
+                  {
+                    name: 'RPA',
+                    href: '/solucoes/consultancy',
+                  },
                 ]}
               />
             )}
