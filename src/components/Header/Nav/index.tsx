@@ -167,6 +167,10 @@ export function Nav() {
                     name: 'Parceiros',
                     href: 'https://portalproativetec.topdesk.net/',
                   },
+                  {
+                    name: 'Colaboradores',
+                    href: 'https://app.expenseon.com/admin/login',
+                  }
                   // { name: 'Colaboradores', href: '/' },
                 ]}
               />
