@@ -26,7 +26,7 @@ export const Content = styled.div`
   }
 
   @media (max-width: 695px) {
-    max-width: 80%;
+    max-width: 80%; line-height: 1.8rem;
   }
 
   @media (max-width: 528px) {

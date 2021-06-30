@@ -40,7 +40,7 @@ export const Info = styled.div`
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 12px
     line-height: 1.5625rem;
   }
 
@@ -52,7 +52,7 @@ export const Info = styled.div`
   @media (max-width: 490px) {
     margin: 0 auto;
 
-    max-width: 180px;
+    max-width: 80%; line-height: 1.8rem;
     width: 100%;
   }
 `;

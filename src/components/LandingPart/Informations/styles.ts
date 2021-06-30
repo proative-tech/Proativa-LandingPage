@@ -138,8 +138,8 @@ export const ContainerInfos = styled.div<VisibledProp>`
     }
 
     p:nth-child(3) {
-      font-size: 0.8125rem;
-      line-height: 1.4375rem;
+      font-size: 14px;
+      line-height: 1.8375rem;
       color: #666666;
 
       margin-top: 11px;
@@ -251,7 +251,7 @@ export const ContainerInfos = styled.div<VisibledProp>`
       }
 
       p:nth-child(3) {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
       }
     }

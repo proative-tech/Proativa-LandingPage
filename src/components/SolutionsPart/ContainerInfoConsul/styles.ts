@@ -36,7 +36,7 @@ export const Info = styled.div`
     padding-top: 12px;
 
     font-size: 1rem;
-    line-height: 1.4375rem;
+    line-height: 1.8375rem;
     color: #434343;
   }
 `;
@@ -131,8 +131,8 @@ export const ContentBottom = styled.div`
     }
 
     p {
-      font-size: 0.8125rem;
-      line-height: 1.4375rem;
+      font-size: 14px;
+      line-height: 1.8375rem;
     }
   }
 

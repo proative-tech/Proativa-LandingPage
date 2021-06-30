@@ -101,7 +101,7 @@ export const Content = styled.section`
       }
 
       p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 24px;
       }
     }

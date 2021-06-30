@@ -116,7 +116,7 @@ export const Container = styled.div`
       padding: 0;
 
       p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 27px;
       }
 
@@ -129,7 +129,7 @@ export const Container = styled.div`
         margin-top: 12px;
 
         strong {
-          font-size: 12px;
+          font-size: 14px;
           font-weight: Normal;
           line-height: 19px;
           color: #000;

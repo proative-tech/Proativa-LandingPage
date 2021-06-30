@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   width: 100vw;
   background: #fff;
 
-  padding-top: 4.5rem;
+  padding-top: 1.0rem;
 
   @media (max-width: 928px) {
     padding-top: 0;
@@ -130,7 +130,7 @@ export const Header = styled.div`
   }
 
   @media (max-width: 669px) {
-    max-width: 80%;
+    max-width: 80%; line-height: 1.8rem;
   }
 
   @media (max-width: 593px) {
@@ -151,7 +151,7 @@ export const Header = styled.div`
     }
 
     p {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 24px;
     }
   }
@@ -184,7 +184,7 @@ export const Footer = styled.div`
   }
 
   @media (min-width: 1518px) {
-    max-width: 80%;
+    max-width: 80%; line-height: 1.8rem;
   }
 
   @media (min-width: 1441px) {
@@ -196,14 +196,14 @@ export const Footer = styled.div`
   }
 
   @media (max-width: 647px) {
-    max-width: 80%;
+    max-width: 80%; line-height: 1.8rem;
   }
 
   @media (max-width: 490px) {
     max-width: 100%;
 
     p {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 24px;
     }
   }

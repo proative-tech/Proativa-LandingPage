@@ -99,9 +99,8 @@ export const Content = styled.section`
         font-size: 26px;
         line-height: 34px;
       }
-
       p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 24px;
       }
     }

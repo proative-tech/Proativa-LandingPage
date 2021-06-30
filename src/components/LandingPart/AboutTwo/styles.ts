@@ -135,7 +135,7 @@ export const Header = styled.div`
   }
 
   @media (max-width: 647px) {
-    max-width: 80%;
+    max-width: 80%; line-height: 1.8rem;
   }
 
   @media (max-width: 490px) {
@@ -153,7 +153,7 @@ export const Header = styled.div`
     }
 
     p {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 24px;
       margin-left: 0px;
     }

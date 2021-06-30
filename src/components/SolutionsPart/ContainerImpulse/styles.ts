@@ -37,7 +37,7 @@ export const Content = styled.div`
   }
 
   @media (max-width: 612px) {
-    max-width: 80%;
+    max-width: 80%; line-height: 1.8rem;
   }
 
   @media (max-width: 530px) {
@@ -98,7 +98,7 @@ export const ContentTop = styled.div`
     }
 
     p {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 24px;
     }
   }

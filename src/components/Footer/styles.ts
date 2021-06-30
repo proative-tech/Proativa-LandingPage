@@ -278,7 +278,7 @@ interface ContentMainProps {
 
 export const ContentMain = styled.div<ContentMainProps>`
   width: 100vw;
-  margin: 256px auto 0;
+  margin: 56px auto 0;
 
   display: flex;
   align-items: center;

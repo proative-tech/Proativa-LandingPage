@@ -48,7 +48,7 @@ export const Container = styled.button<ContainerProps>`
     `}
 
   @media (max-width: 490px) {
-    font-size: 12px;
+    font-size: 14px;
     padding: 12px 18px;
   }
   @media (max-width: 321px) {

@@ -146,6 +146,7 @@ export const Item = styled.li<ItemProps | any>`
     > span {
       display: inline-block;
       width: 100%;
+      font-size: 1.125rem;
     }
 
     &:hover {
