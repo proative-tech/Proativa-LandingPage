@@ -83,7 +83,7 @@ export default function Index() {
             {
               title: 'AI & ML',
               content:
-                'Identificar Imagens; Interprestar E-mails; Analizar padrões.',
+                'Identificar Imagens; Interpretar E-mails; Analizar padrões.',
             },
             {
               title: 'DATA',
