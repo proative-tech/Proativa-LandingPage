@@ -97,7 +97,7 @@ export const Cybersecurity = ({ children }: CybersecurityProps) => {
               </Footer>
               <ContainerButton>
                 <ButtonText
-                  label="Saiba mais sobre Cybersecurity Services"
+                  label="Saiba mais sobre Cyber Security Services"
                   href="/solucoes/cybersecurity"
                 />
               </ContainerButton>
