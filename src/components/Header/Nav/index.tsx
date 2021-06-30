@@ -137,7 +137,7 @@ export function Nav() {
             <Link href="/cases">CASES</Link>
           </li> */}
           <li>
-            <Link scroll href="/carreiras">
+            <Link scroll={false} href="/carreiras">
               CARREIRAS
             </Link>
           </li>
@@ -147,7 +147,9 @@ export function Nav() {
             </Link>
           </li>
           <li>
-            <Link href="/fale-conosco">FALE CONOSCO</Link>
+            <Link scroll={false} href="/fale-conosco">
+              FALE CONOSCO
+            </Link>
           </li>
           <li
             onMouseEnter={() => setFocusPortais(!focusPortais)}
@@ -170,7 +172,7 @@ export function Nav() {
                   {
                     name: 'Colaboradores',
                     href: 'https://app.expenseon.com/admin/login',
-                  }
+                  },
                   // { name: 'Colaboradores', href: '/' },
                 ]}
               />

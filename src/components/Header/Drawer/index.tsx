@@ -173,12 +173,12 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
             </Link>
           </Item>
           <Item>
-            <Link href="/blog" passHref>
+            <Link scroll={false} href="/blog" passHref>
               BLOG
             </Link>
           </Item>
           <Item>
-            <Link href="/fale-conosco" passHref>
+            <Link scroll={false} href="/fale-conosco" passHref>
               FALE CONOSCO
             </Link>
           </Item>
