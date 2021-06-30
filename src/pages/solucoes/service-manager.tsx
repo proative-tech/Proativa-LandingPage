@@ -26,7 +26,10 @@ export default function Index() {
       </Head>
       <Container>
         <Header bgColor="#fff" />
-        <HeroSolutions idMoveScroll="soluciton-service">
+        <HeroSolutions
+          idMoveScroll="soluciton-service"
+          className="professionals"
+        >
           <div className="content__text">
             <h2>
               Nosso Managed Services traz experiência e seriedade para sua
