@@ -52,7 +52,7 @@ export const ContainerBarLeft = ({ children }: Props) => {
 
             <div className="containerButton">
               <ButtonText
-                label="Entre em contato sobre Service Managed"
+                label="Entre em contato sobre Managed Services"
                 href="/fale-conosco"
                 directionArrow="top"
               />

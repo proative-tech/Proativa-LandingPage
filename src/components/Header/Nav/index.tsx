@@ -79,7 +79,7 @@ export function Nav() {
                 links={[
                   { name: 'Todas Soluções', href: '/solucoes' },
                   {
-                    name: 'Service Managed',
+                    name: 'Managed Services',
                     href: '/solucoes/service-manager',
                   },
                   {
