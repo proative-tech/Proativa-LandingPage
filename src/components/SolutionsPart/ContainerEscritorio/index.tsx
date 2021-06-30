@@ -55,7 +55,7 @@ export const ContainerEscritorio = ({ children }: CybersecurityProps) => {
       >
         <ContainerImg modifier={!!children}>
           <AnimationImg
-            url="/images/carreira-cont-1.png"
+            url="/images/01-service.png"
             height={553}
             heightUW={626}
           />
