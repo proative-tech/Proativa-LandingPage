@@ -142,7 +142,7 @@ export const Content = styled.section`
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 20px;
         line-height: 2.1875rem;
       }
     }

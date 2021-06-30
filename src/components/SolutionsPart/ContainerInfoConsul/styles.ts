@@ -48,7 +48,7 @@ export const ContentTop = styled.div`
   margin-bottom: 90px;
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-family: 'Source Sans Pro';
     color: #2c2c2c;
 
@@ -123,7 +123,7 @@ export const ContentBottom = styled.div`
     width: 100%;
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 20px;
       color: #eb0029;
       font-family: 'Source Sans Pro';
 

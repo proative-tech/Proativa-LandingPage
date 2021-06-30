@@ -85,7 +85,7 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
               </WrapperFooters>
               <ContainerButton>
                 <ButtonText
-                  label="Saiba mais sobre Consultoria"
+                  label="Saiba mais sobre Consulting Services"
                   directionArrow="right"
                   href="/solucoes/consultancy"
                 />

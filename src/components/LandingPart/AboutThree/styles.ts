@@ -75,8 +75,8 @@ export const Footer = styled.div`
   @media (min-width: 1441px) {
     max-width: 83%;
     p {
-      font-size: 0.875rem;
-      line-height: 34px;
+      font-size: 16px;
+      line-height: 30px;
       color: #434343;
       margin-right: 250px;
       margin-top: 2rem;

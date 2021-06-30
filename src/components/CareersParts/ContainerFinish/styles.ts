@@ -94,7 +94,7 @@ export const ContainerInfo = styled.div`
       list-style: none;
       li {
         p {
-          font-size: 1.5rem;
+          font-size: 20px;
 
           font-weight: bold;
           font-family: 'Source Sans Pro';

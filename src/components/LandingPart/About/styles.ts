@@ -117,7 +117,7 @@ export const Header = styled.div`
   }
 
   p {
-    font-size: 0.875rem;
+    font-size: 16px;
     line-height: 1.5625rem;
     color: #434343;
 
@@ -135,10 +135,10 @@ export const Header = styled.div`
   }
 
   @media (min-width: 1558px) {
-    max-width: 83%;
+    max-width: 90;
 
     p {
-      width: 70%;
+      width: 90%;
     }
   }
 

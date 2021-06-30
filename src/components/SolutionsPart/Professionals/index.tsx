@@ -96,7 +96,7 @@ export const Professionals = ({
               </ListVant>
               <ContainerButton>
                 <ButtonText
-                  label="  Saiba mais sobre Serviços Profissionais"
+                  label="  Saiba mais sobre Professional Services"
                   directionArrow="right"
                   href="/solucoes/professionals"
                 />

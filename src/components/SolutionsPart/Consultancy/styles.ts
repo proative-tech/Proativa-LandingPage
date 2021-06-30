@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
   background: #fff;
 
   padding-top: 1.0rem;
+  margin-bottom: 4.5rem;
 `;
 
 export const ContainerImg = styled.div<ContainerProps>`

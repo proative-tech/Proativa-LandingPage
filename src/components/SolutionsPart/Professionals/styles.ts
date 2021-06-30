@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   background: #fff;
 
   padding-top: 1.0rem;
+  margin-bottom: 4.5rem;
 `;
 
 type ContainerImgProps = {
@@ -57,7 +58,7 @@ export const Content = styled.div`
     margin-top: 13px;
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 20px;
       font-family: 'Source Sans Pro';
       color: #eb0029;
     }

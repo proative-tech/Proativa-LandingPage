@@ -29,7 +29,7 @@ export const Content = styled.div`
 
     color: #eb0029;
 
-    font-size: 1.5rem;
+    font-size: 20px;
   }
 
   p {
