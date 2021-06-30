@@ -31,7 +31,7 @@ export const Content = styled.div`
 
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
-    padding-bottom: 3.4rem;
+    padding-bottom: 0.1rem;
 
     width: 95%;
   }

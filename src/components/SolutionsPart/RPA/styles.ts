@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   background: #fff;
 
   padding-top: 1.0rem;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 `;
 
 export const ContainerImg = styled.div<ContainerProps>`
@@ -62,7 +62,7 @@ export const Content = styled.div`
 
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
-    padding-bottom: 3.4rem;
+    padding-bottom: 0.1rem;
 
     width: 95%;
   }
@@ -84,6 +84,7 @@ export const Content = styled.div`
     max-width: 100%;
     width: 100%;
     margin-left: 0%;
+    margin-bottom: -80px;
   }
 `;
 

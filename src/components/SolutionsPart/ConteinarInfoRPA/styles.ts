@@ -38,7 +38,8 @@ export const Content = styled.div`
   }
 
   @media (max-width: 580px) {
-    margin: 10px 0 40px;
+    margin: 10px  0px 40px;
+    
   }
 `;
 
