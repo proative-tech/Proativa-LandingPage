@@ -29,50 +29,95 @@ export default function Index() {
       </Head>
       <Container>
         <Header bgColor="#fff" />
-        <HeroSolutions idMoveScroll="containerProfessionals">
+        <HeroSolutions
+          idMoveScroll="containerProfessionals"
+          className="professionals"
+        >
           <div className="content__text">
-            <h1>
-              Serviços Profissionais Um título explicativo para service manage
-              com qualidades
-            </h1>
+            <h2>
+              Professional Services: <br />
+              Obtenha eficiência operacional com uma equipe experiente de
+              serviços profissionais.
+            </h2>
             <p>
-              Nosso Centro de Command serve como um hub para todos os dados
-              críticos da sua empresa para que ele possa ser acessado por todos
-              as unidades de negócios, transformando dados globais em insights
-              significativos.
+              Estamos aqui para conduzir o sucesso do seu projeto ou da entrega
+              dos seus serviços, seja você mesmo criando soluções e desejando
+              alguma orientação ao dar o próximo passo, ou procurando suporte
+              completo de ponta a ponta para o projeto.
             </p>
           </div>
         </HeroSolutions>
-        <Professionals>
-          <h1>
-            Possuímos profissionais capacitados e certificados para executar as
-            atividades críticas do seu ambiente.
+        <Professionals inverter>
+          <h1 style={{ maxWidth: 420 }}>
+            Um time de especialistas dedicado à sua empresa.
           </h1>
 
           <p className="textPage">
-            Arquitetura de solução com alta capacidade de abrangência para
-            monitoramento e gerenciamento, soluções integradas que garantem
-            aderência as boas práticas e automação de rotinas operacionais.
+            O Professional Services Proative oferece a alocação de profissionais
+            especializados e certificados nas mais diversas áreas de atuação. A
+            equipe contratada realiza suas atividades no ambiente físico ou
+            remoto dos nossos clientes, o que possibilita um melhor conhecimento
+            de todo o contexto envolvido, permitindo-o desenvolver os serviços
+            necessários para atender às demandas da organização.
           </p>
 
           <p className="textPage">
-            Modelo de Governança que permite a aplicação de processos de
-            melhoria contínua e alta capacidade de personalização de regras de
-            negócio para monitoramento proativo, além de contar com
-            profissionais técnicos multidisciplinares e gerenciamento
-            centralizado de serviços.
+            As soluções permitem a transferência total ou parcial de seus
+            serviços para nossas equipes especializadas, conforme os perfis e
+            requisitos previamente definidos pelos clientes. Além de
+            profissionais dedicados, executamos projetos pontuais de
+            Implementação, Migração, PMO e Suporte Técnico para o universo de
+            Infraestrutura e Segurança da Informação.
           </p>
 
-          <p className="textPage">
-            Modelo de Governança que permite a aplicação de processos de
-            melhoria contínua e alta capacidade de personalização de regras de
-            negócio para monitoramento proativo.
-          </p>
+          <div className="footerPro">
+            <h3>Diferenciais</h3>
+            <p>
+              Gerenciamento por SLA <br /> Economia - Agilidade - Qualidade -
+              Suporte - Capacitação - Supervisão - Controle - Relatórios -
+              Flexibilidade.
+            </p>
+          </div>
         </Professionals>
-        <ContainerInfosOne />
-        <ContainerInfosTwo />
-        <ContainerConsultoria />
-        <ContainerImpulse />
+        <div style={{ marginTop: '3rem' }} />
+        <ContainerInfosTwo
+          infos={[
+            {
+              title: 'Profissional Residente',
+              content:
+                'Selecionamos e contratamos os melhores profissionais do mercado para atuar nas mais importantes plataformas de tecnologia e serviços.',
+            },
+            {
+              title: 'Implementação e Migrações',
+              content:
+                'Realizamos projetos de implementação e Migrações para ambientes de Infraestrutura e Segurança da Informação.',
+            },
+            {
+              title: 'Serviços de PMO',
+              content:
+                'O Escritório de Gerenciamento de Projetos (PMO - Project Management Office) da Proative entrega serviços de gerenciamento coordenado de projetos, atuando de forma corporativa, departamental ou operacional.',
+            },
+            {
+              title: 'Suporte Técnico',
+              content:
+                'Suporte Técnico Emergencial para ambientes de Infraestrutura e Segurança da Informação.',
+            },
+          ]}
+        />
+        <ContainerImpulse labelBtn="Entre em contato sobre Professional Services">
+          <div style={{ maxWidth: 620 }}>
+            <h1>
+              Busca um time qualificado
+              <br /> e dedicado à sua empresa?
+            </h1>
+            <p style={{ maxWidth: 540 }}>
+              Todos nossos profissionais passam por treinamentos específicos
+              para atender os padrões de qualidade Proative, seguindo as
+              práticas e padrões mais conceituados. Temos profissionais em
+              diversas áreas.
+            </p>
+          </div>
+        </ContainerImpulse>
       </Container>
       <Footer />
     </>

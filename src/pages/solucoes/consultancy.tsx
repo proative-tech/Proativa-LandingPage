@@ -28,7 +28,10 @@ export default function Index() {
       </Head>
       <Container>
         <Header bgColor="#fff" />
-        <HeroSolutions idMoveScroll="containerConsultancy">
+        <HeroSolutions
+          idMoveScroll="containerConsultancy"
+          className="consultancyID"
+        >
           <div className="content__text">
             <h2>
               Consulting Services: <br />
@@ -69,9 +72,44 @@ export default function Index() {
           </p>
         </Cybersecurity>
         <ContainerInfosOne />
-        <ContainerInfosTwo />
-        <ContainerConsultoria />
-        <ContainerImpulse />
+
+        <ContainerInfosTwo
+          infos={[
+            {
+              title: 'Quality Control',
+              content:
+                'Equipe dedicada para verificação da qualidade nos atendimentos efetuados pelas equipes de suporte de acordo com as boas práticas de mercado. Call Monitoring, Trainning/Corporate Education, Ombudsman, Satisfaction Survey, Trainning/Corporate Education.',
+            },
+            {
+              title: 'New Services',
+              content:
+                'Conjunto de Processos que garante a entrada fluida e organizada de novas demandas e serviços. POPs Creation, Training , Service Catalog, Assisted Operation.',
+            },
+            {
+              title: 'KPI & SLA Control',
+              content:
+                'Realiza o acompanhamento das operações conforme KPI’s e SLA’s pré estabelecidos, fornecendo relatórios de controles: Daily, Weekly, Monthly, BI e Custom reports.',
+            },
+            {
+              title: 'Service Intelligence',
+              content:
+                'Analisa, monitora e trata informações da operação, facilitando a tomada de decisão estratégica: SLAM, Ticket Review, Ticket Audit, Morning Meeting, Custom Projects.',
+            },
+          ]}
+        />
+        <ContainerImpulse labelBtn="Entre em contato sobre Consulting Services">
+          <div style={{ maxWidth: 620 }}>
+            <h1>Quer elevar sua maturidade em Governança de TI?</h1>
+            <p style={{ maxWidth: 480 }}>
+              Nós identificamos através de um diagnóstico em qual nível sua
+              empresa se encontra, essa informação é essencial para implantar
+              uma governança de TI adequada, além de avaliar as práticas
+              internas e elaborar ações de melhorias para que a sua TI consiga
+              acompanhar as exigências do mercado e ofereça os benefícios
+              esperados.
+            </p>
+          </div>
+        </ContainerImpulse>
       </Container>
       <Footer />
     </>

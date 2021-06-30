@@ -11,8 +11,20 @@ export const Wrapper = styled.div`
   padding-top: 4.5rem;
 `;
 
-export const ContainerImg = styled.div`
+type ContainerImgProps = {
+  inverter: boolean;
+};
+
+export const ContainerImg = styled.div<ContainerImgProps>`
   overflow: hidden;
+
+  ${({ inverter }) => css`
+    ${inverter &&
+    css`
+      margin-right: 75px;
+      order: -1;
+    `}
+  `}
 
   img {
     display: block;
@@ -29,17 +41,33 @@ export const ContainerImg = styled.div`
 
   @media (max-width: 928px) {
     order: -1;
+
+    margin-right: 0;
   }
 `;
 
 export const Content = styled.div`
-  padding-right: 75px;
-
   height: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  div.footerPro {
+    margin-top: 13px;
+
+    h3 {
+      font-size: 1.5rem;
+      font-family: 'Source Sans Pro';
+      color: #eb0029;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.875rem;
+      color: #434343;
+    }
+  }
 
   @media (max-width: 1399px) {
     padding-top: 3.9rem;
@@ -188,8 +216,13 @@ export const ContainerButton = styled.div`
   justify-content: flex-start;
 `;
 
-export const Container = styled.div<VisibledProp>`
-  ${({ visibled }) => css`
+type ContainerProps = {
+  visibled: boolean;
+  inverter: boolean;
+};
+
+export const Container = styled.div<ContainerProps>`
+  ${({ visibled, inverter }) => css`
     max-width: 1084px;
     width: 100%;
 
@@ -219,12 +252,23 @@ export const Container = styled.div<VisibledProp>`
 
     ${visibled &&
     css`
-      ${StylesAnimationImg.Wrapper} {
-        animation: ${animationsObj.toYAnimation(70)} 1.2s;
-      }
-      ${Content} {
-        animation: ${animationsObj.toXAnimation(-650)} 1.2s;
-      }
+      ${inverter
+        ? css`
+            ${StylesAnimationImg.Wrapper} {
+              animation: ${animationsObj.toYAnimation(70)} 1.2s;
+            }
+            ${Content} {
+              animation: ${animationsObj.toXAnimation(650)} 1.2s;
+            }
+          `
+        : css`
+            ${StylesAnimationImg.Wrapper} {
+              animation: ${animationsObj.toYAnimation(70)} 1.2s;
+            }
+            ${Content} {
+              animation: ${animationsObj.toXAnimation(-650)} 1.2s;
+            }
+          `}
     `}
   `}
 `;

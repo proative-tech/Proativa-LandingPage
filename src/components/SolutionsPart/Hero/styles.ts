@@ -52,7 +52,7 @@ export const ContainerTop = styled.div`
 `;
 
 export const Content = styled.section`
-  max-width: 535px;
+  max-width: 600px;
   width: 100%;
   margin-left: auto;
 
@@ -94,6 +94,26 @@ export const Content = styled.section`
     }
   }
 
+  &.professionals {
+    max-width: 500px;
+
+    > div.content__text {
+      p {
+        max-width: 80%;
+      }
+    }
+  }
+
+  &.consultancyID {
+    max-width: 430px;
+
+    > div.content__text {
+      p {
+        max-width: 89%;
+      }
+    }
+  }
+
   @media (min-width: 1441px) {
     max-width: 632px;
 
@@ -111,6 +131,36 @@ export const Content = styled.section`
       p {
         font-size: 1.5rem;
         line-height: 2.1875rem;
+      }
+    }
+
+    &.cyber {
+      max-width: 613px;
+
+      > div.content__text {
+        p {
+          max-width: 80%;
+        }
+      }
+    }
+
+    &.professionals {
+      max-width: 600px;
+
+      > div.content__text {
+        p {
+          max-width: 90%;
+        }
+      }
+    }
+
+    &.consultancyID {
+      max-width: 560px;
+
+      > div.content__text {
+        p {
+          max-width: 89%;
+        }
       }
     }
   }
@@ -142,6 +192,10 @@ export const Content = styled.section`
     }
   }
 `;
+
+type ContainerImgProps = {
+  inverter: boolean;
+};
 
 export const ContainerImg = styled.section`
   position: relative;

@@ -1,3 +1,5 @@
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/no-unused-prop-types */
 import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -17,9 +19,13 @@ import {
 interface CybersecurityProps {
   // eslint-disable-next-line react/require-default-props
   children?: ReactNode;
+  inverter?: boolean;
 }
 
-export const Professionals = ({ children }: CybersecurityProps) => {
+export const Professionals = ({
+  children,
+  inverter = false,
+}: CybersecurityProps) => {
   const router = useRouter();
   const is1920 = useMediaQuery({ minWidth: 1601 });
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
@@ -48,7 +54,11 @@ export const Professionals = ({ children }: CybersecurityProps) => {
 
   return (
     <Wrapper>
-      <Container visibled={isAnimated} id="containerProfessionals">
+      <Container
+        visibled={isAnimated}
+        id="containerProfessionals"
+        inverter={inverter}
+      >
         <Content>
           {children ? (
             <Header>{children}</Header>
@@ -94,7 +104,7 @@ export const Professionals = ({ children }: CybersecurityProps) => {
             </>
           )}
         </Content>
-        <ContainerImg>
+        <ContainerImg inverter={inverter}>
           <AnimationImg url="/images/servicosProfissionais1920.png" />
         </ContainerImg>
       </Container>
