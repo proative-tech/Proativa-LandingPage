@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { useWindowScroll } from 'react-use';
 import Head from 'next/head';
 
+import { animateScroll } from 'react-scroll';
+
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { HeroMaketOrCases } from '../components/CareersParts/Hero';
@@ -12,7 +14,9 @@ import { ContainerFinish } from '../components/CareersParts/ContainerFinish';
 import { Container, ContainerInfos } from '../styles/pages/Careers';
 
 export default function Index() {
-  const { y } = useWindowScroll();
+  useEffect(() => {
+    animateScroll.scrollToTop();
+  }, []);
 
   return (
     <>
@@ -28,10 +32,14 @@ export default function Index() {
           <header className="headerContent">
             <h1>Sobre nós</h1>
             <p>
-            Desde 2007, a nossa missão tem sido de tornar as operações dos nossos clientes mais simples e eficientes, facilitando as tomadas de decisões potencializando o crescimento do negócio. 
+              Desde 2007, a nossa missão tem sido de tornar as operações dos
+              nossos clientes mais simples e eficientes, facilitando as tomadas
+              de decisões potencializando o crescimento do negócio.
             </p>
             <p>
-            Trabalhamos o equilíbrio entre criatividade, tecnologia, governança e agilidade, sustentada sempre, por pessoas apaixonadas pelo sucesso.
+              Trabalhamos o equilíbrio entre criatividade, tecnologia,
+              governança e agilidade, sustentada sempre, por pessoas apaixonadas
+              pelo sucesso.
             </p>
           </header>
         </ContainerImgRight>

@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import { animateScroll } from 'react-scroll';
+
 import Head from 'next/head';
 import { Header } from '../components/Header';
 import { Container, ButtonAsLink } from '../styles/pages/FaleConosco';
@@ -6,6 +9,10 @@ import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
 
 export default function Index() {
+  useEffect(() => {
+    animateScroll.scrollToTop();
+  }, []);
+
   return (
     <>
       <Head>
