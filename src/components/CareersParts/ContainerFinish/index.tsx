@@ -92,12 +92,12 @@ export function ContainerFinish() {
           <ul>
             <li><p>1. Sorria.</p></li>
             <li><p>2. Lidere com exemplo.</p></li>
-            <li><p>3. Abrace e conduza mudanças, seja um agente transformador!</p></li>
+            <li><p>3. Abrace e conduza mudanças, seja um agente transformador.</p></li>
             <li><p>4. Celebre cada conquista.</p></li>
-            <li><p>5. Procure sempre por crescimento</p></li>
+            <li><p>5. Procure sempre por crescimento.</p></li>
             <li><p>6. Seja empático.</p></li>
             <li><p>7. Seja apaixonado e determinado.</p></li>
-            <li><p>8. Seja humilde</p></li>
+            <li><p>8. Seja humilde.</p></li>
             <li><p>9. Desenvolva um espírito empreendedor.</p></li>
             <li><p>10. Respeite as pessoas e o meio ambiente e faça parte da construção de um mundo melhor.</p></li>
           </ul>
@@ -111,15 +111,12 @@ export function ContainerFinish() {
                   href="https://vemserproative.solides.jobs/"
                 />
               </ContainerButton>
-   
-     
-             
       </ContainerTop>
-      <ContainerGoTop>
+      {/* <ContainerGoTop>
         <Link to="headerScroll" smooth duration={700} style={{ display: 'inline-block', zIndex: 20, width: 60, height: 40, cursor: 'pointer' }}>
           <img src="/images/arrow-go-top.svg" alt="seta para cima" />
         </Link>
-      </ContainerGoTop>
+      </ContainerGoTop> */}
     </Container>
   );
 }
