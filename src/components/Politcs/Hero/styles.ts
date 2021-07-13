@@ -87,7 +87,7 @@ export const Content = styled.section`
   @media (min-width: 1441px) {
     max-width: 632px;
 
-    margin-right: 0;
+    margin-right: 50px;
 
     p {
       font-size: 16px;
@@ -156,7 +156,8 @@ export const ContainerImg = styled.section`
     width: 100%;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     margin-left: 50px;
 
