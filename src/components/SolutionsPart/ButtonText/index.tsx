@@ -8,7 +8,6 @@ export type ButtonTextProps = {
   directionArrow?: 'left' | 'right' | 'top';
   href: string;
 };
-
 export const ButtonText = ({
   directionArrow = 'left',
   label,
