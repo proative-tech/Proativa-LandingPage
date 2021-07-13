@@ -114,7 +114,7 @@ export const Container = styled.div`
       color: #c4c4c4;
     }
   }
-  
+
   a {
     font-weight: bold;
   }
@@ -191,6 +191,21 @@ export const Container = styled.div`
         left: 0.3rem;
         background: #434343;
         display: block;
+      }
+
+      div.stylePolitics {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 0;
+
+        a {
+          color: #434343;
+          font-size: 1rem;
+          line-height: 1.5625rem;
+          text-decoration: none;
+          font-weight: normal;
+        }
       }
     }
     a {

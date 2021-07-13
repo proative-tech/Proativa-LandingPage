@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 
 import { Container, Content, ContentMain } from './styles';
@@ -37,9 +38,22 @@ export const Footer = () => {
                   <p>contato@proativetec.com.br</p>
                 </div>
                 <div>
-                  <a href="https://www.youtube.com/channel/UC4gXi-wVzJhb5jehBUgCb9A">Youtube</a>
+                  <a href="https://www.youtube.com/channel/UC4gXi-wVzJhb5jehBUgCb9A">
+                    Youtube
+                  </a>
                   <a href="/" />
-                  <a href="https://www.linkedin.com/company/proativetechnology/">linkedln</a>
+                  <a href="https://www.linkedin.com/company/proativetechnology/">
+                    linkedln
+                  </a>
+                </div>
+                <div className="stylePolitics">
+                  <Link
+                    scroll={false}
+                    href="/politicas-de-privacidade"
+                    passHref
+                  >
+                    Políticas de Privacidade
+                  </Link>
                 </div>
               </div>
             </div>
