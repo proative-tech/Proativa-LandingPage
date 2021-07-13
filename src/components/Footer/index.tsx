@@ -41,7 +41,7 @@ export const Footer = () => {
                   <a href="https://www.youtube.com/channel/UC4gXi-wVzJhb5jehBUgCb9A">
                     Youtube
                   </a>
-                  <a href="/" />
+                  <span />
                   <a href="https://www.linkedin.com/company/proativetechnology/">
                     linkedln
                   </a>
