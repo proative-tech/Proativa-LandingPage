@@ -78,6 +78,10 @@ export const Container = styled.div`
       font-weight: 500;
       font-size: 1rem;
       color: #434343;
+
+      &:nth-child(1) {
+        font-weight: 700;
+      }
     }
 
     p {

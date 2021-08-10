@@ -157,11 +157,11 @@ export function Cases({ children }: CasesProps | any) {
                 comment="Para monitorar temos a Proative que deverá acompanhar o crescimento de nossos serviços, monitorando, por exemplo, pacientes crônicos, serviços de home care, medicina preventiva e prontuário eletrônico."
               />
               <CardComments
-                clientCompany="Expressa"
-                nameClient="Tiago Parrera"
-                areaClient="Gestor de TI"
+                clientCompany="Tecnisa"
+                nameClient="Renato Diego Bizzarri Barbosa"
+                areaClient="Coordenador de Infraestrutura"
                 src="/images/par-expressa.svg"
-                comment="A Proative é um parceiro estratégico, através do Command Center gerenciamos em tempo real 24x7 toda operação de missão crítica da nossa empresa, assegurando que os nossos serviços estejam disponíveis para a continuidade do nosso negócio."
+                comment="A entrega está além do monitoramento de dispositivos on e off, com a tecnologia e a flexibilidade na construção de dashboards é possível monitorarmos processos, possibilitando a atuação a atuação em melhorias importantes para o negócio e não somente uma visão para Capacity Planning de TI"
               />
             </section>
           )}
@@ -184,11 +184,11 @@ export function Cases({ children }: CasesProps | any) {
                   comment="Para monitorar temos a Proative que deverá acompanhar o crescimento de nossos serviços, monitorando, por exemplo, pacientes crônicos, serviços de home care, medicina preventiva e prontuário eletrônico."
                 />
                 <CardComments
-                  clientCompany="Expressa"
-                  nameClient="Tiago Parrera"
-                  areaClient="Gestor de TI"
+                  clientCompany="Tecnisa"
+                  nameClient="Renato Diego Bizzarri Barbosa"
+                  areaClient="Coordenador de Infraestrutura"
                   src="/images/par-expressa.svg"
-                  comment="A Proative é um parceiro estratégico, através do Command Center gerenciamos em tempo real 24x7 toda operação de missão crítica da nossa empresa, assegurando que os nossos serviços estejam disponíveis para a continuidade do nosso negócio."
+                  comment="A entrega está além do monitoramento de dispositivos on e off, com a tecnologia e a flexibilidade na construção de dashboards é possível monitorarmos processos, possibilitando a atuação a atuação em melhorias importantes para o negócio e não somente uma visão para Capacity Planning de TI"
                 />
               </Carousel>
               <ContainerBottomCarousel>
