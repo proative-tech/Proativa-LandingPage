@@ -10,9 +10,6 @@ export type VisibledProp = {
 };
 
 export const Content = styled.div`
-  max-width: 1085px;
-  margin: 0 auto;
-
   padding: 4.8125rem 0 7.625rem;
 
   @media (max-width: 690px) {
@@ -108,151 +105,170 @@ export const Header = styled.div<VisibledProp>`
 `;
 
 export const ContainerInfos = styled.div<VisibledProp>`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 7rem;
+  background: #f4f4f4;
 
-  > div.containerInfo {
-    max-width: 140px;
+  div.wrapper__width {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7rem;
 
-    > div {
-      height: 80px;
-      width: 80px;
+    max-width: 1085px;
+    margin: 0 auto;
+
+    padding: 36px 0;
+
+    > div.containerInfo {
+      max-width: 140px;
 
       display: flex;
+      flex-direction: column;
       align-items: center;
 
-      margin-bottom: 12px;
-      /*
+      > div {
+        height: 80px;
+        width: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 12px;
+        /*
       img {
         height: 80px;
         width: 80px;
       } */
-    }
-
-    p.title {
-      font-size: 0.9rem;
-      line-height: 1.1875rem;
-      color: #eb0029;
-      font-weight: bold;
-    }
-
-    p:nth-child(3) {
-      font-size: 14px;
-      line-height: 1.8375rem;
-      color: #666666;
-
-      margin-top: 11px;
-    }
-  }
-
-  > div.containerInfo:nth-child(1) {
-    ${({ visibled }) => css`
-      opacity: ${visibled ? 1 : 0};
-      max-width: 230px;
-
-      img {
-        height: 98px;
-        width: 98px;
       }
 
-      ${visibled &&
-      css`
-        animation: ${animationsObj.toYAnimation(50)} 3s;
-      `}
-    `}
-  }
-
-  > div.containerInfo:nth-child(2) {
-    ${({ visibled }) => css`
-      opacity: ${visibled ? 1 : 0};
-
-      img {
-        height: 98px;
-        width: 98px;
-      }
-      ${visibled &&
-      css`
-        animation: ${animationsObj.toYAnimation(50)} 4s;
-      `}
-    `}
-  }
-
-  > div.containerInfo:nth-child(3) {
-    ${({ visibled }) => css`
-      opacity: ${visibled ? 1 : 0};
-
-      img {
-        height: 98px;
-        width: 98px;
-      }
-      ${visibled &&
-      css`
-        animation: ${animationsObj.toYAnimation(50)} 5s;
-      `}
-    `}
-  }
-
-  > div.containerInfo:nth-child(4) {
-    ${({ visibled }) => css`
-      opacity: ${visibled ? 1 : 0};
-      max-width: 230px;
-
-      img {
-        height: 98px;
-        width: 98px;
-      }
-
-      ${visibled &&
-      css`
-        animation: ${animationsObj.toYAnimation(50)} 6s;
-      `}
-    `}
-  }
-
-  @media (max-width: 1152px) {
-    padding-left: 26px;
-    padding-right: 26px;
-
-    gap: 5rem;
-  }
-
-  @media (max-width: 947px) {
-    gap: 3rem;
-  }
-
-  @media (max-width: 844px) {
-    gap: 1.5rem;
-  }
-
-  @media (max-width: 768px) {
-    padding-left: 36px;
-    padding-right: 36px;
-
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10rem;
-  }
-
-  @media (max-width: 666px) {
-    column-gap: 7rem;
-  }
-
-  @media (max-width: 574px) {
-    column-gap: 4rem;
-  }
-
-  @media (max-width: 490px) {
-    column-gap: 30px;
-    padding-right: 24px;
-
-    > div.containerInfo {
       p.title {
-        font-size: 0.875rem;
+        font-size: 0.9rem;
+        line-height: 1.1875rem;
+        color: #eb0029;
+
+        font-weight: bold;
+
+        text-align: center;
       }
 
       p:nth-child(3) {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 1.8375rem;
+        color: #666666;
+
+        margin-top: 11px;
+
+        text-align: center;
+      }
+    }
+
+    > div.containerInfo:nth-child(1) {
+      ${({ visibled }) => css`
+        opacity: ${visibled ? 1 : 0};
+        max-width: 230px;
+
+        img {
+          height: 98px;
+          width: 98px;
+        }
+
+        ${visibled &&
+        css`
+          animation: ${animationsObj.toYAnimation(50)} 3s;
+        `}
+      `}
+    }
+
+    > div.containerInfo:nth-child(2) {
+      ${({ visibled }) => css`
+        opacity: ${visibled ? 1 : 0};
+
+        img {
+          height: 98px;
+          width: 98px;
+        }
+        ${visibled &&
+        css`
+          animation: ${animationsObj.toYAnimation(50)} 4s;
+        `}
+      `}
+    }
+
+    > div.containerInfo:nth-child(3) {
+      ${({ visibled }) => css`
+        opacity: ${visibled ? 1 : 0};
+
+        img {
+          height: 98px;
+          width: 98px;
+        }
+        ${visibled &&
+        css`
+          animation: ${animationsObj.toYAnimation(50)} 5s;
+        `}
+      `}
+    }
+
+    > div.containerInfo:nth-child(4) {
+      ${({ visibled }) => css`
+        opacity: ${visibled ? 1 : 0};
+        max-width: 230px;
+
+        img {
+          height: 98px;
+          width: 98px;
+        }
+
+        ${visibled &&
+        css`
+          animation: ${animationsObj.toYAnimation(50)} 6s;
+        `}
+      `}
+    }
+
+    @media (max-width: 1152px) {
+      padding-left: 26px;
+      padding-right: 26px;
+
+      gap: 5rem;
+    }
+
+    @media (max-width: 947px) {
+      gap: 3rem;
+    }
+
+    @media (max-width: 844px) {
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      padding-left: 36px;
+      padding-right: 36px;
+
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10rem;
+    }
+
+    @media (max-width: 666px) {
+      column-gap: 7rem;
+    }
+
+    @media (max-width: 574px) {
+      column-gap: 4rem;
+    }
+
+    @media (max-width: 490px) {
+      column-gap: 30px;
+      padding-right: 24px;
+
+      > div.containerInfo {
+        p.title {
+          font-size: 0.875rem;
+        }
+
+        p:nth-child(3) {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
   }

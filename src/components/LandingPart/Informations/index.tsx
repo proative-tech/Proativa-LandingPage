@@ -35,46 +35,46 @@ export function Informations() {
         </Header>
 
         <ContainerInfos visibled={isAnimated}>
-          <div className="containerInfo">
-            <div className="containerImg">
-              <img src="/images/teamidea.svg" alt="Seja Proativo" />
+          <div className="wrapper__width">
+            <div className="containerInfo">
+              <div className="containerImg">
+                <img src="/images/teamidea.svg" alt="Seja Proativo" />
+              </div>
+              <p className="title">Cocriamos Valor</p>
+              <p>Lentes para gerar valor e potencializar negócios.</p>
             </div>
-            <p className="title">Cocriamos Valor</p>
-            <p>Lentes para gerar valor e potencializar negócios.</p>
-          </div>
 
-          <div className="containerInfo">
-            <div className="containerImg">
-              <img src="/images/analise.svg" alt="Diminua o Downtime" />
+            <div className="containerInfo">
+              <div className="containerImg">
+                <img src="/images/analise.svg" alt="Diminua o Downtime" />
+              </div>
+              <p className="title">Continuidade</p>
+              <p>Garantimos a continuidade do seu negócio.</p>
             </div>
-            <p className="title">Continuidade</p>
-            <p>Garantimos a continuidade do seu negócio.</p>
-          </div>
 
-          <div className="containerInfo">
-            <div className="containerImg">
-              <img src="/images/preferencias.svg" alt="Maior produtividade" />
+            <div className="containerInfo">
+              <div className="containerImg">
+                <img src="/images/preferencias.svg" alt="Maior produtividade" />
+              </div>
+              <p className="title">Gestão e Agilidade</p>
+              <p>
+                Oferecemos uma experiência única sobre um ciclo de trabalho
+                inteligente, ágil e uma gestão centralizada.
+              </p>
             </div>
-            <p className="title">Gestão e Agilidade</p>
-            <p>
-              Oferecemos uma experiência única sobre um ciclo de trabalho
-              inteligente, ágil e uma gestão centralizada.
-            </p>
-          </div>
 
-          <div className="containerInfo">
-            <div className="containerImg">
-              <img src="/images/medalha.svg" alt="Melhore sua Gestão" />
+            <div className="containerInfo">
+              <div className="containerImg">
+                <img src="/images/medalha.svg" alt="Melhore sua Gestão" />
+              </div>
+              <p className="title">Garantimos Qualidade</p>
+              <p>
+                Cuidamos da sua operação garantindo disponibilidade, segurança e
+                qualidade na entrega.
+              </p>
             </div>
-            <p className="title">Garantimos Qualidade</p>
-            <p>
-              Cuidamos da sua operação garantindo disponibilidade, segurança e
-              qualidade na entrega.
-            </p>
           </div>
         </ContainerInfos>
-
-        <Divider />
       </Content>
     </Container>
   );
