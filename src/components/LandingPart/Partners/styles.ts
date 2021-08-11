@@ -224,6 +224,10 @@ export const ContainerImg = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    max-width: 98%;
+  }
   img#flex {
     margin-left: 100px;
   }
