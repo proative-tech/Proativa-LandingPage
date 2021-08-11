@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable no-extra-boolean-cast */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -83,13 +84,18 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
   const router = useRouter();
   const refQuemSomos = useRef(null);
 
-  const handleClickNoIndex = useCallback(() => {
-    const storeSetItem = localStorage.getItem('@CLICK_QUEM_SOMOS');
+  const handleClickNoIndex = useCallback(
+    (to: string) => {
+      const storeSetItem = localStorage.getItem('@CLICK_DROPDOWN_HOME');
 
-    if (router.asPath.length > 1 && !storeSetItem) {
-      localStorage.setItem('@CLICK_QUEM_SOMOS', 'true');
-    }
-  }, [router.asPath]);
+      onCloseDrawer();
+
+      if (router.asPath.length > 1 && !storeSetItem) {
+        localStorage.setItem('@CLICK_DROPDOWN_HOME', to);
+      }
+    },
+    [router.asPath],
+  );
 
   return (
     <Container>
@@ -116,7 +122,17 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
               {linksHome.map((link, index) => (
                 <li key={String(index)}>
                   <Link href={link.href} passHref>
-                    {link.name}
+                    <LinkScroll
+                      to={`${link.to}`}
+                      duration={700}
+                      offset={-50}
+                      smooth
+                      style={{ cursor: 'pointer' }}
+                      href={link.href}
+                      onClick={() => handleClickNoIndex(link.to)}
+                    >
+                      {link.name}
+                    </LinkScroll>
                   </Link>
                 </li>
               ))}
@@ -134,7 +150,7 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
             </span>
             <ContainerLinks actived={activedSolutions}>
               {links.map((link, index) => (
-                <li key={String(index)}>
+                <li key={String(index)} onClick={onCloseDrawer}>
                   <Link href={link.href} passHref>
                     {link.name}
                   </Link>

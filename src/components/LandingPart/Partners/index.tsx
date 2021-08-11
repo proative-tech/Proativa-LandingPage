@@ -66,15 +66,6 @@ export const Partners = () => {
               <img src="/images/new-parceiro2.png" alt="Automation Edge" />
             </S.ContainerImg>
           </Carousel>
-          <S.ContainerBottomCarousel>
-            <button type="button" onClick={() => carousel.current.slidePrev()}>
-              <FiChevronLeft size={24} color="#000" />
-            </button>
-            <div />
-            <button type="button" onClick={() => carousel.current.slideNext()}>
-              <FiChevronRight size={24} color="#000" />
-            </button>
-          </S.ContainerBottomCarousel>
         </S.ContainerCarousel>
       </S.Content>
     </S.Wrapper>

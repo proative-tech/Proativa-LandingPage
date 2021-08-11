@@ -142,10 +142,6 @@ export const ContainerButtonCustom = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media (max-width: 840px) {
-    display: none;
-  }
 `;
 
 export const ButtonCustom = styled.button`
