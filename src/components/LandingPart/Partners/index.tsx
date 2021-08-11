@@ -13,7 +13,7 @@ export const Partners = () => {
   const carousel = useRef<CarouseRefData | any>();
 
   return (
-    <S.Wrapper>
+    <S.Wrapper id="partners-link">
       <S.Content>
         <S.Header>
           <h2>Parceiros</h2>

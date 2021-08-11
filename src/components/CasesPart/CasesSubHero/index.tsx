@@ -19,7 +19,7 @@ export const CaseSubHero = ({ children }: CybersecurityProps) => {
     const ele: Element | any = document.getElementById('cases-top');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY;
+    const heightEle = ele?.getBoundingClientRect().bottom + window.scrollY;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);

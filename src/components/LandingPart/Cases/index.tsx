@@ -141,7 +141,7 @@ export function Cases({ children }: CasesProps | any) {
 
         <Partners />
 
-        <ContainerClients>
+        <ContainerClients id="commnets-link">
           <section className="section-client">
             <h3>O que os clientes dizem</h3>
             <p>Sobre os serviços e soluções Proative Technology</p>

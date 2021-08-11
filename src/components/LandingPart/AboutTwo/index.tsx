@@ -13,8 +13,8 @@ export const AboutTwo = () => {
     const ele: Element | any = document.getElementById('about-two');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    // const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 200;
-    const heightEle = ele.getBoundingClientRect().top + window.scrollY + 100;
+    // const heightEle = ele?.getBoundingClientRect().bottom + window.scrollY - 200;
+    const heightEle = ele?.getBoundingClientRect().top + window.scrollY + 100;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);

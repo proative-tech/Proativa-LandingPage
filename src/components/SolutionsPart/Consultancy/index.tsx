@@ -30,7 +30,7 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
     const ele: Element | any = document.getElementById('containerConsultancy');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    // const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 600;
+    // const heightEle = ele?.getBoundingClientRect().bottom + window.scrollY - 600;
     const heightEle: any =
       ele?.getBoundingClientRect().top + window.scrollY + 100;
 

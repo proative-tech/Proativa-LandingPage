@@ -24,7 +24,7 @@ export function ContainerFinish() {
     const ele: Element | any = document.getElementById('containerFinishMain');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 1400;
+    const heightEle = ele?.getBoundingClientRect().bottom + window.scrollY - 1400;
 
     // listSelected
     const eleList: Element | any = document.getElementById('infosList');
@@ -54,15 +54,15 @@ export function ContainerFinish() {
   return (
     <Container visibled={isAnimated} visibledList={isAnimatedList} id="containerFinishMain">
       <ContainerTop >
-      
+
         <p>
         <a href="https://vemserproative.solides.jobs/" >
         #vemserproative
                 </a>
-          
+
           </p>
-        
-        
+
+
       </ContainerTop>
       <ContainerBottom>
         {(isMobile && !def) && (

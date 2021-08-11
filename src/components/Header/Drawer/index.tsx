@@ -61,9 +61,24 @@ const linksTwo = [
   { name: 'Outros', to: 'mkt-Outros', href: '/mercados' },
 ];
 
+const linksHome = [
+  { name: 'Quem somos', href: '/', to: 'about-link' },
+  {
+    name: 'Parceiros',
+    href: '/',
+    to: 'partners-link',
+  },
+  {
+    name: 'Depoimentos',
+    href: '/',
+    to: 'commnets-link',
+  },
+];
+
 export const DrawerMenu = ({ onCloseDrawer }) => {
   const [activedSolutions, setActivedSolutions] = useState(false);
   const [activedMkt, setActivedMkt] = useState(false);
+  const [activedHome, setActiveHome] = useState(false);
 
   const router = useRouter();
   const refQuemSomos = useRef(null);
@@ -88,29 +103,26 @@ export const DrawerMenu = ({ onCloseDrawer }) => {
         </ButtonClose>
 
         <ul>
-          <Item>
-            <Link href="/" passHref>
+          <Item modifiersDropdown actived={activedHome}>
+            <span
+              onClick={() => {
+                setActivedMkt(false);
+                setActiveHome(!activedHome);
+              }}
+            >
               HOME
-            </Link>
+            </span>
+            <ContainerLinks actived={activedHome}>
+              {linksHome.map((link, index) => (
+                <li key={String(index)}>
+                  <Link href={link.href} passHref>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ContainerLinks>
           </Item>
-          <Item>
-            <Link href="/" passHref>
-              <LinkScroll
-                to="about-link"
-                duration={700}
-                offset={-90}
-                smooth
-                style={{ cursor: 'pointer' }}
-                onClick={() => {
-                  handleClickNoIndex();
-                  onCloseDrawer();
-                }}
-                ref={refQuemSomos}
-              >
-                QUEM SOMOS
-              </LinkScroll>
-            </Link>
-          </Item>
+
           <Item modifiersDropdown actived={activedSolutions}>
             <span
               onClick={() => {

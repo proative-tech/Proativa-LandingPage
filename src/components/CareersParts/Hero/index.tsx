@@ -18,7 +18,7 @@ export const HeroMaketOrCases = () =>{
     const ele: Element | any = document.getElementById('beginContent');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY;
+    const heightEle = ele?.getBoundingClientRect().bottom + window.scrollY;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);

@@ -14,58 +14,39 @@ import { DropdownMenuTwo } from '../DropdownTwo';
 export function Nav() {
   const [focusMarket, setFocusMerket] = useState(false);
   const [focusSolutions, setFocusSolutions] = useState(false);
+  const [focusHome, setFocusHome] = useState(false);
   const [focusPortais, setFocusPortais] = useState(false);
 
   const isMobileOrTablet = useMediaQuery({ maxWidth: 920 });
 
   const router = useRouter();
-  const refQuemSomos = useRef(null);
-
-  const handleClickNoIndex = useCallback(() => {
-    const storeSetItem = localStorage.getItem('@CLICK_QUEM_SOMOS');
-
-    if (router.asPath.length > 1 && !storeSetItem) {
-      localStorage.setItem('@CLICK_QUEM_SOMOS', 'true');
-    }
-  }, [router.asPath]);
-
-  useEffect(() => {
-    if (!isMobileOrTablet && router.asPath.indexOf('/') > -1) {
-      const storeSetItem = localStorage.getItem('@CLICK_QUEM_SOMOS');
-
-      if (!!storeSetItem) {
-        setTimeout(() => {
-          refQuemSomos.current.scrollTo('about-link', {
-            duration: 700,
-            smooth: true,
-          });
-          localStorage.removeItem('@CLICK_QUEM_SOMOS');
-        }, 1000);
-      }
-    }
-  }, [router.asPath]);
 
   return (
     <Container>
       {!isMobileOrTablet && (
         <ul>
-          <li>
+          <li
+            onMouseEnter={() => setFocusHome(!focusHome)}
+            onMouseLeave={() => setFocusHome(!focusHome)}
+          >
             <Link href="/">HOME</Link>
-          </li>
-          <li>
-            <Link scroll href="/">
-              <LinkScroll
-                to="about-link"
-                duration={700}
-                offset={-50}
-                smooth
-                style={{ cursor: 'pointer' }}
-                onClick={handleClickNoIndex}
-                ref={refQuemSomos}
-              >
-                QUEM SOMOS
-              </LinkScroll>
-            </Link>
+            {focusHome && (
+              <DropdownMenuTwo
+                links={[
+                  { name: 'Quem somos', href: '/', to: 'about-link' },
+                  {
+                    name: 'Parceiros',
+                    href: '/',
+                    to: 'partners-link',
+                  },
+                  {
+                    name: 'Depoimentos',
+                    href: '/',
+                    to: 'commnets-link',
+                  },
+                ]}
+              />
+            )}
           </li>
           <li
             onMouseEnter={() => setFocusSolutions(!focusSolutions)}

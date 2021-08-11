@@ -26,7 +26,7 @@ export const ContainerImgRight = ({
     const ele: Element | any = document.getElementById(id);
 
     const getWindowBottom = window.scrollY + window.innerHeight;
-    const heightEle = ele.getBoundingClientRect().bottom + window.scrollY - 500;
+    const heightEle = ele?.getBoundingClientRect().bottom + window.scrollY - 500;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
