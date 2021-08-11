@@ -94,11 +94,9 @@ export const ContainerCarousel = styled.div`
   align-items: center;
   justify-content: center;
 
-  display: none;
-
   .containerREC {
     button.rec-arrow {
-      display: none;
+      display: block;
     }
 
     div.rec-pagination {
@@ -119,8 +117,12 @@ export const ContainerCarousel = styled.div`
     }
   }
 
-  @media (max-width: 845px) {
-    display: block;
+  @media (max-width: 840px) {
+    .containerREC {
+      button.rec-arrow {
+        display: none;
+      }
+    }
   }
 
   @media (max-width: 490px) {
@@ -136,12 +138,37 @@ export const ContainerCarousel = styled.div`
   }
 `;
 
-export const ContainerBottomCarousel = styled.div`
-  margin-top: 27px;
+export const ContainerButtonCustom = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 840px) {
+    display: none;
+  }
+`;
+
+export const ButtonCustom = styled.button`
+  background: #ffffff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
 
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const ContainerBottomCarousel = styled.div`
+  margin-top: 27px;
+  padding-top: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: none;
 
   button {
     background: #ffffff;
@@ -163,6 +190,10 @@ export const ContainerBottomCarousel = styled.div`
     border-radius: 50%;
 
     margin: 0 17px;
+  }
+
+  @media (max-width: 840px) {
+    display: flex;
   }
 `;
 
@@ -192,13 +223,11 @@ export const Header = styled.div`
 `;
 
 export const ContainerImg = styled.div`
-  @media (max-width: 845px) {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   img#flex {
     margin-left: 100px;
   }

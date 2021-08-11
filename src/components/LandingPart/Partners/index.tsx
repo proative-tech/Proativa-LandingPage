@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
+import { useMediaQuery } from 'react-responsive';
 
 import * as S from './styles';
 
@@ -11,6 +12,25 @@ interface CarouseRefData extends ReactElasticCarouselProps {
 
 export const Partners = () => {
   const carousel = useRef<CarouseRefData | any>();
+
+  const isMobile = useMediaQuery({ maxWidth: 840 });
+
+  function myArrow({ type, onClick }) {
+    const pointer =
+      type === 'PREV' ? (
+        <FiChevronLeft size={24} color="#000" />
+      ) : (
+        <FiChevronRight size={24} color="#000" />
+      );
+
+    return (
+      <S.ContainerButtonCustom>
+        <S.ButtonCustom type="button" onClick={onClick}>
+          {pointer}
+        </S.ButtonCustom>
+      </S.ContainerButtonCustom>
+    );
+  }
 
   return (
     <S.Wrapper id="partners-link">
@@ -24,10 +44,11 @@ export const Partners = () => {
           <Carousel
             isRTL={false}
             className="containerREC"
-            itemsToShow={1}
+            itemsToShow={isMobile ? 1 : 3}
             itemPadding={[0, 24]}
             ref={carousel}
             pagination={false}
+            renderArrow={myArrow}
           >
             <S.ContainerImg>
               <img src="/images/par-automation.svg" alt="Automation Edge" />
@@ -37,6 +58,12 @@ export const Partners = () => {
             </S.ContainerImg>
             <S.ContainerImg>
               <img src="/images/par-flexxible.svg" alt="Flexxible" />
+            </S.ContainerImg>
+            <S.ContainerImg>
+              <img src="/images/new-parceiro.png" alt="Automation Edge" />
+            </S.ContainerImg>
+            <S.ContainerImg>
+              <img src="/images/new-parceiro2.png" alt="Automation Edge" />
             </S.ContainerImg>
           </Carousel>
           <S.ContainerBottomCarousel>
@@ -49,28 +76,6 @@ export const Partners = () => {
             </button>
           </S.ContainerBottomCarousel>
         </S.ContainerCarousel>
-
-        <S.ContainerPartners>
-          <S.ContainerImg>
-            <img src="/images/par-automation.svg" alt="Automation Edge" />
-          </S.ContainerImg>
-          <S.ContainerImg>
-            <img
-              id="flex"
-              src="/images/par-gantech.svg"
-              alt="Automation Edge"
-            />
-          </S.ContainerImg>
-          <S.ContainerImg>
-            <img src="/images/par-flexxible.svg" alt="Automation Edge" />
-          </S.ContainerImg>
-          <S.ContainerImg>
-            <img src="/images/new-parceiro-1.svg" alt="L5.networks" />
-          </S.ContainerImg>
-          <S.ContainerImg>
-            <img src="/images/new-parceiro-2.svg" alt="icts" />
-          </S.ContainerImg>
-        </S.ContainerPartners>
       </S.Content>
     </S.Wrapper>
   );
