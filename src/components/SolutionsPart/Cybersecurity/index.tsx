@@ -65,16 +65,10 @@ export const Cybersecurity = ({ children }: CybersecurityProps) => {
               <Header>
                 <span>Cyber Security Services</span>
                 <h1>
-                  Manter a segurança cibernética em um cenário de ameaças em
-                  constante evolução é um desafio para todas as organizações.
+                Manter a segurança cibernética em um cenário de ameaças em constante evolução é um desafio para todas as organizações.
                 </h1>
                 <p>
-                  Sua organização devidamente segura. Buscamos reduzir o impacto
-                  de ameaças para seu negócio, independentemente de onde estiver
-                  os seus dados ou informações. Nossos serviços gerenciados de
-                  segurança possibilitam que o seu empreendimento possa operar
-                  com segurança mesmo que remotamente. E, com isso, permite o
-                  funcionamento adequado do seu negócio.
+                Sua organização devidamente segura. Buscamos reduzir o impacto de ameaças para sua operação, independentemente de onde estiverem os seus dados ou informações. Nossos serviços gerenciados de segurança possibilitam que o seu negócio possa operar com segurança mesmo que remotamente.
                 </p>
               </Header>
               <Footer>

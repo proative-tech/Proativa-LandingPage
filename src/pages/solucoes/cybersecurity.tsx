@@ -89,7 +89,7 @@ export default function Index() {
             {
               title: 'Network Security',
               content:
-                'Você sabia que os dispositivos implantados na sua rede falam? E além disso, neste exato momento, você pode estar perdendo informações importantes sobre possíveis falhas, pois não deu ouvidos aos seus dispositivos.',
+                'Você sabia que os dispositivos implantados na sua rede falam? Neste exato momento, você pode estar perdendo informações importantes sobre possíveis falhas.',
             },
             {
               title: 'Governance, Risk and Compliance',
@@ -103,11 +103,7 @@ export default function Index() {
           <div style={{ maxWidth: '493px' }}>
             <h1>Quer elevar sua segurança cibernética?</h1>
             <p>
-              A equipe de segurança da Proative está pronta para ajudá-lo a
-              aplicar as medidas de defesa mais relevantes para o seu ambiente
-              de TI. Entre em contato conosco sobre qualquer problema de
-              segurança que você tenha, e nós definiremos e implementaremos uma
-              maneira ideal de resolvê-lo.
+            Entre em contato com os nossos especialistas, estamos ansiosos para ajudá-lo com seus desafios.
             </p>
           </div>
         </ContainerImpulse>

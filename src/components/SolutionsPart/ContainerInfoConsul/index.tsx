@@ -58,17 +58,13 @@ export const ContainerInfoConsul = () => {
             <Info>
               <h3>04</h3>
               <p>
-                Promover a implantação e melhoria dos processos operacionais e
-                de gestão necessários para atender aos serviços de TI, conforme
-                padrões que atendam às necessidades do negócio;
+              Promover a implantação e melhoria contínua dos processos operacionais e de gestão necessários para atender aos serviços de TI, conforme padrões que atendam às necessidades do negócio;
               </p>
             </Info>
             <Info>
               <h3>05</h3>
               <p>
-                Prover a TI da estrutura de processos que possibilite a gestão
-                do seu risco e conformidades. TI Impulsionando e colaborando com
-                o negócio.
+              Prover a estrutura de processos da TI que possibilite a gestão do seu risco e conformidades. TI Impulsionando e colaborando com o negócio.
               </p>
             </Info>
           </div>

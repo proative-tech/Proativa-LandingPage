@@ -53,8 +53,8 @@ export default function Index() {
                 <strong>Atendimento:</strong>
 
                 <p>
-                  De segunda à sexta- <br />
-                  feira, das 9h às 18h. <br />
+                  De segunda à sexta-feira, <br />
+                  das 9h às 18h. <br />
                   +55 11 4130-8800
                 </p>
 

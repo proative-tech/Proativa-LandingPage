@@ -50,14 +50,10 @@ export const ContainerImpulse = ({ children, labelBtn }: Props) => {
           <>
             <ContentTop>
               <h1>
-                Quer impulsionar o desempenho sua operação de TI e do seu
-                negócio?
+              Quer impulsionar o desempenho da sua operação de TI e do seu negócio?
               </h1>
               <p>
-                Nosso Next-Generation Command Center é altamente contextualizado
-                com ferramentas e aplicativos que são conscientes do contexto de
-                serviço e escaláveis, para lidar com volumes crescentes de
-                dados.
+              Entre em contato com os nossos especialistas, estamos ansiosos para ajudá-lo com seus desafios.
               </p>
             </ContentTop>
 

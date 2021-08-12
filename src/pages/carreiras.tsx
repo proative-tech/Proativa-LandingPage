@@ -32,14 +32,10 @@ export default function Index() {
           <header className="headerContent">
             <h1>Sobre nós</h1>
             <p>
-              Desde 2007, a nossa missão tem sido de tornar as operações dos
-              nossos clientes mais simples e eficientes, facilitando as tomadas
-              de decisões potencializando o crescimento do negócio.
+            Desde 2007, a nossa missão tem sido tornar as operações dos nossos clientes mais simples e eficientes, facilitando as tomadas de decisões, potencializando o crescimento do negócio.
             </p>
             <p>
-              Trabalhamos o equilíbrio entre criatividade, tecnologia,
-              governança e agilidade, sustentada sempre, por pessoas apaixonadas
-              pelo sucesso.
+            Trabalhamos o equilíbrio entre criatividade, tecnologia, governança e agilidade, sustentada sempre por pessoas apaixonadas pelo sucesso.
             </p>
           </header>
         </ContainerImgRight>

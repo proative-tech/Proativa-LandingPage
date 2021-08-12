@@ -43,14 +43,12 @@ export default function Index() {
         </HeroSolutions>
         <ServiceManaged>
           <h1>
-            Next-Generation Command Center - A integração é a chave para
-            insights superiores.
+            Next-Generation Command Center - A observalidade é a chave para
+            maior controle, gestão e eficiência.
           </h1>
 
           <p className="textPage">
-            Nosso Command Center serve como um hub para todos os dados críticos da
-            sua empresa para que ele possa ser acessado por todas as unidades de negócios,
-            transformando dados globais em insights significativos.
+          Nosso Command Center atua como um hub para todos os dados críticos da sua empresa, transformando dados globais em insights significativos.
           </p>
 
           <p className="textPage">

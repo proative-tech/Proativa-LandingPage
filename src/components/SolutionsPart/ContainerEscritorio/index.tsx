@@ -76,7 +76,7 @@ export const ContainerEscritorio = ({ children }: CybersecurityProps) => {
               </Header>
               <div>
                 <Footer>
-                  <h3>Analisar o comportamento do usuário.</h3>
+                  <h3>Acompanhar o comportamento do usuário.</h3>
                 </Footer>
                 <Footer>
                   <h3>Medir o bem-estar digital.</h3>
@@ -87,9 +87,7 @@ export const ContainerEscritorio = ({ children }: CybersecurityProps) => {
               </div>
               <Header style={{ marginTop: 16 }}>
                 <p>
-                  Com a nossa solução você pode garantir um controle remoto
-                  eficaz, trabalhar, aumentar a produtividade e manter o
-                  bem-estar digital de seus colaboradores na era do novo normal.
+                Com a nossa solução você pode garantir um controle eficaz do trabalho a distância, aumentar a produtividade e ainda manter o bem-estar digital de seus colaboradores na era do novo normal.
                 </p>
               </Header>
             </>

@@ -43,9 +43,7 @@ export const ConteinerInfosThree = () => {
           </div>
           <p className="title">Security Manager</p>
           <p>
-            Escalar a segurança, gerenciar ameaças e riscos nos diversos
-            ambientes de rede, ajudamos você fazer a escolha correta da melhor
-            solução para reduzir a superfície de ataque da sua infraestrutura.
+          Aumentar a segurança, gerenciar ameaças e riscos nos diversos ambientes de rede. Ajudamos você fazer a escolha correta da melhor solução para reduzir a superfície de ataque da sua infraestrutura.
           </p>
         </Info>
         <Info>

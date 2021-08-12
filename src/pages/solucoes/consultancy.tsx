@@ -51,20 +51,11 @@ export default function Index() {
           </h1>
 
           <p className="textPage">
-            Nosso principal objetivo em Governança é alinhar a Tecnologia e a
-            Informação aos requisitos do negócio, levando em consideração
-            soluções que agreguem valor, com garantia de continuidade dos
-            serviços, minimizando as ameaças, potencializando as oportunidades
-            que TI pode proporcionar ao negócio, assegurando a otimização dos
-            recursos.
+          Nosso principal objetivo em Governança de TI é alinhar a Tecnologia e a Informação aos requisitos do negócio, levando em consideração soluções que agreguem valor, com garantia de continuidade dos serviços, minimizando as ameaças, potencializando as oportunidades que TI pode proporcionar ao negócio, assegurando a otimização dos recursos.
           </p>
 
           <p className="textPage">
-            Nós identificamos através de um diagnóstico em qual nível sua
-            empresa se encontra, essa informação é essencial para implantar uma
-            governança de TI adequada, além de avaliar as práticas internas e
-            elaborar ações de melhorias para que a sua TI consiga acompanhar as
-            exigências do mercado e ofereça os benefícios esperados.
+          Nós identificamos através de um diagnóstico em qual nível de maturidade sua empresa se encontra, essa informação é essencial para implantar uma governança de TI adequada, além de avaliar as práticas internas e elaborar ações de melhorias para que a sua TI consiga acompanhar as exigências do mercado e oferecer os benefícios esperados.
           </p>
         </Consultancy>
         <ContainerInfoConsul />
@@ -74,7 +65,7 @@ export default function Index() {
             {
               title: 'Quality Control',
               content:
-                'Equipe dedicada para verificação da qualidade nos atendimentos efetuados pelas equipes de suporte de acordo com as boas práticas de mercado. Call Monitoring, Trainning/Corporate Education, Ombudsman, Satisfaction Survey, Trainning/Corporate Education.',
+                'Equipe dedicada para verificação da qualidade nos atendimentos efetuados dos times de suporte de acordo com as boas práticas de mercado. Call Monitoring, Trainning/Corporate Education, Ombudsman, Satisfaction Survey, Trainning/Corporate Education.',
             },
             {
               title: 'New Services',
@@ -97,12 +88,7 @@ export default function Index() {
           <div style={{ maxWidth: 620 }}>
             <h1>Quer elevar sua maturidade em Governança de TI?</h1>
             <p style={{ maxWidth: 480 }}>
-              Nós identificamos através de um diagnóstico em qual nível sua
-              empresa se encontra, essa informação é essencial para implantar
-              uma governança de TI adequada, além de avaliar as práticas
-              internas e elaborar ações de melhorias para que a sua TI consiga
-              acompanhar as exigências do mercado e ofereça os benefícios
-              esperados.
+            Entre em contato com os nossos especialistas, estamos ansiosos para ajudá-lo com seus desafios.
             </p>
           </div>
         </ContainerImpulse>

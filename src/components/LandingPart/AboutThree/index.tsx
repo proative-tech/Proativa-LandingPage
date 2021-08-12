@@ -46,14 +46,10 @@ export const AboutThree = () => {
         <Footer>
           <h3>Obtenha experiência de uso em Real Time.</h3>
           <p>
-            Monitoramento com camada de Observabilidade em cima do dado real,
-            extraindo a experiência do usuário que está interagindo com seus
-            sistemas.
+          Monitoramento com camada de observabilidade sobre o dado real, extraindo a experiência do usuário que está interagindo com seus sistemas. 
           </p>
           <p>
-            Trabalhamos o equilíbrio entre criatividade, tecnologia, governança
-            e agilidade, sustentada sempre, por pessoas apaixonadas pelo
-            sucesso.
+          Trabalhamos o equilíbrio entre criatividade, tecnologia, governança e agilidade, sustentada sempre por pessoas apaixonadas pelo sucesso.
           </p>
         </Footer>
       </Content>

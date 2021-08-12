@@ -60,13 +60,10 @@ export const Consultancy = ({ children }: CybersecurityProps) => {
               <Header>
                 <span>Consulting Services</span>
                 <h1>
-                  Identificamos suas necessidades e ajudamos a criar, estruturar
-                  e manter os procedimentos adequados para sua empresa.
+                Identificamos suas necessidades e ajudamos a criar, estruturar e manter as melhores e mais adequadas práticas de TI para sua empresa.
                 </h1>
                 <p>
-                  Somos o parceiro estratégico ideal para suas necessidades de
-                  governança de TI e Qualidade. Atendemos todos os portes e
-                  segmentos.
+                Somos o parceiro estratégico ideal para suas necessidades de governança de TI e Qualidade.
                 </p>
               </Header>
               <WrapperFooters>

@@ -47,23 +47,15 @@ export default function Index() {
           <h1 style={{ maxWidth: 420 }}>Automação de Processos de Negócios.</h1>
 
           <p className="textPage">
-            Cada função de negócios tem tarefas repetitivas que consomem tempo e
-            podem estar sujeitas a erros humanos. Automatize essas tarefas e
-            deixe a força de trabalho trabalhar em atribuições mais
-            inteligentes.
+          Cada função de negócios tem tarefas repetitivas que consomem tempo e podem estar sujeitas a erros humanos. Automatize essas tarefas e deixe a força de trabalho atuar em atribuições mais inteligentes.
           </p>
 
           <p className="textPage">
-            AutomationEdge - a plataforma de automação de processos robóticos
-            que automatiza processos de dados repetitivos, como transações de
-            processamento, coleta de dados, respostas de disparo e integra
-            vários sistemas de dados diferentes.
+          AutomationEdge - a plataforma de automação de processos robóticos que automatiza processos de dados repetitivos, como transações de processamento, coleta de dados, respostas de disparo e integra vários sistemas de dados diferentes.
           </p>
 
           <p className="textPage">
-            Sua automação inteligente garante que todas as operações de front
-            office, middle office, back office e operações de TI sejam feitas na
-            velocidade da luz e com custo reduzido com a maior precisão.
+          Sua automação inteligente garante que todas as operações de front office, middle office, back office e operações de TI sejam feitas com rapidez, custo reduzido e com maior precisão.
           </p>
         </RPA>
 

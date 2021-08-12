@@ -28,7 +28,7 @@ function Hero() {
             Lentes para gerar valor e potencializar negócios.
             </h1>
             <p>
-            Trazemos ordem e simplicidade a ambientes complexos, facilitando a tomada de decisão e otimizando os resultados do seu negócio.
+            Ajudamos a sua empresa a organizar e a simplificar ambientes complexos, facilitando a tomada de decisão e otimizando os resultados do seu negócio.
             </p>
           </div>
 

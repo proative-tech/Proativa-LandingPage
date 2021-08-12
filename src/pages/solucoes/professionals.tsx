@@ -40,10 +40,7 @@ export default function Index() {
               serviços profissionais.
             </h2>
             <p>
-              Estamos aqui para conduzir o sucesso do seu projeto ou da entrega
-              dos seus serviços, seja você mesmo criando soluções e desejando
-              alguma orientação ao dar o próximo passo, ou procurando suporte
-              completo de ponta a ponta para o projeto.
+            Estamos aqui para conduzir o sucesso do seu projeto ou da entrega dos seus serviços, seja você mesmo criando soluções e desejando alguma orientação ao dar o próximo passo ou procurando suporte completo de ponta a ponta para o projeto.
             </p>
           </div>
         </HeroSolutions>
@@ -98,7 +95,7 @@ export default function Index() {
                 'O Escritório de Gerenciamento de Projetos (PMO - Project Management Office) da Proative entrega serviços de gerenciamento coordenado de projetos, atuando de forma corporativa, departamental ou operacional.',
             },
             {
-              title: 'Suporte Técnico',
+              title: 'Serviços Expressos',
               content:
                 'Suporte Técnico Emergencial para ambientes de Infraestrutura e Segurança da Informação.',
             },
@@ -111,10 +108,7 @@ export default function Index() {
               <br /> e dedicado à sua empresa?
             </h1>
             <p style={{ maxWidth: 540 }}>
-              Todos nossos profissionais passam por treinamentos específicos
-              para atender os padrões de qualidade Proative, seguindo as
-              práticas e padrões mais conceituados. Temos profissionais em
-              diversas áreas.
+            Entre em contato com os nossos especialistas, estamos ansiosos para ajudá-lo com seus desafios.
             </p>
           </div>
         </ContainerImpulse>

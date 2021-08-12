@@ -52,7 +52,7 @@ export const Footer = () => {
                     href="/politicas-de-privacidade"
                     passHref
                   >
-                    Políticas de Privacidade
+                    Política de Privacidade para Cookies e navegação
                   </Link>
                 </div>
               </div>

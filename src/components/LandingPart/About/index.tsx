@@ -76,14 +76,7 @@ export const About = ({ children }: AboutProps) => {
             gerenciados.
           </h1>
           <p>
-            Provemos soluções customizadas de acordo com cada necessidade para
-            Projetos e Consultoria em Governança Corporativa e de TI, aceleramos
-            operações que já estão rodando e maduras, inserindo componentes de
-            IOT, Analítics, Big Data e data Lake, extraindo insigths
-            significativos para o negócio. Cuidamos e impulsionamos operações
-            Anywhere, garantido disponibilidade e continuidade sobre a
-            disciplina do ITIL4 de gestão de Operações unindo pessoas, processos
-            e tecnologia.
+          Provemos soluções customizadas de acordo com cada necessidade para Projetos de Serviços Gerenciados, Consultoria em Governança Corporativa e de TI, elevando o nível de maturidade, inserindo componentes de Observabilidade, IOT, Analítics, Big Data e Data Lake, extraindo insigths significativos para o negócio. Cuidamos e impulsionamos operações onde você precise, garantido disponibilidade e continuidade de gestão de Operações unindo pessoas, processos e tecnologia.
           </p>
         </Header>
       </Content>

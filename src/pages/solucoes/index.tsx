@@ -34,11 +34,7 @@ export default function Index() {
               Com uma equipe multidisciplinar entendemos as suas necessidades.
             </h1>
             <p>
-              Desenhamos soluções customizáveis e mais competitivas para
-              serviços gerenciados de infraestrutura, aplicações, operações,
-              processos de negócio, devops, segurança da informação, automação e
-              melhor experiência e gestão para o espaço de trabalho digital com
-              mais controle, menos risco e complexidade.
+            Desenhamos soluções customizáveis e mais competitivas para serviços gerenciados de infraestrutura, aplicações, operações, processos de negócio, DevOps, segurança da informação e automação, trazendo maior experiência para gestão de operações de missão crítica.
             </p>
           </div>
         </HeroSolutions>

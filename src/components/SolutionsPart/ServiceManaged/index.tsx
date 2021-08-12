@@ -63,13 +63,10 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
               <Header>
                 <span>Managed Services</span>
                 <h1>
-                  Imagine sair do seu escritório todos os dias, sabendo que a
-                  segurança e a continuidade do seu negócio estão em boas mãos?
+                Já imaginou sair do seu escritório todos os dias sabendo que a segurança e a continuidade do seu negócio estão em boas mãos?
                 </h1>
                 <p>
-                  Os Serviços Gerenciados da Proative fazem exatamente isso - 24
-                  horas por dia, 7/07. Unindo gestão, inteligência, segurança,
-                  agilidade e inovação.
+                Os Serviços Gerenciados da Proative fazem exatamente isso - 24 horas por dia, 7 dias por semana. Unindo gestão, inteligência, segurança, agilidade e inovação.
                 </p>
               </Header>
               <Footer>
@@ -79,22 +76,19 @@ export const ServiceManaged = ({ children }: ServiceManagedProps) => {
               <Footer>
                 <h3>Diminua o Downtime</h3>
                 <p>
-                  Seja rápido e preciso na identificação e solução dos problemas
-                  do seu ambiente.
+                Seja rápido e preciso na identificação e solução dos problemas do seu ambiente.
                 </p>
               </Footer>
               <Footer>
                 <h3>Aumente a sua produtividade</h3>
                 <p>
-                  Automatize soluções e diminua a incidência de problemas
-                  recorrentes.
+                Automatize soluções e diminua a incidência de problemas recorrentes.
                 </p>
               </Footer>
               <Footer>
                 <h3>Melhore a sua gestão</h3>
                 <p>
-                  Tenha informações precisas para medir e melhorar o desempenho
-                  e a performance do seu negócio.
+                Tenha informações precisas para medir e melhorar o desempenho e a performance do seu negócio.
                 </p>
               </Footer>
               <ContainerButton>
