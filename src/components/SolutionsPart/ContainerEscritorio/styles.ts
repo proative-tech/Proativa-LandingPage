@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   width: 100vw;
   background: #fff;
 
-  padding-top: 1.0rem;
+  padding-top: 10.0rem;
 
   @media (max-width: 928px) {
     padding-top: 0;

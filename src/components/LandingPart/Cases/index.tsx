@@ -161,7 +161,7 @@ export function Cases({ children }: CasesProps | any) {
                 nameClient="Renato Diego Bizzarri Barbosa"
                 areaClient="Coordenador de Infraestrutura"
                 src="/images/par-expressa.svg"
-                comment="A entrega está além do monitoramento de dispositivos on e off, com a tecnologia e a flexibilidade na construção de dashboards é possível monitorarmos processos, possibilitando a atuação a atuação em melhorias importantes para o negócio e não somente uma visão para Capacity Planning de TI"
+                comment="A entrega da Proative está além do monitoramento de dispositivos on e off, com a tecnologia da ferramenta e a flexibilidade na construção de dashboards é possível realizarmos o monitoramento de processos do negócio, possibilitando a atuação em melhorias importantes e não somente a visão para Capacity Planning de TI."
               />
             </section>
           )}

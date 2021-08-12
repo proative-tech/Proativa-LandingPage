@@ -87,7 +87,7 @@ export const ContainerEscritorio = ({ children }: CybersecurityProps) => {
               </div>
               <Header style={{ marginTop: 16 }}>
                 <p>
-                Com a nossa solução você pode garantir um controle eficaz do trabalho a distância, aumentar a produtividade e ainda manter o bem-estar digital de seus colaboradores na era do novo normal.
+                  Com a nossa solução você pode garantir um controle eficaz do trabalho a distância, aumentar a produtividade e ainda manter o bem-estar digital de seus colaboradores na era do novo normal.
                 </p>
               </Header>
             </>

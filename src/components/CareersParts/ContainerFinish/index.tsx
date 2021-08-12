@@ -55,12 +55,11 @@ export function ContainerFinish() {
     <Container visibled={isAnimated} visibledList={isAnimatedList} id="containerFinishMain">
       <ContainerTop >
 
-        <p>
-        <a href="https://vemserproative.solides.jobs/" >
-        #vemserproative
-                </a>
 
-          </p>
+
+          <Button type="button" onClick={() => router.push('https://vemserproative.solides.jobs/')}>
+          #vemserproative
+              </Button>
 
 
       </ContainerTop>

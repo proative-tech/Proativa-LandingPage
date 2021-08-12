@@ -10,6 +10,7 @@ export const ContainerTop = styled.div`
 
   button {
     width: 300px;
+    font-size: 1.3rem;
   }
   margin-top: 60px;
   margin-bottom: 116px;
