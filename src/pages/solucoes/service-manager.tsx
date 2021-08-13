@@ -43,7 +43,7 @@ export default function Index() {
         </HeroSolutions>
         <ServiceManaged>
           <h1>
-            Next-Generation Command Center - A observalidade é a chave para
+            Next-Generation Command Center - A observabilidade é a chave para
             maior controle, gestão e eficiência.
           </h1>
 
