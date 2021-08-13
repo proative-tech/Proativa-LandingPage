@@ -60,10 +60,10 @@ export const Partners = () => {
               <img src="/images/par-flexxible.svg" alt="Flexxible" />
             </S.ContainerImg>
             <S.ContainerImg>
-              <img id="l5networks" src="/images/new-parceiro.png" alt="Automation Edge" />
+              <img id="l5networks" src="/images/l5network.svg" alt="L5Network" />
             </S.ContainerImg>
             <S.ContainerImg>
-              <img id="icts" src="/images/new-parceiro2.png" alt="Automation Edge" />
+              <img id="icts" src="/images/icts.svg" alt="ICTS" />
             </S.ContainerImg>
           </Carousel>
         </S.ContainerCarousel>
