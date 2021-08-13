@@ -229,10 +229,10 @@ export const ContainerImg = styled.div`
     max-width: 98%;
   }
   img#l5networks {
-    width: 110px;
+    width: 130px;
   }
   img#icts {
-    width: 110px;
+    width: 130px;
   }
   img#flex {
     margin-left: 100px;
