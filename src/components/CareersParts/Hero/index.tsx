@@ -62,7 +62,7 @@ export const HeroMaketOrCases = () =>{
 
         <div className="containerMain">
           <h1>
-            Nós trasparecemos <br /> <strong>comprometimento.</strong>
+            Nós transparecemos <br /> <strong>comprometimento.</strong>
           </h1>
         </div>
       </ContainerBottom>
