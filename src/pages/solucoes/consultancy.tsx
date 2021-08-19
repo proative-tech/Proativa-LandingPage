@@ -65,7 +65,7 @@ export default function Index() {
             {
               title: 'Quality Control',
               content:
-                'Equipe dedicada para verificação da qualidade nos atendimentos efetuados dos times de suporte de acordo com as boas práticas de mercado. Call Monitoring, Trainning/Corporate Education, Ombudsman, Satisfaction Survey, Trainning/Corporate Education.',
+                'Equipe dedicada para verificação da qualidade nos atendimentos efetuados dos times de suporte de acordo com as boas práticas de mercado. Call Monitoring, Ombudsman, Satisfaction Survey, Trainning/Corporate Education.',
             },
             {
               title: 'New Services',
