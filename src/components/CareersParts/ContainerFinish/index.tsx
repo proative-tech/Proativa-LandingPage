@@ -93,12 +93,12 @@ export function ContainerFinish() {
             <li><p>2. Lidere com exemplo.</p></li>
             <li><p>3. Abrace e conduza mudanças, seja um agente transformador.</p></li>
             <li><p>4. Celebre cada conquista.</p></li>
-            <li><p>5. Procure sempre por crescimento.</p></li>
-            <li><p>6. Seja empático, comece sempre dizendo sim.</p></li>
-            <li><p>7. Seja apaixonado, humilde e determinado.</p></li>
+            <li><p>5. Procure sempre por crescimento e aprendizagem.</p></li>
+            <li><p>6. Seja positivo.</p></li>
+            <li><p>7. Seja apaixonado e determinado.</p></li>
             <li><p>8. Seja humilde.</p></li>
             <li><p>9. Desenvolva um espírito empreendedor.</p></li>
-            <li><p>10. Respeite as pessoas e o meio ambiente e faça parte da construção de um mundo melhor.</p></li>
+            <li><p>10. Respeite as pessoas e o meio ambiente, faça parte da construção de um mundo melhor.</p></li>
           </ul>
         </div>
       </ContainerInfo>

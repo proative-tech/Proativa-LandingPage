@@ -58,6 +58,13 @@ export const About = ({ children }: AboutProps) => {
     <Container visibled={isAnimated} id="about-link">
       <ContainerImg>
         <div className="video" data-video="img">
+        {/* <iframe 
+            width="100%"
+            height="100%"
+            src="https://www.youtube-nocookie.com/embed/nyKP_hsj5WU?rel=0&amp;controls=0&amp;showinfo=0"
+            title="Proative video promocional"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
           <iframe
             width="100%"
             height="100%"
