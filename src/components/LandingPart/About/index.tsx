@@ -65,14 +65,15 @@ export const About = ({ children }: AboutProps) => {
             title="Proative video promocional"
              frameborder="0"
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-          <iframe
+          {/* <iframe
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/nyKP_hsj5WU"
             title="Proative video promocional"
             frameBorder="0"
             allowFullScreen
-          />
+          /> */}
+          <iframe src="https://player.vimeo.com/video/593357178?h=a0cf868b9e" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
       </ContainerImg>
       <Content>

@@ -87,7 +87,7 @@ export function ContainerFinish() {
         <h1>
           Dez atitudes <br /> <strong>Proative</strong>
         </h1>
-        <div className="containerMainInfo">
+        <div className="containerMainInfo">1
           <ul>
             <li><p>1. Trabalhe com alegria e entusiasmo.</p></li>
             <li><p>2. Lidere com exemplo.</p></li>
