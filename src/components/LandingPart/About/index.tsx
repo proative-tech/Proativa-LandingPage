@@ -73,7 +73,7 @@ export const About = ({ children }: AboutProps) => {
             frameBorder="0"
             allowFullScreen
           /> */}
-          <iframe src="https://player.vimeo.com/video/593357178?h=a0cf868b9e" width="640" height="360" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+          <iframe src="https://player.vimeo.com/video/593357178?h=a0cf868b9e" width="100%" height="100%" allow="autoplay; fullscreen; picture-in-picture"></iframe>
         </div>
       </ContainerImg>
       <Content>
