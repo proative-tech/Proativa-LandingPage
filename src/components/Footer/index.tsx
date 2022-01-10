@@ -47,6 +47,7 @@ export const Footer = () => {
                   </a>
                 </div>
                 <div className="stylePolitics">
+            
                   <Link
                     scroll={false}
                     href="/politicas-de-privacidade"
@@ -55,10 +56,14 @@ export const Footer = () => {
                     Política de Privacidade para Cookies e navegação
                   </Link>
                 </div>
+                <div className="stylePolitics">
+                  <a id="ouvidoria" href="https://forms.office.com/Pages/ResponsePage.aspx?id=UdQoUwWli0yfCaVmfOIaQ4Si70P0gddCqImP1BOF9tBUQkNITjhaMkFBN0JHSDVKVEMyNDQ3WlYzNi4u">
+                    Ouvidoria
+                  </a>
+                </div>
               </div>
             </div>
           </section>
-
           <hr />
           <div className="text-footer">
             <p>

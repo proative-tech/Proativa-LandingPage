@@ -200,12 +200,14 @@ export const Container = styled.div`
         margin-left: 0;
 
         a {
-          color: #434343;
+          color: #E5605F;
           font-size: 1rem;
           line-height: 1.5625rem;
           text-decoration: none;
           font-weight: normal;
         }
+
+      
       }
     }
     a {
