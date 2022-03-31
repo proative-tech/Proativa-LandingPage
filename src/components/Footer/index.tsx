@@ -47,9 +47,8 @@ export const Footer = () => {
                   </a>
                 </div>
                 <div className="stylePolitics">
-            
                   <Link
-                    scroll={false}
+                    scroll={true}
                     href="/politicas-de-privacidade"
                     passHref
                   >

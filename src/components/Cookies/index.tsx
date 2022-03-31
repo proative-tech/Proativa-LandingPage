@@ -75,9 +75,15 @@ export const CookiesAlert = () => {
                   Nosso site utiliza cookies para melhorar sua experiência. Ao
                   navegar pela página, você aceita tais condições.
                   <br /> Para mais informações, acesse nossa{' '}
-                  <Link href="/politicas-de-privacidade" passHref>
-                    <a>Política de Privacidade.</a>
+                  <Link
+                    scroll={false}
+                    href="/politicas-de-privacidade"
+                    passHref
+                  >
+                    Política de Privacidade.
                   </Link>
+                    {/* <a>Política de Privacidade.</a>
+                  </Link> */}
                 </p>
               </Content>
             </CookieConsent>
