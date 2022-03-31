@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Component {...pageProps} />
       {isFloatActive && <FloatButton />}
-      <CookiesAlert />
+      {/* <CookiesAlert /> */}
       <GlobalStyles />
     </>
   );
