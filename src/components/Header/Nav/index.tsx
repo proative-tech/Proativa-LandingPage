@@ -154,6 +154,10 @@ export function Nav() {
                     name: 'Colaboradores',
                     href: 'https://app.expenseon.com/admin/login',
                   },
+                  {
+                    name: 'Política de Privacidade',
+                    href: '/politicas-de-privacidade',
+                  },
                   // { name: 'Colaboradores', href: '/' },
                 ]}
               />
