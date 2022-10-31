@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { animationFade, animationsObj } from '../../../utils/animations';
-import { VisibledProp } from '../../LandingPart/Informations/styles';
+import { animationFade, animationsObj } from '../../../../utils/animations';
+import { VisibledProp } from '../../../LandingPart/Informations/styles';
 
 export const Content = styled.div`
   max-width: 1085px;
@@ -26,6 +26,8 @@ export const Content = styled.div`
 `;
 
 export const Info = styled.div`
+max-width: 225px;
+width: 100%;
   h1 {
     color: #707070;
     font-size: 3.125rem;
@@ -57,13 +59,23 @@ export const Info = styled.div`
   }
 `;
 
+export const ContentTop = styled.div`
+  width: 100%;
+
+  text-align: center;
+
+  p {
+    padding: 30px 0;
+  }
+`;
+
 export const Container = styled.div<VisibledProp>`
   ${({ visibled }) => css`
     width: 100vw;
 
     background: #f4f4f4;
 
-    padding: 100px 0 80px;
+    padding: 50px 0 80px;
 
     @media (max-width: 1140px) {
       padding-left: 26px;
@@ -90,9 +102,6 @@ export const Container = styled.div<VisibledProp>`
         }
         > ${Info}:nth-child(3) {
           animation: ${animationsObj.toXAnimation(-50)} 1.2s;
-        }
-        > ${Info}:nth-child(4) {
-          animation: ${animationsObj.toXAnimation(-150)} 1.2s;
         }
       }
     `}

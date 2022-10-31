@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { animationFade, animationsObj } from '../../../utils/animations';
-import { VisibledProp } from '../../LandingPart/Informations/styles';
+import { animationFade, animationsObj } from '../../../../utils/animations';
+import { VisibledProp } from '../../../LandingPart/Informations/styles';
 
 export const ContainerTop = styled.div`
   display: flex;
@@ -92,7 +92,6 @@ export const ContainerInfo = styled.div`
     width: 80%;
 
     ul {
-      list-style: none;
       li {
         p {
           font-size: 20px;
@@ -209,6 +208,9 @@ export const Container = styled.div<VisibledProp | any>`
           }
           li:nth-child(10) {
             animation: ${animationsObj.toXAnimation(-1050)} 3s;
+          }
+          li:nth-child(11) {
+            animation: ${animationsObj.toXAnimation(-1150)} 3s;
           }
         }
       }

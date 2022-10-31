@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { animationFade, animationsObj } from '../../../utils/animations';
-import { VisibledProp } from '../../LandingPart/Informations/styles';
+import { animationFade, animationsObj } from '../../../../utils/animations';
+import { VisibledProp } from '../../../LandingPart/Informations/styles';
 
 export const Content = styled.div`
   max-width: 1085px;
@@ -27,7 +27,7 @@ export const ContainerImg = styled.div`
 
   img {
     width: 100%;
-    height: 429px;
+    height: 100%;
   }
 
   @media (max-width: 920px) {
@@ -116,4 +116,6 @@ export const Container = styled.div<VisibledProp>`
       }
     `}
   `}
+
+  margin: 75px auto;
 `;

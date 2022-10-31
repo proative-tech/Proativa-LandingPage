@@ -26,26 +26,96 @@ export default function Index() {
     <>
       <Head>
         <title>Proative | Soluções - Profissionais</title>
-        <script src='https://cdn.privacytools.com.br/public_api/banner/autoblock/v2/W2lz812131.js?t=1'></script>
-        <link rel="stylesheet" href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"></link>
-        <script type="text/javascript" src="https://cdn.privacytools.com.br/public_api/banner/script/bottom/W2lz812131.js?t=1"></script>
-        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png"/>
-        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png"/>
-        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png"/>
-        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png"/>
-        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png"/>
-        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png"/>
-        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png"/>
-        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png"/>
-        <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png"/>
-        <link rel="manifest" href="/images/favicon/manifest.json"/>
-        <meta name="msapplication-TileColor" content="#ffffff"/>
-        <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png"/>
-        <meta name="theme-color" content="#ffffff"></meta>
+        <script src="https://cdn.privacytools.com.br/public_api/banner/autoblock/v2/W2lz812131.js?t=1" />
+        <link
+          rel="preload"
+          href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"
+          as="style"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"
+        />
+        <script
+          type="text/javascript"
+          src="https://cdn.privacytools.com.br/public_api/banner/script/bottom/W2lz812131.js?t=1"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="57x57"
+          href="/images/favicon/apple-icon-57x57.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="60x60"
+          href="/images/favicon/apple-icon-60x60.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="72x72"
+          href="/images/favicon/apple-icon-72x72.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href="/images/favicon/apple-icon-76x76.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="114x114"
+          href="/images/favicon/apple-icon-114x114.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="120x120"
+          href="/images/favicon/apple-icon-120x120.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="144x144"
+          href="/images/favicon/apple-icon-144x144.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href="/images/favicon/apple-icon-152x152.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/favicon/apple-icon-180x180.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/images/favicon/android-icon-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/images/favicon/favicon-96x96.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/images/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+          name="msapplication-TileImage"
+          content="/images/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <Container>
         <Header bgColor="#fff" />
@@ -67,15 +137,22 @@ export default function Index() {
           <h1 style={{ maxWidth: 420 }}>Automação de Processos de Negócios.</h1>
 
           <p className="textPage">
-          Cada função de negócios tem tarefas repetitivas que consomem tempo e podem estar sujeitas a erros humanos. Automatize essas tarefas e deixe a força de trabalho atuar em atribuições mais inteligentes.
+            Cada função de negócios tem tarefas repetitivas que consomem tempo e
+            podem estar sujeitas a erros humanos. Automatize essas tarefas e
+            deixe a força de trabalho atuar em atribuições mais inteligentes.
           </p>
 
           <p className="textPage">
-          AutomationEdge - a plataforma de automação de processos robóticos que automatiza processos de dados repetitivos, como transações de processamento, coleta de dados, respostas de disparo e integra vários sistemas de dados diferentes.
+            AutomationEdge - a plataforma de automação de processos robóticos
+            que automatiza processos de dados repetitivos, como transações de
+            processamento, coleta de dados, respostas de disparo e integra
+            vários sistemas de dados diferentes.
           </p>
 
           <p className="textPage">
-          Sua automação inteligente garante que todas as operações de front office, middle office, back office e operações de TI sejam feitas com rapidez, custo reduzido e com maior precisão.
+            Sua automação inteligente garante que todas as operações de front
+            office, middle office, back office e operações de TI sejam feitas
+            com rapidez, custo reduzido e com maior precisão.
           </p>
         </RPA>
 

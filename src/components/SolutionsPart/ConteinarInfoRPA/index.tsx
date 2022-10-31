@@ -30,7 +30,10 @@ export const ContainerInfoRPA = () => {
         <h2>O que mais pode ser feito?</h2>
         <h4>Automação Excel</h4>
         <p>
-        Automatize procedimentos e atividades importantes para verificar integridade e validação dos dados, reduzindo o tempo de processamento de horas para minutos com a integração de automação. Simplifique várias operações vitais e importantes em sua organização.
+          Automatize procedimentos e atividades importantes para verificar
+          integridade e validação dos dados, reduzindo o tempo de processamento
+          de horas para minutos com a integração de automação. Simplifique
+          várias operações vitais e importantes em sua organização.
         </p>
       </S.Content>
     </S.Wrapper>

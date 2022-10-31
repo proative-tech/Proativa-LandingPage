@@ -87,7 +87,8 @@ export const Container = styled.div<VisibledProp>`
     padding: 100px 0 80px;
 
     @media (max-width: 578px) {
-      padding: 29px;     padding-top: 0px;
+      padding: 29px;
+      padding-top: 0px;
     }
 
     //animations

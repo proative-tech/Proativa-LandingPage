@@ -23,27 +23,92 @@ export default function Index() {
     <>
       <Head>
         <title>Proative | Soluções - Service Manager</title>
-        <script src='https://cdn.privacytools.com.br/public_api/banner/autoblock/v2/W2lz812131.js?t=1'></script>
-        <link rel="stylesheet" href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"></link>
-        <script type="text/javascript" src="https://cdn.privacytools.com.br/public_api/banner/script/bottom/W2lz812131.js?t=1"></script>
-        <script src='https://cdn.privacytools.com.br/public_api/banner/autoblock/v2/W2lz812131.js?t=1'></script>
-        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png"/>
-        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png"/>
-        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png"/>
-        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png"/>
-        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png"/>
-        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png"/>
-        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png"/>
-        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png"/>
-        <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png"/>
-        <link rel="manifest" href="/images/favicon/manifest.json"/>
-        <meta name="msapplication-TileColor" content="#ffffff"/>
-        <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png"/>
-        <meta name="theme-color" content="#ffffff"></meta>
+        <script src="https://cdn.privacytools.com.br/public_api/banner/autoblock/v2/W2lz812131.js?t=1" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"
+        />
+        <script
+          type="text/javascript"
+          src="https://cdn.privacytools.com.br/public_api/banner/script/bottom/W2lz812131.js?t=1"
+        />
+        <script src="https://cdn.privacytools.com.br/public_api/banner/autoblock/v2/W2lz812131.js?t=1" />
+        <link
+          rel="apple-touch-icon"
+          sizes="57x57"
+          href="/images/favicon/apple-icon-57x57.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="60x60"
+          href="/images/favicon/apple-icon-60x60.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="72x72"
+          href="/images/favicon/apple-icon-72x72.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href="/images/favicon/apple-icon-76x76.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="114x114"
+          href="/images/favicon/apple-icon-114x114.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="120x120"
+          href="/images/favicon/apple-icon-120x120.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="144x144"
+          href="/images/favicon/apple-icon-144x144.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href="/images/favicon/apple-icon-152x152.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/favicon/apple-icon-180x180.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/images/favicon/android-icon-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/images/favicon/favicon-96x96.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/images/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+          name="msapplication-TileImage"
+          content="/images/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <Container>
         <Header bgColor="#fff" />
@@ -51,8 +116,19 @@ export default function Index() {
           idMoveScroll="soluciton-service"
           className="professionals"
         >
-          <link rel="stylesheet" href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"></link>
-          <script type="text/javascript" src="https://cdn.privacytools.com.br/public_api/banner/script/bottom/W2lz812131.js?t=1"></script>
+          <link
+            rel="preload"
+            href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"
+            as="style"
+          />
+          <link
+            rel="stylesheet"
+            href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"
+          />
+          <script
+            type="text/javascript"
+            src="https://cdn.privacytools.com.br/public_api/banner/script/bottom/W2lz812131.js?t=1"
+          />
           <div className="content__text">
             <h2>
               Nosso Managed Services traz experiência e seriedade para sua
@@ -71,18 +147,23 @@ export default function Index() {
           </h1>
 
           <p className="textPage">
-          Nosso Command Center atua como um hub para todos os dados críticos da sua empresa, transformando dados globais em insights significativos.
+            Nosso Command Center atua como um hub para todos os dados críticos
+            da sua empresa, transformando dados globais em insights
+            significativos.
           </p>
 
           <p className="textPage">
-            Arquitetura de solução com alta capacidade de abrangência para monitoramento e gerenciamento,
-            soluções integradas que garantem aderência as boas práticas e automação de rotinas operacionais.
+            Arquitetura de solução com alta capacidade de abrangência para
+            monitoramento e gerenciamento, soluções integradas que garantem
+            aderência as boas práticas e automação de rotinas operacionais.
           </p>
 
           <p className="textPage">
-            Modelo de Governança que permite a aplicação de processos de melhoria contínua
-            e alta capacidade de personalização de regras de negócio para monitoramento proativo,
-            além de contar com profissionais técnicos multidisciplinares e gerenciamento centralizado de serviços.
+            Modelo de Governança que permite a aplicação de processos de
+            melhoria contínua e alta capacidade de personalização de regras de
+            negócio para monitoramento proativo, além de contar com
+            profissionais técnicos multidisciplinares e gerenciamento
+            centralizado de serviços.
           </p>
         </ServiceManaged>
         <ContainerInfosOne />

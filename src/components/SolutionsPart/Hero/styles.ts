@@ -89,7 +89,8 @@ export const Content = styled.section`
 
     > div.content__text {
       p {
-        max-width: 80%; line-height: 1.8rem;
+        max-width: 80%;
+        line-height: 1.8rem;
       }
     }
   }
@@ -99,7 +100,8 @@ export const Content = styled.section`
 
     > div.content__text {
       p {
-        max-width: 80%; line-height: 1.8rem;
+        max-width: 80%;
+        line-height: 1.8rem;
       }
     }
   }
@@ -152,7 +154,8 @@ export const Content = styled.section`
 
       > div.content__text {
         p {
-          max-width: 80%; line-height: 1.8rem;
+          max-width: 80%;
+          line-height: 1.8rem;
         }
       }
     }

@@ -2,8 +2,8 @@
 import { useRouter } from 'next/router';
 import {  useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive';
-import { Button } from '../../Button';
 import { Link } from 'react-scroll';
+import { Button } from '../../Button';
 
 import { ButtonText } from '../../SolutionsPart/ButtonText';
 

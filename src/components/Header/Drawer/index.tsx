@@ -40,6 +40,11 @@ const links = [
     name: 'RPA',
     href: '/solucoes/rpa',
   },
+
+  {
+    name: 'Academy',
+    href: '/solucoes/academy',
+  },
 ];
 const linksTwo = [
   { name: 'Todos Mercados', to: 'mkt-top', href: '/mercados' },

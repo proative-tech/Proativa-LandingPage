@@ -25,26 +25,96 @@ export default function Index() {
     <>
       <Head>
         <title>Proative | Soluções - Cybersecutiry</title>
-        <script src='https://cdn.privacytools.com.br/public_api/banner/autoblock/v2/W2lz812131.js?t=1'></script>
-        <link rel="stylesheet" href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"></link>
-        <script type="text/javascript" src="https://cdn.privacytools.com.br/public_api/banner/script/bottom/W2lz812131.js?t=1"></script>
-        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png"/>
-        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png"/>
-        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png"/>
-        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png"/>
-        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png"/>
-        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png"/>
-        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png"/>
-        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png"/>
-        <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png"/>
-        <link rel="manifest" href="/images/favicon/manifest.json"/>
-        <meta name="msapplication-TileColor" content="#ffffff"/>
-        <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png"/>
-        <meta name="theme-color" content="#ffffff"></meta>
+        <script src="https://cdn.privacytools.com.br/public_api/banner/autoblock/v2/W2lz812131.js?t=1" />
+        <link
+          rel="preload"
+          href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"
+          as="style"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.privacytools.com.br/public_api/banner/style/W2lz812131.css?t=1"
+        />
+        <script
+          type="text/javascript"
+          src="https://cdn.privacytools.com.br/public_api/banner/script/bottom/W2lz812131.js?t=1"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="57x57"
+          href="/images/favicon/apple-icon-57x57.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="60x60"
+          href="/images/favicon/apple-icon-60x60.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="72x72"
+          href="/images/favicon/apple-icon-72x72.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href="/images/favicon/apple-icon-76x76.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="114x114"
+          href="/images/favicon/apple-icon-114x114.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="120x120"
+          href="/images/favicon/apple-icon-120x120.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="144x144"
+          href="/images/favicon/apple-icon-144x144.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href="/images/favicon/apple-icon-152x152.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/favicon/apple-icon-180x180.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/images/favicon/android-icon-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/images/favicon/favicon-96x96.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/images/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+          name="msapplication-TileImage"
+          content="/images/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <Container>
         <Header bgColor="#fff" />
@@ -71,11 +141,21 @@ export default function Index() {
           </h1>
 
           <p className="textPage">
-          Nosso principal objetivo em Governança de TI é alinhar a Tecnologia e a Informação aos requisitos do negócio, levando em consideração soluções que agreguem valor, com garantia de continuidade dos serviços, minimizando as ameaças, potencializando as oportunidades que TI pode proporcionar ao negócio, assegurando a otimização dos recursos.
+            Nosso principal objetivo em Governança de TI é alinhar a Tecnologia
+            e a Informação aos requisitos do negócio, levando em consideração
+            soluções que agreguem valor, com garantia de continuidade dos
+            serviços, minimizando as ameaças, potencializando as oportunidades
+            que TI pode proporcionar ao negócio, assegurando a otimização dos
+            recursos.
           </p>
 
           <p className="textPage">
-          Nós identificamos através de um diagnóstico em qual nível de maturidade sua empresa se encontra, essa informação é essencial para implantar uma governança de TI adequada, além de avaliar as práticas internas e elaborar ações de melhorias para que a sua TI consiga acompanhar as exigências do mercado e oferecer os benefícios esperados.
+            Nós identificamos através de um diagnóstico em qual nível de
+            maturidade sua empresa se encontra, essa informação é essencial para
+            implantar uma governança de TI adequada, além de avaliar as práticas
+            internas e elaborar ações de melhorias para que a sua TI consiga
+            acompanhar as exigências do mercado e oferecer os benefícios
+            esperados.
           </p>
         </Consultancy>
         <ContainerInfoConsul />
@@ -108,7 +188,8 @@ export default function Index() {
           <div style={{ maxWidth: 620 }}>
             <h1>Quer elevar sua maturidade em Governança de TI?</h1>
             <p style={{ maxWidth: 480 }}>
-            Entre em contato com os nossos especialistas, estamos ansiosos para ajudá-lo com seus desafios.
+              Entre em contato com os nossos especialistas, estamos ansiosos
+              para ajudá-lo com seus desafios.
             </p>
           </div>
         </ContainerImpulse>

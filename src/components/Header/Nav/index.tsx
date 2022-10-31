@@ -80,6 +80,11 @@ export function Nav() {
                     name: 'RPA',
                     href: '/solucoes/rpa',
                   },
+
+                  {
+                    name: 'Academy',
+                    href: '/solucoes/academy',
+                  },
                 ]}
               />
             )}

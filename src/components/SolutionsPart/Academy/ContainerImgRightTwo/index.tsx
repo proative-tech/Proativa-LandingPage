@@ -5,11 +5,13 @@ import { Container, Content, ContainerImg, ContainerText } from './styles';
 interface ContainerImgLeftProps {
   children: ReactNode;
   name: string;
+  img: string;
 }
 
-export const ContainerImgRight = ({
+export const ContainerImgRightTwo = ({
   children,
   name,
+  img,
 }: ContainerImgLeftProps) => {
   const isMobile = useMediaQuery({ maxWidth: 490 });
   const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
@@ -20,7 +22,7 @@ export const ContainerImgRight = ({
 
     const getWindowBottom = window.scrollY + window.innerHeight;
     const heightEle =
-      ele?.getBoundingClientRect().bottom + window.scrollY - 400;
+      ele?.getBoundingClientRect().bottom + window.scrollY + 900;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
@@ -37,14 +39,7 @@ export const ContainerImgRight = ({
       <Content>
         <ContainerText>{children}</ContainerText>
         <ContainerImg>
-          <img
-            src={
-              isMobile
-                ? '/images/carreira-cont-1-m.png'
-                : '/images/carreira-cont-1.png'
-            }
-            alt={name}
-          />
+          <img src={img} alt={name} />
         </ContainerImg>
       </Content>
     </Container>

@@ -76,7 +76,8 @@ export const RPA = ({ children }: CybersecurityProps) => {
               <Footer>
                 <h3>Automatização</h3>
                 <p>
-                Analisamos seu processo e buscamos automatizá-lo por intermédio de robotização ou workflows.
+                  Analisamos seu processo e buscamos automatizá-lo por
+                  intermédio de robotização ou workflows.
                 </p>
               </Footer>
               <Footer>
