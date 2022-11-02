@@ -1,25 +1,17 @@
 /* eslint-disable prettier/prettier */
-import { useRouter } from 'next/router';
 import {  useState, useEffect } from 'react'
-import { useMediaQuery } from 'react-responsive';
-import { Link } from 'react-scroll';
 
-import { FaArrowRight } from 'react-icons/fa';
-import { ButtonText } from "../../ButtonText";
+import { ButtonText } from "../../SolutionsPart/ButtonText";
 
 import { Container,ContainerButton, ContainerTop, ContainerBottom, ContainerInfo } from './styles';
 
 
 
 export function ContainerFinish() {
-  const router = useRouter();
-  const isMobile = useMediaQuery({ maxWidth: 490 });
-  const isMobileUltra = useMediaQuery({ minWidth: 1920 });
-  const def = useMediaQuery({ minWidth: 491, maxWidth: 1919 });
+
   const [isAnimated, setIsAnimated] = useState(false);
   const [isAnimatedList, setIsAnimatedList] = useState(false);
 
-  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
 
   const handleScroll = () => {
     const ele: Element | any = document.getElementById('containerFinishMain');
@@ -86,7 +78,7 @@ export function ContainerFinish() {
           <ButtonText
             label="Conheça a Proative Academy"
             directionArrow="none"
-            href="https://vemserproative.solides.jobs/"
+            href=""
           />
         </ContainerButton>
       </ContainerTop>

@@ -1,5 +1,4 @@
 import { ReactNode, useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import { Container, Content, ContainerImg, ContainerText } from './styles';
 
 interface ContainerImgLeftProps {
@@ -8,13 +7,11 @@ interface ContainerImgLeftProps {
   img: string;
 }
 
-export const ContainerImgRightTwo = ({
+export const ContainerImgRight = ({
   children,
   name,
   img,
 }: ContainerImgLeftProps) => {
-  const isMobile = useMediaQuery({ maxWidth: 490 });
-  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
@@ -22,7 +19,7 @@ export const ContainerImgRightTwo = ({
 
     const getWindowBottom = window.scrollY + window.innerHeight;
     const heightEle =
-      ele?.getBoundingClientRect().bottom + window.scrollY + 900;
+      ele?.getBoundingClientRect().bottom + window.scrollY - 400;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { animationFade, animationsObj } from '../../../../utils/animations';
-import { VisibledProp } from '../../../LandingPart/Informations/styles';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const Content = styled.div`
   max-width: 1085px;
@@ -26,8 +26,13 @@ export const Content = styled.div`
 `;
 
 export const Info = styled.div`
-max-width: 225px;
-width: 100%;
+  max-width: 225px;
+  width: 100%;
+
+  position: relative;
+  z-index: 1;
+  background: #f4f4f4;
+
   h1 {
     color: #707070;
     font-size: 3.125rem;
@@ -87,6 +92,9 @@ export const Container = styled.div<VisibledProp>`
       padding-bottom: 50px;
     }
 
+    // position: absolute;
+    // z-index: 1;
+
     ${Info} {
       opacity: ${visibled ? 1 : 0};
     }
@@ -106,4 +114,21 @@ export const Container = styled.div<VisibledProp>`
       }
     `}
   `}
+`;
+
+export const Background = styled.div`
+  position: absolute;
+  z-indez: -1;
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: 520px) and (max-width: 920px) {
+    margin-top: 250px;
+  }
+
+  @media (max-width: 520px) {
+    margin-top: 300px;
+  }
 `;

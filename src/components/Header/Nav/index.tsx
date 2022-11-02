@@ -80,11 +80,6 @@ export function Nav() {
                     name: 'RPA',
                     href: '/solucoes/rpa',
                   },
-
-                  {
-                    name: 'Academy',
-                    href: '/solucoes/academy',
-                  },
                 ]}
               />
             )}
@@ -122,6 +117,11 @@ export function Nav() {
           <li>
             <Link href="/cases">CASES</Link>
           </li> */}
+          <li>
+            <Link scroll={false} href="/academy">
+              ACADEMIA
+            </Link>
+          </li>
           <li>
             <Link scroll={false} href="/carreiras">
               CARREIRAS

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { animationFade, animationsObj } from '../../../../utils/animations';
-import { VisibledProp } from '../../../LandingPart/Informations/styles';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const Content = styled.div`
   max-width: 1085px;
@@ -10,7 +10,7 @@ export const Content = styled.div`
   height: 100%;
 
   display: grid;
-  grid-template-columns: repeat(2, 56% 44%);
+  grid-template-columns: repeat(2, 41.5% 58.5%);
 
   margin: 0 auto;
 
@@ -42,7 +42,7 @@ export const ContainerImg = styled.div`
 `;
 
 export const ContainerText = styled.div`
-  padding-left: 100px;
+  padding-right: 69px;
 
   header.headerContent {
     h1 {
@@ -60,12 +60,12 @@ export const ContainerText = styled.div`
   }
 
   @media (max-width: 1150px) {
-    padding-right: 42px;
+    padding-left: 42px;
   }
 
   @media (max-width: 920px) {
     margin-top: 52px;
-    padding-left: 42px;
+    padding-right: 42px;
     width: 60%;
   }
 
@@ -108,12 +108,14 @@ export const Container = styled.div<VisibledProp>`
     ${visibled &&
     css`
       ${ContainerImg} {
-        // animation: ${animationsObj.toYAnimation(100)} 1.2s;
+        animation: ${animationsObj.toYAnimation(100)} 1.2s;
       }
 
       ${ContainerText} {
-        animation: ${animationsObj.toXAnimation(350)} 1.2s;
+        animation: ${animationsObj.toXAnimation(-350)} 1.2s;
       }
     `}
   `}
+
+  margin: 75px auto;
 `;

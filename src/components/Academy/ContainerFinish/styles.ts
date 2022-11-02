@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { animationFade, animationsObj } from '../../../../utils/animations';
-import { VisibledProp } from '../../../LandingPart/Informations/styles';
+import { animationFade, animationsObj } from '../../../utils/animations';
+import { VisibledProp } from '../../LandingPart/Informations/styles';
 
 export const ContainerTop = styled.div`
   display: flex;

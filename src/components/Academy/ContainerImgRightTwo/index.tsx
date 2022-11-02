@@ -1,5 +1,4 @@
-import { ReactNode, useState, useEffect } from 'react';
-import { useMediaQuery } from 'react-responsive';
+import { ReactNode, useEffect, useState } from 'react';
 import { Container, Content, ContainerImg, ContainerText } from './styles';
 
 interface ContainerImgLeftProps {
@@ -8,21 +7,19 @@ interface ContainerImgLeftProps {
   img: string;
 }
 
-export const ContainerImgLeft = ({
+export const ContainerImgRightTwo = ({
   children,
   name,
   img,
 }: ContainerImgLeftProps) => {
-  const isMobile = useMediaQuery({ maxWidth: 490 });
-  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
-    const ele: Element | any = document.getElementById('containerImgLeft');
+    const ele: Element | any = document.getElementById('containerImgRight');
 
     const getWindowBottom = window.scrollY + window.innerHeight;
     const heightEle =
-      ele?.getBoundingClientRect().bottom + window.scrollY - 300;
+      ele?.getBoundingClientRect().bottom + window.scrollY + 900;
 
     if (!isAnimated && getWindowBottom >= heightEle) {
       setIsAnimated(true);
@@ -35,12 +32,12 @@ export const ContainerImgLeft = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <Container visibled={isAnimated} id="containerImgLeft">
+    <Container visibled={isAnimated} id="containerImgRight">
       <Content>
+        <ContainerText>{children}</ContainerText>
         <ContainerImg>
           <img src={img} alt={name} />
         </ContainerImg>
-        <ContainerText>{children}</ContainerText>
       </Content>
     </Container>
   );

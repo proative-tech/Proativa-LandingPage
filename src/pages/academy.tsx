@@ -2,24 +2,21 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 import { animateScroll } from 'react-scroll';
 
-import { Footer } from '../../components/Footer';
-import { Header } from '../../components/Header';
-import { ContainerFinish } from '../../components/SolutionsPart/Academy/ContainerFinish';
+import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
+import { ContainerFinish } from '../components/Academy/ContainerFinish';
 import {
   ContainerButton,
   ContainerTop,
-} from '../../components/SolutionsPart/Academy/ContainerFinish/styles';
-import { ContainerImgLeft } from '../../components/SolutionsPart/Academy/ContainerImgLeft';
-import { ContainerImgRight } from '../../components/SolutionsPart/Academy/ContainerImgRight';
-import { ButtonText } from '../../components/SolutionsPart/ButtonText';
-import { ContainerInfoAcademy } from '../../components/SolutionsPart/Academy/ContainerInfoAcademy';
+} from '../components/Academy/ContainerFinish/styles';
+import { ContainerInit } from '../components/Academy/ContainerInit';
+import { ContainerImgLeft } from '../components/Academy/ContainerImgLeft';
+import { ContainerImgRight } from '../components/Academy/ContainerImgRight';
+import { ButtonText } from '../components/SolutionsPart/ButtonText';
+import { ContainerInfoAcademy } from '../components/Academy/ContainerInfoAcademy';
 
-import {
-  Container,
-  ContainerBottom,
-  ContainerImg,
-} from '../../styles/pages/Solutions';
-import { ContainerImgRightTwo } from '../../components/SolutionsPart/Academy/ContainerImgRightTwo';
+import { Container } from '../styles/pages/Solutions';
+import { ContainerImgRightTwo } from '../components/Academy/ContainerImgRightTwo';
 
 export default function Index() {
   useEffect(() => {
@@ -118,22 +115,7 @@ export default function Index() {
       <Container>
         <Header />
 
-        <ContainerImg>
-          <img src="/images/academy.png" alt="Imagem de 5 pessoas." />
-        </ContainerImg>
-
-        <ContainerBottom>
-          <h1>
-            <p className="tag">Proative Academy</p>
-          </h1>
-
-          <div className="containerMain">
-            <h1>
-              Nós transparecemos <br /> <strong>comprometimento.</strong>
-            </h1>
-          </div>
-        </ContainerBottom>
-
+        <ContainerInit />
         <ContainerImgRight
           name="roda de pessoas"
           img="/images/academy-roda-pessoas.png"
@@ -148,8 +130,9 @@ export default function Index() {
               vez mais importante à medida em que esse conhecimento está
               diretamente ligado ao valor da nossa entrega para o cliente, mas
               também volátil, incerto, complexo e ambíguo, refletindo o que
-              chamamos de ambiente VUCA (VOLATILITY, UNCERTAINTY, COMPLEXITY,
-              AMBIGUITY) sendo necessário constante atualização.
+              chamamos de ambiente <strong>VUCA</strong> (VOLATILITY,
+              UNCERTAINTY, COMPLEXITY, AMBIGUITY) sendo necessário constante
+              atualização.
             </p>
           </header>
         </ContainerImgRight>
@@ -193,7 +176,7 @@ export default function Index() {
             <ButtonText
               label="Conheça a Proative Academy"
               directionArrow="none"
-              href="https://vemserproative.solides.jobs/"
+              href=""
             />
           </ContainerButton>
         </ContainerTop>

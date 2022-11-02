@@ -1,12 +1,11 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/require-default-props */
 import { useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import { MdLocationOn } from 'react-icons/md';
 
-import { Container, ContentTop, Content, Info } from './styles';
+import { Container, ContentTop, Content, Info, Background } from './styles';
 
 export const ContainerInfoAcademy = () => {
-  const isMobileOrTabled = useMediaQuery({ maxWidth: 928 });
   const [isAnimated, setIsAnimated] = useState(false);
 
   const handleScroll = () => {
@@ -35,6 +34,10 @@ export const ContainerInfoAcademy = () => {
           sendo elas:
         </p>
       </ContentTop>
+
+      <Background>
+        <img src="/images/trilha.svg" />
+      </Background>
 
       <Content>
         <Info>
