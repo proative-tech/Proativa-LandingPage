@@ -119,7 +119,7 @@ export function Nav() {
           </li> */}
           <li>
             <Link scroll={false} href="/academy">
-              ACADEMIA
+              ACADEMY
             </Link>
           </li>
           <li>

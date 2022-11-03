@@ -25,18 +25,17 @@ export const ContainerBottom = styled.div`
 
   margin-top: 60px;
 
-  > a {
-    text-decoration: none;
-    h1 {
-      margin-bottom: 1.75rem;
+  text-decoration: none;
 
-      font-size: 2.375rem;
-      line-height: 2.5rem;
-      font-family: 'Source Sans Pro';
-      color: #eb0029;
-      font-weight: 600;
-      text-align: center;
-    }
+  h1 {
+    margin-bottom: 1.75rem;
+
+    font-size: 4rem;
+    line-height: 2.5rem;
+    font-family: 'Source Sans Pro';
+    color: #eb0029;
+    font-weight: 600;
+    text-align: center;
   }
 
   div.containerMain {
