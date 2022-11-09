@@ -11,6 +11,7 @@ export const Content = styled.div`
   gap: 3.315rem;
 
   margin: 0 auto;
+  justify-items: center;
 
   @media (max-width: 920px) {
     grid-template-columns: repeat(2, 1fr);
@@ -117,6 +118,8 @@ export const Container = styled.div<VisibledProp>`
 `;
 
 export const Background = styled.div`
+  width: 100vw;
+
   position: absolute;
   z-indez: -1;
 

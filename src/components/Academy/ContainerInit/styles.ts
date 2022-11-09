@@ -23,6 +23,10 @@ export const ContainerBottom = styled.div`
   align-items: center;
   justify-content: center;
 
+  width: 100vw;
+  max-width: 507px;
+  margin: auto;
+
   margin-top: 60px;
 
   text-decoration: none;
@@ -30,7 +34,7 @@ export const ContainerBottom = styled.div`
   h1 {
     margin-bottom: 1.75rem;
 
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 2.5rem;
     font-family: 'Source Sans Pro';
     color: #eb0029;

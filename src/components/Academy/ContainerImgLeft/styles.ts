@@ -42,6 +42,10 @@ export const ContainerImg = styled.div`
 `;
 
 export const ContainerText = styled.div`
+  display: flex
+  height: 100%;
+  margin: auto;
+
   padding-left: 100px;
 
   header.headerContent {
