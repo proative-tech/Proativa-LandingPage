@@ -34,7 +34,7 @@ export const ContainerBottom = styled.div`
   h1 {
     margin-bottom: 1.75rem;
 
-    font-size: 3rem;
+    font-size: 2.375rem;
     line-height: 2.5rem;
     font-family: 'Source Sans Pro';
     color: #eb0029;
