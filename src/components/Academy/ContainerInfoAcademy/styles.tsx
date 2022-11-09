@@ -124,7 +124,7 @@ export const Background = styled.div`
   z-indez: -1;
 
   img {
-    width: 100%;
+    width: 100vw;
   }
 
   @media (min-width: 520px) and (max-width: 920px) {
