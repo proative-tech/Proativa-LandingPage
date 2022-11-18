@@ -6,12 +6,21 @@ export const Container = styled.div`
   border: 1px solid #ededed;
   padding: 2rem 1rem 1rem 1.5rem;
 
+  max-width: 1230px;
+  height: 342px;
+
+  overflow-y: scroll;
+
   .profile {
     display: block;
     justify-content: center;
     align-items: center;
     margin-right: 3rem;
     margin-top: 2rem;
+
+    img {
+      width: 90%;
+    }
 
     grid-area: 'profile';
 

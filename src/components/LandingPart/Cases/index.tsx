@@ -18,6 +18,7 @@ import {
 
 import { CardComments } from '../CardComments';
 import { Partners } from '../Partners';
+import { Statements } from '../Statements';
 
 interface CarouseRefData extends ReactElasticCarouselProps {
   slidePrev: () => void;
@@ -141,74 +142,7 @@ export function Cases({ children }: CasesProps | any) {
 
         <Partners />
 
-        <ContainerClients id="commnets-link">
-          <section className="section-client">
-            <h3>O que os clientes dizem</h3>
-            <p>Sobre os serviços e soluções Proative Technology</p>
-          </section>
-
-          {!isMobileOrTablet && (
-            <section className="section-comentario">
-              <CardComments
-                clientCompany="Unimed Santos"
-                nameClient="Robinson Pinheiro"
-                areaClient="Gerente Executivo de TI"
-                src="/images/par-unimed.svg"
-                comment="Para monitorar temos a Proative que deverá acompanhar o crescimento de nossos serviços, monitorando, por exemplo, pacientes crônicos, serviços de home care, medicina preventiva e prontuário eletrônico."
-              />
-              <CardComments
-                clientCompany="Tecnisa"
-                nameClient="Renato Diego Bizzarri Barbosa"
-                areaClient="Coordenador de Infraestrutura"
-                src="/images/par-expressa.svg"
-                comment="A entrega da Proative está além do monitoramento de dispositivos on e off, com a tecnologia da ferramenta e a flexibilidade na construção de dashboards é possível realizarmos o monitoramento de processos do negócio, possibilitando a atuação em melhorias importantes e não somente a visão para Capacity Planning de TI."
-              />
-            </section>
-          )}
-
-          {isMobileOrTablet && (
-            <ContainerCarousel>
-              <Carousel
-                isRTL={false}
-                className="containerREC"
-                itemsToShow={1}
-                itemPadding={[0, 24]}
-                ref={carousel}
-                pagination={false}
-              >
-                <CardComments
-                  clientCompany="Unimed Santos"
-                  nameClient="Robinson Pinheiro"
-                  areaClient="Gerente Executivo de TI"
-                  src="/images/par-unimed.svg"
-                  comment="Para monitorar temos a Proative que deverá acompanhar o crescimento de nossos serviços, monitorando, por exemplo, pacientes crônicos, serviços de home care, medicina preventiva e prontuário eletrônico."
-                />
-                <CardComments
-                  clientCompany="Tecnisa"
-                  nameClient="Renato Diego Bizzarri Barbosa"
-                  areaClient="Coordenador de Infraestrutura"
-                  src="/images/par-expressa.svg"
-                  comment="A entrega está além do monitoramento de dispositivos on e off, com a tecnologia e a flexibilidade na construção de dashboards é possível monitorarmos processos, possibilitando a atuação a atuação em melhorias importantes para o negócio e não somente uma visão para Capacity Planning de TI"
-                />
-              </Carousel>
-              <ContainerBottomCarousel>
-                <button
-                  type="button"
-                  onClick={() => carousel.current.slidePrev()}
-                >
-                  <FiChevronLeft size={24} color="#000" />
-                </button>
-                <div />
-                <button
-                  type="button"
-                  onClick={() => carousel.current.slideNext()}
-                >
-                  <FiChevronRight size={24} color="#000" />
-                </button>
-              </ContainerBottomCarousel>
-            </ContainerCarousel>
-          )}
-        </ContainerClients>
+        <Statements />
       </Content>
     </Container>
   );

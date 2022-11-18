@@ -73,7 +73,7 @@ export const Content = styled.div`
   .section-comentario {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
 
     gap: 1.5rem;
   }
@@ -134,6 +134,32 @@ export const ContainerCarousel = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  .containerDEP {
+    width: 100vw;
+    padding: 0 24px;
+
+    button.rec-arrow {
+      background: #c4c4c4;
+    }
+
+    div.rec-pagination {
+      margin-top: 3rem;
+
+      button.rec-dot {
+        background: black;
+        border: none;
+        box-shadow: none;
+
+        width: 6px;
+        height: 6px;
+      }
+
+      button.rec-dot_active {
+        background: #eb0029;
+      }
+    }
+  }
 
   .containerREC {
     button.rec-arrow {
