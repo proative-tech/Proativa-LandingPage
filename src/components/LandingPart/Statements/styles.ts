@@ -87,11 +87,11 @@ export const ContainerCarousel = styled.div`
 `;
 
 export const ContainerBottomCarousel = styled.div`
-  margin-top: 27px;
-
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin-top: 27px;
 
   button {
     background: #f4f4f4;
