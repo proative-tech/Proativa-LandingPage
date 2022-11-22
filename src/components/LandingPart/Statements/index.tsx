@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React, { useEffect, useRef, useState } from 'react';
 import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
@@ -18,7 +19,7 @@ export const Statements = () => {
   // const isMobileOrTablet = useMediaQuery({ maxWidth: 845 });
   const isMobileOrTablet = useMediaQuery({ maxWidth: 928 });
 
-  const items = [1, 2, 3];
+  const items = [1, 2, 3, 4];
 
   const initialValue = 0;
 
@@ -65,6 +66,20 @@ export const Statements = () => {
     );
   }
 
+  const onNextStart = (currentItem, nextItem) => {
+    if (currentItem.index === nextItem.index) {
+      // ir para primeiro item
+      carousel.current.goTo(0);
+    }
+  };
+
+  const onPrevStart = (currentItem, nextItem) => {
+    if (currentItem.index === nextItem.index) {
+      // ir para último item
+      carousel.current.goTo(items.length);
+    }
+  };
+
   return (
     <S.ContainerClients id="commnets-link">
       <section className="section-client">
@@ -82,6 +97,8 @@ export const Statements = () => {
             ref={carousel}
             pagination={false}
             renderArrow={myArrow}
+            onPrevStart={onPrevStart}
+            onNextStart={onNextStart}
           >
             <CardComments
               clientCompany="Unimed Santos"
@@ -125,6 +142,8 @@ export const Statements = () => {
             itemPadding={[0, 24]}
             ref={carousel}
             pagination={false}
+            onPrevStart={onPrevStart}
+            onNextStart={onNextStart}
           >
             <CardComments
               clientCompany="Unimed Santos"
@@ -157,11 +176,17 @@ export const Statements = () => {
             />
           </Carousel>
           <S.ContainerBottomCarousel>
-            <button type="button" onClick={() => carousel.current.slidePrev()}>
+            <button
+              type="button"
+              onClick={() => carousel.current.onPrevStart()}
+            >
               <FiChevronLeft size={24} color="#000" />
             </button>
             <div />
-            <button type="button" onClick={() => carousel.current.slideNext()}>
+            <button
+              type="button"
+              onClick={() => carousel.current.onNextStart()}
+            >
               <FiChevronRight size={24} color="#000" />
             </button>
           </S.ContainerBottomCarousel>

@@ -15,6 +15,8 @@ export const Partners = () => {
 
   const isMobile = useMediaQuery({ maxWidth: 840 });
 
+  const items = [1, 2, 3, 4, 5, 6, 7, 8];
+
   function myArrow({ type, onClick }) {
     const pointer =
       type === 'PREV' ? (
@@ -31,6 +33,20 @@ export const Partners = () => {
       </S.ContainerButtonCustom>
     );
   }
+
+  const onNextStart = (currentItem, nextItem) => {
+    if (currentItem.index === nextItem.index) {
+      // ir para primeiro item
+      carousel.current.goTo(0);
+    }
+  };
+
+  const onPrevStart = (currentItem, nextItem) => {
+    if (currentItem.index === nextItem.index) {
+      // ir para último item
+      carousel.current.goTo(items.length);
+    }
+  };
 
   return (
     <S.Wrapper id="partners-link">
@@ -49,6 +65,8 @@ export const Partners = () => {
             ref={carousel}
             pagination={false}
             renderArrow={myArrow}
+            onPrevStart={onPrevStart}
+            onNextStart={onNextStart}
           >
             <S.ContainerImg>
               <img src="/images/par-automation.svg" alt="Automation Edge" />
