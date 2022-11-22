@@ -18,9 +18,15 @@ export const Container = styled.div`
     margin-right: 3rem;
     margin-top: 2rem;
 
-    img {
-      width: 100%;
-      height: 40px;
+    .image {
+      max-width: 100%;
+
+      height: 38px;
+      margin: auto;
+
+      img {
+        width: 100%;
+      }
     }
 
     grid-area: 'profile';

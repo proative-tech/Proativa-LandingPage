@@ -23,8 +23,11 @@ export function CardComments({
   return (
     <Container>
       <div className="profile">
-        <img src={src} alt={clientCompany} />
+        <div className="image">
+          <img src={src} alt={clientCompany} />
+        </div>
         <br />
+
         <div className="empresa">
           <p>{clientCompany}</p>
         </div>
