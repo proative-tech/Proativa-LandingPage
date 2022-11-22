@@ -19,7 +19,8 @@ export const Container = styled.div`
     margin-top: 2rem;
 
     img {
-      width: 90%;
+      width: 100%;
+      height: 50px;
     }
 
     grid-area: 'profile';
