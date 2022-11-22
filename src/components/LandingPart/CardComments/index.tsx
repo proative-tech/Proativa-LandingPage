@@ -9,6 +9,8 @@ type CardCommentsProps = {
   nameClient: string;
   areaClient: string;
   src: string;
+  // eslint-disable-next-line react/require-default-props
+  styles?: string;
 };
 
 export function CardComments({
@@ -17,6 +19,7 @@ export function CardComments({
   nameClient,
   areaClient,
   src,
+  styles,
 }: CardCommentsProps) {
   const isMobile = useMediaQuery({ maxWidth: 490 });
 
@@ -36,7 +39,7 @@ export function CardComments({
       <div className="note">
         <div className="contentNote">
           <strong>"</strong>
-          <p>{comment}"</p>
+          <p className={styles}>{comment}"</p>
         </div>
       </div>
       <div />

@@ -75,9 +75,13 @@ export const Container = styled.div`
         padding-top: 1px;
       }
 
+      .veloe {
+        font-size: 0.75rem;
+      }
+
       p {
         padding-top: 8px;
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         line-height: 24px;
       }
     }
