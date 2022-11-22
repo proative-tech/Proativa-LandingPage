@@ -119,15 +119,14 @@ export const Statements = () => {
               nameClient="Fernanda Toscano"
               areaClient="Superintendente de TI"
               src="/images/par-veloe.svg"
-              comment="O conhecimento do negócio e da operação, sem dúvida é um diferencial positivo de um parceiro de tecnologia e a Proative é especialista no tema monitoração, sustentação, governança de TI e operação, o que nos trouxe segurança para seguir com o projeto. O ótimo relacionamento entre as empresas também foi fator decisivo. E, o mais importante, a qualidade dos serviços prestados atende nossas expectativas.”
-                  "
+              comment="O conhecimento do negócio e da operação, sem dúvida é um diferencial positivo de um parceiro de tecnologia e a Proative é especialista no tema monitoração, sustentação, governança de TI e operação, o que nos trouxe segurança para seguir com o projeto. O ótimo relacionamento entre as empresas também foi fator decisivo. E, o mais importante, a qualidade dos serviços prestados atende nossas expectativas."
             />
             <CardComments
               clientCompany="Mitre Realty"
               nameClient="Aline Pontes"
               areaClient="Gerente de infraestrutura e governança em TI"
               src="/images/par-mitre.svg"
-              comment="Precisávamos de uma empresa que tivesse como principal diferencial o domínio do assunto e que tinha conhecimento suficiente para identificar e estancar a nossa dor com competência e Know-how na nossa área de atuação, daí a escolha pela Proative Technology.”"
+              comment="Precisávamos de uma empresa que tivesse como principal diferencial o domínio do assunto e que tinha conhecimento suficiente para identificar e estancar a nossa dor com competência e Know-how na nossa área de atuação, daí a escolha pela Proative Technology."
             />
           </Carousel>
         </S.ContainerCarousel>
@@ -164,15 +163,14 @@ export const Statements = () => {
               nameClient="Fernanda Toscano"
               areaClient="Superintendente de TI"
               src="/images/par-veloe.svg"
-              comment="O conhecimento do negócio e da operação, sem dúvida é um diferencial positivo de um parceiro de tecnologia e a Proative é especialista no tema monitoração, sustentação, governança de TI e operação, o que nos trouxe segurança para seguir com o projeto. O ótimo relacionamento entre as empresas também foi fator decisivo. E, o mais importante, a qualidade dos serviços prestados atende nossas expectativas.”
-                  "
+              comment="O conhecimento do negócio e da operação, sem dúvida é um diferencial positivo de um parceiro de tecnologia e a Proative é especialista no tema monitoração, sustentação, governança de TI e operação, o que nos trouxe segurança para seguir com o projeto. O ótimo relacionamento entre as empresas também foi fator decisivo. E, o mais importante, a qualidade dos serviços prestados atende nossas expectativas."
             />
             <CardComments
               clientCompany="Mitre Realty"
               nameClient="Aline Pontes"
               areaClient="Gerente de infraestrutura e governança em TI"
               src="/images/par-mitre.svg"
-              comment="Precisávamos de uma empresa que tivesse como principal diferencial o domínio do assunto e que tinha conhecimento suficiente para identificar e estancar a nossa dor com competência e Know-how na nossa área de atuação, daí a escolha pela Proative Technology.”"
+              comment="Precisávamos de uma empresa que tivesse como principal diferencial o domínio do assunto e que tinha conhecimento suficiente para identificar e estancar a nossa dor com competência e Know-how na nossa área de atuação, daí a escolha pela Proative Technology."
             />
           </Carousel>
           <S.ContainerBottomCarousel>
