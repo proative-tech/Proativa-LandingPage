@@ -7,9 +7,9 @@ export const Container = styled.div`
   padding: 2rem 1rem 1rem 1.5rem;
 
   max-width: 1230px;
-  height: 342px;
+  height: 442px;
 
-  overflow-y: scroll;
+  //overflow-y: scroll;
 
   .profile {
     display: block;
@@ -123,11 +123,43 @@ export const Container = styled.div`
     }
   }
 
+  @media screen and (min-width: 490px) and (max-width: 720px) {
+    height: 330px;
+
+    .profile {
+      .image {
+        max-width: 80%;
+
+        height: 38px;
+        margin: auto;
+
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 920px) {
+    height: 350px;
+
+    .profile {
+      .image {
+        max-width: 80%;
+
+        height: 38px;
+        margin: auto;
+
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
   @media (max-width: 490px) {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-
     margin: 0;
 
     height: 310px;
