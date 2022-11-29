@@ -176,7 +176,7 @@ export default function Index() {
             <ButtonText
               label="Conheça a Proative Academy"
               directionArrow="none"
-              href=""
+              href="https://proativetechnology.twygoead.com/users/login"
             />
           </ContainerButton>
         </ContainerTop>
