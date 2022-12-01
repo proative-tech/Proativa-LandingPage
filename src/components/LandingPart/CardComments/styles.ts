@@ -7,9 +7,9 @@ export const Container = styled.div`
   padding: 2rem 1rem 1rem 1.5rem;
 
   max-width: 1230px;
-  height: 442px;
+  height: 342px;
 
-  //overflow-y: scroll;
+  overflow-y: scroll;
 
   .profile {
     display: block;
@@ -89,7 +89,7 @@ export const Container = styled.div`
 
   div.infomationsClient {
     margin-left: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

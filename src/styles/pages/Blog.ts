@@ -6,9 +6,10 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   width: 100vw;
-  height: 1400px;
 
+  height: 100vh;
 
+  margin-bottom: 200px;
 
   position: relative;
 
@@ -21,7 +22,6 @@ export const Content = styled.div`
   margin: 0;
   padding: 0;
   height: 100%;
-  
 
   > iframe {
     width: 100%;

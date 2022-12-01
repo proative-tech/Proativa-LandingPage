@@ -19,6 +19,9 @@ export const ContainerTop = styled.div`
   display: grid;
   grid-template-columns: 1fr 45%;
 
+  width: 100vw;
+  max-width: 1085px;
+
   @media (max-width: 1264px) {
     grid-template-columns: 1fr 45%;
   }
