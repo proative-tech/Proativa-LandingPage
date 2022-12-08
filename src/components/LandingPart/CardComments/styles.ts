@@ -92,10 +92,12 @@ export const Container = styled.div`
 
   div.infomationsClient {
     margin-left: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    height: 75px;
+   
 
     strong {
       font-weight: 500;
@@ -115,7 +117,7 @@ export const Container = styled.div`
     div.empresa {
       display: flex;
 
-      margin-top: 1rem;
+      margin-top: 0.1rem;
       width: 100%;
 
       p {
@@ -124,10 +126,14 @@ export const Container = styled.div`
         color: red;
       }
     }
+
+
   }
 
   @media screen and (min-width: 490px) and (max-width: 720px) {
     height: 330px;
+
+
 
     .profile {
       .image {
@@ -140,6 +146,10 @@ export const Container = styled.div`
           width: 80%;
         }
       }
+    }
+
+    div.empresa {
+      height: 30px
     }
   }
 
