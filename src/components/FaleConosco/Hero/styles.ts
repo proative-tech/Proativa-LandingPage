@@ -17,14 +17,11 @@ const animationH1 = keyframes`
 
 export const ContainerTop = styled.div`
   display: grid;
-  grid-template-columns: 1fr 45%;
 
   width: 100vw;
-  max-width: 1085px;
 
   @media (min-width: 1414px) {
     width: 100vw;
-    max-width: 1400px;
     display: flex;
     margin: auto;
     justify-content: space-around;
@@ -67,7 +64,7 @@ export const ContainerTop = styled.div`
 `;
 
 export const Content = styled.section`
-  width: 70%;
+  width: 100%;
 
   justify-self: flex-end;
   align-self: center;
@@ -93,10 +90,46 @@ export const Content = styled.section`
     }
   }
 
-  @media (min-width: 1441px) {
+  @media (min-width: 2300px) {
     div.content__text {
       margin-bottom: 3.125rem;
-      margin-left: 12rem;
+      margin-left: 40%;
+    }
+  }
+
+  @media (max-width: 2300px) {
+    div.content__text {
+      margin-bottom: 3.125rem;
+      margin-left: 25%;
+    }
+  }
+
+  @media (max-width: 2000px) {
+    div.content__text {
+      margin-bottom: 3.125rem;
+      margin-left: 20%;
+    }
+  }
+
+  @media (max-width: 1500px) {
+    div.content__text {
+      margin-bottom: 3.125rem;
+      margin-left: 5%;
+    }
+  }
+
+  @media (min-width: 1379px) {
+    div.content__text {
+      margin-bottom: 3.125rem;
+      position: relative;
+      left: 20%;
+    }
+  }
+
+  @media (max-width: 1450px) {
+    div.content__text {
+      margin-bottom: 3.125rem;
+      // margin-left: 50%;
     }
   }
 
@@ -125,6 +158,12 @@ export const Content = styled.section`
 export const ContainerImg = styled.section`
   position: relative;
   left: 0;
+
+  img {
+    position: relative;
+
+    right: 0;
+  }
 
   justify-self: flex-end;
 
