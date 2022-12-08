@@ -22,6 +22,18 @@ export const ContainerTop = styled.div`
   width: 100vw;
   max-width: 1085px;
 
+  @media (min-width: 1414px) {
+    width: 100vw;
+    max-width: 1400px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 1414px) {
+    grid-template-columns: 1fr 45%;
+  }
+
   @media (max-width: 1264px) {
     grid-template-columns: 1fr 45%;
   }

@@ -21,8 +21,11 @@ export const Container = styled.div`
     .image {
       max-width: 100%;
 
-      height: 38px;
       margin: auto;
+
+      @media (min-width: 1446px) {
+        max-width: 60%;
+      }
 
       img {
         width: 100%;

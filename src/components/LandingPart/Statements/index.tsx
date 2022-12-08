@@ -100,7 +100,7 @@ export const Statements = () => {
             onPrevStart={onPrevStart}
             onNextStart={onNextStart}
           >
-           <CardComments
+            <CardComments
               clientCompany="Veloe"
               nameClient="Fernanda Toscano"
               areaClient="Superintendente de TI"
@@ -129,7 +129,6 @@ export const Statements = () => {
               src="/images/par-expressa.svg"
               comment="A entrega da Proative está além do monitoramento de dispositivos on e off, com a tecnologia da ferramenta e a flexibilidade na construção de dashboards é possível realizarmos o monitoramento de processos do negócio, possibilitando a atuação em melhorias importantes e não somente a visão para Capacity Planning de TI."
             />
-        
           </Carousel>
         </S.ContainerCarousel>
       )}
@@ -146,7 +145,7 @@ export const Statements = () => {
             onPrevStart={onPrevStart}
             onNextStart={onNextStart}
           >
-          <CardComments
+            <CardComments
               clientCompany="Veloe"
               nameClient="Fernanda Toscano"
               areaClient="Superintendente de TI"
@@ -160,7 +159,7 @@ export const Statements = () => {
               areaClient="Gerente de infraestrutura e governança em TI"
               src="/images/par-mitre.svg"
               comment="Precisávamos de uma empresa que tivesse como principal diferencial o domínio do assunto e que tinha conhecimento suficiente para identificar e estancar a nossa dor com competência e Know-how na nossa área de atuação, daí a escolha pela Proative Technology."
-            /> 
+            />
             <CardComments
               clientCompany="Unimed Santos"
               nameClient="Robinson Pinheiro"
@@ -175,8 +174,6 @@ export const Statements = () => {
               src="/images/par-expressa.svg"
               comment="A entrega da Proative está além do monitoramento de dispositivos on e off, com a tecnologia da ferramenta e a flexibilidade na construção de dashboards é possível realizarmos o monitoramento de processos do negócio, possibilitando a atuação em melhorias importantes e não somente a visão para Capacity Planning de TI."
             />
-
-        
           </Carousel>
           <S.ContainerBottomCarousel>
             <button
